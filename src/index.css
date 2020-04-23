@@ -23,13 +23,51 @@ code {
 }
 
 #picOfMe_Home{
-  width: 25vw;
-  transition: width 0.5s;
+  width: 400px;
 }
 
-#picOfMe_Home:hover{
-  width: 30vw;
+.heroTitle {
+  font-size: 6rem;
 }
+.heroSubTitle{
+  font-size: 3rem;
+}
+
+@media (max-width: 992px) {
+  #picOfMe_Home{
+    width: 50vw;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 13vw;
+  }
+  .heroSubTitle{
+    font-size: 8vw;
+  }
+
+  .bodyText {
+    font-size: 5vw;
+  }
+
+  .videoResponsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+  }
+  .videoResponsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+}
+
 
 #lis500_pic {
   width: 80vw;
@@ -69,5 +107,5 @@ a {
 
 #homepageBackground{
   width: 100vw;
-  margin-top: -10px;
+  margin-top: 30px;
 }

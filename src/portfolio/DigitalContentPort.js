@@ -21,8 +21,10 @@ function DigitalContentPort(props) {
                 </h5>
 
             <h3 className="mt-5">Mr. BongoSide - A Mr.BrightSide Meme</h3>
+            <div class="videoResponsive">
             <iframe title="bongoCat" width="560" height="315" src="https://www.youtube-nocookie.com/embed/_-0L_whRKa0" 
             frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             <h5>This video is an example of what kind of content I would create for the <a href="https://www.facebook.com/groups/175526726305977"> 
             UW Madison Memes for Milk-Chugging Teens</a>. This video was created using mostly After Effects, but then linking the After Effects clips onto
             premiere to render out the final video. Other Adobe products went into the creation of this video, such as PhotoShop and Audition. This video is a take
