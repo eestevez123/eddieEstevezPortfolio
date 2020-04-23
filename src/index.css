@@ -30,6 +30,17 @@ code {
 #picOfMe_Home:hover{
   width: 30vw;
 }
+
+#lis500_pic {
+  width: 80vw;
+}
+
+
+
+#thisSite_pic {
+  width: 80vw;
+}
+
 a {
   color: #80f5c2;
 }
@@ -46,4 +57,17 @@ a {
 .logoLink:hover {
   cursor: pointer;
   width: 55vw;
+}
+
+#videos {
+  margin-left: 20vw;
+}
+
+#culversPic_ID{
+  width: 70vw;
+}
+
+#homepageBackground{
+  width: 100vw;
+  margin-top: -10px;
 }

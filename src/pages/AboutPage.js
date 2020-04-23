@@ -17,9 +17,9 @@ function AboutPage(props) {
         </Row>
         <Content>
         <h3>My name is Eddie Estevez, and I am an optimistic, extroverted individual. 
-            I am currently a student at the University of Wisconsin - Madison,  majoring in both Computer 
-            Science and Computer Engineering. I love learning in general, as well trying new experiences and 
-            exploring cultures. Not only am I a computer enthusiast as well like to stay updated on the latest 
+            I am currently a Junior at the University of Wisconsin - Madison,  majoring in both Computer 
+            Science and Computer Engineering, as well as pursuing a certificate within Digital Studies. I love learning in general, 
+            as well trying new experiences and exploring cultures. Not only am I a computer enthusiast as well as like to stay updated on the latest 
             trends within software development, but I also enjoy photo and video editing.</h3>
         </Content>
         </div>

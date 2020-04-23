@@ -1,16 +1,15 @@
 import React from 'react';
-
+import backgroundPicture from "../images/HomePageBackground.png";
+import Image from "react-bootstrap/Image"
 
 import Hero from "../components/Hero";
-import Content from "../components/Content";
 
 function HomePage(props) {
 
     return(
         <div>
-        <Hero title={props.title} subTitle={props.subTitle} />
-        <Content>
-        </Content>
+        <Hero id="hereOnHomePage" title={props.title} subTitle={props.subTitle} />
+        <Image id="homepageBackground" src={backgroundPicture} rounded className="mx-auto" />
         </div>
         )
 } 
