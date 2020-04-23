@@ -23,5 +23,27 @@ code {
 }
 
 #picOfMe_Home{
-  width: 200px;
+  width: 25vw;
+  transition: width 0.5s;
+}
+
+#picOfMe_Home:hover{
+  width: 30vw;
+}
+a {
+  color: #80f5c2;
+}
+
+#downloadResume {
+  margin-top: 15vh;
+}
+
+.logoLink{
+  width: 50vw;
+  transition: width 0.5s;
+}
+
+.logoLink:hover {
+  cursor: pointer;
+  width: 55vw;
 }

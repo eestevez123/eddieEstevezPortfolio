@@ -8,10 +8,11 @@ function HomePage(props) {
     return(
         <div>
         <Hero title={props.title} subTitle={props.subTitle} />
-        <Content>
-            <h1>Thank you for being interested in contacting me!</h1>
-            <h3>LinkedIn: <a href="https://www.linkedin.com/in/eduardo-estevez-a63193144/">Eddie Estevez</a></h3>
-            <h3>Email: eestevez@wisc.edu </h3>
+        <Content className="mb-50">
+            <h1 className="mb-10">Thank you for being interested in contacting me!</h1>
+            <h3>LinkedIn <div><a href="https://www.linkedin.com/in/eduardo-estevez-a63193144/">Eddie Estevez</a></div></h3>
+            <h3>Email <div style={{color: "#007bff"}} >eestevez@wisc.edu </div> </h3>
+            <h3>Phone Number <div style={{color: "#007bff"}} > (414) 628-4171 </div> </h3>
         </Content>
         </div>
         )
