@@ -33,8 +33,8 @@ constructor(props) {
       {title: "Contact", path: "/contact"},
     ], 
     home: {
-      title: "Hey, thanks for stopping by!",
-      subTitle: "Hope you enjoy your stay!"
+      title: "Hey guys, Eddie here",
+      subTitle: "well, not actually here, currently somewhere else, but you know what I mean"
     },
     about: {
       title: "About me",
@@ -58,7 +58,7 @@ render() {
       <Container className="p-0" fluid={true}>
 
         <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <Navbar.Brand>Eddie Estevez</Navbar.Brand>
+            <Navbar.Brand href="/">Eddie Estevez</Navbar.Brand>
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
