@@ -82,7 +82,7 @@ function ResumePage(props) {
         </Content>
         <Content className="mt-5">
             <div>
-                <h1 className="font-weight-bolder border-bottom" style={{color: '#007bff' }}>Leadership Expereriences</h1>
+                <h1 className="font-weight-bolder border-bottom" style={{color: '#007bff' }}>Leadership Experiences</h1>
 
                 <div className="d-flex justify-content-between"><h4>NCJS and JUST</h4> <h4><i>June 2020 – Present </i></h4></div>
                 <h5><i>Web Master </i></h5>
