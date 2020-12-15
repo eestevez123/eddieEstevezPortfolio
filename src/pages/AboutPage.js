@@ -31,11 +31,9 @@ class AboutPage extends React.Component {
         {this.state.imageLoadDone}
         </Row>
         <Content>
-        <h3 className="bodyText">My name is Eddie Estevez, and I am an optimistic, extroverted individual. 
-            I am currently a Junior at the University of Wisconsin - Madison,  majoring in both Computer 
-            Science and Computer Engineering, as well as pursuing a certificate within Digital Studies. I love learning in general, 
-            as well trying new experiences and exploring cultures. Not only am I a computer enthusiast as well as like to stay updated on the latest 
-            trends within software development, but I also enjoy photo and video editing.</h3>
+        <h3 className="bodyText">My name is Eddie Estevez, and I am an optimistic, extroverted individual. I am currently a Senior at the University of Wisconsin - Madison, majoring in both Computer Science and Computer Engineering, as well as pursuing a certificate within Digital Studies. I love learning in general, as well trying new experiences and exploring cultures. I’m a computer enthusiast who likes to stay updated on the latest trends within software development, but I also enjoy photo and video editing, and just creating digital things in general.
+
+</h3>
         </Content>
         </div>
     )

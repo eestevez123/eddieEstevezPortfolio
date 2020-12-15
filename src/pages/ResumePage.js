@@ -3,6 +3,7 @@ import React from 'react';
 import Hero from "../components/Hero"
 import Content from "../components/Content";
 
+const  eddieResumePDF = process.env.PUBLIC_URL + '/eddieResume.pdf';
 
 function ResumePage(props) {
 
@@ -22,14 +23,24 @@ function ResumePage(props) {
         <Content className="mt-5">
         <h1 className="font-weight-bolder border-bottom" style={{color: '#007bff' }}>Skills</h1>
         <h5><b>Web Design Tools: </b>React, JavaScript, Node JS, CSS, HTML5</h5>
-        <h5><b>Other Programming LanguagesL </b>Java, Python, Matlab, C </h5>
+        <h5><b>Other Programming Languages: </b>React Native, Java, Python, Matlab, C </h5>
         <h5><b>Adobe Suite: </b>PhotoShop, Premiere, After Effects, Illustrator, Audition</h5>
         <h5><b>Languages: </b>Spanish, Italian</h5>
         </Content>
         <Content className="mt-5">
             <div>
-                <h1 className="font-weight-bolder border-bottom" style={{color: '#007bff' }}>Software Engineering Experience</h1>   
-                <div className="d-flex justify-content-between"><h4>Northwestern Mutual</h4> <h4><i>July 2017 – September 2019</i></h4></div>
+                <h1 className="font-weight-bolder border-bottom" style={{color: '#007bff' }}>Software Engineering Experience</h1>
+
+                <div className="d-flex justify-content-between "><h4>BlackRock</h4> <h4><i>July 2020 – August 2020</i></h4></div>
+                <h5><i>Summer Analyst Intern</i></h5>
+                <h5>
+                Used Python to create and calculate CSV files to be visualized using Tableau  
+                </h5>
+                <h5>
+                The Tableau pages were created to aid portfolio managers to view model data and anomalies within them
+                </h5>
+
+                <div className="d-flex justify-content-between mt-4"><h4>Northwestern Mutual</h4> <h4><i>July 2017 – September 2019</i></h4></div>
                 <h5><i>Software Engineering Intern</i></h5>
                 <h5>
                 Developed a user interface to produces internal web applications that allow decision makers to quantify financial risk of
@@ -42,21 +53,14 @@ function ResumePage(props) {
                 <h5>
                 Worked in an Agile team using Agilecraft and Jira for task management
                 </h5>
+
             </div>
         </Content>
         <Content className="mt-5">
             <div>
-                <h1 className="font-weight-bolder border-bottom" style={{color: '#007bff' }}>Video Editing Experience</h1>   
-                <div className="d-flex justify-content-between"><h4>The Black Sheep</h4> <h4><i>September 2018 – May 2019 </i></h4></div>
-                <h5><i>Video Creator</i></h5>
-                <h5>
-                Made two videos a week for the UW Black Sheep professional Instagram and Twitter pages
-                </h5>
-                <h5>
-                Created photo and video content using Premiere, After Effects, and Photoshop 
-                </h5>
+                <h1 className="font-weight-bolder border-bottom" style={{color: '#007bff' }}>Video Editing Experience</h1>
 
-                <div className="d-flex justify-content-between mt-4"><h4>Ad Club</h4> <h4><i>September 2019- Present</i></h4></div>
+                <div className="d-flex justify-content-between "><h4>Ad Club</h4> <h4><i>September 2019- Present</i></h4></div>
                 <h5><i>Ad Agency Member </i></h5>
                 <h5>
                 Create digital media  for marketing campaigns and apply agency style advertising techniques for businesses in the
@@ -65,12 +69,32 @@ function ResumePage(props) {
                 <h5>
                 Specifically, made 10-15 seconds clips showcasing players from Forward Madison Football Club
                 </h5>
+
+                <div className="d-flex justify-content-between mt-4"><h4>The Black Sheep</h4> <h4><i>September 2018 – May 2019 </i></h4></div>
+                <h5><i>Video Creator</i></h5>
+                <h5>
+                Made two videos a week for the UW Black Sheep professional Instagram and Twitter pages
+                </h5>
+                <h5>
+                Created photo and video content using Premiere, After Effects, and Photoshop 
+                </h5>
             </div>
         </Content>
         <Content className="mt-5">
             <div>
-                <h1 className="font-weight-bolder border-bottom" style={{color: '#007bff' }}>Leadership Expereriences</h1>   
-                <div className="d-flex justify-content-between"><h4>Division of Information Technology</h4> <h4><i>February 2019 – May 2019 </i></h4></div>
+                <h1 className="font-weight-bolder border-bottom" style={{color: '#007bff' }}>Leadership Expereriences</h1>
+
+                <div className="d-flex justify-content-between"><h4>NCJS and JUST</h4> <h4><i>June 2020 – Present </i></h4></div>
+                <h5><i>Web Master </i></h5>
+                <h5>
+                Designed and currently maintain the website for the National Collegiate Journal of Science using Wordpress
+                </h5>
+                <h5>
+                Maintain the website for the Journal of Undergraduate Science and Technology
+                </h5>
+
+
+                <div className="d-flex justify-content-between mt-4"><h4>Division of Information Technology</h4> <h4><i>February 2019 – May 2019 </i></h4></div>
                 <h5><i>Student Technician </i></h5>
                 <h5>
                 Offered in-person technical support for faculty members across University of Wisconsin
@@ -103,7 +127,7 @@ function ResumePage(props) {
             </div>
         </Content>
         <Content id="downloadResume">
-        <h5 >Download my resume following this <a href="http://pages.cs.wisc.edu/~estevez-jr/resume/Eddie_Resume.pdf">link</a>.</h5>
+        <h5 >Download my resume following this <a href={eddieResumePDF} target='_blank' rel="noopener noreferrer">link</a>.</h5>
         </Content>
         
         </div>
