@@ -34,7 +34,7 @@ constructor(props) {
     ], 
     home: {
       title: "Hey guys, Eddie here",
-      subTitle: "well, not actually here, currently somewhere else, but you know what I mean"
+      subTitle: "A computer nerd with a passion for digital media and design"
     },
     about: {
       title: "About me",

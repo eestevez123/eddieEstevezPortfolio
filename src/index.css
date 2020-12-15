@@ -28,10 +28,10 @@ code {
 }
 
 .heroTitle {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 .heroSubTitle{
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 @media (max-width: 992px) {
@@ -90,14 +90,30 @@ a {
 }
 
 .logoLink{
-  width: 50vw;
+  width: 24vw;
   transition: width 0.5s;
 }
 
 .logoLink:hover {
   cursor: pointer;
-  width: 55vw;
+  width: 26vw;
 }
+
+@media (max-width: 900px) { 
+
+  .logoLink{
+    width: 50vw;
+    transition: width 0.5s;
+  }
+  
+  .logoLink:hover {
+    cursor: pointer;
+    width: 52vw;
+  }
+  
+
+}
+
 
 #videos {
   margin-left: 20vw;
