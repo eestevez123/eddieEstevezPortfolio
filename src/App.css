@@ -36,3 +36,98 @@
     transform: rotate(360deg);
   }
 }
+
+:root {
+  --circleShape: 200px;
+  --rectangleWidth: 300px;
+}
+@media (max-width: 1000px) { 
+  :root {
+    --circleShape: 175px;
+    --rectangleWidth: 225px;
+  }
+}
+@media (max-width: 768px) { 
+  :root {
+    --circleShape: 150px;
+    --rectangleWidth: 200px;
+  }
+}
+@media (max-width: 500px) { 
+  :root {
+    --circleShape: 32vw;
+    --rectangleWidth: 40vw;
+  }
+}
+
+
+#interactiveDivHomePage {
+  position: relative;
+  background-color: #ffffff00 !important;
+  width: 100vw !important; 
+  height: 350px !important;
+  overflow: hidden;
+}
+
+#greenCircleHomePage {
+  position: absolute;
+  left: 84%;
+  z-index: 1;
+  bottom: 0%;
+  height: var(--circleShape)!important;
+  width: var(--circleShape)!important;
+}
+
+#blueCircleHomePage {
+  position: absolute;
+  left:2%;
+  z-index: 0;
+  bottom: 0%;
+  height: var(--circleShape)!important;
+  width: var(--circleShape)!important;
+}
+
+#purpleCircleHomePage {
+  position: absolute;
+  left: 74%;
+  z-index: 0;
+  top: 0%;
+  height: var(--circleShape)!important;
+  width: var(--circleShape)!important;
+}
+
+#blueRectangeHomePage {
+  position: absolute;
+  left: 50%;
+  z-index: 0;
+  bottom: 0%;
+  height: var(--circleShape)!important;
+  width: var(--rectangleWidth)!important;
+}
+
+#greenRectangeHomePage {
+  position: absolute;
+  left: 28%;
+  z-index: 0;
+  top: 14%;
+  height: var(--circleShape)!important;
+  width: var(--rectangleWidth)!important;
+}
+
+#blackLineRectHomePage {
+  position: absolute;
+  left: 56%;
+  z-index: 0;
+  bottom: 14%;
+  height: var(--circleShape)!important;
+  width: var(--circleShape)!important;
+}
+
+#blackLineRectHomePage2 {
+  position: absolute;
+  left: 21%;
+  z-index: 0;
+  top: 4%;
+  height: var(--circleShape)!important;
+  width: var(--circleShape)!important;
+}
