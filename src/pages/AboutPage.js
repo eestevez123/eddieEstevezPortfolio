@@ -15,18 +15,6 @@ import DraggableObject from "../components/DraggableObject";
 
 class AboutPage extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            imageLoadDone: false
-        }
-    }
-
-    handleImageLoading() {
-        this.setState({
-            imageLoadDone: true
-        })
-    }
 
     render(){
         return(
@@ -41,7 +29,7 @@ class AboutPage extends React.Component {
                     className="mx-auto"
                 />
             <Pulse>
-                <ImageLoad id="picOfMe_Home" src={eddieEstevez_img} className="mx-auto" onLoad={this.handleImageLoading.bind(this)}/>
+                <ImageLoad id="picOfMe_Home" imgAlt="Picture of me, Eddie Estevez" src={eddieEstevez_img} className="mx-auto"/>
             </Pulse>
             <DraggableObject objID = "blackLineRectAboutPage"
                 isImage={true} 

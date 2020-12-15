@@ -14,9 +14,7 @@ function VideoPort(props) {
                 <iframe title="mcDanger" width="560" height="315" src="https://www.youtube-nocookie.com/embed/rvvAN6obsn0" frameBorder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
-                <h5>This video was made for Com Arts 155. For this video, I worked with 2 other students to create a short 4 minute film using
-                    the tools and skills that were taught in lecture and lab. With a Panasonic GH5, a boom mic, tripod, and even more equipment, my partners
-                    and I came up with this cinematic masterpiece where you are able to see the fictional character Eddie McDanger climb up Bascom Hill </h5>
+                <h5>This video was made for Com Arts 155. For this video, I worked with 2 other students to create a short 4-minute film using the tools and skills that were taught in lecture and lab. With a Panasonic GH5, a boom mic, tripod, and even more equipment, my partners and I came up with this cinematic masterpiece where you can see the fictional character Eddie McDanger climb up Bascom Hill.</h5>
 
                 <h3 className="mt-5">A Required Meal Plan: Why the meal plan in UW-Madison should be optional</h3>
                 <div class="videoResponsive">
@@ -33,7 +31,7 @@ function VideoPort(props) {
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
                 <h5>This video was submitted for Com Arts 200. This is re-edit of the first video I submitted, but the twist this time is to take that
-                    video and add and remix it for a venacular, more informal audience. I talk about the same subject, the meal plan, but I do so in a style
+                    video and add/remix it for a venacular, more informal, audience. I talk about the same subject, the meal plan, but I do so in a style
                     of a stereotypical YouTuber. </h5>
 
                 <h3 className="mt-5">A Midlife Crisis, but in College</h3>
@@ -41,8 +39,8 @@ function VideoPort(props) {
                 <iframe title="Midlife" width="560" height="315" src="https://www.youtube-nocookie.com/embed/77Tll5PkhJk" frameBorder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
-                <h5>This video was submitted to the 2020 UW Madison Digital Salon competition. I wanted to make a more serious video for sometime, to contrast
-                    the more positive videos I was used to making. Reflecting on parts of my life where I thought the biggeer picture, I made this video with
+                <h5>This video was submitted to the 2020 UW Madison Digital Salon competition. I wanted to make a more serious video for some time, to contrast
+                    the more positive/comedic videos I was used to making. Reflecting on parts of my life where I thought the bigger picture, I made this video with
                     shots I recorded with my phone, camcorder, and a narration of my stream of consciousness. </h5>
                 </Content>
         </>

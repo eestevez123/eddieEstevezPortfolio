@@ -10,6 +10,9 @@ class ImageLoad extends React.Component {
             loading: false
         }
     }
+    componentDidMount() {
+        console.log("Image has not loaded")
+    }
 
     handleImageLoading() {
         console.log("Image had been loaded");
@@ -20,7 +23,7 @@ class ImageLoad extends React.Component {
 
     render(){
         return(<>
-        <Image id={this.props.id} src={this.props.src} rounded className={this.props.className} style={{display: (this.state.loading)?"block":"none"}} onLoad={this.handleImageLoading.bind(this)} />
+        <Image id={this.props.id} alt={this.props.imgAlt} src={this.props.src} rounded className={this.props.className} style={{display: (this.state.loading)?"block":"none"}} onLoad={this.handleImageLoading.bind(this)} />
         <Spinner annimation="border" style={{display: (this.state.loading)?"none":"block"}} />
         </>
         )

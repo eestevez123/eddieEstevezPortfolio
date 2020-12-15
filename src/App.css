@@ -207,4 +207,86 @@
   }
 }
 
+#testMotionDiv {
+  color: white;
+}
 
+.porfolioBlock{
+  width: auto;
+  height: 20vh;
+  margin-top: 10vh;
+}
+
+.portfolioTitle{
+  color: black;
+  padding-left: 0%;
+  font-size: 5.5rem;
+}
+
+@media (max-width: 996px) { 
+  .portfolioTitle{
+    font-size: 3rem;
+    margin: auto;
+    text-align: center;
+  }
+  
+}
+
+.portfolioButton {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  background-color: rgb(33, 234, 175);
+  cursor: pointer;
+  text-align: center;
+  margin: auto;
+  padding: 1%;
+  font-size: 2rem;
+  color: white;
+
+}
+.portfolioButton > a {
+    text-decoration: none;
+    color: white;
+}
+.portfolioButton > a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+#subTextPortfolio2 {
+  margin-top: 10vh;
+}
+
+#adobeAppContainer {
+  height: 25vh;
+  text-align: center;
+}
+
+.adobeAppContainerCol  {
+  background-color: rgb(100, 100, 100);
+  font-size: 2rem;
+  height: 20vh;
+  color: white;
+  border-radius: 10px;
+  padding: auto;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.PhotoShop{
+  background-color: #21eaaf;
+}
+.Premiere{
+  background-color: #672fd9;
+}
+.AfterE{
+  background-color: #2196f3;
+}
+.Audition{
+  background-color:#ea215c;
+}
+
+#workoutScreensImg{
+  width: 60vw;
+}

@@ -39,6 +39,7 @@ function DraggableObject(props) {
             dragElastic={0.75}
             whileTap={{ cursor: "grabbing" }}
             />
+            
         );
     }
 
