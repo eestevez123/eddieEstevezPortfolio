@@ -58,7 +58,7 @@ render() {
       <Container className="p-0" fluid={true}>
 
         <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <Navbar.Brand href="/">Eddie Estevez</Navbar.Brand>
+            <Navbar.Brand href="/">asdasd Estevez</Navbar.Brand>
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
