@@ -358,3 +358,7 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+.aboutImage {
+  height: 300px;
+}

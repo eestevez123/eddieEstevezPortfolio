@@ -1,10 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 
 function ContactItem(props) {
+
+
     
     return(
         <>
-        <div class="col-md-3">
+        <div class={props.colClass}>
             <div class="dbox w-100 text-center">
                 <a href={props.href}>
                     <div class="icon d-flex align-items-center justify-content-center">

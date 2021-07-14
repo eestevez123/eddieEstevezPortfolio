@@ -50,21 +50,21 @@ function HomePage(props) {
                 <div class="wrapper">
                     <div class="row mb-5">
 
-                        <ContactItem imgAddr={facebookIcon} imgAlt="Facebook Logo" txtTitle="Facebook" href="https://www.facebook.com/Eduardo.Estevez1.0"/>
-                        <ContactItem imgAddr={instagramIcon} imgAlt="Instagram Logo" txtTitle="Instagram" href="https://www.instagram.com/edd1e_estevez/"/>
-                        <ContactItem imgAddr={twitterLogo} imgAlt="Twitter Logo" txtTitle="Twitter" href="https://twitter.com/edd1e_estevezz"/>
-                        <ContactItem imgAddr={linkedInLogo} imgAlt="LinkedIn Logo" txtTitle="LinkedIn" href="https://www.linkedin.com/in/eduardo-estevez-a63193144/"/>
+                        <ContactItem imgAddr={facebookIcon} imgAlt="Facebook Logo" txtTitle="Facebook" href="https://www.facebook.com/Eduardo.Estevez1.0" colClass="col-md-3"/>
+                        <ContactItem imgAddr={instagramIcon} imgAlt="Instagram Logo" txtTitle="Instagram" href="https://www.instagram.com/edd1e_estevez/"colClass="col-md-3" />
+                        <ContactItem imgAddr={twitterLogo} imgAlt="Twitter Logo" txtTitle="Twitter" href="https://twitter.com/edd1e_estevezz" colClass="col-md-3"/>
+                        <ContactItem imgAddr={linkedInLogo} imgAlt="LinkedIn Logo" txtTitle="LinkedIn" href="https://www.linkedin.com/in/eduardo-estevez-a63193144/" colClass="col-md-3"/>
                         
 
                     </div>
                     <h3 class="mb-4 contactPageTitle">Reach Me via...</h3>
                     <div class="row mb-5">
 
-                        <ContactItem imgAddr={phoneIcon} imgAlt="Facebook Logo" txtTitle="Phone: " txt="(414)628-4171" href="tel:4146284171"/>
-                        <ContactItem imgAddr={emailIcon} imgAlt="Instagram Logo" txtTitle="Email: " txt="estevez.eduardo111@gmail.com" href="mailto:estevez.eduardo111@gmail.com"/>
+                        <ContactItem imgAddr={phoneIcon} imgAlt="Facebook Logo" txtTitle="Phone: " txt="(414)628-4171" href="tel:4146284171" colClass="col-md-6"/>
+                        <ContactItem imgAddr={emailIcon} imgAlt="Instagram Logo" txtTitle="Email: " txt="estevez.eduardo111@gmail.com" href="mailto:estevez.eduardo111@gmail.com" colClass="col-md-6"/>
 
                     </div>
-                    <div class="row no-gutters">
+                    <div class="row no-gutters bg-light">
                         <div class="col-md-7">
                             <div class="contact-wrap w-100 p-md-5 p-4">
                                 <h3 class="mb-4">Let's get a conversation going!</h3>
