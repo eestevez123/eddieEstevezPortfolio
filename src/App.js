@@ -4,8 +4,12 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
+import eddieEstevezLogo from './images/EddieLogoWithBack.svg';
+
 import Footer from "./components/Footer";
 import './App.css';
+
+
 // Pages
 import HomePage from"./pages/HomePage"
 import AboutPage from './pages/AboutPage';
@@ -18,6 +22,7 @@ import WebsitePort from './portfolio/WebsitePort';
 import ApplicationsPort from './portfolio/ApplicationsPort';
 
 import ContactPage from './pages/ContactPage'; // We'll just provide info for now, we can fix the API later
+import { Image } from 'react-bootstrap';
 
 class App extends React.Component {
 
@@ -26,7 +31,6 @@ constructor(props) {
   this.state = {
     title: "Eddie Estevz",
     headerLinks: [
-      {title: "Home", path: "/"},
       {title: "About", path: "/about"},
       {title: "Resume", path: "/resume"},
       {title: "Portfolio", path: "/portfolio"},
@@ -34,7 +38,6 @@ constructor(props) {
     ], 
     home: {
       title: "Hey guys, Eddie here",
-      subTitle: "A computer nerd with a passion for digital media and design"
     },
     about: {
       title: "About me",
@@ -46,9 +49,6 @@ constructor(props) {
     portfolio: {
       title: "Portfolio",
     },
-    contact: {
-      title: "Contact",
-    },
   }
 }
 
@@ -58,23 +58,25 @@ render() {
       <Container className="p-0" fluid={true}>
 
         <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <Navbar.Brand href="/">asdasd Estevez</Navbar.Brand>
+            <Navbar.Brand id="pageLogo" href="/">
+              <Image id="eddieMainLogo" src={eddieEstevezLogo} alt="Eddie Estevez Logo"/>
+              <div>eddie estevez</div>
+            </Navbar.Brand>
+            
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
 
             <Nav className="ml-auto">
-              <Link className="nav-link" to ="/">Home</Link>
-              <Link className="nav-link" to ="/about">About</Link>
-              <Link className="nav-link" to ="/resume">Resume</Link>
-              <Link className="nav-link" to ="/portfolio">Portfolio</Link>
-              <Link className="nav-link" to ="/contact">Contact</Link>
+              <Link className="nav-link" to ="/about">About Me</Link>
+              <Link className="nav-link" to ="/portfolio">My Work</Link>
+              <Link className="nav-link" to ="/contact">Let's Connect</Link>
             </Nav>
 
             </Navbar.Collapse>
         </Navbar>
 
-        <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle}/>} />
+        <Route path="/" exact render={() => <HomePage title={this.state.home.title}/>} />
         <Route path="/about" render={()=> <AboutPage title={this.state.about.title} />} />
         <Route path="/resume" render={()=> <ResumePage title={this.state.resume.title} />} />
         <Route path="/portfolio" exact render={()=> <PortfolioPage title={this.state.portfolio.title} />} />
@@ -83,7 +85,7 @@ render() {
         <Route path="/portfolio/Websites" render={()=> <WebsitePort title="Websites" />} />
         <Route path="/portfolio/Applications" render={()=> <ApplicationsPort title="Applications"/>} />
 
-        <Route path="/contact" render={()=> <ContactPage title={this.state.contact.title} />} />
+        <Route path="/contact" render={()=> <ContactPage/>} />
       <Footer />
 
       </Container>
