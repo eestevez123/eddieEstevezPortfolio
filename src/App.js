@@ -56,8 +56,8 @@ render() {
       <Container className="p-0" fluid={true}>
 
         <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <Navbar.Brand id="pageLogo" href="/">
-              <Image id="eddieMainLogo" src={eddieEstevezLogo} alt="Eddie Estevez Logo"/>
+            <Navbar.Brand id="pageLogo" href="/" className="align-items-center">
+              <Image id="eddieMainLogo" className="img-responsive navbar-left" src={eddieEstevezLogo} alt="Eddie Estevez Logo"/>
               <div>eddie estevez</div>
             </Navbar.Brand>
             

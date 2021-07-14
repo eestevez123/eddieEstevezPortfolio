@@ -36,7 +36,7 @@ function PortfolioPage(props) {
     return(<>
             <Hero title={props.title} className="mb-0"/>
             <div className="container text-center">
-                <ToggleButtonGroup name="button" onChange={(e) => mainButtonClick(e)} >
+                <ToggleButtonGroup className="btn-group-justified" name="button" onChange={(e) => mainButtonClick(e)} >
                     {sectionArray.map((button, idx) => (
                     <ToggleButton
                         key={idx}
