@@ -9,9 +9,9 @@ function HomePage(props) {
 
     return(
         <div>
-        <Hero id="hereOnHomePage" title={props.title} subTitle={props.subTitle} />
+        <Hero id="hereOnHomePage" title={props.title}/>
         <Slide bottom>
-            <InteractiveShapes/>
+            <InteractiveShapes id="interactiveShapes"/>
         </Slide>
         </div>
         )

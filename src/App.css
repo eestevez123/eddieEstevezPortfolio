@@ -60,7 +60,6 @@
   }
 }
 
-
 #interactiveDivHomePage {
   position: relative;
   background-color: #ffffff00 !important;
@@ -289,4 +288,73 @@
 
 #workoutScreensImg{
   width: 60vw;
+}
+
+#eddieMainLogo {
+  height: 75px;
+  display: block; 
+  text-indent: -9999px;
+}
+
+@media (min-width: 992px) {
+  .nav-link {
+    padding-right: 1.5rem !important; 
+    padding-left: 1.5rem !important;
+    font-size: 1.5rem !important;
+  }
+}
+
+#pageLogo {
+  display: flex;
+  font-size: 2.5rem;
+}
+
+#pageLogo > div {
+  padding-left: 1rem;
+}
+
+.container {
+  padding-top: 1rem;
+}
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1140px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+      max-width: 960px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+      max-width: 720px;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+      max-width: 540px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .info-wrap {
+      height: 400px;
+  }
+}
+
+.contactItemImg {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.contactPageTitle {
+  margin-bottom: 20px !important; 
+}
+
+#formImage {
+  background-image: url("./images/placeholder.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
