@@ -1,21 +1,21 @@
 import React from 'react';
 
+import Hero from "../components/Hero";
+
 import Button from 'react-bootstrap/Button';
 import placeholderImg from "../images/placeholder.png";
 
 const  eddieResumePDF = process.env.PUBLIC_URL + '/eddieResume.pdf';
 
-class AboutPage extends React.Component {
+function AboutPage(props) {
 
-
-    render(){
         return(
         <div>
+            <Hero id="hereOnHomePage" title={props.title}/>
             <div className="container">
                 <div className="top-section">
                     <div className="left">
-                        <p className="about__subheading">Hey, I'm Eddie!</p>
-                        <h2 className="about__heading">A software developer and content creator</h2>
+                        <h2 className="about__heading">Hey, I'm Eddie! A software developer and content creator</h2>
 
                         <div className="row justify-content-center align-items-center">
                             <div className="col-sm-6">
@@ -99,7 +99,7 @@ class AboutPage extends React.Component {
 
         </div>
     )
-    }
+    
 } 
 
 export default AboutPage;

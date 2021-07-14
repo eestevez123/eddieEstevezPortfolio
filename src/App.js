@@ -13,7 +13,6 @@ import './App.css';
 // Pages
 import HomePage from"./pages/HomePage"
 import AboutPage from './pages/AboutPage';
-import ResumePage from './pages/ResumePage';
 import PortfolioPage from './pages/PortfolioPage';
 
 // Portfolio Pages
@@ -32,7 +31,6 @@ constructor(props) {
     title: "Eddie Estevz",
     headerLinks: [
       {title: "About", path: "/about"},
-      {title: "Resume", path: "/resume"},
       {title: "Portfolio", path: "/portfolio"},
       {title: "Contact", path: "/contact"},
     ], 
@@ -40,15 +38,15 @@ constructor(props) {
       title: "Hey guys, Eddie here",
     },
     about: {
-      title: "About me",
+      title: "Me, myself, and I",
       
     },
-    resume: {
-      title: "Resume",
-    },
     portfolio: {
-      title: "Portfolio",
+      title: "My Work",
     },
+    contact: {
+      title: "Contact Info",
+    }
   }
 }
 
@@ -78,14 +76,14 @@ render() {
 
         <Route path="/" exact render={() => <HomePage title={this.state.home.title}/>} />
         <Route path="/about" render={()=> <AboutPage title={this.state.about.title} />} />
-        <Route path="/resume" render={()=> <ResumePage title={this.state.resume.title} />} />
         <Route path="/portfolio" exact render={()=> <PortfolioPage title={this.state.portfolio.title} />} />
+          <Route path="/portfolio/Videos" render={()=> <VideoPortfolioPage title="Videos" />} />
+          <Route path="/portfolio/Websites" render={()=> <WebsitePort title="Websites" />} />
+          <Route path="/portfolio/Applications" render={()=> <ApplicationsPort title="Applications"/>} />
+        <Route path="/contact" render={()=> <ContactPage title={this.state.contact.title}/>} />
 
-        <Route path="/portfolio/Videos" render={()=> <VideoPortfolioPage title="Videos" />} />
-        <Route path="/portfolio/Websites" render={()=> <WebsitePort title="Websites" />} />
-        <Route path="/portfolio/Applications" render={()=> <ApplicationsPort title="Applications"/>} />
 
-        <Route path="/contact" render={()=> <ContactPage/>} />
+        
       <Footer />
 
       </Container>

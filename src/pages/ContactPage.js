@@ -2,6 +2,7 @@ import React from 'react';
 
 import emailjs from 'emailjs-com';
 
+import Hero from "../components/Hero";
 import ContactItem from "../components/ContactItem";
 
 
@@ -41,6 +42,7 @@ function HomePage(props) {
 
     return(
         <>
+        <Hero id="hereOnHomePage" title={props.title}/>
         <div class="container">
         <div class="row justify-content-center">
 
