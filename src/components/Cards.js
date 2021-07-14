@@ -35,13 +35,13 @@ function Cards(props) {
                 setCurrentDeck(appCards)
                 break;
             case 2:
-                // code block
+                setCurrentDeck(noCards)
                 break;
             case 3:
-            // code block
+                setCurrentDeck(noCards)
                 break;
             case 4:
-            // code block
+                setCurrentDeck(noCards)
                 break;
             default:
                 setCurrentDeck(noCards)
