@@ -1,0 +1,26 @@
+.eddieProfile {
+    max-width: 35% !important;
+    margin-left: 35% !important;
+    cursor: "grab";
+    border-radius: 0;
+}
+
+.bg-myBlue {
+    background-color: #2196f3 !important;
+}
+
+.skillChart {
+    margin-top: -5rem;
+}
+
+.font-myBlue {
+    color: #2196f3 !important;
+}
+
+.skillIcon{
+    max-width: 35% !important;
+}
+
+.workImage{
+    max-width: 50% !important;
+}

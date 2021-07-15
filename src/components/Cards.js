@@ -55,9 +55,8 @@ function Cards(props) {
                 <div className="row cardRow">
 
                     {currentDeck.map((deck, idx) => (
-                        <div className={cardCSS}>
+                        <div className={cardCSS} key={idx}>
                             <Card
-                                key={idx}
                                 id={`card-${idx}`}
                                 src={deck.src}
                                 alt={deck.alt}

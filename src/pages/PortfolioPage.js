@@ -5,6 +5,7 @@ import ToggleButtonGroup from'react-bootstrap/ToggleButtonGroup';
 import Hero from "../components/Hero"
 import Cards from '../components/Cards.js';
 
+
 import Container from 'react-bootstrap/Container'
 
 import Fade from 'react-reveal/Fade';
@@ -58,7 +59,6 @@ function PortfolioPage(props) {
             </Container>
             
             <Cards section={sectionValue} />
-            
         </>
     )
 } 
