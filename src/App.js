@@ -17,9 +17,7 @@ import AboutPage from './pages/AboutPage';
 import PortfolioPage from './pages/PortfolioPage';
 
 // Portfolio Pages
-import VideoPortfolioPage from './portfolio/VideoPort';
-import WebsitePort from './portfolio/WebsitePort';
-import ApplicationsPort from './portfolio/ApplicationsPort';
+
 
 import ContactPage from './pages/ContactPage'; // We'll just provide info for now, we can fix the API later
 import { Image } from 'react-bootstrap';
@@ -79,9 +77,7 @@ render() {
         <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle}/>} />
         <Route path="/about" render={()=> <AboutPage title={this.state.about.title} />} />
         <Route path="/portfolio" exact render={()=> <PortfolioPage title={this.state.portfolio.title} />} />
-          <Route path="/portfolio/Videos" render={()=> <VideoPortfolioPage title="Videos" />} />
-          <Route path="/portfolio/Websites" render={()=> <WebsitePort title="Websites" />} />
-          <Route path="/portfolio/Applications" render={()=> <ApplicationsPort title="Applications"/>} />
+          
         <Route path="/contact" render={()=> <ContactPage title={this.state.contact.title}/>} />
 
 
