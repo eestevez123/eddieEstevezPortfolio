@@ -7,6 +7,7 @@ function InteractiveShapes(props) {
     return (
         <Frame id="interactiveDivHomePage">
             <DraggableObject objID = "greenCircleHomePage"
+            className="dragObject"
             isImage={false}
             width={150}
             height={150}
@@ -14,6 +15,7 @@ function InteractiveShapes(props) {
             backgroundColor="#21eaaf"
             />
             <DraggableObject objID = "blueCircleHomePage"
+            className="dragObject"
             isImage={false}
             width={150}
             height={150}
@@ -21,6 +23,7 @@ function InteractiveShapes(props) {
             backgroundColor="#2196f3"
             />
             <DraggableObject objID = "purpleCircleHomePage"
+            className="dragObject"
             isImage={false}
             width={150}
             height={150}
@@ -29,6 +32,7 @@ function InteractiveShapes(props) {
             />
     
             <DraggableObject objID = "blueRectangeHomePage"
+            className="dragObject"
             isImage={false}
             width={200}
             height={150}
@@ -36,6 +40,7 @@ function InteractiveShapes(props) {
             backgroundColor="#2196f3"
             />
             <DraggableObject objID = "greenRectangeHomePage"
+            className="dragObject"
             isImage={false}
             width={200}
             height={150}
@@ -45,12 +50,14 @@ function InteractiveShapes(props) {
     
     
             <DraggableObject objID = "blackLineRectHomePage"
+            className="dragObject"
             isImage={true} 
             imageObj={blackLineRect}
             width={150}
             height={150}
             />
             <DraggableObject objID = "blackLineRectHomePage2"
+            className="dragObject"
             isImage={true} 
             imageObj={blackLineRect}
             width={150}

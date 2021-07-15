@@ -7,6 +7,7 @@ import Nav from "react-bootstrap/Nav";
 import eddieEstevezLogo from './images/EddieLogoWithBack.svg';
 
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 import './App.css';
 
 
@@ -36,6 +37,7 @@ constructor(props) {
     ], 
     home: {
       title: "Hey guys, Eddie here",
+      subTitle: "Software developer, content creator, and overall computer nerd. I have a passion for creative digital media and design."
     },
     about: {
       title: "Me, myself, and I",
@@ -73,8 +75,8 @@ render() {
 
             </Navbar.Collapse>
         </Navbar>
-
-        <Route path="/" exact render={() => <HomePage title={this.state.home.title}/>} />
+        <ScrollToTop />
+        <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle}/>} />
         <Route path="/about" render={()=> <AboutPage title={this.state.about.title} />} />
         <Route path="/portfolio" exact render={()=> <PortfolioPage title={this.state.portfolio.title} />} />
           <Route path="/portfolio/Videos" render={()=> <VideoPortfolioPage title="Videos" />} />
