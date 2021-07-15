@@ -52,8 +52,8 @@ function HomePage(props) {
         <div className="container-fluid bg-myBlue text-white p-5"> </div>
 
         <div className="container justify-content-center bg-white rounded skillChart">
-            <div className="row mw-100 text-center">
-                <div className="col-md-4"> 
+            <div className="row text-center">
+                <div className="col-md-4 border border-top-0 border-right-0 rounded-left"> 
                     <h4 className="fw-bold">Front-End Developer</h4>
                     <img className="img-fluid skillIcon my-2" src={placeholderImg} alt="TODO"/>
                     <p className="font-weight-light mx-2 mt-2">Qui qui quis occaecat dolor occaecat eiusmod irure minim ad reprehenderit. Minim duis deserunt cupidatat nulla proident ut pariatur. Adipisicing sunt elit non voluptate mollit ex aliquip sit pariatur occaecat qui ut anim in. Labore cupidatat proident nulla deserunt magna eiusmod.</p>
@@ -62,7 +62,7 @@ function HomePage(props) {
                         <li>asdasd</li>
                     </ul>
                 </div>
-                <div className="col-md-4"> 
+                <div className="col-md-4 border border-top-0"> 
                     <h4 className="fw-bold">Designer</h4>
                     <img className="img-fluid skillIcon my-2" src={placeholderImg} alt="TODO"/>
                     <p className="font-weight-light mx-2 mt-2">Qui qui quis occaecat dolor occaecat eiusmod irure minim ad reprehenderit. Minim duis deserunt cupidatat nulla proident ut pariatur. Adipisicing sunt elit non voluptate mollit ex aliquip sit pariatur occaecat qui ut anim in. Labore cupidatat proident nulla deserunt magna eiusmod.</p>
@@ -72,7 +72,7 @@ function HomePage(props) {
                     </ul>
 
                 </div>
-                <div className="col-md-4"> 
+                <div className="col-md-4 border border-top-0 border-left-0 rounded-right"> 
                     <h4 className="fw-bold">Content Creator</h4>
                     <img className="img-fluid skillIcon my-2" src={placeholderImg} alt="TODO"/>
                     <p className="font-weight-light mx-2 mt-2">Qui qui quis occaecat dolor occaecat eiusmod irure minim ad reprehenderit. Minim duis deserunt cupidatat nulla proident ut pariatur. Adipisicing sunt elit non voluptate mollit ex aliquip sit pariatur occaecat qui ut anim in. Labore cupidatat proident nulla deserunt magna eiusmod.</p>
@@ -85,7 +85,7 @@ function HomePage(props) {
             </div>
         </div>
 
-        <div className="container content-justify-center text-center align-items-center">
+        <div className="container content-justify-center text-center align-items-center mt-5">
             <div className="row align-items-center">
                 <div className="col-md-6">
                     <img src={placeholderImg} alt="TODO" className="img-fluid workImage"/>
