@@ -18,9 +18,13 @@
 }
 
 .skillIcon{
-    max-width: 35% !important;
+    max-width: 40% !important;
 }
 
 .workImage{
     max-width: 50% !important;
+}
+
+.designerIcon {
+    max-width: 22% !important;
 }

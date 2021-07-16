@@ -35,10 +35,10 @@ constructor(props) {
     ], 
     home: {
       title: "Hey guys, Eddie here",
-      subTitle: "Software developer, content creator, and overall computer nerd. I have a passion for creative digital media and design."
+      subTitle: "Software developer, designer, content creator, and coffee lover"
     },
     about: {
-      title: "Me, myself, and I",
+      title: "Hello World!",
       
     },
     portfolio: {
