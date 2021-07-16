@@ -291,7 +291,7 @@
 }
 
 #eddieMainLogo {
-  height: 4rem;
+  height: 3rem;
 }
 
 @media (min-width: 992px) {
@@ -304,7 +304,7 @@
 
 #pageLogo {
   display: flex;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 #pageLogo > div {
@@ -312,9 +312,6 @@
 }
 
 @media (max-width: 600px) {
-  #eddieMainLogo {
-    height: 3rem;
-  }
   #pageLogo > div {
     visibility: hidden;
     width: 0;

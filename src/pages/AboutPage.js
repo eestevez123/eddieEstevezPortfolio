@@ -15,7 +15,7 @@ function AboutPage(props) {
             <div className="container">
                 <div className="top-section">
                     <div className="left">
-                        <h2 className="about__heading">Hey, I'm Eddie! A software developer, designer and content creator</h2>
+                        <h2 className="about__heading">I'm Eddie! It's nice to meet you!</h2>
 
                         <div className="row justify-content-center align-items-center">
                             <div className="col-sm-6">
@@ -81,7 +81,7 @@ function AboutPage(props) {
 
             <div className="container-fluid bg-light mt-4">
                 <div className="container">
-                <h2 className="about__heading">Skills</h2>
+                <h2 className="about__heading">Fun Facts</h2>
                     <div className="row justify-content-center">
                         <div className="col-sm-6 order-sm-2">
                         <h2>Languages</h2>
