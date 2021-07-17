@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {HashRouter as Router, Route, Link} from "react-router-dom";
 
 
 function PortfolioCard(props) {
@@ -15,9 +16,9 @@ function PortfolioCard(props) {
             <p className="card-text text-secondary">
                 {props.desc}
             </p>
-            <a href={props.href} className="btn btn-outline-primary">
-                More Info
-            </a>
+            <Link to={props.href}>
+            <button type="button" className="btn btn-outline-primary">More Info</button>
+            </Link>
         </div>
         </div>
         </>

@@ -79,6 +79,7 @@ function HomePage(props) {
                                 <li>Matlab</li>
                                 <li>Verilog</li>
                                 <li>C</li>
+                                <li>PHP</li>
                             </ul>
                             </div>
                             <div className="col-6">
