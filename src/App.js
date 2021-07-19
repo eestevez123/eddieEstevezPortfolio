@@ -1,5 +1,5 @@
 import React from 'react';
-import {HashRouter as Router, Route, Link} from "react-router-dom";
+import {BrowserRouter, Route, Link} from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -15,6 +15,7 @@ import './App.css';
 import HomePage from"./pages/HomePage"
 import AboutPage from './pages/AboutPage';
 import PortfolioPage from './pages/PortfolioPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 // Portfolio Pages
 
@@ -52,7 +53,7 @@ constructor(props) {
 
 render() {
   return (
-    <Router>
+    <BrowserRouter>
       <Container className="p-0" fluid={true}>
 
         <Navbar className="border-bottom" bg="transparent" expand="lg">
@@ -66,26 +67,29 @@ render() {
             <Navbar.Collapse id="navbar-toggle">
 
             <Nav className="ml-auto">
-              <Link className="nav-link" to ="/about">About Me</Link>
-              <Link className="nav-link" to ="/portfolio">My Work</Link>
-              <Link className="nav-link" to ="/contact">Let's Connect</Link>
+              <Link className="nav-link" to ="/aboutme">About Me</Link>
+              <Link className="nav-link" to ="/mywork">My Work</Link>
+              <Link className="nav-link" to ="/letsconnect">Let's Connect</Link>
             </Nav>
 
             </Navbar.Collapse>
         </Navbar>
         <ScrollToTop />
         <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle}/>} />
-        <Route path="/about" render={()=> <AboutPage title={this.state.about.title} />} />
-        <Route path="/portfolio" exact render={()=> <PortfolioPage title={this.state.portfolio.title} />} />
+        <Route path="/aboutme" exact render={()=> <AboutPage title={this.state.about.title} />} />
+        <Route path="/mywork" exact render={()=> <PortfolioPage title={this.state.portfolio.title} />} />
           
-        <Route path="/contact" render={()=> <ContactPage title={this.state.contact.title}/>} />
+        <Route path="/letsconnect"  exact render={()=> <ContactPage title={this.state.contact.title}/>} />
+
+        
+        <Route render={()=> <NotFoundPage/>} />
 
 
         
       <Footer />
 
       </Container>
-    </Router>
+    </BrowserRouter>
   );  
 }
 
