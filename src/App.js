@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route, Link} from "react-router-dom";
+import {BrowserRouter, Route, Link, Switch} from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -75,18 +75,19 @@ render() {
             </Navbar.Collapse>
         </Navbar>
         <ScrollToTop />
-        <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle}/>} />
-        <Route path="/aboutme" exact render={()=> <AboutPage title={this.state.about.title} />} />
-        <Route path="/mywork" exact render={()=> <PortfolioPage title={this.state.portfolio.title} />} />
+        <Switch>
+          <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle}/>} />
+          <Route path="/aboutme" exact render={()=> <AboutPage title={this.state.about.title} />} />
+          <Route path="/mywork" exact render={()=> <PortfolioPage title={this.state.portfolio.title} />} />
+            
+          <Route path="/letsconnect"  exact render={()=> <ContactPage title={this.state.contact.title}/>} />
+
           
-        <Route path="/letsconnect"  exact render={()=> <ContactPage title={this.state.contact.title}/>} />
+          <Route render={()=> <NotFoundPage/>} />
+        </Switch>
 
         
-        <Route render={()=> <NotFoundPage/>} />
-
-
-        
-      <Footer />
+      <Footer/>
 
       </Container>
     </BrowserRouter>
