@@ -3,6 +3,8 @@ import React from 'react';
 import Hero from "../components/Hero"
 import Container from "react-bootstrap/Container";
 
+
+
 const  eddieResumePDF = process.env.PUBLIC_URL + '/eddieResume.pdf';
 
 function ResumePage(props) {
