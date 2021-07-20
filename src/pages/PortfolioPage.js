@@ -31,8 +31,6 @@ function PortfolioPage(props) {
         setSectionName(sectionArray[e].name)
     }
 
-    
-
 
     return(<>
             <Hero title={props.title} className="mb-0"/>

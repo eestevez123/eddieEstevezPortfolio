@@ -17,7 +17,7 @@ import AboutPage from './pages/AboutPage';
 import PortfolioPage from './pages/PortfolioPage';
 import NotFoundPage from './pages/NotFoundPage';
 
-// Portfolio Pages
+import Template from './portfolioFiles/pages/Websites/template';
 
 
 import ContactPage from './pages/ContactPage'; // We'll just provide info for now, we can fix the API later
@@ -29,11 +29,6 @@ constructor(props) {
   super(props);
   this.state = {
     title: "Eddie Estevz",
-    headerLinks: [
-      {title: "About", path: "/about"},
-      {title: "Portfolio", path: "/portfolio"},
-      {title: "Contact", path: "/contact"},
-    ], 
     home: {
       title: "Hey guys, Eddie here",
       subTitle: "Software developer, designer, content creator, and coffee lover"
@@ -47,7 +42,7 @@ constructor(props) {
     },
     contact: {
       title: "Contact Info",
-    }
+    },
   }
 }
 
@@ -75,14 +70,18 @@ render() {
             </Navbar.Collapse>
         </Navbar>
         <ScrollToTop />
+
+
+        
         <Switch>
           <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle}/>} />
           <Route path="/aboutme" exact render={()=> <AboutPage title={this.state.about.title} />} />
           <Route path="/mywork" exact render={()=> <PortfolioPage title={this.state.portfolio.title} />} />
-            
           <Route path="/letsconnect"  exact render={()=> <ContactPage title={this.state.contact.title}/>} />
-
           
+            <Route path="/mywork/template"  exact render={()=> <Template />} />
+
+
           <Route render={()=> <NotFoundPage/>} />
         </Switch>
 

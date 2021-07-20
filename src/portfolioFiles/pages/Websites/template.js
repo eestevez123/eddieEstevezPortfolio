@@ -1,26 +1,23 @@
 
 import React from 'react';
 
-import Hero from "../components/Hero";
 
-
-import placeholderImg from "../images/placeholder.png";
+import placeholderImg from "../../../images/placeholder.png";
 
 
 function Template(props) {
 
         return(
         <div>
-            <Hero id="hereOnHomePage" title={props.title}/>
             <div className="container">
                 <div className="top-section">
                     <div className="left">
-                        <h2 className="about__heading">404!</h2>
+                        <h2 className="about__heading">Template</h2>
 
                         <div className="row justify-content-center align-items-center">
                             <div className="col-sm-6">
                                 <p>
-                                Page Not found
+                                Template
                                 </p>
 
                             </div>
