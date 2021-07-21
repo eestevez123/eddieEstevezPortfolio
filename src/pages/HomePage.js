@@ -64,7 +64,7 @@ function HomePage(props) {
                 <div className="col-md-4 border border-top-0 rounded-left"> 
                     <h4 className="fw-bold">Software Developer</h4>
                     <img className="img-fluid skillIcon my-4" src={softwareIcon } alt="Software Development Icon"/>
-                    <p className="font-weight-light mx-2 mt-2">With a passion for design and code, being a front-end developer has given be a chance to stretch my artistic and analytical
+                    <p className="fw-light mx-2 mt-2">With a passion for design and code, being a front-end developer has given be a chance to stretch my artistic and analytical
                      muscles. I also like to dabble with other tools to develop software and for data processing.</p>
 
                      <div className="row mb-3">
@@ -81,7 +81,7 @@ function HomePage(props) {
                                 <li>C</li>
                                 <li>PHP</li>
                             </ul>
-                            </div>
+                    </div>
                             <div className="col-6">
                         <h5 className="font-myBlue fw-bold">Tools</h5>
                         <ul>
@@ -106,7 +106,7 @@ function HomePage(props) {
                 <div className="col-md-4 border border-top-0"> 
                     <h4 className="fw-bold mt-4 mt-md-0">Designer</h4>
                     <img className="img-fluid skillIcon my-4 designerIcon" src={designerIcon } alt="Designer Icon"/>
-                    <p className="font-weight-light mx-2 mt-2">I consider myself a very visual and imaginative person, so the task of coming up with elegant and useful tasks is always a 
+                    <p className="fw-light mx-2 mt-2">I consider myself a very visual and imaginative person, so the task of coming up with elegant and useful tasks is always a 
                     fun exercise.</p>
                         <h5 className="font-myBlue fw-bold">Tools</h5>
                     <ul>
@@ -123,7 +123,7 @@ function HomePage(props) {
                 <div className="col-md-4 border border-top-0  rounded-right"> 
                     <h4 className="fw-bold mt-4 mt-md-0">Content Creator</h4>
                     <img className="img-fluid skillIcon my-4" src={contentIcon} alt="Content Creator Icon"/>
-                    <p className="font-weight-light mx-2 mt-2">It all started with me making memes for my University’s Facebook meme page, and I just kept on going. 
+                    <p className="fw-light mx-2 mt-2">It all started with me making memes for my University’s Facebook meme page, and I just kept on going. 
                     Today, I love editing in all forms, from video, photo, and sound, to create.</p>
                          <h5 className="font-myBlue fw-bold">Tools</h5>
                     <ul>

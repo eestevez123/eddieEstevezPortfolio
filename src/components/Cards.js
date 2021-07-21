@@ -17,7 +17,7 @@ function Cards(props) {
 
     const [currentDeck, setCurrentDeck] = useState(websiteCards);
 
-    useEffect( () =>{
+    useEffect( () => {
         switch(props.section) {
             case 0:
                 setCurrentDeck(websiteCards)

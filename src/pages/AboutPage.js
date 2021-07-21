@@ -76,7 +76,7 @@ function AboutPage(props) {
                         <div className="row justify-content-center align-items-center text-center">
                             <div className="col-12">
                             <h6>University of Wisconsin-Madison</h6>
-                                <h6 className="font-weight-light">Class of 2021</h6>
+                                <h6 className="fw-light">Class of 2021</h6>
                                 <img className="img-flud m-auto uwLogo" src={uwlogo} alt="TODO"/>
                             
                         </div>

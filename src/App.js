@@ -50,16 +50,18 @@ render() {
       <Container className="p-0" fluid={true}>
 
         <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <Navbar.Brand id="pageLogo" href="/" className="align-items-center">
+            <Navbar.Brand id="pageLogo" href="/" className="align-items-center ms-2">
               <Image id="eddieMainLogo" className="img-responsive navbar-left" src={eddieEstevezLogo} alt="Eddie Estevez Logo"/>
               <div>eddie estevez</div>
             </Navbar.Brand>
             
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
-            <Navbar.Collapse id="navbar-toggle">
 
-            <Nav className="ml-auto">
+
+            <Navbar.Collapse id="navbar-toggle" className="text-center">
+
+            <Nav className="ms-auto">
               <Link className="nav-link" to ="/aboutme">About Me</Link>
               <Link className="nav-link" to ="/mywork">My Work</Link>
               <Link className="nav-link" to ="/letsconnect">Let's Connect</Link>
