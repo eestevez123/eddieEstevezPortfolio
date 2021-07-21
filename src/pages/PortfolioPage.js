@@ -9,8 +9,8 @@ import {
   } from "react-router-dom";
 
 
-import ToggleButton from'react-bootstrap/ToggleButton';
-import ToggleButtonGroup from'react-bootstrap/ToggleButtonGroup';
+import Button from'react-bootstrap/Button';
+import ButtonGroup from'react-bootstrap/ButtonGroup';
 
 import Hero from "../components/Hero"
 import Cards from '../components/Cards.js';
@@ -40,8 +40,9 @@ function PortfolioPage(props) {
     console.log("url", url)
 
     function mainButtonClick(e) {
-        setSectionValue(e)
-        setSectionName(sectionArray[e].name)
+        let val = e.target.value
+        setSectionValue(parseInt(val))
+        setSectionName(sectionArray[val].name)
     }
 
 
@@ -50,9 +51,9 @@ function PortfolioPage(props) {
 
             <Route exact path={path}>
                 <div className="container text-center">
-                    <ToggleButtonGroup className="btn-group-justified" name="button" onChange={(e) => mainButtonClick(e)} >
+                    <ButtonGroup className="btn-group-justified" name="button" onClick={(e) => mainButtonClick(e)} >
                         {sectionArray.map((button, idx) => (
-                        <ToggleButton
+                        <Button
                             key={idx}
                             id={`button-${button.name}`}
                             type="button"
@@ -61,12 +62,12 @@ function PortfolioPage(props) {
                             value={button.value}
                         >
                             {button.name}
-                        </ToggleButton>
+                        </Button>
                         ))}
-                    </ToggleButtonGroup>
+                    </ButtonGroup>
                 </div>
                 <Container>
-                    <h1>{sectionName} </h1>
+                    <h1>{sectionName}</h1>
                 </Container>
                 
                 <Cards section={sectionValue} url={url} path={path}/>
