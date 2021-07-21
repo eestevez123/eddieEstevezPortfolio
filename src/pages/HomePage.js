@@ -9,11 +9,11 @@ import InteractiveShapes from "../components/InteractiveShapes";
 // Images
 import placeholderImg from "../images/placeholder.png";
 
-import softwareIcon from "../images/softwareDevIcon.svg";
-import designerIcon from "../images/designerIcon.svg";
-import contentIcon from "../images/contentCreatorIcon.svg";
+import softwareIcon from "../images/homePage/softwareDevIcon.svg";
+import designerIcon from "../images/homePage/designerIcon.svg";
+import contentIcon from "../images/homePage/contentCreatorIcon.svg";
 
-import eddieProfilePic from "../images/eddieHome.png"
+import eddieProfilePic from "../images/homePage/eddieHome.png"
 
 function HomePage(props) {
 

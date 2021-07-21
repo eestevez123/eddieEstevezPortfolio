@@ -1,8 +1,11 @@
 .eddieProfile {
     max-width: 35% !important;
     margin-left: 35% !important;
-    cursor: "grab";
     border-radius: 0;
+}
+
+.eddieProfile:hover {
+    cursor: grab;
 }
 
 .bg-myBlue {

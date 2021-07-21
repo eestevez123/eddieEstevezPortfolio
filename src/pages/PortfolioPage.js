@@ -52,7 +52,7 @@ function PortfolioPage(props) {
             </div>
             <Container>
             <Fade Slide>
-                <h1>So far I've made {sectionName} </h1>
+                <h1>{sectionName} </h1>
             </Fade>
             </Container>
             

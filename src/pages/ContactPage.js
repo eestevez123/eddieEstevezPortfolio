@@ -8,13 +8,13 @@ import ContactItem from "../components/ContactItem";
 
 // import placeholderImg from "../images/placeholder.png";
 
-import facebookIcon from "../images/facebookSocialIcon.png";
-import instagramIcon from "../images/instagramIcon.png";
-import twitterLogo from "../images/twitterLogo.png";
-import linkedInLogo from "../images/linkedinLogo.png";
+import facebookIcon from "../images/contactPage/facebookSocialIcon.png";
+import instagramIcon from "../images/contactPage/instagramIcon.png";
+import twitterLogo from "../images/contactPage/twitterLogo.png";
+import linkedInLogo from "../images/contactPage/linkedinLogo.png";
 
-import phoneIcon from "../images/phoneIcon.png";
-import emailIcon from "../images/emailIcon.png";
+import phoneIcon from "../images/contactPage/phoneIcon.png";
+import emailIcon from "../images/contactPage/emailIcon.png";
 
 function HomePage(props) {
 
