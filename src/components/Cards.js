@@ -51,7 +51,6 @@ function Cards(props) {
                                 alt={deck.alt}
                                 title={deck.title}
                                 desc={deck.desc}
-                                url={props.url}
                                 path={props.path}
                                 href={deck.href}
                             />
