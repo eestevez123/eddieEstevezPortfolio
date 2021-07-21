@@ -14,10 +14,8 @@ import './App.css';
 // Pages
 import HomePage from"./pages/HomePage"
 import AboutPage from './pages/AboutPage';
-import PortfolioPage from './pages/PortfolioPage';
+import MyWorkPage from './pages/PortfolioPage';
 import NotFoundPage from './pages/NotFoundPage';
-
-import Template from './portfolioFiles/pages/Websites/template';
 
 
 import ContactPage from './pages/ContactPage'; // We'll just provide info for now, we can fix the API later
@@ -75,14 +73,12 @@ render() {
         
         <Switch>
           <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle}/>} />
-          <Route path="/aboutme" exact render={()=> <AboutPage title={this.state.about.title} />} />
-          <Route path="/mywork" exact render={()=> <PortfolioPage title={this.state.portfolio.title} />} />
-          <Route path="/letsconnect"  exact render={()=> <ContactPage title={this.state.contact.title}/>} />
-          
-            <Route path="/mywork/template"  exact render={()=> <Template />} />
+          <Route path="/aboutme"  render={()=> <AboutPage title={this.state.about.title} />} />
+          <Route path="/mywork" exact render={()=> <MyWorkPage title={this.state.portfolio.title} />} />
+          <Route path="/letsconnect"   render={()=> <ContactPage title={this.state.contact.title}/>} />
 
 
-          <Route render={()=> <NotFoundPage/>} />
+          <Route component={NotFoundPage} />
         </Switch>
 
         

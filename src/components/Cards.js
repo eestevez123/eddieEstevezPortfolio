@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import Card from "./PortfolioCard";
+import Card from "./Card";
 
 import {websiteCards} from "../portfolioFiles/cards/website"
 import {appCards} from "../portfolioFiles/cards/applications"
@@ -42,9 +42,7 @@ function Cards(props) {
 
         return(
             <div className="container-fluid">
-
                 <div className="row cardRow justify-content-center">
-
                     {currentDeck.map((deck, idx) => (
                         <div className={cardCSS} key={idx}>
                             <Card
@@ -53,11 +51,12 @@ function Cards(props) {
                                 alt={deck.alt}
                                 title={deck.title}
                                 desc={deck.desc}
+                                url={props.url}
+                                path={props.path}
                                 href={deck.href}
                             />
                         </div>
                     ))}
-
                 </div>
             </div>
         )
