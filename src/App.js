@@ -76,11 +76,11 @@ render() {
         <Switch>
           <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle}/>} />
           <Route path="/aboutme"  render={()=> <AboutPage title={this.state.about.title} />} />
-          <Route path="/mywork" exact render={()=> <MyWorkPage title={this.state.portfolio.title} />} />
+          <Route path="/mywork" render={()=> <MyWorkPage title={this.state.portfolio.title} />} />
           <Route path="/letsconnect"   render={()=> <ContactPage title={this.state.contact.title}/>} />
 
 
-          <Route component={NotFoundPage} />
+          <Route path="*" component={NotFoundPage} />
         </Switch>
 
         

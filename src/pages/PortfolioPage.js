@@ -47,35 +47,36 @@ function PortfolioPage(props) {
 
 
     return(<>
-            <Hero title={props.title} className="mb-0"/>
-
-            <Route exact path={path}>
-                <div className="container text-center">
-                    <ButtonGroup className="btn-group-justified" name="button" onClick={(e) => mainButtonClick(e)} >
-                        {sectionArray.map((button, idx) => (
-                        <Button
-                            key={idx}
-                            id={`button-${button.name}`}
-                            type="button"
-                            variant="outline-primary"
-                            name="button"
-                            value={button.value}
-                        >
-                            {button.name}
-                        </Button>
-                        ))}
-                    </ButtonGroup>
-                </div>
-                <Container>
-                    <h1>{sectionName}</h1>
-                </Container>
+            <Switch>
+                <Route exact path={path}>
+                    <Hero title={props.title} className="mb-0"/>
+                    <div className="container text-center">
+                        <ButtonGroup className="btn-group-justified" name="button" onClick={(e) => mainButtonClick(e)} >
+                            {sectionArray.map((button, idx) => (
+                            <Button
+                                key={idx}
+                                id={`button-${button.name}`}
+                                type="button"
+                                variant="outline-primary"
+                                name="button"
+                                value={button.value}
+                            >
+                                {button.name}
+                            </Button>
+                            ))}
+                        </ButtonGroup>
+                    </div>
+                    <Container>
+                        <h1>{sectionName}</h1>
+                    </Container>
+                    
+                    <Cards section={sectionValue} url={url} path={path}/>
+                </Route>
                 
-                <Cards section={sectionValue} url={url} path={path}/>
-            </Route>
-            
-            <Route path={`${path}/?portfolioURL`}>
-                <Template />
-            </Route>
+                <Route path={`${path}/:portfolioURL`}>
+                    <Template />
+                </Route>
+            </Switch>
         </>
     )
 } 
