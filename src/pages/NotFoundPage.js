@@ -11,12 +11,10 @@ function Template(props) {
 
         return(
         <div>
-            <Hero id="hereOnHomePage" title={props.title}/>
             <div className="container">
-                <div className="top-section">
+                <div className="top-section mt-5">
                     <div className="left">
                         <h2 className="about__heading">404!</h2>
-
                         <div className="row justify-content-center align-items-center">
                             <div className="col-sm-6">
                                 <p>

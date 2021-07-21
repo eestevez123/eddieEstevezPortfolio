@@ -16,10 +16,6 @@ import placeholderImg from "../../../images/placeholder.png";
 function Template(props) {
 
     let { portfolioURL } = useParams();
-    
-    let { path, url } = useRouteMatch();
-    console.log("path", path)
-    console.log("url", url)
 
         return(
         <>
