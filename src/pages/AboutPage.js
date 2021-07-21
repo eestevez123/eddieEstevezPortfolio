@@ -2,16 +2,14 @@ import React from 'react';
 
 import Hero from "../components/Hero";
 
-import Button from 'react-bootstrap/Button';
-
 import "./AboutPage.css"
 
 import placeholderImg from "../images/placeholder.png";
-import uwlogo from "../images/uwlogo.png";
+import uwlogo from "../images/aboutMePage/uwlogo.png";
 
-import compEng from "../images/computerEngineering.svg";
-import compSci from "../images/computerScience.svg";
-import digStud from "../images/digitalStudies.svg";
+import compEng from "../images/aboutMePage/computerEngineering.svg";
+import compSci from "../images/aboutMePage/computerScience.svg";
+import digStud from "../images/aboutMePage/digitalStudies.svg";
 
 const  eddieResumePDF = process.env.PUBLIC_URL + '/eddieResume.pdf';
 

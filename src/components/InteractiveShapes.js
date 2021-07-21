@@ -1,5 +1,5 @@
 import React from 'react';
-import blackLineRect from "../images/blackLineRect.svg";
+import blackLineRect from "../images/homePage/blackLineRect.svg";
 import DraggableObject from "../components/DraggableObject";
 import { Frame } from "framer"
 
