@@ -5,6 +5,7 @@ export const websiteCards =  [
         title: "My Personal Website",
         desc: "I designed and implimented my own personal website (this one!) using React and other web tools.",
         href: "personal-site", 
+        use: "WebsiteTemplate",
     },
     {   
         src: require('../../images/placeholder.png').default, 

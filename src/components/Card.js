@@ -4,7 +4,6 @@ import {HashRouter as Router, Route, Link} from "react-router-dom";
 
 function PortfolioCard(props) {
 
-    let url = props.url
     let path = props.path
 
     return(

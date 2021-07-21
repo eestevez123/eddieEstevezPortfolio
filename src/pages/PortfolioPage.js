@@ -8,6 +8,7 @@ import {
     useRouteMatch
   } from "react-router-dom";
 
+import "./PortfolioPage.css";
 
 import Button from'react-bootstrap/Button';
 import ButtonGroup from'react-bootstrap/ButtonGroup';
@@ -16,8 +17,8 @@ import Hero from "../components/Hero"
 import Cards from '../components/Cards.js';
 
 
-import Container from 'react-bootstrap/Container'
-import Template from '../portfolioFiles/pages/Websites/Template';
+
+import Template from '../portfolioFiles/pages/Template';
 
 function PortfolioPage(props) {
 
@@ -33,16 +34,12 @@ function PortfolioPage(props) {
       ];
 
     const [sectionValue, setSectionValue] = useState(0);
-    const [sectionName, setSectionName] = useState(sectionArray[sectionValue].name);
 
-    let { path, url } = useRouteMatch();
-    console.log("path", path)
-    console.log("url", url)
+    let { path } = useRouteMatch();
 
     function mainButtonClick(e) {
         let val = e.target.value
         setSectionValue(parseInt(val))
-        setSectionName(sectionArray[val].name)
     }
 
 
@@ -57,8 +54,8 @@ function PortfolioPage(props) {
                                 key={idx}
                                 id={`button-${button.name}`}
                                 type="button"
+                                className={sectionValue === button.value ? 'active' : ''}
                                 variant="outline-primary"
-                                name="button"
                                 value={button.value}
                             >
                                 {button.name}
@@ -66,15 +63,12 @@ function PortfolioPage(props) {
                             ))}
                         </ButtonGroup>
                     </div>
-                    <Container>
-                        <h1>{sectionName}</h1>
-                    </Container>
                     
-                    <Cards section={sectionValue} url={url} path={path}/>
+                    <Cards section={sectionValue} path={path}/>
                 </Route>
                 
                 <Route path={`${path}/:portfolioURL`}>
-                    <Template />
+                    <Template sectionValue={sectionValue} />
                 </Route>
             </Switch>
         </>
