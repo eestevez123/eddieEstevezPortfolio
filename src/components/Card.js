@@ -4,6 +4,9 @@ import {HashRouter as Router, Route, Link} from "react-router-dom";
 
 function PortfolioCard(props) {
 
+    let url = props.url
+    let path = props.path
+
     return(
         <>
         <div className="card text-center">
@@ -16,8 +19,8 @@ function PortfolioCard(props) {
             <p className="card-text text-secondary">
                 {props.desc}
             </p>
-            <Link to={props.href}>
-            <button type="button" className="btn btn-outline-primary">More Info</button>
+            <Link to={`${path}/${props.href}`}>
+                <button type="button" className="btn btn-outline-primary">More Info</button>
             </Link>
         </div>
         </div>

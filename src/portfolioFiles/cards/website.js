@@ -1,10 +1,10 @@
 export const websiteCards =  [
     {   
         src: require('../../images/placeholder.png'), 
-        alt: "La Cosecha Tortilleria Logo",
+        alt: "My Personal Website Logo",
         title: "My Personal Website",
         desc: "I designed and implimented my own personal website (this one!) using React and other web tools.",
-        href: "/mywork/template", 
+        href: "personal-site", 
     },
     {   
         src: require('../../images/placeholder.png'), 
