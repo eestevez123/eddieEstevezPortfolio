@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route, Link, Switch} from "react-router-dom";
+import {BrowserRouter, Route, Link, Switch, Redirect } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -47,7 +47,8 @@ constructor(props) {
 render() {
   return (
     <BrowserRouter>
-      <Container className="p-0" fluid={true}>
+    <Container className="p-0 pageContainer" fluid={true}>
+      <Container className="px-0 pt-0 contentWrap" fluid={true}>
 
         <Navbar className="border-bottom" bg="transparent" expand="lg">
             <Navbar.Brand id="pageLogo" href="/" className="align-items-center ms-2">
@@ -80,12 +81,14 @@ render() {
           <Route path="/letsconnect"   render={()=> <ContactPage title={this.state.contact.title}/>} />
 
 
-          <Route path="*" component={NotFoundPage} />
+          <Route path="/404" component={NotFoundPage} />
+          <Redirect path="*" to="/404" />
         </Switch>
 
         
-      <Footer/>
+      <Footer />
 
+      </Container>
       </Container>
     </BrowserRouter>
   );  
