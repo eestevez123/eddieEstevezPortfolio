@@ -7,12 +7,12 @@ export const websiteInfo = [
         WhatIDid: "I started this React website with the create-react-app toolchain to get me started, and I used Bootstrap as my CSS framework. I took advantage of a lot of features React provides such React hooks, state management, as well as reusable components. This site itself is hosted as a GitHub page with a custom domain name. ",
         WhatILearned: "As I built out the website, I got more familiar with React and Bootstrap, as well great practice with building out a website from scratch, from designing to copyrighting to the actual implementation. ",
         CarouselImages: [{
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL",
-                desc: "DESC"
+                src: require("../../images/myWorkPage/website/websiteCode.png").default,
+                label: "Javascript Array holding information for this page itself",
+                desc: "Most data is loaded in from separate files, making it easier to be able to fetch this data from an API one day"
             },
             {
-                src: require("../../images/placeholder.png").default,
+                src: require("../../images/myWorkPage/website/githubPage.png").default, 
                 label: "LABEL 1",
                 desc: "DESC"
             },
