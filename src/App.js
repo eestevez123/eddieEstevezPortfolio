@@ -47,7 +47,8 @@ constructor(props) {
 render() {
   return (
     <BrowserRouter>
-      <Container className="p-0" fluid={true}>
+    <Container className="p-0 pageContainer" fluid={true}>
+      <Container className="px-0 pt-0 contentWrap" fluid={true}>
 
         <Navbar className="border-bottom" bg="transparent" expand="lg">
             <Navbar.Brand id="pageLogo" href="/" className="align-items-center ms-2">
@@ -85,8 +86,9 @@ render() {
         </Switch>
 
         
-      <Footer/>
+      <Footer />
 
+      </Container>
       </Container>
     </BrowserRouter>
   );  
