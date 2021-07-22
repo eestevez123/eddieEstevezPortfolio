@@ -43,6 +43,7 @@ function PictureTemplate(props) {
                             <Gallery
                                 images={imageList}
                                 enableImageSelection={false}
+                                backdropClosesModal={true}
                             />
                             </div>
                         </div>
