@@ -32,43 +32,46 @@ function WebsiteTemplate(props) {
         }
     }, [infoObj.CarouselImages])
 
-
-
-
-
-
-
         return(
         <>
             <div className="container">
-                <div className="top-section">
+
                 <Link to ="/mywork">
                     <button type="button" className="btn btn-outline-primary m-3">Go Back</button>
                 </Link>
-                    <h2 className="about__heading">
-                        {infoObj["PageTitle"]}
-                    </h2>
-                    <div className="row">
-                        <div className="col">
-                            <img className="portfolioCoverImage img-flud d-block m-auto" src={infoObj.CoverPic} alt="cover" />
-                        </div>
-                    </div>
-                    <div className="row justify-content-center align-items-center">
-                        <div className="col-sm-6">
-                            <h4 className="mt-3">
-                                Background
-                            </h4>
-                            <p>
-                               {infoObj["Background"]}
-                            </p>
 
-                        </div>
+                <h2 className="about__heading">
+                    {infoObj["PageTitle"]}
+                </h2>
+            </div>
 
+                <div className="container-fluid bg-light mt-4">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col">
+                                <div className="overflow">
+                                <   img className="portfolioCoverImage img-flud d-block m-auto" src={infoObj.CoverPic} alt="cover" />
+                                </div> 
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-                            
-            <div className="container-fluid bg-light mt-4">
+
+                    <div className="container">
+                        <div className="row justify-content-center align-items-center">
+                            <div className="col-sm-6">
+                                <h4 className="mt-3">
+                                    Background
+                                </h4>
+                                <p>
+                                {infoObj["Background"]}
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
                 <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-sm-6">
@@ -92,11 +95,10 @@ function WebsiteTemplate(props) {
 
                     </div>
                 </div>                
-            </div>
 
             {showCarousel
             ? <> 
-            <div className="container">
+            <div className="container mt-5">
                 <Carousel fade>
 
                     {CarouselImages.map((picObj, idx) => (
@@ -104,9 +106,9 @@ function WebsiteTemplate(props) {
                             <img
                                 className="d-block w-100 carouselImage"
                                 src={picObj.src}
-                                alt="First slide"
+                                alt="slide"
                             />
-                            <Carousel.Caption>
+                            <Carousel.Caption className="carouselCaptions">
                                 <h3>{picObj.label}</h3>
                                 <p>{picObj.desc}</p>
                             </Carousel.Caption>
@@ -117,6 +119,16 @@ function WebsiteTemplate(props) {
             </div>
             </>
             : <></>}
+
+            <div className="container">
+                <div className="row text-center m-3">
+                    <div className="col">
+                    <Link to ="/mywork">
+                    <   button type="button" className="btn btn-outline-primary m-3">Go Back</button>
+                    </Link>
+                    </div>
+                </div>
+            </div>
     </>
     )
     
