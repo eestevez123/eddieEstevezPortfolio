@@ -18,7 +18,6 @@ import {imageInfo} from "../pageInfo/imageInfo.js"
 function PictureTemplate(props) {
     
     let portfolioURL = props.portfolioURL;
-    console.log("imageInfo",imageInfo)
     let infoObj = imageInfo.find(o => o.id === portfolioURL);
     console.log("infoObj",infoObj)
     let imageList = infoObj.images

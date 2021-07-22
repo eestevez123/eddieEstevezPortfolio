@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route, Link, Switch} from "react-router-dom";
+import {BrowserRouter, Route, Link, Switch, Redirect } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -80,7 +80,8 @@ render() {
           <Route path="/letsconnect"   render={()=> <ContactPage title={this.state.contact.title}/>} />
 
 
-          <Route path="*" component={NotFoundPage} />
+          <Route path="/404" component={NotFoundPage} />
+          <Redirect path="*" to="/404" />
         </Switch>
 
         

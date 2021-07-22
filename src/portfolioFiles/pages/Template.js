@@ -7,8 +7,12 @@ import {
     Route,
     Link,
     useParams,
-    useRouteMatch
+    Redirect
   } from "react-router-dom";
+
+
+// URL validation
+import {websiteURLs, appURLs, videoURLs, soundURLs, imageURLs, validWorkURLs} from "../cards/urlValid.js"
 
 
 import WebsiteTemplate from "./WebsiteTemplate";
@@ -21,7 +25,6 @@ import PictureTemplate from "./PictureTemplate";
 import PodcastPage from "./custom/PodcastPage";
 
 import NotFoundPage from '../../pages/NotFoundPage';
-import placeholderImg from "../../images/placeholder.png";
 
 
 
@@ -29,39 +32,49 @@ function Template(props) {
 
     let { portfolioURL } = useParams();
 
-    if (props.sectionValue === 0) {
+    if (! validWorkURLs.includes(portfolioURL)) {
+        return (<>
+        <Redirect to="/404" />
+        </>)
+    }
+
+
+    if (websiteURLs.includes(portfolioURL)) {
         // Websites
         return(
             <>
                 <WebsiteTemplate portfolioURL={portfolioURL}/>
             </>
         )
-    } else if (props.sectionValue === 1) {
-        // Applications
+    } else if (appURLs.includes(portfolioURL)) {
         return (
             <>
                 <AppTemplate portfolioURL={portfolioURL}/>
             </>
         )
-    } else if (props.sectionValue === 2) {
-        // Videos
+    } else if (videoURLs.includes(portfolioURL)) {
         return (
             <>
                 <VideoTemplate portfolioURL={portfolioURL}/>
             </>
         )
-    } else if (props.sectionValue === 3) {
-        // Sounds
+    } else if (soundURLs.includes(portfolioURL)) {
+        
         if (portfolioURL === "podcast-about-relationships") {
             return (<><PodcastPage portfolioURL={portfolioURL}/></>)
         } else {
             return (<><SoundTemplate portfolioURL={portfolioURL}/></>)
         }
-    } else if (props.sectionValue === 4) {
-        // Photos
-        return (<><PictureTemplate portfolioURL={portfolioURL}/></>)
+    } else if (imageURLs.includes(portfolioURL)) {
+        return (
+            <>
+                <PictureTemplate portfolioURL={portfolioURL}/>
+            </>
+        )
     } else {
-        return (<><NotFoundPage /></>)
+        return (<>
+            <Redirect to="/404" />
+            </>)
     }
 } 
 

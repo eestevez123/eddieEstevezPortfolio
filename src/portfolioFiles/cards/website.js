@@ -71,14 +71,14 @@ export const websiteCards =  [
         href: "custom-implicit-bias-test",
     },
     {   
-        src: require('../../images/placeholder.png').default, 
+        src: require("../../images/myWorkPage/cardPics/website/freesound.png").default,   
         alt: "Freesound Logo",
         title: "Freesound Website Redesign",
         desc: "I created a mockup of a redesign of a website I frequented called FreeSound and created a prototype with React",
         href: "freesound-website-redesign",
     },
     {   
-        src: require('../../images/placeholder.png').default, 
+        src: require("../../images/myWorkPage/cardPics/website/arb.png").default, 
         alt: "University of Wisconsin-Arboretum Website Redesign",
         title: "University of Wisconsin-Arboretum Website Redesign",
         desc: "I was in team that redesigned the website used by the University of Wisconsin-Arboretum to be more useful to most users and to increase traffic and interations",

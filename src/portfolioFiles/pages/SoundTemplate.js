@@ -18,6 +18,11 @@ import {soundInfo} from "../pageInfo/soundInfo.js"
 function SoundTemplate(props) {
     
     let portfolioURL = props.portfolioURL;
+
+    let appURLs = soundInfo.map(o => o.id)
+    console.log(appURLs)
+
+
     let infoObj = soundInfo.find(o => o.id === portfolioURL);
 
         return(
