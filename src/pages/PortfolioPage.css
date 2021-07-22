@@ -1,7 +1,12 @@
 .portfolioCoverImage {
-    max-width: 22% !important;
+    max-width: 50rem !important;
+    transform: scale(1);
+    transition: transform 0.5s ease;
 }
 
+.portfolioCoverImage:hover {
+    transform: scale(1.1);
+}
 .notVisible {
     visibility: hidden;
     height: 0px;
@@ -10,4 +15,27 @@
 .cardLoader {
     width: 5rem !important;
     height: 5rem !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("../images/myWorkPage/next.svg") !important;
+    width: 3rem;
+    height: 3rem;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("../images/myWorkPage/next.svg") !important;
+    transform: scaleX(-1) !important;
+    width: 3rem;
+    height: 3rem;
+}
+
+.carouselCaptions {
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    transform: scale(1.2) !important;
+}
+
+.sr-only {
+    visibility: hidden;
 }
