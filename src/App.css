@@ -348,3 +348,19 @@
 .btn-group {
   display: inline !important;
 }
+
+.pageContainer {
+  position: relative !important ;
+  min-height: 100vh !important ;
+}
+
+.contentWrap {
+  padding-bottom: 5rem !important ;    /* Footer height */
+}
+
+.footer {
+  position: absolute !important ;
+  bottom: 0 !important ;
+  width: 100% !important ;
+  height: 5rem !important ;            /* Footer height */
+}
