@@ -10,7 +10,7 @@ export const websiteCards =  [
     {   
         src: require("../../images/myWorkPage/cardPics/website/lacosechawebsite.png").default, 
         alt: "La Cosecha Tortilleria Logo",
-        title: "La Cosecha Tortilleria Compnany Website",
+        title: "La Cosecha Tortilleria Company Website",
         desc: "I designed and implimented a website for the La Cosecha Tortilleria Company, a tortilla business located in Madison, WI",
         href: "la-cosecha-tortilla", 
     },
@@ -43,7 +43,7 @@ export const websiteCards =  [
         href: "apprisen-website-redesign",
     },
     {   
-        src: require("../../images/myWorkPage/cardPics/website/longgame.jpg").default, 
+        src: require("../../images/myWorkPage/cardPics/website/longgame.png").default, 
         alt: "Logevity Game Logo",
         title: "The Longevity Game",
         desc: "Within Northwestern Mutual, I was a part of team that recreated an old Flash game called The Longevity Game with modern web tools.",

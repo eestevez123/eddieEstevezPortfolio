@@ -31,9 +31,8 @@
 }
 
 .carouselCaptions {
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: black;
-    transform: scale(1.2) !important;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .sr-only {

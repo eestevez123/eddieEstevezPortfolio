@@ -23,11 +23,15 @@ function WebsiteTemplate(props) {
     let CarouselImages = infoObj.CarouselImages
 
     const [showCarousel, setshowCarousel] = useState(false)
+    const [showCarouselControls, setshowCarouselControlers] = useState(true)
 
     useEffect(() => {
         if (Object.keys(infoObj.CarouselImages).length === 0) {
             setshowCarousel(false)
-        } else {
+        } else if (Object.keys(infoObj.CarouselImages).length === 1) { 
+            setshowCarouselControlers(false)
+            setshowCarousel(true)
+        } else  {
             setshowCarousel(true)
         }
     }, [infoObj.CarouselImages])
@@ -47,7 +51,7 @@ function WebsiteTemplate(props) {
 
                 <div className="container-fluid bg-light mt-4">
                     <div className="container">
-                        <div className="row">
+                        <div className="row pt-0">
                             <div className="col">
                                 <div className="overflow">
                                 <   img className="portfolioCoverImage img-flud d-block m-auto" src={infoObj.CoverPic} alt="cover" />
@@ -58,7 +62,7 @@ function WebsiteTemplate(props) {
                 </div>
 
                     <div className="container">
-                        <div className="row justify-content-center align-items-center">
+                        <div className="row justify-content-center">
                             <div className="col-sm-6">
                                 <h4 className="mt-3">
                                     Background
@@ -68,12 +72,7 @@ function WebsiteTemplate(props) {
                                 </p>
 
                             </div>
-
-                        </div>
-                    </div>
-
-                <div className="container">
-                        <div className="row justify-content-center">
+                            <div className="row justify-content-center">
                             <div className="col-sm-6">
                                 <h4 className="mt-3">
                                     What I Did
@@ -83,7 +82,9 @@ function WebsiteTemplate(props) {
                                 </p>
 
                             </div>
-                            <div className="col-sm-6 ">
+                            </div>
+                            <div className="row justify-content-center">
+                            <div className="col-sm-6">
                                 <h4 className="mt-3">
                                     What I Learned
                                 </h4>
@@ -92,14 +93,14 @@ function WebsiteTemplate(props) {
                                 </p>
 
                             </div>
-
+                            </div>
                     </div>
-                </div>                
+                    </div>   
 
             {showCarousel
             ? <> 
             <div className="container mt-5">
-                <Carousel fade>
+                <Carousel fade controls={showCarouselControls}>
 
                     {CarouselImages.map((picObj, idx) => (
                         <Carousel.Item id={idx}>
@@ -108,13 +109,12 @@ function WebsiteTemplate(props) {
                                 src={picObj.src}
                                 alt="slide"
                             />
-                            <Carousel.Caption className="carouselCaptions">
+                            <Carousel.Caption className={`carouselCaptions rounded`}>
                                 <h3>{picObj.label}</h3>
                                 <p>{picObj.desc}</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                     ))}
-
                 </Carousel>
             </div>
             </>
