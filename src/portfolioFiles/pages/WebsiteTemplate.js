@@ -70,6 +70,11 @@ function WebsiteTemplate(props) {
                                 <p>
                                 {infoObj["Background"]}
                                 </p>
+                                {("Background2" in infoObj) ?<>
+                                <p>
+                                {infoObj["Background2"]}
+                                </p>
+                                </>:<></>}
 
                             </div>
                             <div className="row justify-content-center">
