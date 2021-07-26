@@ -11,7 +11,7 @@ function PortfolioCard(props) {
 
     const springProps = useSpring({
         to: {opacity: 1, y:0},
-        from: {opacity: 0, y:50},
+        from: {opacity: 0, y:0},
         config: config.default,
         reset: true
     })

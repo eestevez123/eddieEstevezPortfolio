@@ -198,69 +198,74 @@ export const websiteInfo = [
         Background: "During my Fall Semester of my Junior year (2019), I took a class called LIS 500: Code and Power which had me analyze and critique of the portrayal of race, gender, religions, and more in computing, such as within the training data used within machine learning models, google search results, etc. Within the class, I had the opportunity to practice my web development skills through multiple assignments, the final one being a survey created by three other students and I that was modeled after the Harvard Implicit Bias Test. This survey had our own original questions, and we would keep track of the responses once the user finished the survey. The goal of the survey was like the goal of the Harvard implicit bias test, which was to see how biases we as a person are, regardless of being conscious of it or not.",
         WhatIDid: "I helped the team develop the website and track the survey results using HTML, CSS, and PHP.",
         WhatILearned: "Regarding technical skills, I learned basic functional PHP, and got more practice with HTML and CSS. The biggest take from the class came from the readings and conversation regarding representation and issues that plague the tech industry, such as artificial intelligence branding people of color as criminals, racist google search results, meritocracy, as well as the demographics of major tech companies not being diverse. ",
-        CarouselImages: [{
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL",
-                desc: "DESC"
-            },
-            {
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL 1",
-                desc: "DESC"
-            },
-            {
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL 2",
-                desc: "DESC"
-            },
-        ]
+        CarouselImages: []
     },
     {   
         id: "freesound-website-redesign",
         PageTitle: "Freesound Website Redesign",
-        CoverPic: require("../../images/placeholder.png").default,
+        CoverPic: require("../../images/myWorkPage/cardPics/website/freesound.png").default,   
         Background: "Within the fall semester of my senior year (2020), I took a class called LSC 532: Web Design for the Sciences. This class focused on effective communication of science information in an honest but easily digestible way. Within an assignment, I was to take a website whose design I thought I could improve on, which happed to be freesounds.org. I was familiar with this website as this was the site I always came to find specific sound effects for good sound design in videos and more. I thought the site could’ve used a modern redesign that would push people to not only consume and download like I was doing, but to also share sounds and interact with other users.",
         WhatIDid: "I first made a mockup of the redesigned website using Adobe XD, and then implemented the actual website using React. ",
         WhatILearned: "This class taught me how to not only make simple and elegant websites, but also how to nudge users to do something you want them to do, such as create an account, or to be a part of the community and promote social interactions such as sharing and commenting.",
         CarouselImages: [{
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL",
-                desc: "DESC"
+                src: require("../../images/myWorkPage/website/freesound1.png").default, 
+                label: "Adobe XD Design",
+                desc: "This is the redesigned UI I created with Adobe XD with only 2 pages, the Home Page and Sound Page created for the MVP (minimum viable product)"
             },
             {
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL 1",
-                desc: "DESC"
-            },
-            {
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL 2",
-                desc: "DESC"
-            },
+                src: require("../../images/myWorkPage/website/freesound2.png").default, 
+                label: "Original Website Design",
+                desc: "This is the design of the website (https://freesound.org/) at the time of me creating the redesign"
+            }
         ]
     },
     {   
         id: "university-of-wisconsin-arboretum-website-redesign",
         PageTitle: "University of Wisconsin-Arboretum Website Redesign",
-        CoverPic: require("../../images/placeholder.png").default,
+        CoverPic: require("../../images/myWorkPage/cardPics/website/arb.png").default, 
         Background: "Within the fall semester of my senior year (2020), I took a class called LSC 532: Web Design for the Sciences. This class focused on effective communication of science information in an honest but easily digestible way. Within the final project, I worked alongside 2 other students to redesign https://arboretum.wisc.edu/ to get website traffic as well as provide the information most users look for in an easier way",
         WhatIDid: "One of the original designers of the website came to one of our class sessions and I had the opportunity to ask questions about the organization’s current goals and general analytics about which parts of the site have more traffic. With these notes and archetypes of three common users, we were able to map out a redesigned website with a modern look that provides most sought out answers in the home page as well as redesigning parts of the site in a question-answer style, such as what can be found within the Visit tab of the website.  ",
         WhatILearned: "I learned it’s always important to ask as many questions as you can when you are with a client/project owner. This way, I can start tackling the biggest problems the best way possible, and better dedicate time and energy to the best minimal vial product. It was also a good opportunity to place myself in the shoes of different prospect users, such as someone who’s never heard of knows what an Arboretum is, or a parent that is only interested in family activities they could do with their children",
         CarouselImages: [{
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL",
-                desc: "DESC"
+                src: require("../../images/myWorkPage/cardPics/website/arb.png").default, 
+                label: "Redesigned Home Page",
+                desc: "This new website now stretches to the entire width of the screen, as well as displays info about the Arboretum such as the Our Mission and Our Vision statments. "
             },
             {
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL 1",
-                desc: "DESC"
+                src: require("../../images/myWorkPage/website/arb1.png").default, 
+                label: "Original Home Page",
+                desc: "The original page had its content width style as boxed, as well as was not welcoming to new visitors not aware of what the Arboretum is."
             },
             {
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL 2",
-                desc: "DESC"
+                src: require("../../images/myWorkPage/website/arb2.png").default, 
+                label: "Redesigned Visit Page",
+                desc: "The content within the Visit page was restructured into sections in a Question-Answer style so that a user looking for specific information could find it quicky."
             },
+            {
+                src: require("../../images/myWorkPage/website/arb3.png").default, 
+                label: "Original Visit Page",
+                desc: "The original visit page had it's content under different sections but had its information set into paragraphs without clear distiction of what those paragraphs contained"
+            },
+            {
+                src: require("../../images/myWorkPage/website/arb4.png").default, 
+                label: "Redesigned Learn Page",
+                desc: "The new Learn page also had its content set in a Question-Answer style, as well as had accordian compoenents to not bombard the user with too much unnecessary text that they weren't looking for"
+            },
+            {
+                src: require("../../images/myWorkPage/website/arb5.png").default, 
+                label: "Original Learn Page",
+                desc: "Just like in the orignal Visit page, the information is placed within paragraphs and other sections, but the content itself is not labeled within each section"
+            },
+            {
+                src: require("../../images/myWorkPage/website/harold.png").default, 
+                label: "Harold Persona Info",
+                desc: "When redesigning the page, it was important to create personas to keep in mind when creating designs and concept ideas"
+            },
+            {
+                src: require("../../images/myWorkPage/website/sarah.png").default, 
+                label: "Harold Persona Info",
+                desc: "2 persona's were created for this project, Harold being the first and Sarah being the second. "
+            }
         ]
     }
 ]

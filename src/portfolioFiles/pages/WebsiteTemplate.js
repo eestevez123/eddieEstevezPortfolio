@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react";
 import Carousel from 'react-bootstrap/Carousel'
+import OnImagesLoaded from 'react-on-images-loaded';
+import Skeleton from 'react-loading-skeleton';
 
 import {
     Link,
@@ -12,21 +14,24 @@ function WebsiteTemplate(props) {
     
     let portfolioURL = props.portfolioURL;
     let infoObj = websiteInfo.find(o => o.id === portfolioURL);
-    let CarouselImages = infoObj.CarouselImages
+    let CarouselImages = infoObj.CarouselImages;
+    const carouselImageLength = Object.keys(infoObj.CarouselImages).length;
 
+    const [isLoadingCover, setIsLoadingCover] = useState(true);
+    const [isLoadingCarousel, setIsLoadingCarousel] = useState(true);
     const [showCarousel, setshowCarousel] = useState(false)
     const [showCarouselControls, setshowCarouselControlers] = useState(true)
 
     useEffect(() => {
-        if (Object.keys(infoObj.CarouselImages).length === 0) {
+        if (carouselImageLength === 0) {
             setshowCarousel(false)
-        } else if (Object.keys(infoObj.CarouselImages).length === 1) { 
+        } else if (carouselImageLength.length === 1) { 
             setshowCarouselControlers(false)
             setshowCarousel(true)
         } else  {
             setshowCarousel(true)
         }
-    }, [infoObj.CarouselImages])
+    }, [carouselImageLength])
 
         return(
         <>
@@ -37,7 +42,7 @@ function WebsiteTemplate(props) {
                 </Link>
 
                 <h2 className="about__heading">
-                    {infoObj["PageTitle"]}
+                    {infoObj["PageTitle"] || <Skeleton/>}
                 </h2>
             </div>
 
@@ -46,7 +51,11 @@ function WebsiteTemplate(props) {
                         <div className="row pt-0">
                             <div className="col">
                                 <div className="overflow">
-                                <   img className="portfolioCoverImage img-flud d-block m-auto" src={infoObj.CoverPic} alt="cover" />
+                                    {isLoadingCover?(<><Skeleton height={300}/></>):(<></>)}
+                                    <img onLoad={()=>{
+                                        setIsLoadingCover(false)
+                                    }}
+                                    className={`portfolioCoverImage img-fluid d-block m-auto ${isLoadingCover?"hidden":""}`} src={infoObj.CoverPic} alt="cover"/>
                                 </div> 
                             </div>
                         </div>
@@ -70,34 +79,46 @@ function WebsiteTemplate(props) {
 
                             </div>
                             <div className="row justify-content-center">
-                            <div className="col-sm-6">
-                                <h4 className="mt-3">
-                                    What I Did
-                                </h4>
-                                <p>
-                                {infoObj["WhatIDid"]}
-                                </p>
+                                <div className="col-sm-6">
+                                    <h4 className="mt-3">
+                                        What I Did
+                                    </h4>
+                                    <p>
+                                    {infoObj["WhatIDid"]}
+                                    </p>
 
-                            </div>
+                                </div>
                             </div>
                             <div className="row justify-content-center">
-                            <div className="col-sm-6">
-                                <h4 className="mt-3">
-                                    What I Learned
-                                </h4>
-                                <p>
-                                {infoObj["WhatILearned"]}
-                                </p>
+                                <div className="col-sm-6">
+                                    <h4 className="mt-3">
+                                        What I Learned
+                                    </h4>
+                                    <p>
+                                    {infoObj["WhatILearned"]}
+                                    </p>
 
+                                </div>
                             </div>
-                            </div>
-                    </div>
+                        </div>
                     </div>   
 
             {showCarousel
             ? <> 
             <div className="container mt-5">
-                <Carousel fade controls={showCarouselControls}>
+                {(isLoadingCarousel)?(
+                    <div className="row text-center">
+                        <div className="col">
+                            <Skeleton height={500}/>
+                        </div>
+                    </div>
+               ):(<></>)}
+            <OnImagesLoaded
+                onLoaded={() => {setIsLoadingCarousel(false)}}
+                onTimeout={() => {setIsLoadingCarousel(false)}}
+                timeout={7000}
+            >
+            <Carousel fade controls={showCarouselControls} interval={null} className={`${isLoadingCarousel?("hidden"):("")}`}>
 
                     {CarouselImages.map((picObj, idx) => (
                         <Carousel.Item id={idx}>
@@ -106,16 +127,24 @@ function WebsiteTemplate(props) {
                                 src={picObj.src}
                                 alt="slide"
                             />
-                            <Carousel.Caption className={`carouselCaptions rounded`}>
+                            <Carousel.Caption className={`carouselCaptions rounded-bottom`}>
                                 <h3>{picObj.label}</h3>
                                 <p>{picObj.desc}</p>
+                                <h6 className="fw-light">{idx+1} of {carouselImageLength}</h6>
                             </Carousel.Caption>
                         </Carousel.Item>
                     ))}
                 </Carousel>
+
+            </OnImagesLoaded>
             </div>
             </>
             : <></>}
+
+
+            {props.portfolioURL === ("custom-implicit-bias-test")?(<>
+            <ImplicitBiasTest/>
+            </>):(<></>)}
 
             <div className="container">
                 <div className="row text-center m-3">
@@ -130,5 +159,52 @@ function WebsiteTemplate(props) {
     )
     
 } 
+
+function ImplicitBiasTest() {
+    return(
+        <div className="container-fluid bg-light pb-5">
+                <div className="container">
+                    <div className="row text-center justify-content-center">
+                        <div className="col col-sm-6">
+                            <h4 className="mt-3">
+                                Video Explanations For Survey
+                            </h4>
+                            <p>
+                                For the survey, I created an Introduction video to welcome the taker of the survey, as well as a video explaining the results of the survey and what they mean
+                            </p>
+                        </div>
+                    </div>
+                    <div className="row text-center">
+                        <div className="col col-sm-6">
+                            <h4>Introduction Video</h4>
+                                <div class="ratio ratio-16x9 youtubeVideo">
+                                    <iframe
+                                        src="https://youtube.com/embed/Rt14x7_5C5o"
+                                        title="YouTube video player" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen
+                                    >
+                                    </iframe>
+                            </div>
+                        </div>
+                        <div className="col col-sm-6">
+                            <h4>Results Video</h4>
+                                <div class="ratio ratio-16x9 youtubeVideo">
+                                    <iframe
+                                        src="https://youtube.com/embed/3Z7cNFscLgQ"
+                                        title="YouTube video player" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen
+                                    >
+                                    </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    )
+}
 
 export default WebsiteTemplate;

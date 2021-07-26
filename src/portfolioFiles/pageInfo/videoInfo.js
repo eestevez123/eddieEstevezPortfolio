@@ -14,8 +14,29 @@ export const videoInfo = [
     {   
         id: "videos-for-uw-madison-memes-for-milk-chugging-teens",
         PageTitle: "Videos For UW-Madison Memes For Milk Chugging Teens",
-        videoURL: "https://www.youtube.com/embed/_-0L_whRKa0",
         Description: "For three years within my college career, I helped run the UW-Madison Facebook meme page called UW-Madison Memes for Milk Chugging teens. Throughout my time as an admin, I created many videos that showcased my skills with the Adobe Creative apps such as Premiere Pro, After Effects, Photoshop, and more.  ",
+        videoURLs: [
+            {
+                videoID: "_OekNTxnOBQ",
+                title: "Vid 1",
+                desc: "Desc 1"
+            },
+            {
+                videoID: "_OekNTxnOBQ",
+                title: "Vid 2",
+                desc: "Desc 2"
+            },
+            {
+                videoID: "_OekNTxnOBQ",
+                title: "Vid 3",
+                desc: "Desc 3"
+            },
+            {
+                videoID: "_OekNTxnOBQ",
+                title: "Vid 4",
+                desc: "Desc 4"
+            },
+        ]
     },
     {   
         id: "advertisement-club-videos",
@@ -32,7 +53,7 @@ export const videoInfo = [
     {   
         id: "communication-arts-200-video",
         PageTitle: "Communication Arts 200 Video",
-        videoURL: "https://www.youtube.com/embed/_-0L_whRKa0",
+        videoURL: "https://www.youtube.com/embed/_OekNTxnOBQ",
         Description: "Within CA 200: Introduction to Digital Communication, I made a vide on a subject on an issue on campus. I focused on the required meal plan that new incoming student were required to participate in that only involved food from the campus dining halls. I focused how this increased the financial burden and decreases traffic to local restaurants on campus that keep getting closed due to decreased business. Later on in the semester, we were tasked to remix the video and present within a vernacular lens.  ",
     },
     {   

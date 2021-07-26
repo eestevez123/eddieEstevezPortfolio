@@ -30,8 +30,8 @@ function ApplicationTemplate(props) {
                     <h2 className="about__heading">
                         {infoObj["PageTitle"]}
                     </h2>
-                    <div className="row">
-                        <div className="col">
+                    <div className="row justify-content-center">
+                        <div className="col-8">
                             <div class="ratio ratio-16x9 youtubeVideo">
                             <iframe
                                 src={infoObj["videoURL"]}
@@ -47,7 +47,7 @@ function ApplicationTemplate(props) {
                 </div>
             </div>
                             
-            <div className="container-fluid bg-light mt-4">
+            <div className="container-fluid bg-light mt-4 pb-5">
                 <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-sm-6">
@@ -57,10 +57,19 @@ function ApplicationTemplate(props) {
                                 <p>
                                 {infoObj["Description"]}
                                 </p>
-
                             </div>
                     </div>
                 </div>                
+            </div>
+
+            <div className="container">
+                <div className="row text-center m-3">
+                    <div className="col">
+                    <Link to ="/mywork">
+                    <   button type="button" className="btn btn-outline-primary m-3">Go Back</button>
+                    </Link>
+                    </div>
+                </div>
             </div>
     </>
     )

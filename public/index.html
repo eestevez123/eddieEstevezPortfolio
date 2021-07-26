@@ -29,7 +29,39 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <style>
+        #root {
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        #Layer_1 {
+          margin:0;
+          height: 5rem;
+          width: 5rem;
+          -webkit-animation: fadein 2s ease-in alternate infinite;
+          -moz-animation: fadein 2s ease-in alternate infinite;
+          animation: fadein 2s ease-in alternate infinite;
+        }
+        @-webkit-keyframes fadein {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @-moz-keyframes fadein {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadein {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+      </style>
+      <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 557.13 484.33"><defs><style>.cls-1{fill:#2196f3;}.cls-2{fill:#fff;}</style></defs><path class="cls-1" d="M414.4,0H142.72a6.88,6.88,0,0,0-6,3.44L.92,238.72a6.89,6.89,0,0,0,0,6.89L136.76,480.89a6.88,6.88,0,0,0,6,3.44H414.4a6.89,6.89,0,0,0,6-3.44L556.21,245.61a6.89,6.89,0,0,0,0-6.89L420.37,3.44A6.89,6.89,0,0,0,414.4,0Z"/><path class="cls-2" d="M419.38,314l-41.51,71.9a31.61,31.61,0,0,1-27.37,15.8H206.63a31.59,31.59,0,0,1-27.37-15.8l-60.4-104.61a10,10,0,0,1,8.66-15H495a10,10,0,0,0,8.65-5h0a31.62,31.62,0,0,0,0-31.6L401.92,53.44a21.6,21.6,0,0,0-18.71-10.81H179.69a31.61,31.61,0,0,0-27.37,15.81L53.45,229.69a31.57,31.57,0,0,0,0,31.6l98.87,171.25a31.61,31.61,0,0,0,27.37,15.81H377.44a31.63,31.63,0,0,0,27.37-15.8L467.49,324a10,10,0,0,0-8.66-15H428A10,10,0,0,0,419.38,314ZM179.26,105.09a31.61,31.61,0,0,1,27.37-15.8H350.5a31.63,31.63,0,0,1,27.37,15.8l57.47,99.55a10,10,0,0,1-8.65,15H130.44a10,10,0,0,1-8.66-15Z"/></svg>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

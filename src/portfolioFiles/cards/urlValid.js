@@ -15,5 +15,7 @@ export const soundURLs = ["podcast-about-relationships", "beep-boop"]
 
 export const imageURLs = ["uw-madison-memes", "la-cosecha-tortilla-companny-pictures", "advertisement-club-pictures", "art-155"]
 
+export const vidGalleryURLs = ["videos-for-uw-madison-memes-for-milk-chugging-teens", "advertisement-club-videos", "black-sheep-videos"]
+
 export const validWorkURLs = [...websiteURLs, ...appURLs, ...videoURLs, ...soundURLs, ...imageURLs]
 

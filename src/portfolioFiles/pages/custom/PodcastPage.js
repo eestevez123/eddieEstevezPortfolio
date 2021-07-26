@@ -28,15 +28,15 @@ function PodcastPage(props) {
                     <h2 className="about__heading">
                         {infoObj["PageTitle"]}
                     </h2>
-                    <div className="row">
-                        <div className="col">
+                    <div className="row justify-content-center">
+                        <div className="col-8 m-5">
                             <ReactSoundcloud url="https://soundcloud.com/eduardo-estevez-771666676/podcast-about-relationships" visual={false}/>
                         </div>
                     </div>
                 </div>
             </div>
                             
-            <div className="container-fluid bg-light mt-4">
+            <div className="container-fluid bg-light mt-4 pb-5">
                 <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-sm-6">
@@ -50,6 +50,16 @@ function PodcastPage(props) {
                             </div>
                     </div>
                 </div>                
+            </div>
+
+            <div className="container mt-5">
+                <div className="row text-center mt-5">
+                    <div className="col mt-5">
+                    <Link to ="/mywork">
+                    <   button type="button" className="btn btn-outline-primary mt-5">Go Back</button>
+                    </Link>
+                    </div>
+                </div>
             </div>
     </>
     )
