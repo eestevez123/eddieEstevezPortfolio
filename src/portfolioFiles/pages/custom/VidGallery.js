@@ -37,11 +37,15 @@ function VidGallery(props) {
                     </div>
                 </div>
             </div>
-                            
-            <div className="container-fluid bg-light pb-5">
-                <div className="container">
+
+
+            {infoObj["sections"].map((sectionObj, idx) => (
+                <div className={`container-fluid py-3 ${(idx % 2 === 0)?("bg-light"):("")}`}>
+                    <div className="container">
+                        <h2>{sectionObj.sectionTitle}</h2>
+                        <p>{sectionObj.sectionDesc}</p>
                         <div className= "row row-cols-1 row-cols-md-2 gx-5">
-                            {infoObj["videoURLs"].map((videoObj) => (
+                            {sectionObj["videoURLs"].map((videoObj) => (
                                 <div className="col text-center mb-5" key={videoObj.videoID}>
                                     <h4>{videoObj.title}</h4>
                                     <p>{videoObj.desc}</p>
@@ -59,8 +63,11 @@ function VidGallery(props) {
                                 )
                             )}
                     </div>
-                </div>                
-            </div>
+                </div>  
+                </div>
+                ) 
+            )}
+
 
 
             <div className="container">
