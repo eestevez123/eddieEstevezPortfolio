@@ -7,10 +7,6 @@
 .portfolioCoverImage:hover {
     transform: scale(1.1);
 }
-.notVisible {
-    visibility: hidden;
-    height: 0px;
-}
 
 .cardLoader {
     width: 5rem !important;
@@ -37,4 +33,9 @@
 
 .sr-only {
     visibility: hidden;
+}
+
+.hidden {
+    visibility: hidden !important;
+    height: 0px !important;
 }

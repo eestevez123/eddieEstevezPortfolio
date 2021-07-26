@@ -2,16 +2,8 @@ import React, {useState, useEffect} from "react";
 import Carousel from 'react-bootstrap/Carousel'
 
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
     Link,
-    useParams,
-    useRouteMatch
   } from "react-router-dom";
-
-
-import placeholderImg from "../../images/placeholder.png";
 
 import {websiteInfo} from "../pageInfo/websiteInfo.js"
 
