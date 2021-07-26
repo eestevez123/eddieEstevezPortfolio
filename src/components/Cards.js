@@ -1,6 +1,4 @@
 import React, {useState, useEffect} from "react";
-import { useSpring, animated , config} from 'react-spring'
-import OnImagesLoaded from 'react-on-images-loaded';
 import Card from "./Card";
 
 import {websiteCards} from "../portfolioFiles/cards/website"
@@ -18,15 +16,6 @@ function Cards(props) {
 
     const [currentDeck, setCurrentDeck] = useState(websiteCards);
     const [isLoading, setIsLoading] = useState(true);
-
-    const springProps = useSpring({
-        to: {opacity: 1, y:0},
-        from: {opacity: 0, y:50},
-        delay: 500,
-        config: config.default,
-        reset: isLoading
-
-    })
 
     useEffect( () => {
         setIsLoading(true)
@@ -50,9 +39,8 @@ function Cards(props) {
                 setCurrentDeck(noCards)
                 break
           }
-          setTimeout(() => {
-            setIsLoading(false)
-          }, 500)  // 500
+          setIsLoading(false)
+
     }, [props.section])
 
         return(
@@ -73,20 +61,18 @@ function Cards(props) {
                 <></>
             )}
             <div className="container-fluid">
-                <div className={`row cardRow justify-content-center ${(isLoading)?(`notVisible`):(``)}`}>
+                <div className={`row cardRow justify-content-center ${(isLoading)?(`hidden`):(``)}`}>
                     {currentDeck.map((deck, idx) => (
-                        <div className={cardCSS} key={idx}>
-                            <animated.div style={springProps} >
+                        <div className={cardCSS} key={deck.title}>
                                 <Card
-                                    id={`card-${idx}`}
                                     src={deck.src}
                                     alt={deck.alt}
                                     title={deck.title}
                                     desc={deck.desc}
                                     path={props.path}
                                     href={deck.href}
+                                    section={currentDeck}
                                 />
-                            </animated.div>
                         </div>
                     ))}
                 </div>
