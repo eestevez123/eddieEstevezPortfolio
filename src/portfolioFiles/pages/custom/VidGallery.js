@@ -40,10 +40,10 @@ function VidGallery(props) {
                             
             <div className="container-fluid bg-light pb-5">
                 <div className="container">
-                        <div className= "row row-cols-sm-1 row-cols-md-2 gx-5">
+                        <div className= "row row-cols-1 row-cols-md-2 gx-5">
                             {infoObj["videoURLs"].map((videoObj) => (
                                 <div className="col text-center mb-5" key={videoObj.videoID}>
-                                    <h4>{videoObj.desc}</h4>
+                                    <h4>{videoObj.title}</h4>
                                     <p>{videoObj.desc}</p>
                                     <div class="ratio ratio-16x9 youtubeVideo">
                                         <iframe

@@ -17,25 +17,61 @@ export const videoInfo = [
         Description: "For three years within my college career, I helped run the UW-Madison Facebook meme page called UW-Madison Memes for Milk Chugging teens. Throughout my time as an admin, I created many videos that showcased my skills with the Adobe Creative apps such as Premiere Pro, After Effects, Photoshop, and more.  ",
         videoURLs: [
             {
-                videoID: "_OekNTxnOBQ",
-                title: "Vid 1",
-                desc: "Desc 1"
+                videoID: "_-0L_whRKa0",
+                title: "Mr.BongoSide",
+                desc: "Original Caption: Just a regular Saturday night in Madtown. I call this one \"Mr. BongoSide.\"",
             },
             {
-                videoID: "_OekNTxnOBQ",
-                title: "Vid 2",
-                desc: "Desc 2"
+                videoID: "9lOO5CqQ_Mg",
+                title: "Look Out, Looks Like Bucky Badger Likes You",
+                desc: "Orginal Caption: As everyone is focusing on UW Basketball, we failed to remember one of our greatest ASSets, the fact that Bucky is thicc af 😏😩"
             },
             {
-                videoID: "_OekNTxnOBQ",
-                title: "Vid 3",
-                desc: "Desc 3"
+                videoID: "ZkhfwIxkzzA",
+                title: "UW-Madison Mifflin Block Party | FRIENDS Parody",
+                desc: "Original Caption: It's that time of the year! Never been to the Mifflin Block Party held at UW-Madison? Worry no more! This video should give you a taste of what you can encounter when at the event!"
             },
             {
-                videoID: "_OekNTxnOBQ",
-                title: "Vid 4",
-                desc: "Desc 4"
+                videoID: "v2fnGkZvRLc",
+                title: "Everyone Is Here",
+                desc: "Original Caption: Can't wait for the new Super Smash Bros. It looks like they're adding some new characters inspired by UW Madison"
             },
+            {
+                videoID: "Otez9NQ0EiI",
+                title: "Get Stick Bugged Lol",
+                desc: "TODO"
+            },
+            {
+                videoID: "wZqh0W8dETM",
+                title: "French Tunnel Bob",
+                desc: "Original Caption: 🥖🥖🥖"
+            },
+            {
+                videoID: "PH435OkaY7k",
+                title: "Super Smash UW Edition 2.0",
+                desc: "Original Caption: Since Super Smash Bros Ultimate came out recently and the page reached over 20,000 members, I thought it was time to increase the roster with some new characters for the UW edition"
+            },
+            {
+                videoID: "6KnlyqR7zEg",
+                title: "Alien Dance",
+                desc: "Original Caption: One of the greatest traditions in college football history"
+            },
+            {
+                videoID: "MqTaK47nxaw",
+                title: "GameCube StartUp",
+                desc: "This is what happens when you spill Spotted Cow on your GameCube"
+            },
+            {
+                videoID: "JH9IksUW3u4",
+                title: "YouTube Rewind Spring 2019",
+                desc: "Original Caption: Hey guys, Eddie here, and I wanted to share with you guys a little video I made that's a recap of last school year's memes. You might even recognize some of your OC in the video that I... ummm... re-purposed (def not stealing). You might also recognize a certain celebrity in the beginning of the video 😉"
+            },
+            {
+                videoID: "vB9t0iIyrQU",
+                title: "YouTube Rewind Fall 2019",
+                desc: "Original Caption: This page has been home to a lot of top tier, high quality memes, and I am incredibly proud to be a part of such community. Keep being awesome you guys. Can't wait to see what else we make fun of in 2020"
+            },
+        
         ]
     },
     {   
