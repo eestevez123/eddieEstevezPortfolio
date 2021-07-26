@@ -6,21 +6,7 @@ export const appInfo = [
         Background: "In the summer of 2020, I interned with BlackRock, Inc. BlackRock is the world’s largest asset manager, and as an Application Engineering Intern within the Aladdin Product Group, specifically the Multi Asset Strategies team. ",
         WhatIDid: "I worked with 2 other interns within the team to collect datapoints from many different models to track how assets change and interact with each other every single day. I started with importing and scraping CSV files, cleaning the data to make sure I can run further calculations, such as the means and averages between asset classes and more. For this, I used a python script with the help of packages such as numpy, pytorch, and pandas. This python script would run every day with the help of Jenkins that would ultimately produce a final CSV file that I pointed to with a Tableau dashboard I designed. This Tableau dashboard was an interactive and visual way of seeing key performing information on the assets within the models I was working with. ",
         WhatILearned: "As someone coming in with a basic understanding of finance, working within BlackRock with the tasks I was given challenged me to learn a lot what BlackRock as a whole did as an organization as well as what exactly was the data I was handling. ",
-        CarouselImages: [{
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL",
-                desc: "DESC"
-            },
-            {
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL 1",
-                desc: "DESC"
-            },
-            {
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL 2",
-                desc: "DESC"
-            },
+        CarouselImages: [
         ]
     },
     {   
@@ -31,20 +17,24 @@ export const appInfo = [
         WhatIDid: "For this project, I helped with the visuals and designing of the application with Figma, the connecting of the backend API to get past workouts with MongoDB and Heroku, and getting automated UI testing with Android Studio and Espresso. ",
         WhatILearned: "The project had me  exposed to new technologies that I had to quickly learn to be an asset to the team. I made sure to ask questions to confirm my understanding of the technologies in hand. This project also gave me more experience with working within 2-week sprints and tracking my tasks that were assigned to me by the scrum master. ",
         CarouselImages: [{
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL",
-                desc: "DESC"
+                src: require("../../images/myWorkPage/app/workout1.png").default, 
+                label: "Figma Desing for the Workout App",
+                desc: "My team and I chose to design the app via Figma in order to easily collaborate"
             },
             {
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL 1",
-                desc: "DESC"
+                src: require("../../images/myWorkPage/app/workout2.png").default, 
+                label: "Prototype Design",
+                desc: "Before Figma, we used the tools provided by Google slides to contruct a basic skelleton to how we wanted our app to be structured"
             },
             {
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL 2",
-                desc: "DESC"
-            },
+                src: require("../../images/myWorkPage/app/workout3.png").default, 
+                label: "Front End Testing",
+                desc: "My team and I were able to run Front End tests using Jest"
+            },{
+                src: require("../../images/myWorkPage/app/workout4.png").default, 
+                label: "Back End Testing",
+                desc: "My team and I were able to run Back End tests as well with helper function testing and endpoint testing"
+            }
         ]
     },
     {   
@@ -78,21 +68,7 @@ export const appInfo = [
         Background: "Within two classes I taken ECE 210: Intro to Electrical Engineering and ECE 353: Intro to Microprocessor Systems, I played around with a TI Tiva Launchpad on a custom development board in which I produced a game in in each of those classes. ",
         WhatIDid: "The games were written in C within Keil uVision. I needed to get familiar with many packages and troubleshoot with drivers for the games to interact appropriately with the hardware, both screen and input buttons.",
         WhatILearned: "I got a better appreciation for hardware-software interaction. I also learned how to deal with hardware limitations to get the best experience for the user. ",
-        CarouselImages: [{
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL",
-                desc: "DESC"
-            },
-            {
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL 1",
-                desc: "DESC"
-            },
-            {
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL 2",
-                desc: "DESC"
-            },
+        CarouselImages: [
         ]
     },
     {   

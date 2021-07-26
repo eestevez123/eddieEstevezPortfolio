@@ -1,14 +1,10 @@
 import React, {useState, useEffect} from "react";
 import Gallery from 'react-grid-gallery';
+import OnImagesLoaded from 'react-on-images-loaded';
 
 
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
     Link,
-    useParams,
-    useRouteMatch
   } from "react-router-dom";
 
 
@@ -19,8 +15,8 @@ function PictureTemplate(props) {
     
     let portfolioURL = props.portfolioURL;
     let infoObj = imageInfo.find(o => o.id === portfolioURL);
-    console.log("infoObj",infoObj)
     let imageList = infoObj.images
+    
         return(
         <>
             <div className="container">
@@ -33,11 +29,11 @@ function PictureTemplate(props) {
                     </h2>
                     <div className="row">
                         <div className="col">
-                            <div style={{
+                            <div className="rounded" style={{
                                 display: "block",
                                 minHeight: "1px",
                                 width: "100%",
-                                border: "1px solid #ddd",
+                                border: "2px solid #ddd",
                                 overflow: "auto"}}
                             >
                             <Gallery
@@ -51,7 +47,7 @@ function PictureTemplate(props) {
                 </div>
             </div>
                             
-            <div className="container-fluid bg-light mt-4">
+            <div className="container-fluid bg-light mt-4 pb-5">
                 <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-sm-6">
@@ -65,6 +61,17 @@ function PictureTemplate(props) {
                             </div>
                     </div>
                 </div>                
+            </div>
+
+
+            <div className="container mt-5">
+                <div className="row text-center m-3">
+                    <div className="col mt-5">
+                    <Link to ="/mywork">
+                    <   button type="button" className="btn btn-outline-primary m-3">Go Back</button>
+                    </Link>
+                    </div>
+                </div>
             </div>
     </>
     )

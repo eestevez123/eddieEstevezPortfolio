@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {HashRouter as Router, Route, Link} from "react-router-dom";
+import Skeleton from 'react-loading-skeleton';
 
 import "./HomePage.css"
 import Hero from "../components/Hero";
@@ -16,6 +17,8 @@ import contentIcon from "../images/homePage/contentCreatorIcon.svg";
 import eddieProfilePic from "../images/homePage/eddieHome.png"
 
 function HomePage(props) {
+    
+    const [mainEddieImageLoading, setmMinEddieImageLoading] = useState(true);
 
     return(
         <div>
@@ -23,15 +26,19 @@ function HomePage(props) {
         <div className="container justify-content-center d-flex">
             <div className="row">
                 <div className="col">
+                    {(mainEddieImageLoading)?(<>
+                    <Skeleton height={150} width={150}/>
+                    </>):(<></>)}
                 <motion.img
                     src={eddieProfilePic}
-                    className="img-fluid eddieProfile"
+                    className={`eddieProfile ${mainEddieImageLoading?("hidden"):("")}`}
                     alt="Me, Eddie Estevez"
                     drag
                     dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
                     dragTransition={{ bounceStiffness: 800, bounceDamping: 25 }}
                     dragElastic={0.75}
                     whileTap={{ cursor: "grabbing" }}
+                    onLoad={()=>{setmMinEddieImageLoading(false)}}
                 />
                 </div>
             </div>

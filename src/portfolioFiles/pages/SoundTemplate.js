@@ -35,8 +35,8 @@ function SoundTemplate(props) {
                     <h2 className="about__heading">
                         {infoObj["PageTitle"]}
                     </h2>
-                    <div className="row">
-                        <div className="col">
+                    <div className="row justify-content-center">
+                        <div className="col-8">
                             <div class="ratio ratio-16x9 youtubeVideo">
                             <iframe
                                 src={infoObj["soundURL"]}
@@ -66,6 +66,16 @@ function SoundTemplate(props) {
                             </div>
                     </div>
                 </div>                
+            </div>
+
+            <div className="container mt-5">
+                <div className="row text-center m-3">
+                    <div className="col mt-5">
+                    <Link to ="/mywork">
+                    <   button type="button" className="btn btn-outline-primary m-3">Go Back</button>
+                    </Link>
+                    </div>
+                </div>
             </div>
     </>
     )

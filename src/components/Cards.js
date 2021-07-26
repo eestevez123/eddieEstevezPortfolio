@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { useSpring, animated , config} from 'react-spring'
 import Card from "./Card";
 
 import {websiteCards} from "../portfolioFiles/cards/website"
@@ -16,6 +17,14 @@ function Cards(props) {
 
     const [currentDeck, setCurrentDeck] = useState(websiteCards);
     const [isLoading, setIsLoading] = useState(true);
+
+
+    const springProps = useSpring({
+        to: {opacity: 1, y:0},
+        from: {opacity: 0, y:50},
+        config: config.default,
+        reset: true
+    })
 
     useEffect( () => {
         setIsLoading(true)
@@ -40,7 +49,6 @@ function Cards(props) {
                 break
           }
           setIsLoading(false)
-
     }, [props.section])
 
         return(
@@ -61,8 +69,9 @@ function Cards(props) {
                 <></>
             )}
             <div className="container-fluid">
+            <animated.div style={springProps} >
                 <div className={`row cardRow justify-content-center ${(isLoading)?(`hidden`):(``)}`}>
-                    {currentDeck.map((deck, idx) => (
+                    {currentDeck.map((deck) => (
                         <div className={cardCSS} key={deck.title}>
                                 <Card
                                     src={deck.src}
@@ -76,6 +85,7 @@ function Cards(props) {
                         </div>
                     ))}
                 </div>
+            </animated.div>
             </div>
             </>
         )

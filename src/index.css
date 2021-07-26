@@ -105,8 +105,6 @@ code {
     cursor: pointer;
     width: 52vw;
   }
-  
-
 }
 
 
@@ -125,4 +123,9 @@ code {
 
 ul {
   padding-left: 0 !important;
+}
+
+.hidden {
+  visibility: hidden !important;
+  height: 0px !important;
 }
