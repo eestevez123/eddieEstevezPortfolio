@@ -11,6 +11,8 @@ import {
 
 import {appInfo} from "../pageInfo/appInfo.js"
 
+const  ai_report6 = process.env.PUBLIC_URL + '/P6_Eddie_Estevez_Report.pdf';
+
 
 function ApplicationTemplate(props) {
     
@@ -87,6 +89,18 @@ function ApplicationTemplate(props) {
                                     <p>
                                     {infoObj["WhatIDid"]}
                                     </p>
+
+                                    {(infoObj.WhatIDid_moreParagraphs)?(<>
+                                    {infoObj.WhatIDid_moreParagraphs.map((paragraph, idx) => (
+                                        <p key={idx}>{paragraph}</p>
+                                    ))}
+                                    </>):(<></>)}
+
+                                    {props.portfolioURL === ("artificial-intelligence-projects")?(<>
+                                        <div className="text-center"> <a className="btn btn-primary mb-4" role="button" href={ai_report6} target='_blank' rel="noopener noreferrer">Project 6: MINST CNN Report PDF</a></div>
+                                    </>):(<></>)}
+
+                                    
 
                                 </div>
                             </div>

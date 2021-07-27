@@ -30,7 +30,7 @@ function HomePage(props) {
             <div className="row  justify-content-center">
                 <div className="col-8 col-sm-12">
                     {(mainEddieImageLoading)?(<>
-                    <Skeleton height={150} width={150}/>
+                    <Skeleton height={300}/>
                     </>):(<></>)}
                 <motion.img
                     src={eddieProfilePic}

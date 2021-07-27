@@ -36,7 +36,7 @@ export const websiteCards =  [
         href: "liftoff",
     },
     {   
-        src: require("../../images/myWorkPage/cardPics/website/jpmorgan.png").default, 
+        src: require("../../images/myWorkPage/cardPics/website/codeForGood.jpeg").default, 
         alt: "Apprisen Logo",
         title: "Apprisen Website Redesign (JP Morgan Chase Hackathon)",
         desc: "I was in team within JP Morgan Chase's Code For Good Hackathon where we redesigned a website for a non-profit organzation called Aprisen",

@@ -4,7 +4,6 @@ import Hero from "../components/Hero";
 
 import "./AboutPage.css"
 
-import placeholderImg from "../images/placeholder.png";
 import uwlogo from "../images/aboutMePage/uwlogo.png";
 
 import babyPic from "../images/aboutMePage/eddieAsBaby.svg";

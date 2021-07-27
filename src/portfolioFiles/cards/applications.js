@@ -35,13 +35,6 @@ export const appCards =  [
         href: "artificial-intelligence-projects", 
     },
     {   
-        src: require("../../images/myWorkPage/cardPics/app/bmi.png").default, 
-        alt: "Introduction to Bioinformatics via Jupyter Notebooks Logo",
-        title: "Introduction to Bioinformatics via Jupyter Notebooks",
-        desc: "Through a class called BMI 576: Intro to Bioinformatics, I had the opporunity to apply technical skills onto a different field, Biology, to solve modern day problems.",
-        href: "introduction-to-bioinformatics-via-jupyter-notebooks", 
-    },
-    {   
         src: require("../../images/myWorkPage/cardPics/app/eclipse.png").default,   
         alt: "Java Programs and Applications Logo",
         title: "Java Programs and Applications",
