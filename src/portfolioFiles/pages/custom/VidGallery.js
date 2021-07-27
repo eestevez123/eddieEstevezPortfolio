@@ -33,7 +33,7 @@ function VidGallery(props) {
 
 
             {infoObj["sections"].map((sectionObj, idx) => (
-                <div className={`container-fluid py-3 ${(idx % 2 === 0)?("bg-light"):("")}`}>
+                <div key={idx} className={`container-fluid py-3 ${(idx % 2 === 0)?("bg-light"):("")}`}>
                     <div className="container">
                         <h2>{sectionObj.sectionTitle}</h2>
                         <p>{sectionObj.sectionDesc}</p>
@@ -42,13 +42,13 @@ function VidGallery(props) {
                                 <div className="col text-center mb-5" key={videoObj.videoID}>
                                     <h4>{videoObj.title}</h4>
                                     <p>{videoObj.desc}</p>
-                                    <div class="ratio ratio-16x9 youtubeVideo">
+                                    <div className="ratio ratio-16x9 youtubeVideo">
                                         <iframe
-                                            src={`https://youtube.com/embed/${videoObj.videoID}`}
+                                            src={`https://www.youtube-nocookie.com/embed/${videoObj.videoID}`}
                                             title="YouTube video player" 
-                                            frameborder="0" 
+                                            frameBorder="0" 
                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                            allowfullscreen
+                                            allowFullScreen
                                         >
                                         </iframe>
                                     </div>

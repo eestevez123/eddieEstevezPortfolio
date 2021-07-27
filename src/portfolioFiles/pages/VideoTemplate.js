@@ -24,13 +24,13 @@ function ApplicationTemplate(props) {
                     </h2>
                     <div className="row justify-content-center">
                         <div className="col col-sm-8">
-                            <div class="ratio ratio-16x9 youtubeVideo">
+                            <div className="ratio ratio-16x9 youtubeVideo">
                             <iframe
                                 src={infoObj["videoURL"]}
                                 title="YouTube video player" 
-                                frameborder="0" 
+                                frameBorder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen
+                                allowFullScreen
                             >
                             </iframe>
                             </div>
