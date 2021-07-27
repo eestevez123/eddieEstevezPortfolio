@@ -1,14 +1,11 @@
 import React, {useState} from 'react';
-import {HashRouter as Router, Route, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import Skeleton from 'react-loading-skeleton';
 
 import "./HomePage.css"
 import Hero from "../components/Hero";
 import { motion } from "framer-motion"
 import InteractiveShapes from "../components/InteractiveShapes";
-
-// Images
-import placeholderImg from "../images/placeholder.png";
 
 import softwareIcon from "../images/homePage/softwareDevIcon.svg";
 import designerIcon from "../images/homePage/designerIcon.svg";

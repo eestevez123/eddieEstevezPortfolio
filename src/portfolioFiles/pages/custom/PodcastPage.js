@@ -1,14 +1,7 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import ReactSoundcloud from 'react-soundcloud-embedded'
 
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    useParams,
-    useRouteMatch
-  } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import {soundInfo} from "../../pageInfo/soundInfo.js"
 

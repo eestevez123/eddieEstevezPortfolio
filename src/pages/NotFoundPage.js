@@ -1,11 +1,6 @@
 
 import React from 'react';
 
-import Hero from "../components/Hero";
-
-
-import placeholderImg from "../images/placeholder.png";
-
 
 function Template(props) {
 
@@ -23,7 +18,7 @@ function Template(props) {
 
                             </div>
                             <div className="col-sm-6 mt-4">
-                                <img className="img-fluid aboutImage d-block m-auto" src={placeholderImg} alt="TODO"/>
+
                             </div>
                         </div>
                     </div>

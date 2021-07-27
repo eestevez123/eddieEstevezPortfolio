@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from "react";
-import { useSpring, animated , config} from 'react-spring'
-import {HashRouter as Router, Route, Link} from "react-router-dom";
+import React, {useState,} from "react";
+import {useSpring, animated , config} from 'react-spring'
+import {Link} from "react-router-dom";
 import Skeleton from 'react-loading-skeleton';
 
 

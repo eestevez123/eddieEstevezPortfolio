@@ -5,9 +5,6 @@ import emailjs from 'emailjs-com';
 import Hero from "../components/Hero";
 import ContactItem from "../components/ContactItem";
 
-
-// import placeholderImg from "../images/placeholder.png";
-
 import facebookIcon from "../images/contactPage/facebookSocialIcon.png";
 import instagramIcon from "../images/contactPage/instagramIcon.png";
 import twitterLogo from "../images/contactPage/twitterLogo.png";

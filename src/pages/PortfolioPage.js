@@ -1,10 +1,7 @@
 import React, {useState} from 'react';
 import {
-    BrowserRouter as Router,
     Switch,
     Route,
-    Link,
-    useParams,
     useRouteMatch
   } from "react-router-dom";
 
@@ -21,9 +18,6 @@ import Cards from '../components/Cards.js';
 import Template from '../portfolioFiles/pages/Template';
 
 function PortfolioPage(props) {
-
-
-
 
     const sectionArray = [
         { name: 'Web Development and Design', value: 0 },

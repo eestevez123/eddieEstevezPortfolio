@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import { useSpring, animated , config} from 'react-spring'
+import {useSpring, animated , config} from 'react-spring'
 import Card from "./Card";
 
 import {websiteCards} from "../portfolioFiles/cards/website"
