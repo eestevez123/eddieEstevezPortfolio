@@ -5,13 +5,13 @@ import emailjs from 'emailjs-com';
 import Hero from "../components/Hero";
 import ContactItem from "../components/ContactItem";
 
-import facebookIcon from "../images/contactPage/facebookSocialIcon.png";
-import instagramIcon from "../images/contactPage/instagramIcon.png";
-import twitterLogo from "../images/contactPage/twitterLogo.png";
-import linkedInLogo from "../images/contactPage/linkedinLogo.png";
+import facebookIcon from "../images/contactPage/facebook.svg";
+import instagramIcon from "../images/contactPage/insta.svg";
+import twitterLogo from "../images/contactPage/twitter.svg";
+import linkedInLogo from "../images/contactPage/linkedIn.svg";
 
-import phoneIcon from "../images/contactPage/phoneIcon.png";
-import emailIcon from "../images/contactPage/emailIcon.png";
+import phoneIcon from "../images/contactPage/phone.svg";
+import emailIcon from "../images/contactPage/email.svg";
 
 function HomePage(props) {
 
@@ -46,7 +46,7 @@ function HomePage(props) {
             <div className="col-md-12">
             <h3 className="mb-4 contactPageTitle">Follow me on Social Media!</h3>
                 <div className="wrapper">
-                    <div className="row mb-5">
+                    <div className="row mb-5 g-5">
 
                         <ContactItem imgAddr={facebookIcon} imgAlt="Facebook Logo" txtTitle="Facebook" href="https://www.facebook.com/Eduardo.Estevez1.0" colClass="col-md-3 col-6"/>
                         <ContactItem imgAddr={instagramIcon} imgAlt="Instagram Logo" txtTitle="Instagram" href="https://www.instagram.com/edd1e_estevez/"colClass="col-md-3 col-6" />
@@ -56,10 +56,10 @@ function HomePage(props) {
 
                     </div>
                     <h3 className="mb-4 contactPageTitle">Reach Me via...</h3>
-                    <div className="row mb-5">
+                    <div className="row mb-5 justify-content-center g-5">
 
-                        <ContactItem imgAddr={phoneIcon} imgAlt="Phone" txtTitle="Phone: " txt="(414)628-4171" href="tel:4146284171" colClass="col-6"/>
-                        <ContactItem imgAddr={emailIcon} imgAlt="Email" txtTitle="Email: " txt="estevez.eduardo111@gmail.com" href="mailto:estevez.eduardo111@gmail.com" colClass="col-6"/>
+                        <ContactItem imgAddr={phoneIcon} imgAlt="Phone" txtTitle="Phone: " txt="(414)628-4171" href="tel:4146284171" colClass="col-xl-3 col-sm-6"/>
+                        <ContactItem imgAddr={emailIcon} imgAlt="Email" txtTitle="Email: " txt="estevez.eduardo111@gmail.com" href="mailto:estevez.eduardo111@gmail.com" colClass="col-xl-3 col-sm-6"/>
 
                     </div>
                     <div className="row no-gutters bg-light mb-5 rounded">
