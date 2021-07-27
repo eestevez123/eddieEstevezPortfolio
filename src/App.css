@@ -332,13 +332,6 @@
 }
 
 
-@media (max-width: 500px) {
-  .emailText {
-    word-break: break-all;
-  }
-}
-
-
 @media (max-width: 767.98px) {
   .info-wrap {
       height: 400px;
