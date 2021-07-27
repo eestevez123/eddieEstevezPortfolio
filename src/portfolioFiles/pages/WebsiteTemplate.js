@@ -100,6 +100,32 @@ function WebsiteTemplate(props) {
 
                                 </div>
                             </div>
+                            {props.portfolioURL === ("la-cosecha-tortilla")?(<>
+                                        <div className="text-center"> <a className="btn btn-primary my-4" role="button" href={"https://lacosechatortillas.com/"} target='_blank' rel="noopener noreferrer">Check Out The Website</a></div>
+                            </>):(<></>)}
+                            {props.portfolioURL === ("JUST")?(<>
+                                        <div className="text-center"> <a className="btn btn-primary my-4" role="button" href={"https://justjournal.org/"} target='_blank' rel="noopener noreferrer">Check Out The Website</a></div>
+                            </>):(<></>)}
+                            {props.portfolioURL === ("NCJS")?(<>
+                                        <div className="text-center"> <a className="btn btn-primary my-4" role="button" href={"https://ncjs.us/"} target='_blank' rel="noopener noreferrer">Check Out The Website</a></div>
+                            </>):(<></>)}
+                            {props.portfolioURL === ("freesound-website-redesign")?(<>
+                                        <div className="text-center"> <a className="btn btn-primary my-4" role="button" href={"https://freesound.org/"} target='_blank' rel="noopener noreferrer">Check Out The Original Website</a></div>
+                            </>):(<></>)}
+                            {props.portfolioURL === ("university-of-wisconsin-arboretum-website-redesign")?(<>
+                                        <div className="row justify-content-center text-center">
+                                            <div className="col-sm-3"> 
+                                                <a className="btn btn-primary my-4" role="button" href={"https://arboretum.wisc.edu/"} target='_blank' rel="noopener noreferrer">
+                                                    Check Out The Original Website
+                                                </a>
+                                            </div>
+                                            <div className="col-sm-3"> 
+                                                <a className="btn btn-primary my-4" role="button" href={"https://lujainaj.wixsite.com/arboretum"} target='_blank' rel="noopener noreferrer">
+                                                    Check Out The Redesigned Website
+                                                </a>
+                                            </div>
+                                        </div>
+                            </>):(<></>)}
                         </div>
                     </div>   
 

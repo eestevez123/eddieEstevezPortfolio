@@ -56,7 +56,7 @@ function HomePage(props) {
                 <div className="row">
                     <div className="col text-center">
                         <h2 className="fw-bold">A Little About Me</h2>
-                        <p className="fs-6">A Milwaukee native and overall computer nerd with a passion for creative digital media and design. I enjoy challenging myself with goals and projects in an effort to place myself outside of 
+                        <p className="fs-5">A Milwaukee native and overall computer nerd with a passion for creative digital media and design. I enjoy challenging myself with goals and projects in an effort to place myself outside of 
                         my comfort zone and to continuously learn. Those goals and projects usually involved thinking outside the box with tools both familiar and unfamiliar to make something 
                         truly unique and personal. As I start my career, I want to keep exploring the world of tech with my optimistic and extroverted perspective.</p>
                         <Link to="/aboutme">

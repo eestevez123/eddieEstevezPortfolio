@@ -110,22 +110,31 @@ export const appInfo = [
         PageTitle: "Java Programs and Applications",
         CoverPic: require("../../images/myWorkPage/cardPics/app/eclipse.png").default,   
         Background: "Within my college career, I took the Introduction to programming sequence within the computer science program, which involved me working with Java and learning more about the Java language, concepts that are a staple in most programming languages, data structures, software engineering, and more.",
-        WhatIDid: "I worked on many programming assignments in Java that helped me dive into many Java concepts as well as data structures. Here are some examples of them",
-        WhatILearned: "These programs helped me build a foundation for my programming skills as well as my understanding for the application of code to solve problems. ",
-        CarouselImages: [{
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL",
-                desc: "DESC"
+        WhatIDid: "Within CS 300: Programming II, I learned the importance of test-driven development and to continuously test out new features whenever I added utilities onto a program. Multiple projects involved using Processing libraries to add a graphics windows, an example being one program where I created a simulation of a water fountain by creating a stream of 800 blue circles who’s starting velocity and direction was random and then the y-direction velocity would decelerate to simulate gravity. Each project taught me a new concept such as Java classes, subclasses, objects, exceptions, iterators, interfaces, generic types, and more. I also had to implement some basic data structures such as linked lists and binary trees to be used in different applications such as a priority queue for a simulated help desk. ",
+        WhatIDid_moreParagraphs: [ 
+            "Within CS 400: Programming III, the same concepts from 300 were applied and added upon. I implemented even more data structures such as self-balancing binary trees such as Red-Black trees and AVL trees, and directed and unweighted graphs, B+ trees.  "
+        ],
+        WhatILearned: "Overall, the programs and projects I did within CS 300 and CS 400 taught me how to think and approach problems with software. The tools and methods I learned in these classes continuously help me today as I these skills transfer to other programming languages. ",
+        CarouselImages: [
+            {
+                src: require("../../images/myWorkPage/app/java1.png").default, 
+                label: "TODO",
+                desc: "TODO"
             },
             {
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL 1",
-                desc: "DESC"
+                src: require("../../images/myWorkPage/app/java2.png").default, 
+                label: "TODO",
+                desc: "TODO"
             },
             {
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL 2",
-                desc: "DESC"
+                src: require("../../images/myWorkPage/app/java3.png").default, 
+                label: "TODO",
+                desc: "TODO"
+            },
+            {
+                src: require("../../images/myWorkPage/app/java4.png").default, 
+                label: "TODO",
+                desc: "TODO"
             },
         ]
     },
@@ -137,20 +146,15 @@ export const appInfo = [
         WhatIDid: "I was in a team of 3 other students. I designed some parts of the project as well as getting the code coverage for the final report.",
         WhatILearned: "This class was my first-time using Verilog and it combined what I knew form software engineering into hardware design. It helped me understand how audio amplifiers and equalizers functioned at a high level as well.",
         CarouselImages: [{
-                src: require("../../images/placeholder.png").default,
+                src: require("../../images/myWorkPage/app/551_1.png").default, 
                 label: "LABEL",
                 desc: "DESC"
             },
             {
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL 1",
+                src: require("../../images/myWorkPage/cardPics/app/551.png").default, 
+                label: "LABEL",
                 desc: "DESC"
-            },
-            {
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL 2",
-                desc: "DESC"
-            },
+                },
         ]
     },
     {   
@@ -161,18 +165,23 @@ export const appInfo = [
         WhatIDid: "My partner and I built out the processor with Verilog in three different stages, first from an unpipelined version, into a 5-stage processor with data forwarding, and then finally a 5-stage processor with data forwarding and a 2-way cache. We tested the processor with a compiler that was provided that would run assembly code and see the results within the registers. ",
         WhatILearned: "I learned how exactly a microprocessor worked, building one out and emulating it via software, and using basic software on it with our very own instruction set. ",
         CarouselImages: [{
-                src: require("../../images/placeholder.png").default,
+                src: require("../../images/myWorkPage/app/552_1.png").default,
                 label: "LABEL",
                 desc: "DESC"
             },
             {
-                src: require("../../images/placeholder.png").default,
+                src:  require("../../images/myWorkPage/cardPics/app/552.png").default, 
                 label: "LABEL 1",
                 desc: "DESC"
             },
             {
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL 2",
+                src:  require("../../images/myWorkPage/app/552_2.png").default, 
+                label: "LABEL 1",
+                desc: "DESC"
+            },
+            {
+                src:  require("../../images/myWorkPage/app/552_3.png").default, 
+                label: "LABEL 1",
                 desc: "DESC"
             },
         ]
@@ -184,19 +193,15 @@ export const appInfo = [
         Background: "Within my last semester at UW – Madison for my computer engineering capstone, I took ECE 554: Digital Engineering Lab in which I learned furthermore the applications of building custom hardware with HDLs such as system Verilog and more tools. For my semester project, I worked within a team of 5 other students to build out a Convolutional Neural Network accelerator, designed to be able to do the required matrix math correctly with pretrained values. ",
         WhatIDid: "I focused on the software side of the project, training the model based on the Fashion-MNIST training data, quantizing the float integers that I would get into 8-bit signed integers that would then be loaded into the FPGA, which was on Intel cloud due to the semester being taught purely online due to the COVID-19 pandemic. ",
         WhatILearned: "Within this project, communication and time management was incredibly important due to the workload and the complexity of the project. ",
-        CarouselImages: [{
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL",
-                desc: "DESC"
-            },
+        CarouselImages: [
             {
-                src: require("../../images/placeholder.png").default,
+                src:  require("../../images/myWorkPage/app/554_1.png").default, 
                 label: "LABEL 1",
                 desc: "DESC"
             },
             {
-                src: require("../../images/placeholder.png").default,
-                label: "LABEL 2",
+                src:  require("../../images/myWorkPage/app/554_2.png").default, 
+                label: "LABEL 1",
                 desc: "DESC"
             },
         ]
