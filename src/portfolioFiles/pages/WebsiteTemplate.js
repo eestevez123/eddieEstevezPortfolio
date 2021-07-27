@@ -71,7 +71,7 @@ function WebsiteTemplate(props) {
                                 <p>
                                 {infoObj["Background"]}
                                 </p>
-                                {("Background2" in infoObj) ?<>
+                                {(infoObj.Background2) ?<>
                                 <p>
                                 {infoObj["Background2"]}
                                 </p>
