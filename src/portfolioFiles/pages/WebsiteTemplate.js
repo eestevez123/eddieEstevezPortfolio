@@ -147,7 +147,7 @@ function WebsiteTemplate(props) {
             <Carousel fade controls={showCarouselControls} interval={null} className={`${isLoadingCarousel?("hidden"):("")}`}>
 
                     {CarouselImages.map((picObj, idx) => (
-                        <Carousel.Item id={idx}>
+                        <Carousel.Item key={idx}>
                             <img
                                 className="d-block w-100 carouselImage rounded-top"
                                 src={picObj.src}
@@ -203,26 +203,26 @@ function ImplicitBiasTest() {
                     <div className="row text-center">
                         <div className="col col-sm-6">
                             <h4>Introduction Video</h4>
-                                <div class="ratio ratio-16x9 youtubeVideo">
+                                <div className="ratio ratio-16x9 youtubeVideo">
                                     <iframe
-                                        src="https://youtube.com/embed/Rt14x7_5C5o"
+                                        src="https://www.youtube-nocookie.com/embed/Rt14x7_5C5o"
                                         title="YouTube video player" 
-                                        frameborder="0" 
+                                        frameBorder="0" 
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                        allowfullscreen
+                                        allowFullScreen
                                     >
                                     </iframe>
                             </div>
                         </div>
                         <div className="col col-sm-6">
                             <h4>Results Video</h4>
-                                <div class="ratio ratio-16x9 youtubeVideo">
+                                <div className="ratio ratio-16x9 youtubeVideo">
                                     <iframe
-                                        src="https://youtube.com/embed/3Z7cNFscLgQ"
+                                        src="https://www.youtube-nocookie.com/embed/3Z7cNFscLgQ"
                                         title="YouTube video player" 
-                                        frameborder="0" 
+                                        frameBorder="0" 
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                        allowfullscreen
+                                        allowFullScreen
                                     >
                                     </iframe>
                             </div>

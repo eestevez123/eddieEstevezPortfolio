@@ -52,7 +52,7 @@ render() {
 
         <Navbar className="border-bottom" bg="transparent" expand="lg">
           <Link to="/" className="text-decoration-none">
-              <Navbar.Brand id="pageLogo" href="/" className="align-items-center ms-2">
+              <Navbar.Brand id="pageLogo" className="align-items-center ms-2">
                 <Image id="eddieMainLogo" className="img-responsive navbar-left" src={eddieEstevezLogo} alt="Eddie Estevez Logo"/>
                 <div>eddie estevez</div>
               </Navbar.Brand>

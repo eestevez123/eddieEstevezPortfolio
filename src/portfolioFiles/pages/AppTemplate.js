@@ -136,7 +136,7 @@ function ApplicationTemplate(props) {
                 <Carousel fade controls={showCarouselControls} interval={null} className={`${isLoadingCarousel?("hidden"):("")}`}>
 
                     {CarouselImages.map((picObj, idx) => (
-                        <Carousel.Item id={idx}>
+                        <Carousel.Item key={idx}>
                             <img
                                 className="d-block w-100 carouselImage rounded-top"
                                 src={picObj.src}
@@ -192,13 +192,13 @@ function WorkoutApp() {
             </div>
             <div className="row justify-content-center">
                 <div className="col col-sm-8">
-                        <div class="ratio ratio-16x9 youtubeVideo">
+                        <div className="ratio ratio-16x9 youtubeVideo">
                             <iframe
-                                src="https://youtube.com/embed/-C8gSs5AIPw"
+                                src="https://www.youtube-nocookie.com/embed/-C8gSs5AIPw"
                                 title="YouTube video player" 
-                                frameborder="0" 
+                                frameBorder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen
+                                allowFullScreen
                             >
                             </iframe>
                     </div>
@@ -216,13 +216,13 @@ function WorkoutApp() {
             </div>
             <div className="row justify-content-center">
                 <div className="col col-sm-8">
-                        <div class="ratio ratio-16x9 youtubeVideo">
+                        <div className="ratio ratio-16x9 youtubeVideo">
                             <iframe
-                                src="https://youtube.com/embed/dENFLDzxfic"
+                                src="https://www.youtube-nocookie.com/embed/dENFLDzxfic"
                                 title="YouTube video player" 
-                                frameborder="0" 
+                                frameBorder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen
+                                allowFullScreen
                             >
                             </iframe>
                     </div>
@@ -250,26 +250,26 @@ function TivaLaunchGames() {
                     <div className="row text-center">
                         <div className="col col-sm-6">
                             <h4>ECE 210 Game: Bucky @ Space</h4>
-                                <div class="ratio ratio-16x9 youtubeVideo">
+                                <div className="ratio ratio-16x9 youtubeVideo">
                                     <iframe
-                                        src="https://youtube.com/embed/LaCYWZf_8K8"
+                                        src="https://www.youtube-nocookie.com/embed/LaCYWZf_8K8"
                                         title="YouTube video player" 
-                                        frameborder="0" 
+                                        frameBorder="0" 
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                        allowfullscreen
+                                        allowFullScreen
                                     >
                                     </iframe>
                             </div>
                         </div>
                         <div className="col col-sm-6">
                             <h4>ECE 353 Game: Help Me Get To Target!</h4>
-                                <div class="ratio ratio-16x9 youtubeVideo">
+                                <div className="ratio ratio-16x9 youtubeVideo">
                                     <iframe
-                                        src="https://youtube.com/embed/TPqzMM9-WxI"
+                                        src="https://www.youtube-nocookie.com/embed/TPqzMM9-WxI"
                                         title="YouTube video player" 
-                                        frameborder="0" 
+                                        frameBorder="0" 
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                        allowfullscreen
+                                        allowFullScreen
                                     >
                                     </iframe>
                             </div>

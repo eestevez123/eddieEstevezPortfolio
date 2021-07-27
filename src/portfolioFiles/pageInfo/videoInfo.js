@@ -8,7 +8,7 @@ export const videoInfo = [
     {   
         id: "a-midlife-crisis-but-in-college",
         PageTitle: "A Midlife Crisis, But in College",
-        videoURL: "https://www.youtube.com/embed/77Tll5PkhJk",
+        videoURL: "https://www.youtube-nocookie.com/embed/77Tll5PkhJk",
         Description: "This video was created for the Design Salon 2020, a competition hosed by the UW Libraries that asked participants to submit and share their digital works. This is a video essay detailing my weird existential crisis that I had earlier this year. The video itself is made of clips that I have gathered over the past couple weeks using my phone. The video is a personal, somber story that is a nice contrast to the comedic videos I usually like to make.",
     },
     {   
@@ -196,13 +196,13 @@ export const videoInfo = [
     {   
         id: "communication-arts-200-video",
         PageTitle: "Communication Arts 200 Video",
-        videoURL: "https://www.youtube.com/embed/_OekNTxnOBQ",
+        videoURL: "https://www.youtube-nocookie.com/embed/_OekNTxnOBQ",
         Description: "Within CA 200: Introduction to Digital Communication, I made a vide on a subject on an issue on campus. I focused on the required meal plan that new incoming student were required to participate in that only involved food from the campus dining halls. I focused how this increased the financial burden and decreases traffic to local restaurants on campus that keep getting closed due to decreased business. Later on in the semester, we were tasked to remix the video and present within a vernacular lens.  ",
     },
     {   
         id: "communication-arts-155-video",
         PageTitle: "Communication Arts 155 Video",
-        videoURL: "https://www.youtube.com/embed/rvvAN6obsn0",
+        videoURL: "https://www.youtube-nocookie.com/embed/rvvAN6obsn0",
         Description: "Within CA 155: Introduction to Digital Media Production, I alongside another 2 students created a comical video that was a parody to survival shows that involved me, “Eddie McDanger” climbing up the iconic campus hill, Bascom Hill. ",
     }
     
