@@ -51,10 +51,12 @@ render() {
       <Container className="px-0 pt-0 contentWrap" fluid={true}>
 
         <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <Navbar.Brand id="pageLogo" href="/" className="align-items-center ms-2">
-              <Image id="eddieMainLogo" className="img-responsive navbar-left" src={eddieEstevezLogo} alt="Eddie Estevez Logo"/>
-              <div>eddie estevez</div>
-            </Navbar.Brand>
+          <Link to="/" className="text-decoration-none">
+              <Navbar.Brand id="pageLogo" href="/" className="align-items-center ms-2">
+                <Image id="eddieMainLogo" className="img-responsive navbar-left" src={eddieEstevezLogo} alt="Eddie Estevez Logo"/>
+                <div>eddie estevez</div>
+              </Navbar.Brand>
+          </Link>
             
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />

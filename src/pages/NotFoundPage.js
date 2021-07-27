@@ -23,7 +23,7 @@ function Template(props) {
 
                             </div>
                             <div className="col-sm-6 mt-4">
-                                <img className="img-flud aboutImage d-block m-auto" src={placeholderImg} alt="TODO"/>
+                                <img className="img-fluid aboutImage d-block m-auto" src={placeholderImg} alt="TODO"/>
                             </div>
                         </div>
                     </div>

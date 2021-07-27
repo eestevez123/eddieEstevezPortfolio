@@ -31,7 +31,7 @@ function ApplicationTemplate(props) {
                         {infoObj["PageTitle"]}
                     </h2>
                     <div className="row justify-content-center">
-                        <div className="col-8">
+                        <div className="col col-sm-8">
                             <div class="ratio ratio-16x9 youtubeVideo">
                             <iframe
                                 src={infoObj["videoURL"]}

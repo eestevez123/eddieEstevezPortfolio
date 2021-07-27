@@ -21,7 +21,7 @@ export const imageCards =  [
         href: "advertisement-club-pictures", 
     },
     {   
-        src: require("../../images/myWorkPage/images/art155/collage2.jpg").default, 
+        src: require("../../images/myWorkPage/images/art155/codeRep.png").default, 
         alt: "Art 155 Work Logo",
         title: "Art 155 Work",
         desc: "The summer before my senior year (2020), I took a class called Art 107: Introduction to Digital Forms, which gave me the opportunity to learn how to use digital tools like Photoshop, Processing, and Rhino to create artist imagery.",

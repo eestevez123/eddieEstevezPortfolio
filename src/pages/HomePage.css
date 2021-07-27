@@ -1,6 +1,5 @@
 .eddieProfile {
-    width: 35% !important;
-    margin-left: 35% !important;
+    width: 20rem !important;
     border-radius: 0;
 }
 
@@ -25,7 +24,7 @@
 }
 
 .workImage{
-    max-width: 50% !important;
+    width: 30% !important;
 }
 
 .designerIcon {

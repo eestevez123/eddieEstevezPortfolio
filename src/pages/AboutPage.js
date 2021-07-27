@@ -1,11 +1,15 @@
-import React from 'react';
-
+import React, {useState} from 'react';
+import Skeleton from 'react-loading-skeleton';
 import Hero from "../components/Hero";
 
 import "./AboutPage.css"
 
 import placeholderImg from "../images/placeholder.png";
 import uwlogo from "../images/aboutMePage/uwlogo.png";
+
+import babyPic from "../images/aboutMePage/eddieAsBaby.svg";
+import adultPic from "../images/aboutMePage/eddieAsAdult.svg";
+import funFact from "../images/aboutMePage/eddieOnStool.svg";
 
 import compEng from "../images/aboutMePage/computerEngineering.svg";
 import compSci from "../images/aboutMePage/computerScience.svg";
@@ -14,6 +18,10 @@ import digStud from "../images/aboutMePage/digitalStudies.svg";
 const  eddieResumePDF = process.env.PUBLIC_URL + '/eddieResume.pdf';
 
 function AboutPage(props) {
+
+    const [babyPicLoading, setBabyPicLoading] = useState(true)
+    const [adultPicLoading, setAdultPicLoading] = useState(true)
+    const [funPicLoading, setFunPicLoading] = useState(true)
 
         return(
         <div>
@@ -24,7 +32,7 @@ function AboutPage(props) {
                         <h2 className="about__heading">I'm Eddie! It's nice to meet you!</h2>
 
                         <div className="row justify-content-center align-items-center">
-                            <div className="col-sm-6">
+                            <div className="col-md-6">
                                 <h4 className="mt-3">My Origin Story</h4>
                                 <p>
                                 Born and raised in Milwaukee, Wisconsin, I’ve grown up to be someone who really appreciates technology, the color blue, and a good cup of coffee. Just this past May (2021) I have graduated from the University of Wisconsin – Madison, 
@@ -38,8 +46,9 @@ function AboutPage(props) {
                                 </p>
 
                             </div>
-                            <div className="col-sm-6 mt-4">
-                                <img className="img-flud aboutImage d-block m-auto" src={placeholderImg} alt="TODO"/>
+                            <div className="col-md-6 mt-4">
+                                {(babyPicLoading)?(<><Skeleton className="img-fluid aboutImage d-block m-auto" width={300} /></>):(<></>)}
+                                <img src={babyPic} alt="Baby Eddie" className={`img-fluid aboutImage d-block m-auto ${(babyPicLoading)?("hidden"):("")}`} onLoad={() => {setBabyPicLoading(false)}} />
                             </div>
                         </div>
                     </div>
@@ -48,7 +57,7 @@ function AboutPage(props) {
             <div className="container-fluid bg-light mt-4">
                 <div className="container">
                     <div className="row justify-content-center align-items-center">
-                        <div className="col-sm-6 order-sm-2">
+                        <div className="col-md-6 order-md-2">
                             <h4 className="mt-3">Where My Story Is At Right Now</h4>
                             <p>
                             I am a new graduate from the University of Wisconsin – Madison, having graduated with a B.S in Computer Engineering and BMAJ in Computer Science (secondary major), a certificate/minor in Digital Studies.  
@@ -60,15 +69,16 @@ function AboutPage(props) {
                                         <a className="btn btn-primary mb-4" role="button" href={eddieResumePDF} target='_blank' rel="noopener noreferrer">My Resume</a>
                                 </div>
                         </div>
-                        <div className="col-sm-6 order-sm-1 mb-3">
-                            <img className="img-flud aboutImage d-block m-auto" src={placeholderImg} alt="TODO"/>
+                        <div className="col-md-6 order-md-1 mb-3">
+                        {(adultPicLoading)?(<><Skeleton className="img-fluid aboutImage d-block m-auto" width={300} /></>):(<></>)}
+                                <img src={adultPic} alt="Baby Eddie" className={`img-fluid aboutImage d-block m-auto ${(adultPicLoading)?("hidden"):("")}`} onLoad={() => {setAdultPicLoading(false)}} />
                         </div>
 
                     </div>
                 </div>
             </div>
 
-            <div className="container">
+            <div className="container mt-3">
                 <div className="top-section">
                     <div className="left">
                         <h2 className="about__heading">Education</h2>
@@ -77,7 +87,7 @@ function AboutPage(props) {
                             <div className="col-12">
                             <h6>University of Wisconsin-Madison</h6>
                                 <h6 className="fw-light">Class of 2021</h6>
-                                <img className="img-flud m-auto uwLogo" src={uwlogo} alt="TODO"/>
+                                <img className="img-fluid m-auto uwLogo" src={uwlogo} alt="TODO"/>
                             
                         </div>
                         <div className="row justify-content-center mt-5">
@@ -108,20 +118,25 @@ function AboutPage(props) {
             </div>
 
 
-            <div className="container-fluid bg-light mt-4">
+            <div className="container-fluid bg-light pt-3 pb-4 mt-3">
                 <div className="container">
-                <h2 className="about__heading">Fun Facts</h2>
+                <h2 className="about__heading mb-3">Fun Facts</h2>
                     <div className="row justify-content-center">
-                        <div className="col-sm-6 order-sm-2">
-                            <p>Was a part of Season 1 of an online national dating show called Love Campus with the pseudonym of Danny, you can find the episodes on their Instagram account here.</p>
-                            <p>Was the admin to the University of Wisconsin-Madison’s meme page called UW Madison Memes for Milk-Chugging Teens. This page has been me a platform to make memes and videos for a growing group that currently stands at almost 30k members. 
-                                Find the page here. I was also a contributing member of the UW-Madison Meme Club, BOI which of course stood for Meme Analysis Club</p>
-                            <p>As a Mexican American, I grew being bilingual in English and Spanish. In College, I picked up two semesters of Italian, and continue to learn it today in an effort to be trilingual. </p>
+                        <div className="col-md-6 order-md-2 fs-6">
+                            <h5>I Was In A Dating Show!</h5>
+                            <p>Was a part of Season 1 of an online national dating show called Love Campus with the pseudonym of Danny, you can find the episodes on the <a href="https://www.instagram.com/lovecampusofficial/">Love Campus Instagram account</a>.</p>
+                            <h5>Very Involved In The Meme Culture of the University of Wisconsin-Madison!</h5>
+                            <p>Was the admin to the University of Wisconsin-Madison’s meme page called <a href="https://www.facebook.com/groups/175526726305977">UW Madison Memes for Milk-Chugging Teens</a>. This page has been me a platform to make memes and videos for a growing group that currently stands at almost 30k members. 
+                                I was also a contributing member of the UW-Madison Meme Club, B.O.I whose aconym of course stood for Meme Analysis Club</p>
+                            <h5>I Love Learning Languages!</h5>
+                            <p>I grew up bilingual in both English and Spanish. In College, I picked up two semesters of Italian, and continue to learn it today in an effort to be trilingual. Duolingo is a great app for that which I use almost daily</p>
+                            <h5>Recently Learned How To Swim!</h5>
                             <p>After years of trying to teach myself and placing myself in classes, I just learned and became comfortable swimming this summer!</p>
 
                         </div>
-                        <div className="col-sm-6 order-sm-1 mb-3">
-                            <img className="img-flud aboutImage d-block m-auto" src={placeholderImg} alt="TODO"/>
+                        <div className="col-md-6 order-md-1 mb-3">
+                        {(funPicLoading)?(<><Skeleton className="img-fluid aboutImage d-block m-auto" width={300} /></>):(<></>)}
+                                <img src={funFact} alt="Eddie On A Stool" className={`img-fluid aboutImage d-block m-auto ${(funPicLoading)?("hidden"):("")}`} onLoad={() => {setFunPicLoading(false)}} />
                         </div>
 
                     </div>

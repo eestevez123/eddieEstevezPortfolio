@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import emailjs from 'emailjs-com';
 
@@ -18,24 +18,23 @@ import emailIcon from "../images/contactPage/emailIcon.png";
 
 function HomePage(props) {
 
-
+    const [sendingEmail, setSendingEmail] = useState(false)
 
     function sendEmail(e) {
         e.preventDefault();
-
+        setSendingEmail(true)
         if (e.target.message.value === "") {
             alert("You can't send a message if there isn't a message in the first place!")
+            setSendingEmail(false)
             return
         } else {
             emailjs.sendForm('service_h9o93bm', 'template_b99mtj9', e.target, 'emailJSPublicKey')
             .then((result) => {
-                console.log(result.text);
                 alert("Your message was sent! Thank you! I will get back to you soon!");
             }, (error) => {
-                console.log(error.text);
                 alert("Sorry! Your message wasn't able to be sent!");
             });
-            
+            setSendingEmail(false)
             e.target.reset();
         }
       }
@@ -62,16 +61,16 @@ function HomePage(props) {
                     <h3 class="mb-4 contactPageTitle">Reach Me via...</h3>
                     <div class="row mb-5">
 
-                        <ContactItem imgAddr={phoneIcon} imgAlt="Facebook Logo" txtTitle="Phone: " txt="(414)628-4171" href="tel:4146284171" colClass="col-6"/>
-                        <ContactItem imgAddr={emailIcon} imgAlt="Instagram Logo" txtTitle="Email: " txt="estevez.eduardo111@gmail.com" href="mailto:estevez.eduardo111@gmail.com" colClass="col-6"/>
+                        <ContactItem imgAddr={phoneIcon} imgAlt="Phone" txtTitle="Phone: " txt="(414)628-4171" href="tel:4146284171" colClass="col-6"/>
+                        <ContactItem imgAddr={emailIcon} imgAlt="Email" txtTitle="Email: " txt="estevez.eduardo111@gmail.com" href="mailto:estevez.eduardo111@gmail.com" colClass="col-6"/>
 
                     </div>
-                    <div class="row no-gutters bg-light">
+                    <div class="row no-gutters bg-light mb-5 rounded">
                         <div class="col-md-7">
                             <div class="contact-wrap w-100 p-md-5 p-4">
                                 <h3 class="mb-4">Let's get a conversation going!</h3>
                                     <form id="contactForm" name="contactForm" class="contactForm" novalidate="novalidate" onSubmit={sendEmail}>
-                                        <div class="row">
+                                        <div class="row gy-3">
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                 <label class="label" for="name">Name</label>
@@ -98,7 +97,7 @@ function HomePage(props) {
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <input type="submit" value="Send" class="btn btn-primary"/>
+                                                <input type="submit" value={`${(sendingEmail)?("Sending"):("Send")}`} class="btn btn-primary" disabled={sendingEmail}/>
                                                 <div class="submitting"></div>
                                             </div>
                                             </div>
@@ -107,7 +106,7 @@ function HomePage(props) {
                             </div>
                         </div>
                         <div class="col-md-5 d-flex align-items-stretch">
-                            <div id="formImage" class="info-wrap w-100 p-5 img"/>
+                            <div id="formImage" class="info-wrap w-100 p-5 img rounded"/>
                         </div>
                 </div>
             </div>

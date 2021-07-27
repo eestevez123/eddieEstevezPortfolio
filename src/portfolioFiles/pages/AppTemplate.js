@@ -124,7 +124,7 @@ function ApplicationTemplate(props) {
                     {CarouselImages.map((picObj, idx) => (
                         <Carousel.Item id={idx}>
                             <img
-                                className="d-block w-100 carouselImage"
+                                className="d-block w-100 carouselImage rounded-top"
                                 src={picObj.src}
                                 alt="slide"
                             />
