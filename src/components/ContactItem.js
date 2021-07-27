@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 
 function ContactItem(props) {
 
@@ -6,15 +6,13 @@ function ContactItem(props) {
     
     return(
         <>
-        <div class={props.colClass}>
-            <div class="dbox w-100 text-center">
+        <div className={props.colClass}>
+            <div className="text-center">
                 <a href={props.href}>
-                    <div class="icon d-flex align-items-center justify-content-center">
-                        <img src={props.imgAddr} class="fa fa-map-marker contactItemImg" alt={props.imgAlt}/>
+                    <div className="icon d-flex align-items-center justify-content-center">
+                        <img src={props.imgAddr} className="fa fa-map-marker contactItemImg" alt={props.imgAlt}/>
                     </div>
-                <div class="text">
-                    <p><span>{props.txtTitle}</span> {props.txt}</p>
-                </div>
+                    <p className={`${(props.txtTitle === "Email: ")?("emailText"):("")}`}><span>{props.txtTitle}</span>{props.txt}</p>
                 </a>
             </div>
         </div>

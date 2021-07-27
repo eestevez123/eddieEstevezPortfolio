@@ -38,33 +38,46 @@
 }
 
 :root {
-  --circleShape: 200px;
-  --rectangleWidth: 300px;
+  --circleShape: 12rem;
+  --rectangleWidth: 18rem;
 }
-@media (max-width: 1000px) { 
+
+@media (max-width: 1050px) { 
   :root {
-    --circleShape: 175px;
-    --rectangleWidth: 225px;
+    --circleShape: 9rem;
+    --rectangleWidth: 14rem;
   }
 }
-@media (max-width: 768px) { 
+
+@media (max-width: 650px) { 
   :root {
-    --circleShape: 150px;
-    --rectangleWidth: 200px;
+    --circleShape: 7rem;
+    --rectangleWidth: 10rem;
   }
 }
-@media (max-width: 500px) { 
+
+@media (max-width: 375px) { 
   :root {
-    --circleShape: 32vw;
-    --rectangleWidth: 40vw;
+    --circleShape: 5rem;
+    --rectangleWidth: 7rem;
   }
 }
+
+
+
+
 
 #interactiveDivHomePage {
   position: relative;
   background-color: #ffffff00 !important;
-  width: 100vw !important; 
-  height: 350px !important;
+  width: 100% !important; 
+  height: 18rem !important;
+}
+
+@media (max-width: 540px) { 
+  #interactiveDivHomePage {
+    height: 12rem !important;
+  }
 }
 
 #greenCircleHomePage {
@@ -116,7 +129,7 @@
   position: absolute;
   left: 56%;
   z-index: 0;
-  bottom: 14%;
+  bottom: 38%;
   height: var(--circleShape)!important;
   width: var(--circleShape)!important;
 }
@@ -125,7 +138,7 @@
   position: absolute;
   left: 21%;
   z-index: 0;
-  top: 4%;
+  top: 31%;
   height: var(--circleShape)!important;
   width: var(--circleShape)!important;
 }
@@ -319,6 +332,13 @@
 }
 
 
+@media (max-width: 500px) {
+  .emailText {
+    word-break: break-all;
+  }
+}
+
+
 @media (max-width: 767.98px) {
   .info-wrap {
       height: 400px;
@@ -335,14 +355,10 @@
 }
 
 #formImage {
-  background-image: url("./images/placeholder.png");
+  background-image: url("./images/contactPage/conversationIcon.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.aboutImage {
-  height: 300px;
 }
 
 .btn-group {

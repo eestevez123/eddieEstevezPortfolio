@@ -6,6 +6,7 @@ function DraggableObject(props) {
     if (props.isImage) {
         return(
             <motion.img
+            className="img-fluid"
             id = {props.objID}
             key={props.imageObj}
             src={props.imageObj}
@@ -25,6 +26,7 @@ function DraggableObject(props) {
     } else {
         return(
             <motion.div
+            className="img-fluid"
             id = {props.objID}
             style={{
                 width: props.width,
