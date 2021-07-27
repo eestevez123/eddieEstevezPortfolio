@@ -68,7 +68,7 @@ function AboutPage(props) {
                                         <a className="btn btn-primary mb-4" role="button" href={eddieResumePDF} target='_blank' rel="noopener noreferrer">My Resume</a>
                                 </div>
                         </div>
-                        <div className="col-md-6 order-md-1 mb-3">
+                        <div className="col-md-6 order-md-1 mb-3 overflow-hidden">
                         {(adultPicLoading)?(<><Skeleton className="img-fluid aboutImage d-block m-auto" width={300} /></>):(<></>)}
                                 <img src={adultPic} alt="Baby Eddie" className={`img-fluid aboutImage d-block m-auto ${(adultPicLoading)?("hidden"):("")}`} onLoad={() => {setAdultPicLoading(false)}} />
                         </div>

@@ -1,11 +1,7 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 
 
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
     useParams,
     Redirect
   } from "react-router-dom";
@@ -24,8 +20,6 @@ import PictureTemplate from "./PictureTemplate";
 // Custom Pages
 import PodcastPage from "./custom/PodcastPage";
 import VidGallery from "./custom/VidGallery";
-
-import NotFoundPage from '../../pages/NotFoundPage';
 
 
 

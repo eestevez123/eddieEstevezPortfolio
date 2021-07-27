@@ -1,16 +1,6 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    useParams,
-    useRouteMatch
-  } from "react-router-dom";
-
-
-import placeholderImg from "../../images/placeholder.png";
+import { Link } from "react-router-dom";
 
 import {soundInfo} from "../pageInfo/soundInfo.js"
 

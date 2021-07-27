@@ -69,7 +69,6 @@ render() {
               <Link className="nav-link" to ="/mywork">My Work</Link>
               <Link className="nav-link" to ="/letsconnect">Let's Connect</Link>
             </Nav>
-
             </Navbar.Collapse>
         </Navbar>
         <ScrollToTop />
@@ -84,7 +83,7 @@ render() {
 
 
           <Route path="/404" component={NotFoundPage} />
-          <Redirect path="*" to="/404" />
+          <Redirect to="/404"/>
         </Switch>
 
         
