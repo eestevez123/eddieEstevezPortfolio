@@ -6,6 +6,7 @@ import "./HomePage.css"
 import Hero from "../components/Hero";
 import { motion } from "framer-motion"
 import InteractiveShapes from "../components/InteractiveShapes";
+import Fade from 'react-reveal/Fade';
 
 import softwareIcon from "../images/homePage/softwareDevIcon.svg";
 import designerIcon from "../images/homePage/designerIcon.svg";
@@ -150,9 +151,12 @@ function HomePage(props) {
 
         <div className="container content-justify-center text-center align-items-center mt-5">
             <div className="row align-items-center">
+                <Fade left>
                 <div className="col-md-6">
                     <img src={workIcon} alt="Briefcase" className="img-fluid workImage m-3"/>
                 </div>
+                </Fade>
+                <Fade right>
                 <div className="col-md-6">
                     <p className="fs-5">I could go on and say how good my work is, but I think my work can speak for itself! I have selected some of my works and experiences and explained 
                         what I did for each experience and what I gained from it. </p>
@@ -160,6 +164,7 @@ function HomePage(props) {
                             <button type="button" className="btn btn-primary">See My Work</button>
                         </Link>
                 </div>
+                </Fade>
             </div>
         </div>
 
@@ -167,15 +172,19 @@ function HomePage(props) {
         <div className="container-fluid bg-myBlue text-white mt-5 p-5">
             <div className="container content-justify-center text-center align-items-center">
                 <div className="row align-items-center">
+                <Fade bottom>
                     <div className="col-md-6 order-md-2">
                         <img src={greetingIcon} alt="Stick Figure Saying Hello" className="img-fluid workImage"/>
                     </div>
+                </Fade>
+                <Fade bottom>
                     <div className="col-md-6 order-md-1">
                         <p className="fs-5">Don’t be shy! As a people person, I enjoy any opportunity for conversation, even if its just a hello. </p>
                         <Link to="/letsconnect">
                                 <button type="button" className="btn btn-outline-light">Talk To Me</button>
                         </Link>
                     </div>
+                    </Fade>
                 </div>
             </div>
             
