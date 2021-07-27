@@ -373,3 +373,12 @@
   width: 100% !important ;
   height: 5rem !important ;            /* Footer height */
 }
+
+.animatedDiv {
+  box-shadow: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.animatedDiv:hover {
+  box-shadow: 5px 10px 20px 1px rgba(0, 0,0, 0.253) !important;
+}
