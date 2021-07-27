@@ -3,9 +3,8 @@
     margin-left: auto;
     margin-right: auto;
     box-shadow: none;
-    transition: box-shadow 0.25s ease;
     transform: scale(0.98);
-    transition: transform 0.25s ease-out;
+    transition: all 0.25s ease-out;
 }
 
 .card:hover{
