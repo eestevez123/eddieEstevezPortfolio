@@ -49,7 +49,7 @@ function PodcastPage(props) {
                 <div className="row text-center mt-5">
                     <div className="col mt-5">
                     <Link to ="/mywork">
-                    <   button type="button" className="btn btn-outline-primary mt-5">Go Back</button>
+                    <   button type="button" className="btn btn-outline-primary my-5">Go Back</button>
                     </Link>
                     </div>
                 </div>
