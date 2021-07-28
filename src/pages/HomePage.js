@@ -54,9 +54,9 @@ function HomePage(props) {
                 <div className="row">
                     <div className="col text-center">
                         <h2 className="fw-bold">A Little About Me</h2>
-                        <p className="fs-5">A Milwaukee native and overall computer nerd with a passion for creative digital media and design. I enjoy challenging myself with goals and projects in an effort to place myself outside of 
-                        my comfort zone and to continuously learn. Those goals and projects usually involved thinking outside the box with tools both familiar and unfamiliar to make something 
-                        truly unique and personal. As I start my career, I want to keep exploring the world of tech with my optimistic and extroverted perspective.</p>
+                        <p className="fs-5">A Milwaukee native and overall computer nerd. I have a passion for digital media and design. 
+                        I love a good challenge that can place me outside of my comfort zone, especially when equipped with a good cup of coffee.
+                         As a self-proclaimed extrovert, I also enjoy a good conversation, doubly so if it's over coffee. Did I mention I like coffee yet? </p>
                         <Link to="/aboutme">
                             <button type="button" className="btn btn-outline-light">Learn More About Me</button>
                         </Link>
@@ -158,8 +158,8 @@ function HomePage(props) {
                 </Fade>
                 <Fade right>
                 <div className="col-md-6">
-                    <p className="fs-5">I could go on and say how good my work is, but I think my work can speak for itself! I have selected some of my works and experiences and explained 
-                        what I did for each experience and what I gained from it. </p>
+                    <p className="fs-5">I could go on and say how good my work is, but I think my work can speak for itself!
+                    I have selected some of my works and experiences to explain what I did and what I gained from them. </p>
                         <Link to="/mywork">
                             <button type="button" className="btn btn-primary">See My Work</button>
                         </Link>
@@ -179,7 +179,7 @@ function HomePage(props) {
                 </Fade>
                 <Fade bottom>
                     <div className="col-md-6 order-md-1">
-                        <p className="fs-5">Don’t be shy! As a people person, I enjoy any opportunity for conversation, even if its just a hello. </p>
+                        <p className="fs-5">Don’t be shy! As a people person, I enjoy any opportunity for a conversation, even if it’s just a hello. </p>
                         <Link to="/letsconnect">
                                 <button type="button" className="btn btn-outline-light">Talk To Me</button>
                         </Link>

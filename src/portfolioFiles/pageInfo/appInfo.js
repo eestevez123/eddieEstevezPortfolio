@@ -161,7 +161,7 @@ export const appInfo = [
         id: "mips-16-bit-5-stage-pipelined-microprocessor",
         PageTitle: "MIPS 16-bit 5-stage Pipelined Microprocessor",
         CoverPic: require("../../images/myWorkPage/cardPics/app/552.png").default, 
-        Background: "For the semester project of ECE 552: Intro to Computer Architecture, my partner and I had to design and test our very ow MIPS 16-bit 5-stage pipelined microprocessor with forwarding enabled and cache. ",
+        Background: "For the semester project of ECE 552: Intro to Computer Architecture, my partner and I had to design and test our very own MIPS 16-bit 5-stage pipelined microprocessor called the WISC-SP20, which featured forwarding enabled and a single-level cache. The WISC-SP20 is a Harvard Architecture, meaning that instructions and data are in different physical memories. ",
         WhatIDid: "My partner and I built out the processor with Verilog in three different stages, first from an unpipelined version, into a 5-stage processor with data forwarding, and then finally a 5-stage processor with data forwarding and a 2-way cache. We tested the processor with a compiler that was provided that would run assembly code and see the results within the registers. ",
         WhatILearned: "I learned how exactly a microprocessor worked, building one out and emulating it via software, and using basic software on it with our very own instruction set. ",
         CarouselImages: [{
