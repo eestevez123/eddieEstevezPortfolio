@@ -18,7 +18,7 @@ export const appInfo = [
         WhatILearned: "The project had me  exposed to new technologies that I had to quickly learn to be an asset to the team. I made sure to ask questions to confirm my understanding of the technologies in hand. This project also gave me more experience with working within 2-week sprints and tracking my tasks that were assigned to me by the scrum master. ",
         CarouselImages: [{
                 src: require("../../images/myWorkPage/app/workout1.png").default, 
-                label: "Figma Desing for the Workout App",
+                label: "Figma Design for the Workout App",
                 desc: "My team and I chose to design the app via Figma in order to easily collaborate"
             },
             {
