@@ -5,7 +5,7 @@ export const websiteURLs = [ "personal-site", "la-cosecha-tortilla", "JUST", "NC
 
 export const appURLs = ["blackrock-tableau-dashboard", "workout-application", "operating-system-tinkering", "ti-tiva-launchpad-games", 
 "artificial-intelligence-projects", "java-programs-and-applications", 
-"mips-16-bit-5-stage-pipelined-microprocessor", "convulutionary-neural-network-hardware-accelerator"]
+"mips-16-bit-5-stage-pipelined-microprocessor", "convolutional-neural-network-hardware-accelerator"]
 
 export const videoURLs = ["love-on-a-leash", "a-midlife-crisis-but-in-college", "videos-for-uw-madison-memes-for-milk-chugging-teens", "advertisement-club-videos", 
 "black-sheep-videos", "communication-arts-200-video", "communication-arts-155-video"]
@@ -13,7 +13,7 @@ export const videoURLs = ["love-on-a-leash", "a-midlife-crisis-but-in-college", 
 export const soundURLs = ["podcast-about-relationships", "beep-boop"]
 
 
-export const imageURLs = ["uw-madison-memes", "la-cosecha-tortilla-companny-pictures", "advertisement-club-pictures", "art-155"]
+export const imageURLs = ["uw-madison-memes", "la-cosecha-tortilla-company-pictures", "advertisement-club-pictures", "art-155"]
 
 export const vidGalleryURLs = ["videos-for-uw-madison-memes-for-milk-chugging-teens", "advertisement-club-videos", "black-sheep-videos"]
 

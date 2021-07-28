@@ -91,8 +91,8 @@ export const imageInfo = [
         ]
     },
     {   
-        id: "la-cosecha-tortilla-companny-pictures",
-        PageTitle: "La Cosecha Tortilla Companny Pictures",
+        id: "la-cosecha-tortilla-company-pictures",
+        PageTitle: "La Cosecha Tortilla Company Pictures",
         Description: "Alongside the effort of building out a website for my clients at La Cosecha Tortilleria Company, I also came in to their building to take pictures of their products.",
         images: [
             {

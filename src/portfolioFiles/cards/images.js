@@ -11,7 +11,7 @@ export const imageCards =  [
         alt: "La Cosecha Tortilla Company Pictures Logo",
         title: "La Cosecha Tortilla Company Pictures",
         desc: "Alongside the effort of building out a website for my clients at La Cosecha Tortilleria Company, I also came in to their building to take pictures of their products.",
-        href: "la-cosecha-tortilla-companny-pictures", 
+        href: "la-cosecha-tortilla-company-pictures", 
     },
     {   
         src: require("../../images/myWorkPage/images/adclub/pouches.jpg").default,

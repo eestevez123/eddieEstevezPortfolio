@@ -173,7 +173,7 @@ export const appInfo = [
         ]
     },
     {   
-        id: "convulutionary-neural-network-hardware-accelerator",
+        id: "convolutional-neural-network-hardware-accelerator",
         PageTitle: "Convulutional Neural Network Hardware Accelerator",
         CoverPic: require("../../images/myWorkPage/cardPics/app/cnn.png").default, 
         Background: "Within my last semester at UW – Madison for my computer engineering capstone, I took ECE 554: Digital Engineering Lab in which I learned furthermore the applications of building custom hardware with HDLs such as system Verilog and more tools. For my semester project, I worked within a team of 5 other students to build out a Convolutional Neural Network Hardware accelerator, designed to be able to do the required matrix math correctly via systolic arrays with pretrained quantized signed 8-bit values from the MNIST-Fashion dataset.",
