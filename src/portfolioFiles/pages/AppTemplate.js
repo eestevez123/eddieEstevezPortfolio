@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import {Helmet} from "react-helmet";
+import {Helmet} from "react-helmet-async";
 import Carousel from 'react-bootstrap/Carousel'
 import OnImagesLoaded from 'react-on-images-loaded';
 import Skeleton from 'react-loading-skeleton';

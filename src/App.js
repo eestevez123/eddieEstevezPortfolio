@@ -3,7 +3,7 @@ import {BrowserRouter, Route, Link, Switch, Redirect } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-
+import {HelmetProvider } from 'react-helmet-async';
 import eddieEstevezLogo from './images/EddieLogoWithBack.svg';
 
 import Footer from "./components/Footer";
@@ -20,6 +20,8 @@ import NotFoundPage from './pages/NotFoundPage';
 
 import ContactPage from './pages/ContactPage'; // We'll just provide info for now, we can fix the API later
 import { Image } from 'react-bootstrap';
+
+const helmetContext = {};
 
 class App extends React.Component {
 
@@ -46,6 +48,7 @@ constructor(props) {
 
 render() {
   return (
+    <HelmetProvider context={helmetContext}>
     <BrowserRouter>
     <Container className="p-0 pageContainer" fluid={true}>
       <Container className="px-0 pt-0 contentWrap" fluid={true}>
@@ -92,6 +95,7 @@ render() {
       </Container>
       </Container>
     </BrowserRouter>
+    </HelmetProvider>
   );  
 }
 
