@@ -5,8 +5,8 @@ import Skeleton from 'react-loading-skeleton';
 
 import "./HomePage.css"
 import Hero from "../components/Hero";
-import { motion } from "framer-motion"
-import InteractiveShapes from "../components/InteractiveShapes";
+import { motion } from "framer-motion";
+import DraggableObject from "../components/DraggableObject";
 
 import softwareIcon from "../images/homePage/softwareDevIcon.svg";
 import designerIcon from "../images/homePage/designerIcon.svg";
@@ -16,6 +16,7 @@ import workIcon from "../images/homePage/working.svg";
 import greetingIcon from "../images/homePage/greetings.svg";
 
 import eddieProfilePic from "../images/homePage/eddieHome.png"
+import blackLineRect from "../images/homePage/blackLineRect.svg";
 
 function HomePage(props) {
     
@@ -31,7 +32,9 @@ function HomePage(props) {
                 content="Welcome to my personal website! My name is Eddie Estevez, a software developer, designer, content creator, and coffee lover" 
                 />
             </Helmet>
+            
         <Hero id="hereOnHomePage" title={props.title} subTitle={props.subTitle}/>
+        
         <div className="container justify-content-center d-flex">
             <div className="row  justify-content-center">
                 <div className="col-8 col-sm-12">
@@ -40,7 +43,7 @@ function HomePage(props) {
                     </>):(<></>)}
                 <motion.img
                     src={eddieProfilePic}
-                    className={`eddieProfile img-fluid ${mainEddieImageLoading?("hidden"):("")}`}
+                    className={`eddieProfile grabbable img-fluid ${mainEddieImageLoading?("hidden"):("")}`}
                     alt="Me, Eddie Estevez"
                     drag
                     dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
@@ -53,9 +56,49 @@ function HomePage(props) {
             </div>
         </div>
 
+        <div className="container">
+            <div className="row justify-content-center">
+                <div className="col ">
+                        <div className="shapeHolder position-relative">
+                            <DraggableObject
+                                className="img-fluid"
+                                innerClassName="rect1 bg-myBlue grabbable position-absolute top-0 start-0"
+                                isImage={false}
+                            />
+                            <DraggableObject
+                                className="img-fluid"
+                                innerClassName="rect2 bg-myPurple grabbable position-absolute"
+                                isImage={false}
+                            />
+                            <DraggableObject
+                                className="img-fluid"
+                                innerClassName="circle1 bg-myGreen grabbable rounded-circle position-absolute"
+                                isImage={false}
+                            />
+                            <DraggableObject
+                                className="img-fluid"
+                                innerClassName="blackRect grabbable position-absolute"
+                                isImage={true}
+                                src={blackLineRect}
+                            />
+                            <DraggableObject
+                                className="img-fluid"
+                                innerClassName="blackRect2 grabbable position-absolute"
+                                isImage={true}
+                                src={blackLineRect}
+                            />
+                            <DraggableObject
+                                className="img-fluid"
+                                innerClassName="rect3 bg-myGreen grabbable position-absolute"
+                                isImage={false}
+                            />
+                        </div>
+                </div>
+            </div>
+        </div>
 
 
-        <InteractiveShapes id="interactiveShapes"/>
+        
 
         <div className="container-fluid bg-myBlue text-white mt-5 p-5">
             <div className="container justify-content-center d-flex">
