@@ -118,23 +118,23 @@ export const appInfo = [
         CarouselImages: [
             {
                 src: require("../../images/myWorkPage/app/java1.png").default, 
-                label: "TODO",
-                desc: "TODO"
+                label: "Particle Simulator running on a Processing Graphics window",
+                desc: "This is a screenshot of the particle simulator that looks like a water sprinkler"
             },
             {
                 src: require("../../images/myWorkPage/app/java2.png").default, 
-                label: "TODO",
-                desc: "TODO"
+                label: "My Very First College Java Program!",
+                desc: "A simple terminal driven shopping cart app that kept track of what you have how much it costs"
             },
             {
                 src: require("../../images/myWorkPage/app/java3.png").default, 
-                label: "TODO",
-                desc: "TODO"
+                label: "Escape Room App",
+                desc: "This project involved the usage of a lot of class instances, but created a fun escape room challenge that involved clickling and dragging objects around the window"
             },
             {
                 src: require("../../images/myWorkPage/app/java4.png").default, 
-                label: "TODO",
-                desc: "TODO"
+                label: "Storage Unit Organizer",
+                desc: "This app used a linked list to keep the lightest package on top of the pile. The linked list allows for inserting and deleting while keeping itself organized"
             },
         ]
     },
@@ -143,47 +143,52 @@ export const appInfo = [
         PageTitle: "MIPS 16-bit 5-stage Pipelined Microprocessor",
         CoverPic: require("../../images/myWorkPage/cardPics/app/552.png").default, 
         Background: "For the semester project of ECE 552: Intro to Computer Architecture, my partner and I had to design and test our very own MIPS 16-bit 5-stage pipelined microprocessor called the WISC-SP20, which featured forwarding enabled and a single-level cache. The WISC-SP20 is a Harvard Architecture, meaning that instructions and data are in different physical memories. ",
-        WhatIDid: "My partner and I built out the processor with Verilog in three different stages, first from an unpipelined version, into a 5-stage processor with data forwarding, and then finally a 5-stage processor with data forwarding and a 2-way cache. We tested the processor with a compiler that was provided that would run assembly code and see the results within the registers. ",
-        WhatILearned: "I learned how exactly a microprocessor worked, building one out and emulating it via software, and using basic software on it with our very own instruction set. ",
+        WhatIDid: "My partner and I first designed the non-pipelined single-cycle microprocessor. What this meant is that we sketched out the modules that would become the processor, which in our case we did through OneNote. We made sure to clearly label the modules and describe the data paths for the instruction set we were required to implement, which included basic instructions such as for basic arithmetic, branch taking, jumps, and more. When it came time to writing out Verilog code, we built out the processor in multiple different stages. ",
+        WhatIDid_moreParagraphs: [ 
+            "Within the first stage, we created the 5-stage single-cycle non-pipelined processor, meaning that a full cycle must be taken to go through the beginning of the processor at the fetch instruction stage until the end where it reaches the memory writeback stage. For this stage, we were provided perfect memory modules so that we didn’t have to worry about stalling for multi-cycle memory fetching. ",
+            "The second phase took that original design but now implements buffers between each stage to pipeline the processor, meaning multiple parts of the processor could run in a single cycle with multiple instructions, having a more efficient CPI (Cycles per Instructions). At this stage, we were still using the perfect memory modules that provided the request memory in the single cycle, but the next stage was to replace that module with stalling aligned memory, which meant that we needed to accommodate this more realistic memory module by making sure we stalled the processor for it to still the request memory but account for the imperfect slower memory. ",
+            "The second to last phase included use implementing a 2-way set-associative cache to increase processor performance with the more realistic memory. The last phase was use taking the current processor build and giving it optimizations, such as register file bypassing, Memory forwarding from the Memory stage to the Execute Stage, as well as from the Write Back stage to the Execute Stage. We also implemented a prediction policy for branches, predicting that the branch would not be taken, consolidating it within the Execute stage, and flushing the processor in case the prediction was incorrect. ",
+        ],
+        WhatILearned: "I learned how exactly a microprocessor worked via building one out from scratch and adding realistic modules such as stalled aligned memory as well as 2-way-set associative cache that look like microprocessors still used today. It was an incredible experience to be able to say I built out my very own computer and being able to run assembly programs that I wrote with the instruction set architecture I built.",
         CarouselImages: [{
                 src: require("../../images/myWorkPage/app/552_1.png").default,
-                label: "LABEL",
-                desc: "DESC"
+                label: "2-Way Set Associative Cache Shematic",
+                desc: "A broad overview of the cache module used for the final phase of the project"
             },
             {
                 src:  require("../../images/myWorkPage/cardPics/app/552.png").default, 
-                label: "LABEL 1",
-                desc: "DESC"
+                label: "Microprocessor Shematic",
+                desc: "An overview of the microprocessor, non-pipelined. "
             },
             {
                 src:  require("../../images/myWorkPage/app/552_2.png").default, 
-                label: "LABEL 1",
-                desc: "DESC"
+                label: "Assembly Program Written for the microprocessor by Me",
+                desc: "This assembly program served as a test and demo of the how the branch predictor consolidated its predition within the decode stage of the processor"
             },
             {
                 src:  require("../../images/myWorkPage/app/552_3.png").default, 
-                label: "LABEL 1",
-                desc: "DESC"
+                label: "Advanced Programs being run on the microprocessor",
+                desc: "For final testings, advanced programs that ran well-known algorithms such as bubble sort on our microprocessor, you can see cycles, instruction memory fetches, and cache hit rate per program"
             },
         ]
     },
     {   
         id: "convulutionary-neural-network-hardware-accelerator",
-        PageTitle: "Convulutionary Neural Network Hardware Accelerator",
+        PageTitle: "Convulutional Neural Network Hardware Accelerator",
         CoverPic: require("../../images/myWorkPage/cardPics/app/cnn.png").default, 
-        Background: "Within my last semester at UW – Madison for my computer engineering capstone, I took ECE 554: Digital Engineering Lab in which I learned furthermore the applications of building custom hardware with HDLs such as system Verilog and more tools. For my semester project, I worked within a team of 5 other students to build out a Convolutional Neural Network accelerator, designed to be able to do the required matrix math correctly with pretrained values. ",
-        WhatIDid: "I focused on the software side of the project, training the model based on the Fashion-MNIST training data, quantizing the float integers that I would get into 8-bit signed integers that would then be loaded into the FPGA, which was on Intel cloud due to the semester being taught purely online due to the COVID-19 pandemic. ",
-        WhatILearned: "Within this project, communication and time management was incredibly important due to the workload and the complexity of the project. ",
+        Background: "Within my last semester at UW – Madison for my computer engineering capstone, I took ECE 554: Digital Engineering Lab in which I learned furthermore the applications of building custom hardware with HDLs such as system Verilog and more tools. For my semester project, I worked within a team of 5 other students to build out a Convolutional Neural Network Hardware accelerator, designed to be able to do the required matrix math correctly via systolic arrays with pretrained quantized signed 8-bit values from the MNIST-Fashion dataset.",
+        WhatIDid: "I focused on the software side of the project, training the model based on the Fashion-MNIST training data, quantizing the float integers that I would get into 8-bit signed integers that would then be loaded onto the FPGA, which was on Intel cloud due to the semester being taught purely online due to the COVID-19 pandemic. I also worked on the documentation of the project as well as the periodic presentations on the progress of the project. ",
+        WhatILearned: "Within this project, communication and time management was incredibly important due to the workload and the complexity of the project, so making sure I was available when I said I would be crucial. I also learned how to apply what I learned from ECE 552 when I created the general-purpose microprocessor to a more specific processor, which in this case was one that did matrix arithmetic quickly and efficiently.",
         CarouselImages: [
             {
                 src:  require("../../images/myWorkPage/app/554_1.png").default, 
-                label: "LABEL 1",
-                desc: "DESC"
+                label: "Processor Design",
+                desc: "The processor was very similar to the 16-bit MIPS microprocessor I designed in ECE 552, but was expanded to be 32 bits and have a different Instruction Set Architecture"
             },
             {
                 src:  require("../../images/myWorkPage/app/554_2.png").default, 
-                label: "LABEL 1",
-                desc: "DESC"
+                label: "CNN Model Trained via Pytorch",
+                desc: "The Structure of the CNN that was trained and whose weights were used for the Hardware accelerator demo"
             },
         ]
     }
