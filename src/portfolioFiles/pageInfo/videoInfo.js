@@ -96,7 +96,7 @@ export const videoInfo = [
         sections: [
             {
                 sectionTitle: "Forward Madison FC",
-                sectionDesc: "TODO",
+                sectionDesc: "I was tasked to make highlight reels for certain players for Forward Madison FC, a professional soccer team within Madison, WI",
                 videoURLs: [
                     {
                         videoID: "WXHDVQHlMLc",
@@ -117,7 +117,7 @@ export const videoInfo = [
             },
             {
                 sectionTitle: "CAMPO",
-                sectionDesc: "TODO",
+                sectionDesc: "I was tasked to make 2 promo videos for CAMPO, a fair trade company based in Madison that produces alpalca apperal from small businesses in Peru",
                 videoURLs: [
                     {
                         videoID: "nHCQzMFMubo",
@@ -133,7 +133,7 @@ export const videoInfo = [
             },
             {
                 sectionTitle: "Bamdit Tacos",
-                sectionDesc: "TODO",
+                sectionDesc: "I created a promo video for Bandit Tacos, a local Madison Taco restaurant",
                 videoURLs: [
                     {
                         videoID: "sjx1JKIA3_I",
