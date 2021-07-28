@@ -1,6 +1,6 @@
 import React from "react";
 import Gallery from 'react-grid-gallery';
-import {Helmet} from "react-helmet";
+import {Helmet} from "react-helmet-async";
 
 import {
     Link,

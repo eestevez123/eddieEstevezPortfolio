@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Helmet} from "react-helmet";
+import {Helmet} from "react-helmet-async";
 import emailjs from 'emailjs-com';
 
 import Hero from "../components/Hero";

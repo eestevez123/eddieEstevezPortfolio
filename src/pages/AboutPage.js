@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Skeleton from 'react-loading-skeleton';
-import {Helmet} from "react-helmet";
+import {Helmet} from "react-helmet-async";
 import Hero from "../components/Hero";
 
 import "./AboutPage.css"
