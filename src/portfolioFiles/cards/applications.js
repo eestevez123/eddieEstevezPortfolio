@@ -42,13 +42,6 @@ export const appCards =  [
         href: "java-programs-and-applications", 
     },
     {   
-        src: require("../../images/myWorkPage/cardPics/app/551.png").default, 
-        alt: "Blueooth Audio Receiver and Equalizer Logo",
-        title: "Blueooth Audio Receiver and Equalizer",
-        desc: "I alongside 3 other students designed a Blueooth audio receiver and equalizer that we wrote in Verilog, and synthezied and tested via emulation",
-        href: "blueooth-audio-receiver-and-equalizer", 
-    },
-    {   
         src: require("../../images/myWorkPage/cardPics/app/552.png").default, 
         alt: "MIPS 16-bit 5-stage Pipelined Microprocessor Logo",
         title: "MIPS 16-bit 5-stage Pipelined Microprocessor",

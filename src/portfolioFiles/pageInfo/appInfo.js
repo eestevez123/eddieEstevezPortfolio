@@ -139,25 +139,6 @@ export const appInfo = [
         ]
     },
     {   
-        id: "blueooth-audio-receiver-and-equalizer",
-        PageTitle: "Blueooth Audio Receiver and Equalizer",
-        CoverPic: require("../../images/myWorkPage/cardPics/app/551.png").default, 
-        Background: "As part of the computer engineering curriculum, I took ECE 551: Digital System Design & Synthesis. Within in, I learned about the hardware description language Verilog to build common electrical components such as flip flops, adders, multiplexers and more. For the final project, we were tasked with building out an equalizer for a Bluetooth audio device.",
-        WhatIDid: "I was in a team of 3 other students. I designed some parts of the project as well as getting the code coverage for the final report.",
-        WhatILearned: "This class was my first-time using Verilog and it combined what I knew form software engineering into hardware design. It helped me understand how audio amplifiers and equalizers functioned at a high level as well.",
-        CarouselImages: [{
-                src: require("../../images/myWorkPage/app/551_1.png").default, 
-                label: "LABEL",
-                desc: "DESC"
-            },
-            {
-                src: require("../../images/myWorkPage/cardPics/app/551.png").default, 
-                label: "LABEL",
-                desc: "DESC"
-                },
-        ]
-    },
-    {   
         id: "mips-16-bit-5-stage-pipelined-microprocessor",
         PageTitle: "MIPS 16-bit 5-stage Pipelined Microprocessor",
         CoverPic: require("../../images/myWorkPage/cardPics/app/552.png").default, 
