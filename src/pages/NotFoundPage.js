@@ -1,5 +1,6 @@
 
 import React from 'react';
+import {Helmet} from "react-helmet";
 import { Link } from "react-router-dom";
 import penguinPic from "../images/penguin.svg"
 
@@ -32,7 +33,10 @@ function NotFoundPage() {
 
         return(
         <>
-
+            <Helmet>
+                <title>404 Error | Eddie Estevez</title>
+                <meta name="description" content="This is the 404 page for my website in case someone gets lost."/>
+            </Helmet>
             <div className="container-fluid bg-myBlue notFoundPageBackground text-white">
                 <div className="container notFoundPageContainer">
                 <div className="row align-items-center text-center">

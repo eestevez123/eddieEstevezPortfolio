@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Skeleton from 'react-loading-skeleton';
+import {Helmet} from "react-helmet";
 import Hero from "../components/Hero";
 
 import "./AboutPage.css"
@@ -24,6 +25,10 @@ function AboutPage(props) {
 
         return(
         <div>
+            <Helmet>
+                <title>About Me | Eddie Estevez</title>
+                <meta name="description" content="Hello World! I'm Eddie! It's nice to meet you!"/>
+            </Helmet>
             <Hero id="hereOnHomePage" title={props.title}/>
             <div className="container">
                 <div className="top-section">

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+import {Helmet} from "react-helmet";
 import emailjs from 'emailjs-com';
 
 import Hero from "../components/Hero";
@@ -38,6 +38,10 @@ function HomePage(props) {
 
     return(
         <>
+            <Helmet>
+                <title>Let's Connect | Eddie Estevez</title>
+                <meta name="description" content="See What I'm Up to on Social Media! Also you can reach me via phone or email!"/>
+            </Helmet>
         <Hero id="hereOnHomePage" title={props.title}/>
         <div className="container">
         <div className="row justify-content-center">

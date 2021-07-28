@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Helmet} from "react-helmet";
 import {Link} from "react-router-dom";
 import Skeleton from 'react-loading-skeleton';
 
@@ -23,6 +24,10 @@ function HomePage(props) {
 
     return(
         <div>
+            <Helmet>
+                <title>Eddie Estevez</title>
+                <meta name="description" content="Welcome to my personal website where you can learn more about me and my work!"/>
+            </Helmet>
         <Hero id="hereOnHomePage" title={props.title} subTitle={props.subTitle}/>
         <div className="container justify-content-center d-flex">
             <div className="row  justify-content-center">

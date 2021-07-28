@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import {Helmet} from "react-helmet";
 import Carousel from 'react-bootstrap/Carousel'
 import OnImagesLoaded from 'react-on-images-loaded';
 import Skeleton from 'react-loading-skeleton';
@@ -8,12 +9,14 @@ import {
   } from "react-router-dom";
 
 import {websiteInfo} from "../pageInfo/websiteInfo.js"
+import {websiteCards} from "../cards/website"
 
 
 function WebsiteTemplate(props) {
     
     let portfolioURL = props.portfolioURL;
     let infoObj = websiteInfo.find(o => o.id === portfolioURL);
+    let cardObj = websiteCards.find(o => o.href === portfolioURL);
     let CarouselImages = infoObj.CarouselImages;
     const carouselImageLength = Object.keys(infoObj.CarouselImages).length;
 
@@ -35,6 +38,10 @@ function WebsiteTemplate(props) {
 
         return(
         <>
+            <Helmet>
+                <title>{infoObj["PageTitle"]} | Eddie Estevez</title>
+                <meta name="description" content={cardObj.desc}/>
+            </Helmet>
             <div className="container">
 
                 <Link to ="/mywork">

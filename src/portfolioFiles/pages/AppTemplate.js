@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import {Helmet} from "react-helmet";
 import Carousel from 'react-bootstrap/Carousel'
 import OnImagesLoaded from 'react-on-images-loaded';
 import Skeleton from 'react-loading-skeleton';
@@ -10,6 +11,7 @@ import {
 
 
 import {appInfo} from "../pageInfo/appInfo.js"
+import {appCards} from "../cards/applications"
 
 const  ai_report6 = process.env.PUBLIC_URL + '/P6_Eddie_Estevez_Report.pdf';
 
@@ -18,6 +20,7 @@ function ApplicationTemplate(props) {
     
     let portfolioURL = props.portfolioURL;
     let infoObj = appInfo.find(o => o.id === portfolioURL);
+    let cardObj = appCards.find(o => o.href === portfolioURL);
     let CarouselImages = infoObj.CarouselImages;
     const carouselImageLength = Object.keys(infoObj.CarouselImages).length;
 
@@ -39,6 +42,10 @@ function ApplicationTemplate(props) {
 
         return(
         <>
+            <Helmet>
+                <title>{infoObj["PageTitle"]} | Eddie Estevez</title>
+                <meta name="description" content={cardObj.desc}/>
+            </Helmet>
             <div className="container">
                 <Link to ="/mywork">
                     <button type="button" className="btn btn-outline-primary m-3">Go Back</button>
