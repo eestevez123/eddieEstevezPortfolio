@@ -61,6 +61,9 @@ function ApplicationTemplate(props) {
                                 <p>
                                 {infoObj["Description"]}
                                 </p>
+                                {props.portfolioURL === ("a-midlife-crisis-but-in-college")?(<>
+                                        <div className="text-center"> <a className="btn btn-primary my-4" role="button" href={"https://designlab.wisc.edu/a-midlife-crisis-but-in-college-by-eddie-estevez/"} target='_blank' rel="noopener noreferrer">Check Out The Digital Salon Page for this video</a></div>
+                            </>):(<></>)}
                             </div>
                     </div>
                 </div>                

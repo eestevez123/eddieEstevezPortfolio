@@ -29,6 +29,13 @@ export const websiteCards =  [
         href: "NCJS", 
     },
     {   
+        src: require("../../images/myWorkPage/cardPics/website/nm.jpg").default, 
+        alt: "Risk Assessment and Aggregate Application",
+        title: "Risk Assessment and Aggregate Application",
+        desc: "Within my second summer with Northwestern Mutual, I and another intern created a prototype for a new way risk could be calculated and evaluated within the company.",
+        href: "risk-assessment-and-aggregate-application", 
+    },
+    {   
         src: require("../../images/myWorkPage/cardPics/website/takeoff.png").default, 
         alt: "LiftOff Logo",
         title: "LiftOff",
@@ -43,25 +50,18 @@ export const websiteCards =  [
         href: "apprisen-website-redesign",
     },
     {   
-        src: require("../../images/myWorkPage/cardPics/website/longgame.png").default, 
-        alt: "Logevity Game Logo",
-        title: "The Longevity Game",
-        desc: "Within Northwestern Mutual, I was a part of team that recreated an old Flash game called The Longevity Game with modern web tools.",
-        href: "the-longevity-game",
-    },
-    {   
-        src: require("../../images/myWorkPage/cardPics/website/nm.jpg").default, 
-        alt: "Risk Assessment and Aggregate Application",
-        title: "Risk Assessment and Aggregate Application",
-        desc: "Within my second summer with Northwestern Mutual, I and another intern created a prototype for a new way risk could be calculated and evaluated within the company.",
-        href: "risk-assessment-and-aggregate-application", 
-    },
-    {   
         src: require("../../images/myWorkPage/cardPics/website/nm2.jpg").default, 
         alt: "College Financial Literacy Web App Logo",
         title: "College Financial Literacy Web App",
         desc: "During my winter break of my freshman year, I and another intern worked on a prototype web app that would give high school and early college student much needed financial literacy tools.",
          href: "college-financial-literacy-web-app",
+    },
+    {   
+        src: require("../../images/myWorkPage/cardPics/website/longgame.png").default, 
+        alt: "Logevity Game Logo",
+        title: "The Longevity Game",
+        desc: "Within Northwestern Mutual, I was a part of team that recreated an old Flash game called The Longevity Game with modern web tools.",
+        href: "the-longevity-game",
     },
     {   
         src: require("../../images/myWorkPage/cardPics/website/lis500.png").default,   

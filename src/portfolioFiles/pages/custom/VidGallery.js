@@ -38,6 +38,9 @@ function VidGallery(props) {
                         <p className="mt-5 mb-5">
                             {infoObj["Description"]}
                         </p>
+                        {props.portfolioURL === ("videos-for-uw-madison-memes-for-milk-chugging-teens")?(<>
+                                        <div className="text-center"> <a className="btn btn-primary mb-5" role="button" href={"https://www.facebook.com/groups/175526726305977"} target='_blank' rel="noopener noreferrer">Check Out the UW-Madison Memes for Milk-Chugging Teens Facebook Page</a></div>
+                            </>):(<></>)}
                     </div>
                 </div>
             </div>
