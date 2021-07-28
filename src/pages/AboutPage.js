@@ -28,6 +28,10 @@ function AboutPage(props) {
             <Helmet>
                 <title>About Me | Eddie Estevez</title>
                 <meta name="description" content="Hello World! I'm Eddie! It's nice to meet you!"/>
+                <meta property="og:title" content="About Me | Eddie Estevez"/>
+                <meta property="og:description" 
+                content="Hello World! I'm Eddie! It's nice to meet you!" 
+                />
             </Helmet>
             <Hero id="hereOnHomePage" title={props.title}/>
             <div className="container">

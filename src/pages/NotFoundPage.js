@@ -36,6 +36,10 @@ function NotFoundPage() {
             <Helmet>
                 <title>404 | Eddie Estevez</title>
                 <meta name="description" content="This is the 404 page for my website in case someone gets lost."/>
+                <meta property="og:title" content="404 | Eddie Estevez"/>
+                <meta property="og:description" 
+                content="This is the 404 page for my website in case someone gets lost." 
+                />
             </Helmet>
             <div className="container-fluid bg-myBlue notFoundPageBackground text-white">
                 <div className="container notFoundPageContainer">

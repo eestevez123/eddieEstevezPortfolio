@@ -49,7 +49,7 @@ constructor(props) {
 render() {
   return (
     <HelmetProvider context={helmetContext}>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Container className="p-0 pageContainer" fluid={true}>
       <Container className="px-0 pt-0 contentWrap" fluid={true}>
 
