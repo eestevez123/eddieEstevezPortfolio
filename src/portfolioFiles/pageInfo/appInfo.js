@@ -24,7 +24,7 @@ export const appInfo = [
             {
                 src: require("../../images/myWorkPage/app/workout2.png").default, 
                 label: "Prototype Design",
-                desc: "Before Figma, we used the tools provided by Google slides to contruct a basic skelleton to how we wanted our app to be structured"
+                desc: "Before Figma, we used the tools provided by Google slides to construct a basic skeleton to how we wanted our app to be structured"
             },
             {
                 src: require("../../images/myWorkPage/app/workout3.png").default, 
@@ -49,7 +49,7 @@ export const appInfo = [
             "Project 2 had me look at XV6, a simple UNIX-like operating system, and change a couple of functions to see how it would affect the performance of the OS. ",
             "The 3rd project involved me creating my own shell that would be able to store and remove alias commands. ",
             "The 4th, 5th , and 6th projects had me change the scheduling policies for concurrent processes in XV6, including encrypting pages that are not being used to deter from data theft attacks, both manually and automatically by the kernel. ",
-            "In the 7th project, I implemented a functional multi-threated web server with a shared memory segment for statistics logging and other uses.  ",
+            "In the 7th project, I implemented a functional multi-threaded web server with a shared memory segment for statistics logging and other uses.  ",
         ],
         WhatILearned: "Overall, these classes gave me a better understanding of C and assembly for a couple Instruction Sets, as well as concepts within C such as pointers and references. I better understood stack and heap memory allocation and management, as well as how compilers might translate what I’m writing to give to the OS. I also understood how many policies could be implemented in order to have efficient and secure processes and memory management within an Operating System.",
         CarouselImages: [
@@ -95,7 +95,7 @@ export const appInfo = [
             {
                 src: require("../../images/myWorkPage/app/ai3.png").default, 
                 label: "Breast Cancer Dataset Features and Decision Trees",
-                desc: "Here you can see that the original Decision Tree with the depth of 12 has been prunned to have the depth of 8"
+                desc: "Here you can see that the original Decision Tree with the depth of 12 has been pruned to have the depth of 8"
             },
             {
                 src: require("../../images/myWorkPage/app/ai4.png").default, 
@@ -129,7 +129,7 @@ export const appInfo = [
             {
                 src: require("../../images/myWorkPage/app/java3.png").default, 
                 label: "Escape Room App",
-                desc: "This project involved the usage of a lot of class instances, but created a fun escape room challenge that involved clickling and dragging objects around the window"
+                desc: "This project involved the usage of a lot of class instances, but created a fun escape room challenge that involved clicking and dragging objects around the window"
             },
             {
                 src: require("../../images/myWorkPage/app/java4.png").default, 
@@ -152,18 +152,18 @@ export const appInfo = [
         WhatILearned: "I learned how exactly a microprocessor worked via building one out from scratch and adding realistic modules such as stalled aligned memory as well as 2-way-set associative cache that look like microprocessors still used today. It was an incredible experience to be able to say I built out my very own computer and being able to run assembly programs that I wrote with the instruction set architecture I built.",
         CarouselImages: [{
                 src: require("../../images/myWorkPage/app/552_1.png").default,
-                label: "2-Way Set Associative Cache Shematic",
+                label: "2-Way Set Associative Cache Schematic",
                 desc: "A broad overview of the cache module used for the final phase of the project"
             },
             {
                 src:  require("../../images/myWorkPage/cardPics/app/552.png").default, 
-                label: "Microprocessor Shematic",
+                label: "Microprocessor Schematic",
                 desc: "An overview of the microprocessor, non-pipelined. "
             },
             {
                 src:  require("../../images/myWorkPage/app/552_2.png").default, 
                 label: "Assembly Program Written for the microprocessor by Me",
-                desc: "This assembly program served as a test and demo of the how the branch predictor consolidated its predition within the decode stage of the processor"
+                desc: "This assembly program served as a test and demo of the how the branch predictor consolidated its prediction within the decode stage of the processor"
             },
             {
                 src:  require("../../images/myWorkPage/app/552_3.png").default, 

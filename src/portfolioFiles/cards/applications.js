@@ -17,7 +17,7 @@ export const appCards =  [
         src: require("../../images/myWorkPage/cardPics/app/xv6.jpg").default, 
         alt: "Operating System Tinkering Logo",
         title: "Operating System Tinkering",
-        desc: "I had the opporunity to dive into the workings of an operating system and low-level coding, having done projects to put my knowledge to the test.",
+        desc: "I had the opportunity to dive into the workings of an operating system and low-level coding, having done projects to put my knowledge to the test.",
         href: "operating-system-tinkering", 
     },
     {   
@@ -52,7 +52,7 @@ export const appCards =  [
         src: require("../../images/myWorkPage/cardPics/app/cnn.png").default, 
         alt: "Convolutional Neural Network Hardware Accelerator Logo",
         title: "Convolutional Neural Network Hardware Accelerator",
-        desc: "I worked within a team of 5 other students to build out a Convolutional Neural Network Hardware Accelerator, designed to be able to do the required matrix math efficiently with pretrained values. ",
+        desc: "I worked within a team of 5 other students to build out a Convolutional Neural Network Hardware Accelerator, designed to be able to do the required matrix math efficiently with pre-trained values. ",
         href: "convolutional-neural-network-hardware-accelerator", 
     },
 

@@ -24,7 +24,7 @@ export const websiteInfo = [
         CoverPic: require("../../images/myWorkPage/cardPics/website/lacosechawebsite.png").default, 
         Background: "Being within the Advertisement Club at UW-Madison, I was able to network and meet many local businesses. One of these businesses was La Cosecha Tortilleria Company, who reached out to me about my website experience and if I could help them out with theirs. This opportunity was my first venture into freelance work, so I accepted it with gratitude since they were willing to bet on someone with such an early career such as myself.",
         Background2: "La Cosecha Tortilleria Company specializes in making homemade tortillas and other corn snacks, taking full control of the entire process from receiving the corn from selected farms, in their final form. Working with the business owners was a pleasure, especially when I was able to try their products!",
-        WhatIDid: "Before any kind of design work on the website could have been made, there were many meetings set up for me to learn more about the business, their branding, and what they were looking for from the website. In turn, with that knowledge, I was able to come up with design ideas as well as approach them with different hosting solutions to get their business online. Shopify was elected and I began work on the site, as well as coming onsite to take pictures of their products and operations. I was able to edit these pictures in order to make sure they did their best job representing the product. This project is still ongoing, and the website is subject to change as their business grows.",
+        WhatIDid: "Before any kind of design work on the website could have been made, there were many meetings set up for me to learn more about the business, their branding, and what they were looking for from the website. In turn, with that knowledge, I was able to come up with design ideas as well as approach them with different hosting solutions to get their business online. Shopify was elected and I began work on the site, as well as coming on-site to take pictures of their products and operations. I was able to edit these pictures in order to make sure they did their best job representing the product. This project is still ongoing, and the website is subject to change as their business grows.",
         WhatILearned: "I learned how to implement and design a Shopify website, as well as how to have a great relationship with the business owners who you are working for. Communication was key to deliver the best website for their business.",
         CarouselImages: [{
                 src: require("../../images/myWorkPage/website/cosecha1.png").default, 
@@ -47,7 +47,7 @@ export const websiteInfo = [
         CarouselImages: [{
             src: require("../../images/myWorkPage/website/just1.png").default, 
                 label: "JUST Home Page",
-                desc: "I would update this part of the site peridically to keep it up to date with the journal's activities",
+                desc: "I would update this part of the site periodically to keep it up to date with the journal's activities",
                 
             },
             {
@@ -69,7 +69,7 @@ export const websiteInfo = [
         CarouselImages: [{
                 src: require("../../images/myWorkPage/website/ncjs2.png").default, 
                 label: "Adobe XD Design",
-                desc: "Before implimenting the website design through Adobe XD",
+                desc: "Before implementing the website design through Adobe XD",
                 
             },
             {
@@ -81,7 +81,7 @@ export const websiteInfo = [
             {
                 src: require("../../images/myWorkPage/website/ncjs4.png").default, 
                 label: "Adobe XD Design Comments",
-                desc: "A great feature of Adobe XD is being to share my design to others in the organzation and get their input on the design"
+                desc: "A great feature of Adobe XD is being to share my design to others in the organization and get their input on the design"
             },
             {
                 src: require("../../images/myWorkPage/website/ncjs1.png").default, 
@@ -118,7 +118,7 @@ export const websiteInfo = [
         PageTitle: "Apprisen Website Redesign (JP Morgan Chase Hackathon)",
         CoverPic: require("../../images/myWorkPage/cardPics/website/codeForGood.jpeg").default, 
         Background: "In the Fall of 2020, I was invited to participate in the Code for Good 24 hour hackathon in Columbus, Ohio, hosted by JP Morgan Chase & Co. The hackathon’s focus was bringing together creative talent that would help local communities. For that specific hackathon, we were presented two organizations who were looking to update their websites and apps. One of the organizations presented was Apprisen, whose goal was to help people get out of debt, promote financial literacy, and overall decrease financial insecurity. My team elected to focus on Apprisen, who wanted not only a redesigned website, but a way to improve retention of clients and ensure they stay on track of their debt payments.",
-        Background2: "The challenge propsed was making sure to have a robust user experience so that the user could feel motivated to keep achieving their financial goals, as well as make sure that the user has easy access to their progress and program information. The web app also needed an easy nonintimidating method of communication in case there are questions about the program or missed payments. ",
+        Background2: "The challenge proposed was making sure to have a robust user experience so that the user could feel motivated to keep achieving their financial goals, as well as make sure that the user has easy access to their progress and program information. The web app also needed an easy nonintimidating method of communication in case there are questions about the program or missed payments. ",
         WhatIDid: "The web app was built with HTML, CSS, and Flask, a web framework written in python. I focused on the UI/UX of the web app. I sketched out and proposed the general design and updated logo with an iPad, and then used the Adobe Creative suite of apps to make the required UI elements.",
         WhatILearned: "I learned how to battle sleep deprivation as well as control my caffeine intake to work on the web app through the 24 hours given to me and my team. I learned how Flask functioned, and how to best use it for our web app idea. I also learned to keep in mind how UI elements and placement, as well as the copywriting of a website, can affect the emotions and motivation of the user. ",
         CarouselImages: [{
@@ -144,7 +144,7 @@ export const websiteInfo = [
             {
                 src: require("../../images/myWorkPage/website/long2.png").default, 
                 label: "Create Your Character Screen",
-                desc: "Once the user selects a character, the clounds would be animated to leave to reveal the character"
+                desc: "Once the user selects a character, the cloudswould be animated to leave to reveal the character"
             },
             {
                 src: require("../../images/myWorkPage/website/long3.png").default, 
@@ -169,7 +169,7 @@ export const websiteInfo = [
             {
                 src: require("../../images/myWorkPage/website/long7.png").default, 
                 label: "Additional Information",
-                desc: "A goal for the longevity game is to promote a conversation about life insurance and other financial producted, so a way to connect to a representative at the end of the game was implimented."
+                desc: "A goal for the longevity game is to promote a conversation about life insurance and other financial products, so a way to connect to a representative at the end of the game was implemented."
             },
         ]
     },
@@ -204,7 +204,7 @@ export const websiteInfo = [
         id: "freesound-website-redesign",
         PageTitle: "Freesound Website Redesign",
         CoverPic: require("../../images/myWorkPage/cardPics/website/freesound.png").default,   
-        Background: "Within the fall semester of my senior year (2020), I took a class called LSC 532: Web Design for the Sciences. This class focused on effective communication of science information in an honest but easily digestible way. Within an assignment, I was to take a website whose design I thought I could improve on, which happed to be freesounds.org. I was familiar with this website as this was the site I always came to find specific sound effects for good sound design in videos and more. I thought the site could’ve used a modern redesign that would push people to not only consume and download like I was doing, but to also share sounds and interact with other users.",
+        Background: "Within the fall semester of my senior year (2020), I took a class called LSC 532: Web Design for the Sciences. This class focused on effective communication of science information in an honest but easily digestible way. Within an assignment, I was to take a website whose design I thought I could improve on, which happened to be freesounds.org. I was familiar with this website as this was the site I always came to find specific sound effects for good sound design in videos and more. I thought the site could’ve used a modern redesign that would push people to not only consume and download like I was doing, but to also share sounds and interact with other users.",
         WhatIDid: "I started by thinking about the goals of a website such as FreedSound, and positives that website would probably like to see. I thought that more site traffic would probably be good thing to promote their community and higher likelihood for user financial support. Higher community engage would then ultimately lead to more site content that the users come to the website for in the first place. I transfer those ideas onto an Adobe XD design that places the description of the page on center stage, as well as let the user now how many users are online, how many sounds have been uploaded, as well as see regularly updated content to imply that the website and the community is lively. This would hopefully entice the user to join the community to not “feel left out.” With the Adobe XD mockup, I created a working prototype using React. ",
         WhatILearned: "This class taught me how to not only make simple and elegant websites, but also how to nudge users to do something you want them to do, such as create an account, or to be a part of the community and promote social interactions such as sharing and commenting.",
         CarouselImages: [{
@@ -229,7 +229,7 @@ export const websiteInfo = [
         CarouselImages: [{
                 src: require("../../images/myWorkPage/cardPics/website/arb.png").default, 
                 label: "Redesigned Home Page",
-                desc: "This new website now stretches to the entire width of the screen, as well as displays info about the Arboretum such as the Our Mission and Our Vision statments. "
+                desc: "This new website now stretches to the entire width of the screen, as well as displays info about the Arboretum such as the Our Mission and Our Vision statements. "
             },
             {
                 src: require("../../images/myWorkPage/website/arb1.png").default, 
@@ -239,22 +239,22 @@ export const websiteInfo = [
             {
                 src: require("../../images/myWorkPage/website/arb2.png").default, 
                 label: "Redesigned Visit Page",
-                desc: "The content within the Visit page was restructured into sections in a Question-Answer style so that a user looking for specific information could find it quicky."
+                desc: "The content within the Visit page was restructured into sections in a Question-Answer style so that a user looking for specific information could find it quickly."
             },
             {
                 src: require("../../images/myWorkPage/website/arb3.png").default, 
                 label: "Original Visit Page",
-                desc: "The original visit page had it's content under different sections but had its information set into paragraphs without clear distiction of what those paragraphs contained"
+                desc: "The original visit page had it's content under different sections but had its information set into paragraphs without clear distinction of what those paragraphs contained"
             },
             {
                 src: require("../../images/myWorkPage/website/arb4.png").default, 
                 label: "Redesigned Learn Page",
-                desc: "The new Learn page also had its content set in a Question-Answer style, as well as had accordian compoenents to not bombard the user with too much unnecessary text that they weren't looking for"
+                desc: "The new Learn page also had its content set in a Question-Answer style, as well as had accordion components to not bombard the user with too much unnecessary text that they weren't looking for"
             },
             {
                 src: require("../../images/myWorkPage/website/arb5.png").default, 
                 label: "Original Learn Page",
-                desc: "Just like in the orignal Visit page, the information is placed within paragraphs and other sections, but the content itself is not labeled within each section"
+                desc: "Just like in the original Visit page, the information is placed within paragraphs and other sections, but the content itself is not labeled within each section"
             },
             {
                 src: require("../../images/myWorkPage/website/harold.png").default, 

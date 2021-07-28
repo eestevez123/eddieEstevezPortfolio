@@ -48,7 +48,7 @@ export const videoInfo = [
                 {
                     videoID: "Otez9NQ0EiI",
                     title: "Get Stick Bugged Lol",
-                    desc: "TODO"
+                    desc: "A Silly meme about a dancing stick bug"
                 },
                 {
                     videoID: "wZqh0W8dETM",
@@ -117,7 +117,7 @@ export const videoInfo = [
             },
             {
                 sectionTitle: "CAMPO",
-                sectionDesc: "I was tasked to make 2 promo videos for CAMPO, a fair trade company based in Madison that produces alpalca apperal from small businesses in Peru",
+                sectionDesc: "I was tasked to make 2 promo videos for CAMPO, a fair trade company based in Madison that produces alpaca apparel from small businesses in Peru",
                 videoURLs: [
                     {
                         videoID: "nHCQzMFMubo",
@@ -132,7 +132,7 @@ export const videoInfo = [
                 ],
             },
             {
-                sectionTitle: "Bamdit Tacos",
+                sectionTitle: "Bandit Tacos",
                 sectionDesc: "I created a promo video for Bandit Tacos, a local Madison Taco restaurant",
                 videoURLs: [
                     {
@@ -155,7 +155,7 @@ export const videoInfo = [
                 {
                     videoID: "DVhwkRaZGwA",
                     title: "UW Dining Hall Food Plan Meme",
-                    desc: "Original Caption: Just a regular Saturday night in Madtown. I call this one \"Mr. BongoSide.\"",
+                    desc: "A critique on the UW-Madison Dining Hall Food Plan",
                 },
                 {
                     videoID: "mbXiu8v-vQU",
@@ -197,7 +197,7 @@ export const videoInfo = [
         id: "communication-arts-200-video",
         PageTitle: "Communication Arts 200 Video",
         videoURL: "https://www.youtube-nocookie.com/embed/_OekNTxnOBQ",
-        Description: "Within CA 200: Introduction to Digital Communication, I made a vide on a subject on an issue on campus. I focused on the required meal plan that new incoming student were required to participate in that only involved food from the campus dining halls. I focused how this increased the financial burden and decreases traffic to local restaurants on campus that keep getting closed due to decreased business. Later on in the semester, we were tasked to remix the video and present within a vernacular lens.  ",
+        Description: "Within CA 200: Introduction to Digital Communication, I made a video on a subject on an issue on campus. I focused on the required meal plan that new incoming student were required to participate in that only involved food from the campus dining halls. I focused how this increased the financial burden and decreases traffic to local restaurants on campus that keep getting closed due to decreased business. Later on in the semester, we were tasked to remix the video and present within a vernacular lens.  ",
     },
     {   
         id: "communication-arts-155-video",
