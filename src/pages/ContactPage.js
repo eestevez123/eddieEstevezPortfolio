@@ -40,7 +40,15 @@ function HomePage(props) {
         <>
             <Helmet>
                 <title>Let's Connect | Eddie Estevez</title>
-                <meta name="description" content="See What I'm Up to on Social Media! Also you can reach me via phone or email!"/>
+                <meta name="description"
+                content="See What I'm Up to on Social Media! Also you can reach me via phone or email!"
+                />
+                <meta property="og:title" 
+                    content="Let's Connect | Eddie Estevez"
+                />
+                <meta property="og:description" 
+                    content="See What I'm Up to on Social Media! Also you can reach me via phone or email!"
+                />
             </Helmet>
         <Hero id="hereOnHomePage" title={props.title}/>
         <div className="container">

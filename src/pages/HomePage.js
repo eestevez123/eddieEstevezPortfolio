@@ -24,8 +24,12 @@ function HomePage(props) {
     return(
         <div>
             <Helmet>
-                <title>Eddie Estevez</title>
-                <meta name="description" content="Welcome to my personal website where you can learn more about me and my work!"/>
+                <title>Eddie Estevez | Computer Nerd</title>
+                <meta name="description" content="Welcome to my personal website! My name is Eddie Estevez, a software developer, designer, content creator, and coffee lover"/>
+                <meta property="og:title" content="Eddie Estevez | Computer Nerd" />
+                <meta property="og:description" 
+                content="Welcome to my personal website! My name is Eddie Estevez, a software developer, designer, content creator, and coffee lover" 
+                />
             </Helmet>
         <Hero id="hereOnHomePage" title={props.title} subTitle={props.subTitle}/>
         <div className="container justify-content-center d-flex">

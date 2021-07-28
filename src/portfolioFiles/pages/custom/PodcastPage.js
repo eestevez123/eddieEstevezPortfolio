@@ -17,6 +17,12 @@ function PodcastPage(props) {
             <Helmet>
                 <title>{infoObj["PageTitle"]} | Eddie Estevez</title>
                 <meta name="description" content={cardObj.desc}/>
+                <meta property="og:title" 
+                    content={`${infoObj["PageTitle"]} | Eddie Estevez`}
+                />
+                <meta property="og:description" 
+                    content={cardObj.desc}
+                />
             </Helmet>
             <div className="container">
                 <div className="top-section">
