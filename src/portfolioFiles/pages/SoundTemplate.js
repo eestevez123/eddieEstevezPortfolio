@@ -1,18 +1,23 @@
 import React from "react";
-
+import {Helmet} from "react-helmet";
 import { Link } from "react-router-dom";
 
 import {soundInfo} from "../pageInfo/soundInfo.js"
-
+import {soundCards} from "../cards/sounds"
 
 function SoundTemplate(props) {
     
     let portfolioURL = props.portfolioURL;
     
     let infoObj = soundInfo.find(o => o.id === portfolioURL);
+    let cardObj = soundCards.find(o => o.href === portfolioURL);
 
         return(
         <>
+            <Helmet>
+                <title>{infoObj["PageTitle"]} | Eddie Estevez</title>
+                <meta name="description" content={cardObj.desc}/>
+            </Helmet>
             <div className="container">
                 <div className="top-section">
                 <Link to ="/mywork">

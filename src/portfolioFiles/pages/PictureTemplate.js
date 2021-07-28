@@ -1,6 +1,6 @@
 import React from "react";
 import Gallery from 'react-grid-gallery';
-
+import {Helmet} from "react-helmet";
 
 import {
     Link,
@@ -8,16 +8,21 @@ import {
 
 
 import {imageInfo} from "../pageInfo/imageInfo.js"
-
+import {imageCards} from "../cards/images"
 
 function PictureTemplate(props) {
     
     let portfolioURL = props.portfolioURL;
     let infoObj = imageInfo.find(o => o.id === portfolioURL);
     let imageList = infoObj.images
-    
+    let cardObj = imageCards.find(o => o.href === portfolioURL);
+
         return(
         <>
+            <Helmet>
+                <title>{infoObj["PageTitle"]} | Eddie Estevez</title>
+                <meta name="description" content={cardObj.desc}/>
+            </Helmet>
             <div className="container">
                 <div className="top-section">
                 <Link to ="/mywork">

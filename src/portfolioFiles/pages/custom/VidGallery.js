@@ -1,17 +1,22 @@
 import React from "react";
-
+import {Helmet} from "react-helmet";
 import { Link } from "react-router-dom";
 
 import {videoInfo} from "../../pageInfo/videoInfo.js"
-
+import {videoCards} from "../../cards/videos"
 
 function VidGallery(props) {
     
     let portfolioURL = props.portfolioURL;
     let infoObj = videoInfo.find(o => o.id === portfolioURL);
+    let cardObj = videoCards.find(o => o.href === portfolioURL);
 
         return(
         <>
+            <Helmet>
+                <title>{infoObj["PageTitle"]} | Eddie Estevez</title>
+                <meta name="description" content={cardObj.desc}/>
+            </Helmet>
             <div className="container">
                 <div className="top-section">
                 <Link to ="/mywork">

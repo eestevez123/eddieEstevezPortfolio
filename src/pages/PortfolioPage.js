@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Helmet} from "react-helmet";
 import {
     Switch,
     Route,
@@ -38,6 +39,10 @@ function PortfolioPage(props) {
 
 
     return(<>
+            <Helmet>
+                <title>My Work | Eddie Estevez</title>
+                <meta name="description" content="You can find some of my work that I have done throughout the past couple years, from web development and software engineering, to video and sound production."/>
+            </Helmet>
             <Switch>
                 <Route exact path={path}>
                     <Hero title={props.title} className="mb-0"/>
