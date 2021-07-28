@@ -18,7 +18,7 @@ export const websiteCards =  [
         src: require("../../images/myWorkPage/cardPics/website/just.png").default, 
         alt: "JUST Logo",
         title: "Journal of Science and Technology (JUST)",
-        desc: "I helped maintain the website used by JUST, a club at the UW-Madison campus",
+        desc: "I helped maintain the website used by JUST, a club at UW-Madison",
         href: "JUST", 
     },
     {   
@@ -67,7 +67,7 @@ export const websiteCards =  [
         src: require("../../images/myWorkPage/cardPics/website/lis500.png").default,   
         alt: "Custom Implicit Bias Test Logo",
         title: "Custom Implicit Bias Test",
-        desc: "I helped the team develop an online survey about implicit racial and gender biases. We built and tracked the survey and its results using HTML, CSS, and PHP.",
+        desc: "My team and I created an online survey about implicit racial and gender biases. We built and tracked the survey and its results using HTML, CSS, and PHP.",
         href: "custom-implicit-bias-test",
     },
     {   
