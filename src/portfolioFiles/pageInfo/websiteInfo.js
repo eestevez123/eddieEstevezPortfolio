@@ -144,7 +144,7 @@ export const websiteInfo = [
             {
                 src: require("../../images/myWorkPage/website/long2.png").default, 
                 label: "Create Your Character Screen",
-                desc: "Once the user selects a character, the cloudswould be animated to leave to reveal the character"
+                desc: "Once the user selects a character, the clouds would be animated to leave to reveal the character"
             },
             {
                 src: require("../../images/myWorkPage/website/long3.png").default, 
