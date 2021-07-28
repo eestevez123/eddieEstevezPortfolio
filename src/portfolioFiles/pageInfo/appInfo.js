@@ -59,8 +59,8 @@ export const appInfo = [
         id: "ti-tiva-launchpad-games",
         PageTitle: "TI Tiva Launchpad Games",
         CoverPic: require("../../images/myWorkPage/cardPics/app/tiva.png").default, 
-        Background: "Within two classes I taken ECE 210: Intro to Electrical Engineering and ECE 353: Intro to Microprocessor Systems, I played around with a TI Tiva Launchpad on a custom development board in which I produced a game in in each of those classes. ",
-        WhatIDid: "The games were written in C within Keil uVision. I needed to get familiar with many packages and troubleshoot with drivers for the games to interact appropriately with the hardware, both screen and input buttons.",
+        Background: "Within two classes I taken ECE 210: Intro to Electrical Engineering and ECE 353: Intro to Microprocessor Systems, I played around with a TI Tiva Launchpad on a custom development board. The two classes had me work with various peripherals such as a touch screen, gyroscope, buttons, a joystick, and LEDs. For the final project for both of these classes, I produced a game using the code I built throughout the semester. ",
+        WhatIDid: "The games were written in C within Keil uVision. I needed to get familiar with many packages and troubleshoot with drivers for the games to interact appropriately with the hardware. I also used other tools to reduce the resolution of images to fit both memory and screen limitations. ",
         WhatILearned: "I got a better appreciation for hardware-software interaction. I also learned how to deal with hardware limitations to get the best experience for the user. ",
         CarouselImages: [
         ]

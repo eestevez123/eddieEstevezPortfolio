@@ -53,7 +53,7 @@ export const appCards =  [
         alt: "Convolutional Neural Network Hardware Accelerator Logo",
         title: "Convolutional Neural Network Hardware Accelerator",
         desc: "I worked within a team of 5 other students to build out a Convolutional Neural Network Hardware Accelerator, designed to be able to do the required matrix math efficiently with pretrained values. ",
-        href: "convulutionary-neural-network-hardware-accelerator", 
+        href: "convolutional-neural-network-hardware-accelerator", 
     },
 
 ]
