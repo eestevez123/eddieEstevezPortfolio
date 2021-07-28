@@ -3,7 +3,7 @@ export const websiteCards =  [
         src: require("../../images/myWorkPage/cardPics/website/mysite.png").default, 
         alt: "My Personal Website Logo",
         title: "My Personal Website",
-        desc: "I designed and implimented my own personal website (this one!) using React and other web tools.",
+        desc: "I designed and implemented my own personal website (this one!) using React and other web tools.",
         href: "personal-site", 
         use: "WebsiteTemplate", 
     },
@@ -11,7 +11,7 @@ export const websiteCards =  [
         src: require("../../images/myWorkPage/cardPics/website/lacosechawebsite.png").default, 
         alt: "La Cosecha Tortilleria Logo",
         title: "La Cosecha Tortilleria Company Website",
-        desc: "I designed and implimented a website for the La Cosecha Tortilleria Company, a tortilla business located in Madison, WI",
+        desc: "I designed and implemented a website for the La Cosecha Tortilleria Company, a tortilla business located in Madison, WI",
         href: "la-cosecha-tortilla", 
     },
     {   
@@ -46,7 +46,7 @@ export const websiteCards =  [
         src: require("../../images/myWorkPage/cardPics/website/codeForGood.jpeg").default, 
         alt: "Apprisen Logo",
         title: "Apprisen Website Redesign (JP Morgan Chase Hackathon)",
-        desc: "I was in team within JP Morgan Chase's Code For Good Hackathon where we redesigned a website for a non-profit organzation called Aprisen",
+        desc: "I was in team within JP Morgan Chase's Code For Good Hackathon where we redesigned a website for a non-profit organization called Apprisen",
         href: "apprisen-website-redesign",
     },
     {   
@@ -73,7 +73,7 @@ export const websiteCards =  [
     {   
         src: require("../../images/myWorkPage/cardPics/website/freesound.png").default,   
         alt: "Freesound Logo",
-        title: "Freesound Website Redesign",
+        title: "FreeSound Website Redesign",
         desc: "I created a mockup of a redesign of a website I frequented called FreeSound and created a prototype with React",
         href: "freesound-website-redesign",
     },
@@ -81,7 +81,7 @@ export const websiteCards =  [
         src: require("../../images/myWorkPage/cardPics/website/arb.png").default, 
         alt: "University of Wisconsin-Arboretum Website Redesign",
         title: "University of Wisconsin-Arboretum Website Redesign",
-        desc: "I was in team that redesigned the website used by the University of Wisconsin-Arboretum to be more useful to most users and to increase traffic and interations",
+        desc: "I was in team that redesigned the website used by the University of Wisconsin-Arboretum to be more useful to most users and to increase traffic and interactions",
         href: "university-of-wisconsin-arboretum-website-redesign",
     },
     

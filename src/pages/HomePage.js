@@ -170,10 +170,10 @@ function HomePage(props) {
                     <ul>
                         <li>Adobe XD</li>
                         <li>Figma</li>
-                        <li>Adobe Photoshop</li>
+                        <li>Adobe PhotoShop</li>
                         <li>GIMP</li>
                         <li>Adobe Illustrator</li>
-                        <li>Adoe After Effects</li>
+                        <li>Adobe After Effects</li>
                         <li>Canva</li>
                     </ul>
 
