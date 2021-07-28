@@ -4,7 +4,7 @@ export const websiteURLs = [ "personal-site", "la-cosecha-tortilla", "JUST", "NC
 "university-of-wisconsin-arboretum-website-redesign"]
 
 export const appURLs = ["blackrock-tableau-dashboard", "workout-application", "operating-system-tinkering", "ti-tiva-launchpad-games", 
-"artificial-intelligence-projects", "introduction-to-bioinformatics-via-jupyter-notebooks", "java-programs-and-applications", "blueooth-audio-receiver-and-equalizer", 
+"artificial-intelligence-projects", "java-programs-and-applications", 
 "mips-16-bit-5-stage-pipelined-microprocessor", "convulutionary-neural-network-hardware-accelerator"]
 
 export const videoURLs = ["love-on-a-leash", "a-midlife-crisis-but-in-college", "videos-for-uw-madison-memes-for-milk-chugging-teens", "advertisement-club-videos", 
