@@ -34,7 +34,7 @@ function NotFoundPage() {
         return(
         <>
             <Helmet>
-                <title>404 Error | Eddie Estevez</title>
+                <title>404 | Eddie Estevez</title>
                 <meta name="description" content="This is the 404 page for my website in case someone gets lost."/>
             </Helmet>
             <div className="container-fluid bg-myBlue notFoundPageBackground text-white">
