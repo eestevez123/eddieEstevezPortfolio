@@ -35,7 +35,7 @@ function AboutPage(props) {
                                 <h4 className="mt-3">My Origin Story</h4>
                                 <p>
                                 Born and raised in Milwaukee, Wisconsin, I’ve grown up to be someone who really appreciates technology, the color blue, 
-                                and a good cup of coffee. Just this past May (2021) I have graduated from the University of Wisconsin – Madison, with 
+                                and a good cup of coffee. Just this past May (2021) I graduated from the University of Wisconsin – Madison, with 
                                 degrees in both Computer Engineering and Computer Science, as well as a certificate (also known as a minor) in
                                 Digital Studies. Within my time as a university student, I also took classes that peaked my interests outside of my
                                 degrees, such as Spanish and Italian classes, Choir, Theater, more.
@@ -44,7 +44,7 @@ function AboutPage(props) {
                                 My love for tech started when my dad brought home our very first computer. Ten-year-old me promptly elected myself as the
                                 tech guru of the family. In middle school, I got my first smartphone, an LG android device that I almost immediately 
                                 started tinkering with, such as installing custom operating systems and more. In high school, I was able to take my first
-                                computer science courses, learning Python and Java, what software engineering was, specifically with scrum and agile thinking.
+                                computer science courses, learning Python and Java, and what software engineering was, specifically with scrum and agile thinking.
                                 I was fortunate enough to have learned enough to land my very first internship as a high school graduate in the summer of 2017 
                                 at the Fortune 500 financial services company, Northwestern Mutual.
                                 </p>
@@ -65,7 +65,7 @@ function AboutPage(props) {
                             <h4 className="mt-3">Where My Story Is Right Now</h4>
                             <p>
                             I am a new graduate from the University of Wisconsin – Madison, having graduated with a B.S in Computer Engineering and a BMAJ 
-                            (secondary major) in Computer Science, a certificate/minor in Digital Studies. As a visual-focused person, I enjoy front-end development 
+                            (secondary major) in Computer Science, as well as with a certificate/minor in Digital Studies. As a visual-focused person, I enjoy front-end development 
                             for websites and apps, as well as creating digital media for social apps, such as YouTube. I have had incredible opportunities of working 
                             within Northwestern Mutual and BlackRock as an intern, as well as embarking on freelance work developing the website for a local business 
                             in Madison, WI, La Cosecha Tortilla Company. Outside of tech, I enjoy running, reading, and I really appreciate good coffee, proudly owning 
@@ -102,18 +102,18 @@ function AboutPage(props) {
                             <h6>B.S in Computer Engineering</h6>
                             <img className="img-fluid educationIcon my-4" src={compEng} alt="Software Development Icon"/>
                             <p>
-                            Studied the design, development, analysis, and manufacture of computer hardware and low-level software. I started with learning binary to using a hardware description language called Verilog to develop my own 16-bit MIPS Microprocessor. In the middle, I learned the necessary electrical engineering to understand embedded systems as well as signal processing
+                            I studied the design, development, analysis, and manufacture of computer hardware and low-level software. I started with learning binary to using a hardware description language called Verilog to develop my own 16-bit MIPS Microprocessor. In the middle, I learned the necessary electrical engineering to understand embedded systems as well as signal processing
                                 </p> </div>
                             <div className="col-sm-4">
                             <h6>BMAJ in Computer Science</h6>
                             <img className="img-fluid educationIcon my-4" src={compSci } alt="Software Development Icon"/>
                                 <p>
-                                Studied the theory, application, and engineering behind software. I have learned how to work within a scrum team to deliver a workout app built with React Native, the theory behind computer science algorithms, the efficiencies of data structures and sorting algorithms, as well as various applications such as machine learning, website development, and operating systems.
+                                I studied the theory, application, and engineering behind software. I have learned how to work within a scrum team to deliver a workout app built with React Native, the theory behind computer science algorithms, the efficiencies of data structures and sorting algorithms, as well as various applications such as machine learning, website development, and operating systems.
                                     </p></div>
                             <div className="col-sm-4">
                             <h6>Certificate in Digital Studies</h6>
                             <img className="img-fluid educationIcon my-4" src={digStud } alt="Software Development Icon"/>
-                            <p>Studied how the internet and everything digital affects culture, as well as how to best use modern tools to marry form and function within digital media, whether it be a website, video, podcast, etc. </p>
+                            <p>I studied how the internet and everything digital affects culture, as well as how to best use modern tools to marry form and function within digital media, whether it be a website, video, podcast, etc. </p>
                                 </div>
                             </div>
                             
@@ -131,13 +131,13 @@ function AboutPage(props) {
                             <h5>I Was In A Dating Show!</h5>
                             <p>I was a part of Season 1 of an online national dating show called Love Campus with the pseudonym of Danny, you can find the episodes on the <a href="https://www.instagram.com/lovecampusofficial/">Love Campus Instagram account</a>.</p>
                             <h5>Very Involved In The Meme Culture of the University of Wisconsin-Madison!</h5>
-                            <p>I was the admin to the University of Wisconsin-Madison’s meme page called <a href="https://www.facebook.com/groups/175526726305977">UW Madison Memes for Milk-Chugging Teens</a>.
-                            This page has been a platform for me to make memes and videos for a growing group that currently stands at almost 30k members. I was also a contributing member of the UW-Madison Meme Club, B.O.I whose acronym of course stood for Meme Analysis Club.
+                            <p>I was the admin for the University of Wisconsin-Madison’s meme page called <a href="https://www.facebook.com/groups/175526726305977">UW Madison Memes for Milk-Chugging Teens</a>.
+                            This page has been a platform for me to make memes and videos for a growing group that currently stands at almost 30k members. I was also a contributing member of the UW-Madison Meme Club, B.O.I, whose acronym of course stood for Meme Analysis Club.
                             </p>
                             <h5>I Love Learning Languages!</h5>
                             <p>I grew up bilingual in both English and Spanish. In College, I picked up two semesters of Italian, and continue to learn it today in an effort to be trilingual. Duolingo is a great app for that which I use almost daily.</p>
                             <h5>Recently Learned How To Swim!</h5>
-                            <p>After years of trying to teach myself and placing myself in classes, I just learned and became comfortable swimming this summer (2021)!</p>
+                            <p>After years of trying to teach myself and placing myself in a swimming class in high school, I just learned and became comfortable swimming this summer (2021)!</p>
 
                         </div>
                         <div className="col-md-6 order-md-1 mb-3">
@@ -155,4 +155,4 @@ function AboutPage(props) {
     
 } 
 
-export default AboutPage;
+export default AboutPage

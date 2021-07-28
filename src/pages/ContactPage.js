@@ -44,7 +44,7 @@ function HomePage(props) {
 
             
             <div className="col-md-12">
-            <h3 className="mb-4 contactPageTitle">Follow me on Social Media!</h3>
+            <h3 className="mb-4 contactPageTitle">See What I'm Up to on Social Media!</h3>
                 <div className="wrapper">
                     <div className="row mb-5 g-5">
 

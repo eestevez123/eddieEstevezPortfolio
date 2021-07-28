@@ -54,9 +54,7 @@ function HomePage(props) {
                 <div className="row">
                     <div className="col text-center">
                         <h2 className="fw-bold">A Little About Me</h2>
-                        <p className="fs-5">A Milwaukee native and overall computer nerd. I have a passion for digital media and design. 
-                        I love a good challenge that can place me outside of my comfort zone, especially when equipped with a good cup of coffee.
-                         As a self-proclaimed extrovert, I also enjoy a good conversation, doubly so if it's over coffee. Did I mention I like coffee yet? </p>
+                        <p className="fs-5">A Milwaukee native and overall computer nerd. I have a passion for digital media and design. I love a good challenge that can get me outside of my comfort zone, especially when equipped with a good cup of coffee. As a self-proclaimed extrovert, I also enjoy a good conversation, doubly so if it's over coffee. Did I mention I like coffee yet? </p>
                         <Link to="/aboutme">
                             <button type="button" className="btn btn-outline-light">Learn More About Me</button>
                         </Link>
@@ -114,8 +112,9 @@ function HomePage(props) {
                 <div className="col-md-4 border border-top-0"> 
                     <h4 className="fw-bold mt-4 mt-md-0">Designer</h4>
                     <img className="img-fluid skillIcon my-4 designerIcon" src={designerIcon } alt="Designer Icon"/>
-                    <p className="fs-6 mx-2 mt-2">I consider myself a very visual and imaginative person, so the task of coming up with elegant and useful tasks is always a 
-                    fun exercise.</p>
+                    <p className="fs-6 mx-2 mt-2">
+                    I consider myself a very visual and imaginative person, so the task of coming up with a elegant and useful design is always a fun exercise.
+                        </p>
                         <h5 className="font-myBlue fw-bold">Tools</h5>
                     <ul>
                         <li>Adobe XD</li>
@@ -131,8 +130,7 @@ function HomePage(props) {
                 <div className="col-md-4 border border-top-0  rounded-right"> 
                     <h4 className="fw-bold mt-4 mt-md-0">Content Creator</h4>
                     <img className="img-fluid skillIcon my-4" src={contentIcon} alt="Content Creator Icon"/>
-                    <p className="fs-6 mx-2 mt-2">It all started with me making memes for my University’s Facebook meme page, and I just kept on going. 
-                    Today, I love editing in all forms, from video, photo, and sound, to create.</p>
+                    <p className="fs-6 mx-2 mt-2">It all started with me making memes for my University’s Facebook meme page, and I just kept going. Today, I love editing in all forms, from video, photo, and sound, to create.</p>
                          <h5 className="font-myBlue fw-bold">Tools</h5>
                     <ul>
                         <li>Adobe Photoshop</li>

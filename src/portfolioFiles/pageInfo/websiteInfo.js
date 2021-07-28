@@ -22,19 +22,18 @@ export const websiteInfo = [
         id: "la-cosecha-tortilla",
         PageTitle: "La Cosecha Tortilleria Company Website",
         CoverPic: require("../../images/myWorkPage/cardPics/website/lacosechawebsite.png").default, 
-        Background: "Being within the Advertisement Club at UW-Madison, I was able to network and meet many local businesses. One of these businesses was La Cosecha Tortilleria Company, reached out to me as I have worked with one of these business owners before within their taco business at Bandit Tacos and asked about my website experience. This opportunity was my first venture into freelance work, so I accepted with gratitude and appreciation that they were willing to bet on someone with such an early career such as myself.",
-        Background2: "La Cosecha Tortilleria Company specialized in making homemade tortillas and other corn snacks, taking full control of the entire process from receiving the corn from selected farms, in their final form. Working with the business owners was a pleasure, especially when I was able to try their products!",
+        Background: "Being within the Advertisement Club at UW-Madison, I was able to network and meet many local businesses. One of these businesses was La Cosecha Tortilleria Company, who reached out to me about my website experience and if I could help them out with theirs. This opportunity was my first venture into freelance work, so I accepted it with gratitude since they were willing to bet on someone with such an early career such as myself.",
+        Background2: "La Cosecha Tortilleria Company specializes in making homemade tortillas and other corn snacks, taking full control of the entire process from receiving the corn from selected farms, in their final form. Working with the business owners was a pleasure, especially when I was able to try their products!",
         WhatIDid: "Before any kind of design work on the website could have been made, there were many meetings set up for me to learn more about the business, their branding, and what they were looking for from the website. In turn, with that knowledge, I was able to come up with design ideas as well as approach them with different hosting solutions to get their business online. Shopify was elected and I began work on the site, as well as coming onsite to take pictures of their products and operations. I was able to edit these pictures in order to make sure they did their best job representing the product. This project is still ongoing, and the website is subject to change as their business grows.",
-        WhatILearned: "I learned how to implement and design a Shopify website, as well as how to have a great relationship with the businessowners who you are working for. Communication was key to deliver the best website for their business.",
+        WhatILearned: "I learned how to implement and design a Shopify website, as well as how to have a great relationship with the business owners who you are working for. Communication was key to deliver the best website for their business.",
         CarouselImages: [{
                 src: require("../../images/myWorkPage/website/cosecha1.png").default, 
                 label: "La Cosecha Home Page",
-                desc: "The home page is a carousel of images that serve as the Hero header for the site alongside phrases that related to the products and the company"
+                desc: "The home page is a carousel of images that serve as the Hero header for the site alongside phrases"
             },
             {
                 src: require("../../images/myWorkPage/website/cosecha2.png").default, 
-                label: "La Cosecha Home Page, second image",
-                desc: "Another image that is on the home page"
+                label: "La Cosecha Home Page, second image"
             }
         ]
     },
@@ -42,9 +41,9 @@ export const websiteInfo = [
         id: "JUST",
         PageTitle: "Journal of Science and Technology (JUST)",
         CoverPic: require("../../images/myWorkPage/cardPics/website/just.png").default, 
-        Background: "The summer of my junior year at UW-Madison, the president of JUST (Journal of Science and Technology) reached out to me asking if I was interested of maintaining and updating their club’s website. The club focused on getting writers and editors together to produce articles about various STEM subjects, usually relating to the research being done at the UW-Madison campus.",
-        WhatIDid: "The JUST website in the form that was presented to me was a WordPress site with a third-party theme builder. I was tasked update the website accordingly to keep it relevant, as well as change a few UI elements. I was also tasked with taking the articles in the form of work documents and posting them on the website.  ",
-        WhatILearned: "Working with JUST gave me a chance to learn more on how WordPress sites worked and the best way to update the site as well as add content to it.",
+        Background: "The summer of my Junior year at UW-Madison, the president of JUST (Journal of Science and Technology) reached out to me asking if I was interested of maintaining and updating their club’s website. The club focused on getting writers and editors together to produce articles about various STEM subjects and the research being done within UW-Madison",
+        WhatIDid: "The JUST website is a WordPress site with a third-party theme builder. I was tasked with updating the website with new articles and more to keep it relevant, as well as change a few UI elements.",
+        WhatILearned: "Working with JUST gave me a chance to learn more about WordPress and how it worked, as well as with the best way to update the site with content.",
         CarouselImages: [{
             src: require("../../images/myWorkPage/website/just1.png").default, 
                 label: "JUST Home Page",
@@ -65,8 +64,8 @@ export const websiteInfo = [
         PageTitle: "National Collegiate Journal of Science (NCJS)",
         CoverPic: require("../../images/myWorkPage/cardPics/website/ncjs.png").default, 
         Background: "Through my work at JUST, I was contacted by NCJS (National Collegiate Journal of Science), a then-new organization whose goal was to a home to academic research articles written by students across the country and facilitate conversations about STEM fields and advancements within them. Since NCJS was new at the time, I was asked to design and build the NCJS website.",
-        WhatIDid: "With my knowledge gained through JUST, I was able to propose a WordPress website, first designed with Adobe XD, and then later built with a free theme that was heavily edited via the HTML and CSS that was available to me. I then made a tutorial to walk through how to post new articles onto the site.",
-        WhatILearned: "Working with NCJS gave me a chance to build out a WordPress website for an organization, requiring me to strengthen my communication skills to make sure I was delivering satisfactory work in a timely manner.",
+        WhatIDid: "With my knowledge gained through JUST, I was able to propose a WordPress website, first designed with Adobe XD, and then later built with a free theme that was heavily edited via the HTML and CSS that was available to me. I then made a walkthrough tutorial video on how to post new articles onto the site.",
+        WhatILearned: "Working with NCJS gave me a chance to build out a WordPress website for a new organization, requiring me to strengthen my communication skills to make sure I was delivering satisfactory work in a timely manner.",
         CarouselImages: [{
                 src: require("../../images/myWorkPage/website/ncjs2.png").default, 
                 label: "Adobe XD Design",
@@ -97,8 +96,8 @@ export const websiteInfo = [
         PageTitle: "LiftOff",
         CoverPic: require("../../images/myWorkPage/cardPics/website/takeoff.png").default, 
         Background: "As an intern at Northwestern Mutual in 2019, I was able to participate within their intern hackathon with the theme of building for a better intern experience. We were given a full work day to accomplish this goal. ",
-        WhatIDid: "I, alongside 5 others, teamed up to create a web app called Liftoff, designed to streamline the onboarding experience, giving the user a simple yet elegant interface where they could easily see important information such as what tasks are required to be completed and their deadlines. The web app also aimed to expedite and simplify access requests so that interns can get to work with their assignments faster than before, and able to easily see the status of their access request. Within the team, my role was design of the web application as well as the logo. ",
-        WhatILearned: "I learned how to quickly work within a team of 5 other people to deliver and present a web application. I was able to strength my design skills as well using Adobe Photoshop and Illustrator to make the required UI elements.",
+        WhatIDid: "I, alongside 5 others, teamed up to create a web app called Liftoff, designed to streamline the onboarding experience, giving the user a simple yet elegant interface where they could easily see important information such as what tasks are required to be completed and their deadlines. The web app also aimed to expedite and simplify access requests so that interns can get to work with their assignments faster than before, and able to easily see the status of their access request. Within the team, my role was to design the web application as well as the logo.",
+        WhatILearned: "I learned how to quickly work within a team of 5 other people to deliver and present a web application. I was able to strength my design skills with Adobe Photoshop and Illustrator to make the required UI elements.",
         CarouselImages: [
             {
             src: require("../../images/myWorkPage/website/takeoff2.jpg").default, 
@@ -111,7 +110,6 @@ export const websiteInfo = [
             {
                 src: require("../../images/myWorkPage/website/takeoff1.png").default, 
                     label: "Takeoff Logo",
-                    desc: "Logo for the website that I created with Adobe Illustrator"
             },
         ]
     },
@@ -119,14 +117,14 @@ export const websiteInfo = [
         id: "apprisen-website-redesign",
         PageTitle: "Apprisen Website Redesign (JP Morgan Chase Hackathon)",
         CoverPic: require("../../images/myWorkPage/cardPics/website/codeForGood.jpeg").default, 
-        Background: "In the Fall of 2020, I was invited to participate in the Code for Good 24 hour hackathon in Columbus, Ohio, hosted by JP Morgan Chase & Co. The hackathon’s focus was bringing together creative talent that would help local communities. For that specific hackathon, we were presented two organizations who were looking to update their websites and apps. The first organization presented was Inroads, founded in Chicago by Frank C Carr in 1970, whose goal was to help young adults from diverse communities get connected with decisionmakers within companies, and then allow them direct access to apply and get internship/full-time positions that best suit them and their professional interests. The second organization presented was Apprisen, whose goal was to help people get out of debt, promote financial literacy, and overall decrease financial insecurity. My team elected to focus on Apprisen, who wanted not only a redesigned website, but a way to improve retention of clients and ensure they stay on track of their debt payments. ",
-        Background2: "The challenge then was making sure to have a robust user experience so that the user could feel motivated to keep on achieving their financial goals, as well as make sure that the user has easy access on their progress and program information. The web app also wanted to make sure there was an easy nonintimidating method of communication in case there are questions about the program or missed payments. ",
-        WhatIDid: "The web app was built with HTML, CSS, and Flask, a web framework written in python. I focused on the UI/UX of the web app. I decided to sketch out and proposed the general design and updated logo with an iPad, and then used the Adobe Creative suite of apps to make the required UI elements.",
-        WhatILearned: "I learned how to battle sleep deprivation as well as control my caffeine intact to work on the web app through the 24 hours given to me and my team. I learned how Flask functioned, and how to best use it for our web app idea. I also learned to keep in mind how UI elements and placement, as well as the copywriting of a website, can affect the emotions and motivation of the user. ",
+        Background: "In the Fall of 2020, I was invited to participate in the Code for Good 24 hour hackathon in Columbus, Ohio, hosted by JP Morgan Chase & Co. The hackathon’s focus was bringing together creative talent that would help local communities. For that specific hackathon, we were presented two organizations who were looking to update their websites and apps. One of the organizations presented was Apprisen, whose goal was to help people get out of debt, promote financial literacy, and overall decrease financial insecurity. My team elected to focus on Apprisen, who wanted not only a redesigned website, but a way to improve retention of clients and ensure they stay on track of their debt payments.",
+        Background2: "The challenge propsed was making sure to have a robust user experience so that the user could feel motivated to keep achieving their financial goals, as well as make sure that the user has easy access to their progress and program information. The web app also needed an easy nonintimidating method of communication in case there are questions about the program or missed payments. ",
+        WhatIDid: "The web app was built with HTML, CSS, and Flask, a web framework written in python. I focused on the UI/UX of the web app. I sketched out and proposed the general design and updated logo with an iPad, and then used the Adobe Creative suite of apps to make the required UI elements.",
+        WhatILearned: "I learned how to battle sleep deprivation as well as control my caffeine intake to work on the web app through the 24 hours given to me and my team. I learned how Flask functioned, and how to best use it for our web app idea. I also learned to keep in mind how UI elements and placement, as well as the copywriting of a website, can affect the emotions and motivation of the user. ",
         CarouselImages: [{
                 src: require("../../images/myWorkPage/website/apprisen1.png").default, 
                 label: "Design Scribbles",
-                desc: "In the effort of saving time, I designed the website on my iPad on OneNote"
+                desc: "The home page would welcome the user as well as provide the date and their login streak to encourage frequent logins to check on their financial goals. The progress bar on the home page would allow the user to visually see where they are in their dept payment journey."
             },
         ]
     },
@@ -134,8 +132,9 @@ export const websiteInfo = [
         id: "the-longevity-game",
         PageTitle: "The Longevity Game",
         CoverPic: require("../../images/myWorkPage/cardPics/website/longgame.png").default, 
-        Background: "In the summer of 2017, I had the fortunate opportunity to participate in a 4-week program within Northwestern Mutual’s STEM Outreach program aimed on helped high schoolers in the area get a crash course on web development. In order to help us learn the basics such as HTML, CSS, and JavaScript, the 12 of us were split into 3 groups, each tasked with the rewriting and updating of an flash game that existed on the Northwestern Mutual page called The Longevity Game. The flash game involved the user inputting their information such as sex and age, and then asked a series of questions about their life habits, such how often they smoked and exercised. At the end of the game, the user would be displayed their probably life expectancy. Although slightly morbid, the goal was to promote a conversation about the need of life insurance as well as improving potentially life saving habits. At the end of the 4-week program, I was offered an internship for the rest of the summer alongside 3 other students to continue work on the updated game. ",
-        WhatIDid: "I focused on the customization of the character that the user would then be able to design at the beginning of the game. I also worked on other UI elements of the game, such as how the badges would be displayed at the user won them after every question being answered.",
+        Background: "In the summer of 2017, I had the fortunate opportunity to participate in a 4-week program within Northwestern Mutual’s STEM Outreach program, whose focus is to help high schoolers in the area get a crash course on web development. In order to help us learn the basics such as HTML, CSS, and JavaScript, the 12 students in the program were split into 3 groups, each tasked with the rewriting and updating of an flash game that existed on the Northwestern Mutual page called The Longevity Game.",
+        Background2: "The flash game involved the user inputting their information such as sex and age, and then they were asked a series of questions about their life habits and health. At the end of the game, the user would be displayed their probably life expectancy. Although slightly morbid, the goal was to promote a conversation about the need of life insurance as well as improving upon potentially life saving habits. At the end of the 4-week program, I was offered an internship for the rest of the summer alongside 3 other students to continue work on the updated game.",
+        WhatIDid: "I focused on the customization of the character that the user would then be able to design at the beginning of the game. I also worked on other UI/UX elements of the game, such as how the badges would be displayed at the user won them after every question being answered.",
         WhatILearned: "Aside from basic web development skills within HTML, CSS, and JavaScript, I learned how customizable SVG graphics were, as well as new CSS properties I did not play around with before, such as background blur. ",
         CarouselImages: [{
                 src: require("../../images/myWorkPage/website/long1.png").default, 
@@ -150,12 +149,12 @@ export const websiteInfo = [
             {
                 src: require("../../images/myWorkPage/website/long3.png").default, 
                 label: "Create Your Character Screen",
-                desc: "All images were SVG files, which mean changing the color of the items was as easy as targeting a specific CSS class"
+                desc: "All images were SVG files, which means changing the color of the items was as easy as targeting a specific CSS class"
             },
             {
                 src: require("../../images/myWorkPage/website/long4.png").default, 
                 label: "Backpack Explanation",
-                desc: "Right before the game started, you would be told that you could click on the backpack to see how much progress you have made and what kind of badges you have received"
+                desc: "Right before the game started, you were told that you could click on the backpack to see how much progress you have made and what kind of badges you have received"
             },
             {
                 src: require("../../images/myWorkPage/website/long5.png").default, 
@@ -188,7 +187,7 @@ export const websiteInfo = [
         PageTitle: "College Financial Literacy Web App",
         CoverPic: require("../../images/myWorkPage/cardPics/website/nm2.jpg").default, 
         Background: "During my winter break of my freshman year (2018), I returned for 3 weeks at Northwestern Mutual within the same department, Enterprise Architecture, to work with another intern on a financial literacy web app prototype.",
-        WhatIDid: "I and another intern both focused on the front-end development of the web app, which for that time was using vanilla HTML, CSS, and JavaScript. I also thought about the best way to design the web app to best address the questions and lessons the target user, which in our case was a high school student, would have, which was determined to be how to finance big purchases such as a car, college tuition, and living costs. ",
+        WhatIDid: "I and another intern both focused on the front-end development of the web app, which for that time was using vanilla HTML, CSS, and JavaScript. I also thought about the best way to design the web app to best address the questions and lessons the target user, a high school student, would have, which was determined to be how to finance big purchases such as a car, college tuition, and living costs. ",
         WhatILearned: "I learned to create and design a web app with a target user in mind. I was able to strengthen my communication skills in order to fully understand the goal of the project and to make sure we were achieving all the goals we were expected to reach. ",
         CarouselImages: []
     },
