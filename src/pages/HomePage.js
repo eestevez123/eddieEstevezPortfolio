@@ -121,7 +121,7 @@ function HomePage(props) {
                 <div className="col-md-4 border border-top-0 rounded-left"> 
                     <h4 className="fw-bold">Software Developer</h4>
                     <img className="img-fluid skillIcon my-4" src={softwareIcon } alt="Software Development Icon"/>
-                    <p className="fs-6 mx-2 mt-2">With a passion for design and code, being a front-end developer has given be a chance to stretch my artistic and analytical
+                    <p className="fs-6 mx-2 mt-2">With a passion for design and code, being a front-end developer has given me a chance to stretch my artistic and analytical
                      muscles. I also like to dabble with other tools to develop software and for data processing.</p>
 
                      <div className="row mb-3">
