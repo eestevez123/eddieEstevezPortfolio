@@ -3,7 +3,7 @@ export const soundCards =  [
         src: require("../../images/myWorkPage/cardPics/sounds/PodcastAboutRelationships.png").default,
         alt: "Podcast About Relationships Logo",
         title: "A Podcast About Relationships",
-        desc: "Within CA 155: Introduction to Digital Media Production, I and another student created a mini podcast episode about Long Distance relationships",
+        desc: "Within CA 155: Introduction to Digital Media Production, I and another student created a mini podcast episode about Long Distance relationships.",
          href: "podcast-about-relationships", 
     },
     {   

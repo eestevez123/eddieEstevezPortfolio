@@ -17,7 +17,7 @@ export const imageCards =  [
         src: require("../../images/myWorkPage/images/adclub/pouches.jpg").default,
         alt: "Advertisement Club Pictures Logo",
         title: "Advertisement Club Pictures",
-        desc: "For three semesters, I was a part of UW’s Advertisement club which gave me an opportunity to work with local businesses and organizations in Madison, Wisconsin. I was able to take pictures for a bar/restaurant in Madison called Camp Trippalindee",
+        desc: "For three semesters, I was a part of UW’s Advertisement club which gave me an opportunity to work with local businesses and organizations in Madison, Wisconsin. I was able to take pictures for a bar/restaurant in Madison called Camp Trippalindee.",
         href: "advertisement-club-pictures", 
     },
     {   
