@@ -206,15 +206,15 @@ function ImplicitBiasTest() {
                     <div className="row text-center justify-content-center">
                         <div className="col col-sm-6">
                             <h4 className="mt-3">
-                                Video Explanations For Survey
+                                Video Explanations For The Survey
                             </h4>
                             <p>
                                 For the survey, I created an Introduction video to welcome the taker of the survey, as well as a video explaining the results of the survey and what they mean
                             </p>
                         </div>
                     </div>
-                    <div className="row text-center">
-                        <div className="col col-sm-6">
+                    <div className="row text-center gy-5">
+                        <div className="col-12 col-md-6">
                             <h4>Introduction Video</h4>
                                 <div className="ratio ratio-16x9 youtubeVideo">
                                     <iframe
@@ -227,7 +227,7 @@ function ImplicitBiasTest() {
                                     </iframe>
                             </div>
                         </div>
-                        <div className="col col-sm-6">
+                        <div className="co-12 col-md-6">
                             <h4>Results Video</h4>
                                 <div className="ratio ratio-16x9 youtubeVideo">
                                     <iframe

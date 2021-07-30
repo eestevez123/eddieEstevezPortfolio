@@ -86,7 +86,7 @@ export const imageInfo = [
                 thumbnail: require("../../images/myWorkPage/images/uwmadisonmemes/gallery.png").default,
                 thumbnailWidth: 2140,
                 thumbnailHeight: 1143,
-                caption: "Snapchat of a page of all my posts on the UW Madison Memes For Milk Chugging Teens Facebook page"
+                caption: "Snapshot of a page with all my posts on the UW Madison Memes For Milk Chugging Teens Facebook page"
             },
         ]
     },
@@ -156,7 +156,7 @@ export const imageInfo = [
                 thumbnail: require("../../images/myWorkPage/images/adclub/fires.jpg").default,
                 thumbnailWidth: 1002,
                 thumbnailHeight: 666,
-                caption: "A Close up of a picture of fries"
+                caption: "A Close up of fries"
             },
             {
                 src: require("../../images/myWorkPage/images/adclub/game.jpg").default,
@@ -170,21 +170,21 @@ export const imageInfo = [
                 thumbnail: require("../../images/myWorkPage/images/adclub/have.jpg").default,
                 thumbnailWidth: 1002,
                 thumbnailHeight: 666,
-                caption: "A close up of the Jell-O shots that Campo Trippalindee has"
+                caption: "A close up of the Jell-O shots served at Camp Trippalindee"
             },
             {
                 src: require("../../images/myWorkPage/images/adclub/pouches.jpg").default,
                 thumbnail: require("../../images/myWorkPage/images/adclub/pouches.jpg").default,
                 thumbnailWidth: 1002,
                 thumbnailHeight: 666,
-                caption: "A picture with drink pouches and the Wisconin Capitol in the background"
+                caption: "A picture of drink pouches with the Wisconin Capitol in the background"
             },
             {
                 src: require("../../images/myWorkPage/images/adclub/slush.jpg").default,
                 thumbnail: require("../../images/myWorkPage/images/adclub/slush.jpg").default,
                 thumbnailWidth: 1002,
                 thumbnailHeight: 666,
-                caption: "Alchoholic slushies served at Campo Trippalindee"
+                caption: "Alcoholic slushies served at Campo Trippalindee"
             },
             {
                 src: require("../../images/myWorkPage/images/adclub/straw.jpg").default,
@@ -212,35 +212,35 @@ export const imageInfo = [
                 thumbnail: require("../../images/myWorkPage/images/art155/codeRep.png").default,
                 thumbnailWidth: 905,
                 thumbnailHeight: 727,
-                caption: "Example of Code Repetition art created with Processing"
+                caption: "Example of Code Repetition art created with Processing, a Java library built for electronic arts and visual design"
             },
             {
                 src: require("../../images/myWorkPage/images/art155/collage1.jpg").default,
                 thumbnail: require("../../images/myWorkPage/images/art155/collage1.jpg").default,
                 thumbnailWidth: 772,
                 thumbnailHeight: 1000,
-                caption: "Collage created on Photoshop"
+                caption: "\"Throwback\" collage created on Photoshop"
             },
             {
                 src: require("../../images/myWorkPage/images/art155/collage2.jpg").default,
                 thumbnail: require("../../images/myWorkPage/images/art155/collage2.jpg").default,
                 thumbnailWidth: 772,
                 thumbnailHeight: 1000,
-                caption: "Collage created on Photoshop"
+                caption: "Another \"Throwback\" Collage created on Photoshop"
             },
             {
                 src: require("../../images/myWorkPage/images/art155/dino.gif").default,
                 thumbnail: require("../../images/myWorkPage/images/art155/dino.gif").default,
                 thumbnailWidth: 922,
                 thumbnailHeight: 805,
-                caption: "Dinosaur drawing I made into an animated gif"
+                caption: "Dinosaur drawing I made into an animated gif using Photoshop"
             },
             {
                 src: require("../../images/myWorkPage/images/art155/roomOne.jpg").default,
                 thumbnail: require("../../images/myWorkPage/images/art155/roomOne.jpg").default,
                 thumbnailWidth: 1001,
                 thumbnailHeight: 751,
-                caption: "3D model of my bedroom I created with Rhino"
+                caption: "3D model of my bedroom created with Rhino"
             },
             {
                 src: require("../../images/myWorkPage/images/art155/roomTwo.jpg").default,

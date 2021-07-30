@@ -260,8 +260,8 @@ function TivaLaunchGames() {
                             </p>
                         </div>
                     </div>
-                    <div className="row text-center">
-                        <div className="col col-sm-6">
+                    <div className="row text-center gy-5">
+                        <div className="col-12 col-md-6">
                             <h4>ECE 210 Game: Bucky @ Space</h4>
                                 <div className="ratio ratio-16x9 youtubeVideo">
                                     <iframe
@@ -274,7 +274,7 @@ function TivaLaunchGames() {
                                     </iframe>
                             </div>
                         </div>
-                        <div className="col col-sm-6">
+                        <div className="col-12 col-md-6">
                             <h4>ECE 353 Game: Help Me Get To Target!</h4>
                                 <div className="ratio ratio-16x9 youtubeVideo">
                                     <iframe

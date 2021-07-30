@@ -189,7 +189,6 @@ function HomePage(props) {
                         <li>Adobe After Effects</li>
                         <li>Adobe Premiere Pro</li>
                         <li>Adobe Audition</li>
-                        <li>Adobe Audition</li>
                         <li>GIMP</li>
                         <li>A Canon EOS Rebel T6i DSLR Camera</li>
                     </ul>
