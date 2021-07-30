@@ -144,7 +144,7 @@ function AboutPage(props) {
                             This page has been a platform for me to make memes and videos for a growing group that currently stands at almost 30k members. I was also a contributing member of the UW-Madison Meme Club, B.O.I, whose acronym of course stood for Meme Analysis Club.
                             </p>
                             <h5>I Love Learning Languages!</h5>
-                            <p>I grew up bilingual in both English and Spanish. In College, I picked up two semesters of Italian, and continue to learn it today in an effort to be trilingual. Duolingo is a great app for that which I use almost daily.</p>
+                            <p>I grew up bilingual, speaking both English and Spanish. In College, I picked up two semesters of Italian, and continue to learn it today in an effort to be trilingual. Duolingo is a great app for that which I use almost daily.</p>
                             <h5>Recently Learned How To Swim!</h5>
                             <p>After years of trying to teach myself and placing myself in a swimming class in high school, I just learned and became comfortable swimming this summer (2021)!</p>
 

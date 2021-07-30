@@ -3,13 +3,13 @@ export const videoInfo = [
         id: "love-on-a-leash",
         PageTitle: "Love on a Leash",
         videoURL: "https://www.youtube-nocookie.com/embed/hNfx7P5VuWU",
-        Description: "As a volunteer opportunity, I created a video for Love on Leash, a nonprofit organization that provides therapy dogs for local organizations. This video was a slideshow of the dogs a part of the Therapeutic Paws of SE Wisconsin Facebook group, in effort to remind them of the pets. ",
+        Description: "As a volunteer opportunity, I created a video for Love on Leash, a nonprofit organization that provides therapy dogs for local groups. This video was a slideshow of the dogs within the Therapeutic Paws of SE Wisconsin Facebook group. ",
     },
     {   
         id: "a-midlife-crisis-but-in-college",
         PageTitle: "A Midlife Crisis, But in College",
         videoURL: "https://www.youtube-nocookie.com/embed/77Tll5PkhJk",
-        Description: "This video was created for the Design Salon 2020, a competition hosed by the UW Libraries that asked participants to submit and share their digital works. This is a video essay detailing my weird existential crisis that I had earlier this year. The video itself is made of clips that I have gathered over the past couple weeks using my phone. The video is a personal, somber story that is a nice contrast to the comedic videos I usually like to make.",
+        Description: "This video was created for the Design Salon 2020, a competition hosed by the UW Libraries that asked participants to submit and share their digital works. This is a video essay detailing my weird existential crisis that I had earlier that year. The video itself is made of clips that I have gathered over a couple weeks using my phone. The video is a personal, somber story that is a nice contrast to the comedic videos I usually like to make.",
     },
     {   
         id: "videos-for-uw-madison-memes-for-milk-chugging-teens",
@@ -74,7 +74,7 @@ export const videoInfo = [
                 {
                     videoID: "MqTaK47nxaw",
                     title: "GameCube StartUp",
-                    desc: "This is what happens when you spill Spotted Cow on your GameCube"
+                    desc: "Original Caption: This is what happens when you spill Spotted Cow on your GameCube"
                 },
                 {
                     videoID: "JH9IksUW3u4",
@@ -101,17 +101,17 @@ export const videoInfo = [
                     {
                         videoID: "WXHDVQHlMLc",
                         title: "Don Smart Highlight Reel",
-                        desc: "A Highlight Reel for Don Smart, a player in Forward Madison FC",
+                        
                     },
                     {
                         videoID: "GEXlCVF4bE8",
                         title: "J.C. Banks Highlight Reel",
-                        desc: "A Highlight Reel for J.C. Banks, a player in Forward Madison FC",
+                        
                     },
                     {
                         videoID: "1pgRe_qvZbQ",
                         title: "Oliver White Highlight Reel",
-                        desc: "A Highlight Reel for Don Smart, a player in Forward Madison FC",
+                        
                     },
                 ],
             },
@@ -138,7 +138,7 @@ export const videoInfo = [
                     {
                         videoID: "sjx1JKIA3_I",
                         title: "Bandit Tacos: Homemade Doesn't Have To Mean Made At Home",
-                        desc: "Homemade doesn't mean it has to be made at home! At Bandit Tacos, the complete tortilla process is done at home to ensure the freshest flavor.",
+                        
                     },
                 ],
             },
@@ -160,7 +160,7 @@ export const videoInfo = [
                 {
                     videoID: "mbXiu8v-vQU",
                     title: "Finally, \"Nice\" Weather",
-                    desc: "It's 40 degrees out! That means its shorts weather in Wisconsin",
+                    desc: "It's 40 degrees out! That means it's shorts weather in Wisconsin",
                 },
                 {
                     videoID: "YrZBYlrtQC0",
@@ -181,12 +181,12 @@ export const videoInfo = [
                 {
                     videoID: "QKu3oGCCQWM",
                     title: "Patrick in Humanities",
-                    desc: "Are you an actual UW student if you never got lost at Humanities? ",
+                    desc: "Are you an actual UW student if you never got lost at the Humanities building? ",
                 },
                 {
                     videoID: "zqAewL6okrY",
                     title: "Too Cold For School",
-                    desc: "It's great to see that after a lot of complaining, UW-Madison finally believes the polar vortex is enough of a reason to not have class",
+                    desc: "It's great to see that after a lot of complaining, UW-Madison finally believes the polar vortex (wind chill of almost -60 F degrees) is enough of a reason to not have class",
                 },
                 ]
         },
@@ -195,13 +195,13 @@ export const videoInfo = [
     },
     {   
         id: "communication-arts-200-video",
-        PageTitle: "Communication Arts 200 Video",
+        PageTitle: "CA 200 Video: A Required Meal Plan",
         videoURL: "https://www.youtube-nocookie.com/embed/_OekNTxnOBQ",
-        Description: "Within CA 200: Introduction to Digital Communication, I made a video on a subject on an issue on campus. I focused on the required meal plan that new incoming student were required to participate in that only involved food from the campus dining halls. I focused how this increased the financial burden and decreases traffic to local restaurants on campus that keep getting closed due to decreased business. Later on in the semester, we were tasked to remix the video and present within a vernacular lens.  ",
+        Description: "Within CA 200: Introduction to Digital Communication, I made a video on a subject on an issue on campus. I focused on the required meal plan that new incoming student were required to participate in that only involved food from the campus dining halls. I discussed how this increased the financial burden of attending college for students and decreases traffic to local restaurants around the UW campus that have a high turnover rate.",
     },
     {   
         id: "communication-arts-155-video",
-        PageTitle: "Communication Arts 155 Video",
+        PageTitle: "CA 155 Video: Eddie McDanger",
         videoURL: "https://www.youtube-nocookie.com/embed/rvvAN6obsn0",
         Description: "Within CA 155: Introduction to Digital Media Production, I alongside another 2 students created a comical video that was a parody to survival shows that involved me, “Eddie McDanger” climbing up the iconic campus hill, Bascom Hill. ",
     }

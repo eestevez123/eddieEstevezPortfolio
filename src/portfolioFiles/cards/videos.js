@@ -3,7 +3,7 @@ export const videoCards =  [
         src: require("../../images/myWorkPage/cardPics/videos/loveonleash.png").default,
         alt: "Love on a Leash Logo",
         title: "Love on a Leash",
-        desc: "As a volunteer opportunity, I created a video for Love on Leash, a nonprofit organization that provides therapy dogs for local organizations.",
+        desc: "As a volunteer opportunity, I created a video for Love on Leash, a nonprofit organization that provides therapy dogs for local groups.",
         href: "love-on-a-leash", 
     },
     {   
@@ -37,15 +37,15 @@ export const videoCards =  [
     {   
         src: require("../../images/myWorkPage/cardPics/videos/mealplan.jpg").default,
         alt: "Communication Arts 200 Video Logo",
-        title: "Communication Arts 200 Video",
+        title: "CA 200 Video: A Required Meal Plan",
         desc: "Within CA 200: Introduction to Digital Communication, I made a video focusing on the required meal plan that new incoming UW student were required to participate in, and why I thought it was a bad idea.",
          href: "communication-arts-200-video", 
     },
     {   
         src: require("../../images/myWorkPage/cardPics/videos/eddiemcdanger.jpg").default,
         alt: "Communication Arts 155 Video Logo",
-        title: "Communication Arts 155 Video",
-        desc: "Within CA 155: Introduction to Digital Media Production, I alongside another 2 students created a comical video that was a parody to survival shows that involved me, “Eddie McDanger” climbing up the iconic campus hill, Bascom Hill. ",
+        title: "CA 155 Video: Eddie McDanger",
+        desc: "Within CA 155: Introduction to Digital Media Production, I alongside another 2 students created a comical video that was a parody to survival shows that involved me, “Eddie McDanger climbing up the iconic campus hill, Bascom Hill. ",
         href: "communication-arts-155-video", 
     },
 ]

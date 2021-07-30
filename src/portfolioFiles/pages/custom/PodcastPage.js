@@ -33,7 +33,7 @@ function PodcastPage(props) {
                         {infoObj["PageTitle"]}
                     </h2>
                     <div className="row justify-content-center">
-                        <div className="col-8 m-5">
+                        <div className="col-12 col-lg-8 m-5">
                             <ReactSoundcloud url="https://soundcloud.com/eduardo-estevez-771666676/podcast-about-relationships" visual={false}/>
                         </div>
                     </div>

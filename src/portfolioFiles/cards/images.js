@@ -3,7 +3,7 @@ export const imageCards =  [
         src: require("../../images/myWorkPage/images/uwmadisonmemes/gallery.png").default,
         alt: "UW-Madison Memes For Milk Chugging Teens Memes Logo",
         title: "UW-Madison Memes For Milk Chugging Teens Memes",
-        desc: "For three years within my college career, I helped run the UW-Madison Facebook meme page called UW-Madison Memes for Milk Chugging teens. Throughout my time as an admin, I made a good amount of memes that usually involved learning a new Photoshop technique.",
+        desc: "Throughout my time as an admin for the UW-Madison Memes for Milk Chugging Teens page, I made a good amount of memes that usually involved learning a new Photoshop technique.",
         href: "uw-madison-memes", 
     },
     {   
@@ -17,14 +17,14 @@ export const imageCards =  [
         src: require("../../images/myWorkPage/images/adclub/pouches.jpg").default,
         alt: "Advertisement Club Pictures Logo",
         title: "Advertisement Club Pictures",
-        desc: "For three semesters, I was a part of UW’s Advertisement club which gave me an opportunity to work with local businesses and organizations in Madison, Wisconsin. I was able to take pictures for a bar/restaurant in Madison called Camp Trippalindee.",
+        desc: "I was able to take pictures for a bar/restaurant in Madison called Camp Trippalindee during my time being a part of UW’s Advertisement club.",
         href: "advertisement-club-pictures", 
     },
     {   
         src: require("../../images/myWorkPage/images/art155/codeRep.png").default, 
         alt: "Art 155 Work Logo",
         title: "Art 155 Work",
-        desc: "The summer before my senior year (2020), I took a class called Art 107: Introduction to Digital Forms, which gave me the opportunity to learn how to use digital tools like Photoshop, Processing, and Rhino to create artist imagery.",
+        desc: "Art 107: Introduction to Digital Forms was a class that gave me the opportunity to learn how to use digital tools like Photoshop, Processing, and Rhino to create artist imagery.",
         href: "art-155", 
     }
 ]

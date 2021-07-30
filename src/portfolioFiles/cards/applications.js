@@ -24,14 +24,14 @@ export const appCards =  [
         src: require("../../images/myWorkPage/cardPics/app/tiva.png").default, 
         alt: "TI Tiva Launchpad Games Logo",
         title: "TI Tiva Launchpad Games",
-        desc: "I created 2 games written in C that ran on a Tiva Launchpad. This invovled understanding low-level software and hardware communication interfaces such as UART, SPI, I2C, CAN, and more.",
+        desc: "I created 2 games written in C that ran on a Tiva Launchpad. This involved understanding low-level software and hardware communication interfaces such as UART, SPI, I2C, CAN, and more.",
         href: "ti-tiva-launchpad-games", 
     },
     {   
         src: require("../../images/myWorkPage/cardPics/app/AI.png").default, 
         alt: "Artificial Intelligence Project Logo",
         title: "Artificial Intelligence Projects",
-        desc: "During a summer class ( CS 540: Intro to AI ), I had the opportunity to work on a couple projects that put what was taught in class into practice.",
+        desc: "During a summer class (CS 540: Intro to AI), I had the opportunity to work on a couple projects that put what was taught in class into practice.",
         href: "artificial-intelligence-projects", 
     },
     {   
