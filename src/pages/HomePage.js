@@ -18,6 +18,8 @@ import greetingIcon from "../images/homePage/greetings.svg";
 import eddieProfilePic from "../images/homePage/eddieHome.png"
 import blackLineRect from "../images/homePage/blackLineRect.svg";
 
+const  eddieResumePDF = process.env.PUBLIC_URL + '/eddieResume.pdf';
+
 function HomePage(props) {
     
     const [mainEddieImageLoading, setmMinEddieImageLoading] = useState(true);
@@ -210,10 +212,25 @@ function HomePage(props) {
               
                     <p className="fs-5">I could go on and say how good my work is, but I think my work can speak for itself!
                     I have selected some of my works and experiences to explain what I did and what I gained from them. </p>
+
+
+                    <div className="row justify-content-center g-3 g-lg-0">
+                        <div className="col-12 col-md-4">
+                            <Link to="/mywork">
+                                <button type="button" className="btn btn-outline-primary">See My Work</button>
+                            </Link>
+                        
+                        </div>
+                        <div className="col col-md-4">
+                            <div className="text-center">
+                                <a className="btn btn-outline-primary" role="button" href={eddieResumePDF} target='_blank' rel="noopener noreferrer">My Resume</a>
+                            </div>
+                        </div>
+
+                    </div>
+
                     
-                        <Link to="/mywork">
-                            <button type="button" className="btn btn-primary">See My Work</button>
-                        </Link>
+
               
                 </div>
                 
