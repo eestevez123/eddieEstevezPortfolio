@@ -1,17 +1,17 @@
 import React, {useState, useEffect} from "react";
-import {useSpring, animated , config} from 'react-spring'
+import {useSpring, animated , config} from 'react-spring';
 import Card from "./Card";
 
-import {websiteCards} from "../portfolioFiles/cards/website"
-import {appCards} from "../portfolioFiles/cards/applications"
-import {videoCards} from "../portfolioFiles/cards/videos"
-import {soundCards} from "../portfolioFiles/cards/sounds"
-import {imageCards} from "../portfolioFiles/cards/images"
+import {websiteCards} from "../portfolioFiles/cards/website";
+import {appCards} from "../portfolioFiles/cards/applications";
+import {videoCards} from "../portfolioFiles/cards/videos";
+import {soundCards} from "../portfolioFiles/cards/sounds";
+import {imageCards} from "../portfolioFiles/cards/images";
 
 import "./Card.css";
-const cardCSS ="col-lg-4 col-md-6 col-12 my-4"
+const cardCSS ="col-lg-4 col-md-6 col-12 my-4";
 
-const noCards = []
+const noCards = [];
 
 function Cards(props) {
 
@@ -27,25 +27,25 @@ function Cards(props) {
     })
 
     useEffect( () => {
-        setIsLoading(true)
+        setIsLoading(true);
         switch(props.section) {
             case 0:
-                setCurrentDeck(websiteCards)
+                setCurrentDeck(websiteCards);
               break;
             case 1:
-                setCurrentDeck(appCards)
+                setCurrentDeck(appCards);
                 break;
             case 2:
-                setCurrentDeck(videoCards)
+                setCurrentDeck(videoCards);
                 break;
             case 3:
-                setCurrentDeck(soundCards)
+                setCurrentDeck(soundCards);
                 break;
             case 4:
-                setCurrentDeck(imageCards)
+                setCurrentDeck(imageCards);
                 break;
             default:
-                setCurrentDeck(noCards)
+                setCurrentDeck(noCards);
                 break
           }
           setIsLoading(false)
