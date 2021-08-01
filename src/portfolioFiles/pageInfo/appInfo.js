@@ -2,7 +2,7 @@ export const appInfo = [
     {   
         id: "blackrock-tableau-dashboard",
         PageTitle: "BlackRock Tableau Dashboard",
-        CoverPic: require("../../images/myWorkPage/cardPics/app/blackRock.png").default, 
+        CoverPic: "https://res.cloudinary.com/eestevez/image/upload/v1627776315/myWorkPage/cardPics/app/blackRock_xenfxa.png",
         Background: "In the summer of 2020, I interned with BlackRock, Inc., the world’s largest asset manager. I was an Application Engineering Intern in their Summer Analyst Program within the Aladdin Product Group, specifically the Multi Asset Strategies team",
         WhatIDid: "I worked with 2 other interns within the team to collect datapoints from many different models to track how assets change and interact with each other every single day. I started with importing and scraping CSV files, cleaning the data to make sure I can run further calculations, such as the means and averages between asset classes and more. For this, I used a python script with the help of packages such as numpy and pandas. This python script would run every day with the help of Jenkins that would ultimately produce a final CSV file that I pointed to with a Tableau dashboard I designed. This Tableau dashboard was an interactive and visual way for portfolio managers to  see key features that could explain a model’s performance and any anomalies with it.",
         WhatILearned: "I started this internship with a basic understanding of finance, but working within BlackRock challenged me to learn a lot about what they did as well as what the data I was handling represented.",

@@ -12,7 +12,7 @@ import Button from'react-bootstrap/Button';
 import ButtonGroup from'react-bootstrap/ButtonGroup';
 
 import Hero from "../components/Hero"
-import Cards from '../components/Cards.js';
+import Cards from '../components/Cards';
 
 
 
