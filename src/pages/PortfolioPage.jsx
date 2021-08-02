@@ -16,7 +16,7 @@ import Cards from '../components/Cards';
 
 
 
-import Template from '../portfolioFiles/pages/Template';
+import Template from '../portfolioPages/Template';
 
 function PortfolioPage(props) {
 
