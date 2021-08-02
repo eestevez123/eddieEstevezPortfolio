@@ -14,13 +14,13 @@
 }
 
 .carousel-control-next-icon {
-    background-image: url("../images/myWorkPage/next.svg") !important;
+    background-image: url("https://res.cloudinary.com/eestevez/image/upload/v1627777204/myWorkPage/next.svg") !important;
     width: 3rem!important;
     height: 3rem!important;
 }
 
 .carousel-control-prev-icon{
-    background-image: url("../images/myWorkPage/next.svg") !important;
+    background-image: url("https://res.cloudinary.com/eestevez/image/upload/v1627777204/myWorkPage/next.svg") !important;
     transform: scaleX(-1) !important;
     width: 3rem!important;
     height: 3rem!important;

@@ -73,7 +73,7 @@
 }
 
 #formImage {
-  background-image: url("./images/contactPage/conversationIcon.svg");
+  background-image: url("https://res.cloudinary.com/eestevez/image/upload/v1627777237/contactPage/conversationIcon.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -106,4 +106,9 @@
 
 .animatedDiv:hover {
   box-shadow: 5px 10px 20px 1px rgba(0, 0,0, 0.253) !important;
+}
+
+.biggerLoadingSpinner {
+  height: 5rem !important;
+  width: 5rem !important;
 }
