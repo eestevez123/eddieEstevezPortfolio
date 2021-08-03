@@ -73,7 +73,7 @@
 }
 
 #formImage {
-  background-image: url("https://res.cloudinary.com/eestevez/image/upload/v1627777237/contactPage/conversationIcon.svg");
+  background-image: url("./images/contactPage/conversationIcon.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
