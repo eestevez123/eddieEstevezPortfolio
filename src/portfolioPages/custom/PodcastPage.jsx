@@ -19,19 +19,32 @@ function PodcastPage(props) {
     const [cardObj, setCardObj] = useState({});
 
     useEffect(() => {
+        let source = axios.CancelToken.source()
+
         async function loadData() {
-            const infoRes = await api.get("/soundsInfo")
-            const cardRes = await api.get("/soundCards")
-
-            const websiteInfo = infoRes.data
-            const websiteCards = cardRes.data
-
-            setInfoObj(websiteInfo[`${portfolioURL}`])
-            setCardObj(websiteCards[`${portfolioURL}`])
-
-            setIsAxiosDone(true)
+            try {
+                const infoRes = await api.get("/soundsInfo", {cancelToken: source.token})
+                const cardRes = await api.get("/soundCards", {cancelToken: source.token})
+    
+                const websiteInfo = infoRes.data
+                const websiteCards = cardRes.data
+    
+                setInfoObj(websiteInfo[`${portfolioURL}`])
+                setCardObj(websiteCards[`${portfolioURL}`])
+    
+                setIsAxiosDone(true)
+            } catch(err) {
+                if(!axios.isCancel(err)) {
+                    console.log(err)
+                    alert("Let Eddie know that his API could not fetch the requested data")
+                }
+                if(axios.isCancel(err)) console.log("axios async call cancelled")
+            }
         }
         loadData()
+        return () => {
+            source.cancel()
+        }
     }, [portfolioURL] )
     
         return(

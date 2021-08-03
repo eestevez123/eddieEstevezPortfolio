@@ -22,19 +22,33 @@ function PictureTemplate(props) {
     const [imageList, setImageList] = useState([]);
 
     useEffect(() => {
+        let source = axios.CancelToken.source()
+
         async function loadData() {
-            const infoRes = await api.get("/imagesInfo")
-            const cardRes = await api.get("/imageCards")
+            try {
+                const infoRes = await api.get("/imagesInfo", {cancelToken: source.token})
+                const cardRes = await api.get("/imageCards", {cancelToken: source.token})
+    
+                const websiteInfo = infoRes.data
+                const websiteCards = cardRes.data
+    
+                setInfoObj(websiteInfo[`${portfolioURL}`])
+                setCardObj(websiteCards[`${portfolioURL}`])
+    
+                setIsAxiosDone(true)
+            } catch(err) {
+                if(!axios.isCancel(err)) {
+                    console.log(err)
+                    alert("Let Eddie know that his API could not fetch the requested data")
+                }
+                if(axios.isCancel(err)) console.log("axios async call cancelled")
+            }
 
-            const websiteInfo = infoRes.data
-            const websiteCards = cardRes.data
-
-            setInfoObj(websiteInfo[`${portfolioURL}`])
-            setCardObj(websiteCards[`${portfolioURL}`])
-
-            setIsAxiosDone(true)
         }
         loadData()
+        return () => {
+            source.cancel()
+        }
     }, [portfolioURL] )
 
     useEffect(() => {

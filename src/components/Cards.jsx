@@ -26,25 +26,39 @@ function Cards(props) {
     const [imageCards, setimageCards] = useState({});
 
     useEffect(() => {
+        let source = axios.CancelToken.source()
+
         async function loadData() {
-            const websiteCardsData = await api.get("/websiteCards")
-            const appCardsData = await api.get("/appCards")
-            const videoCardsData = await api.get("/videoCards")
-            const soundCardsData = await api.get("/soundCards")
-            const imageCardsData = await api.get("/imageCards")
+            try {
+                const websiteCardsData = await api.get("/websiteCards", {cancelToken: source.token})
+                const appCardsData = await api.get("/appCards", {cancelToken: source.token})
+                const videoCardsData = await api.get("/videoCards", {cancelToken: source.token})
+                const soundCardsData = await api.get("/soundCards", {cancelToken: source.token})
+                const imageCardsData = await api.get("/imageCards", {cancelToken: source.token})
+    
+    
+                setwebsiteCards(Object.values(websiteCardsData.data))
+                setappCards(Object.values(appCardsData.data))
+                setvideoCards(Object.values(videoCardsData.data))
+                setsoundCards(Object.values(soundCardsData.data))
+                setimageCards(Object.values(imageCardsData.data))
+                
+    
+                setCurrentDeck(Object.values(websiteCardsData.data));
+                setIsAxiosDone(true)
+            } catch(err) {
+                if(!axios.isCancel(err)) {
+                    console.log(err)
+                    alert("Let Eddie know that his API could not fetch the requested data")
+                }
+                if(axios.isCancel(err)) console.log("axios async call cancelled")
+            }
 
-
-            setwebsiteCards(Object.values(websiteCardsData.data))
-            setappCards(Object.values(appCardsData.data))
-            setvideoCards(Object.values(videoCardsData.data))
-            setsoundCards(Object.values(soundCardsData.data))
-            setimageCards(Object.values(imageCardsData.data))
-            
-
-            setCurrentDeck(Object.values(websiteCardsData.data));
-            setIsAxiosDone(true)
         }
         loadData()
+        return () => {
+            source.cancel()
+        }
     }, [])
 
 
