@@ -23,20 +23,32 @@ const api = axios.create({
 
 
 function Template(props) {
-    const [doneLoading, setDoneLoaing] = useState(false)
+    const [doneLoading, setDoneLoading] = useState(false)
     const [cardURLs, setCardURLs] = useState({})
     
     
     useEffect(() => {
-        api.get("/cardURLs")
-        .then((res) => {
+        let source = axios.CancelToken.source()
+
+        async function loadData() {
+        try {
+            const res = await api.get("/cardURLs", {cancelToken: source.token})
             setCardURLs(res.data)
-            setDoneLoaing(true)
-        })
-        .catch( err => {
-            console.log(err)
-            alert("Let Eddie know that his API could not fetch the requested data")
-        })
+            setDoneLoading(true)
+
+        } catch(err) {
+            if(!axios.isCancel(err)) {
+                console.log(err)
+                alert("Let Eddie know that his API could not fetch the requested data")
+            }
+            if(axios.isCancel(err)) console.log("axios async call cancelled")
+            }
+        }
+        loadData()
+
+        return () => {
+            source.cancel()
+        }
     },[])
 
     let { portfolioURL } = useParams();
