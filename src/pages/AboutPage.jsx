@@ -111,7 +111,7 @@ function AboutPage(props) {
                             <h6>B.S in Computer Engineering</h6>
                             <img className="img-fluid educationIcon my-4" src={compEng} alt="Software Development Icon"/>
                             <p>
-                            I studied the design, development, analysis, and manufacture of computer hardware and low-level software. I started with learning binary to using a hardware description language called Verilog to develop my own 16-bit MIPS Microprocessor. In the middle, I learned the necessary electrical engineering to understand embedded systems as well as signal processing
+                            I studied the design, development, analysis, and manufacture of computer hardware and low-level software. I started with learning binary to using a hardware description language called Verilog to develop my own 16-bit MIPS Microprocessor. In the middle, I learned the necessary electrical engineering to understand embedded systems as well as signal processing.
                                 </p> </div>
                             <div className="col-sm-4">
                             <h6>BMAJ in Computer Science</h6>
