@@ -41,7 +41,7 @@ function NotFoundPage() {
                 content="This is the 404 page for my website in case someone gets lost." 
                 />
             </Helmet>
-            <div className="container-fluid bg-myBlue notFoundPageBackground text-white">
+            <div className="container-fluid bg-myBlue text-white">
                 <div className="container notFoundPageContainer">
                 <div className="row align-items-center text-center">
                     <div className="col d-flex justify-content-end"><animated.img style={penguinAnimation} src={penguinPic} alt="penguin" className="lostPenguin img-fluid"/></div>
@@ -51,7 +51,7 @@ function NotFoundPage() {
                     <div className="col pt-5"><animated.h1 style={textComeUp}>Even though you're lost, you found this penguin! So that's cool</animated.h1></div>
                 </div>
                 <div className="row text-center">
-                    <div className="col pt-5">
+                    <div className="col py-5">
                         <Link to="/">
                             <animated.button style={buttonComeIn} type="button" className="btn btn-outline-light btn-lg">Let's Go Back Home</animated.button>
                         </Link>
