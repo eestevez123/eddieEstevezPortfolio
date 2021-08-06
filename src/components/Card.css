@@ -31,7 +31,7 @@
 
 .card-img-top {
     transform: scale(1);
-    transition: transform 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .card-img-top:hover {
@@ -59,3 +59,46 @@
         flex: 0 0 16%;
     }
 }
+
+
+.websiteCards > .card {
+    height: 31rem;
+}
+.websiteCards > div > div {
+    height: 10rem;
+}
+
+.cardButton {
+    bottom: 7%;
+    position: absolute;
+    left: 35%;
+}
+
+.appCards > .card {
+    height: 32rem;
+}
+.appCards > div > div {
+    height: 11rem;
+}
+
+.videoCards > .card {
+    height: 32rem;
+}
+.videoCards > div > div {
+    height: 10rem;
+}
+
+.soundCards > .card {
+    height: 41rem;
+}
+.soundCards > div > div {
+    height: auto;
+}
+
+.imageCards > .card {
+    height: 33rem;
+}
+.imageCards > div > div {
+    height: 13rem;
+}
+
