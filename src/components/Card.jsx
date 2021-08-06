@@ -58,9 +58,13 @@ function PortfolioCard(props) {
             <p className="card-text text-secondary">
                 {props.desc || <Skeleton count={4}/>}
             </p>
-            <Link to={`${path}/${props.href}`}>
-                <button type="button" className="btn btn-outline-primary cardButton">More Info</button>
-            </Link>
+
+                {(props.href !== undefined)?(<>
+                <Link to={`${path}/${props.href}`}>
+                    <button type="button" className="btn btn-outline-primary cardButton">More Info</button>
+                </Link>
+                </>):(<><Skeleton width={100} height={25} className="cardButton"/></>)}
+                
         </div>
         </div>
         </animated.div>
