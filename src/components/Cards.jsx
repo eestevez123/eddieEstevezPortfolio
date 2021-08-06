@@ -138,6 +138,7 @@ function Cards(props) {
                                         path={props.path}
                                         href={deck.href}
                                         section={currentDeck}
+                                        cardType={props.section}
                                     />
                             </div>
                         ))}

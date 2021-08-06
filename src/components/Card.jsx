@@ -1,4 +1,4 @@
-import React, {useState,} from "react";
+import React, {useState, useEffect} from "react";
 import {useSpring, animated , config} from 'react-spring'
 import {Link} from "react-router-dom";
 import Skeleton from 'react-loading-skeleton';
@@ -7,6 +7,30 @@ import Skeleton from 'react-loading-skeleton';
 function PortfolioCard(props) {
 
     const [isLoading, setIsLoading] = useState(true);
+    const [cardClass, setCardClass] = useState("websiteCards");
+
+    useEffect( () => {
+        switch(props.cardType) {
+            case 0:
+                setCardClass('websiteCards');
+              break;
+            case 1:
+                setCardClass('appCards');
+                break;
+            case 2:
+                setCardClass('videoCards');
+                break;
+            case 3:
+                setCardClass('soundCards');
+                break;
+            case 4:
+                setCardClass('imageCards');
+                break;
+            default:
+                setCardClass("");
+                break
+          }
+    }, [props.cardType])
 
 
     const springProps = useSpring({
@@ -20,8 +44,8 @@ function PortfolioCard(props) {
 
     return(
         <>
-        <animated.div style={springProps} >
-        <div className="card text-center">
+        <animated.div style={springProps} className={`${cardClass}`}>
+        <div className={`card text-center`}>
             <div className="overflow">
                 {isLoading?(<><Skeleton height={200}/></>):(<></>)}
                 <img onLoad={()=>{
@@ -35,7 +59,7 @@ function PortfolioCard(props) {
                 {props.desc || <Skeleton count={4}/>}
             </p>
             <Link to={`${path}/${props.href}`}>
-                <button type="button" className="btn btn-outline-primary">More Info</button>
+                <button type="button" className="btn btn-outline-primary cardButton">More Info</button>
             </Link>
         </div>
         </div>
