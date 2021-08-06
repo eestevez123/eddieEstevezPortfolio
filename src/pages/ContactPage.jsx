@@ -57,9 +57,8 @@ function HomePage(props) {
             
             <div className="col-md-12">
             <h3 className="mb-4 contactPageTitle">See What I'm Up to on Social Media!</h3>
-                <div className="wrapper">
+                <div className="wrapper itemBoxes">
                     <div className="row mb-5 g-5">
-
                         <ContactItem imgAddr={facebookIcon} imgAlt="Facebook Logo" txtTitle="Facebook" href="https://www.facebook.com/Eduardo.Estevez1.0" colClass="col-md-3 col-6"/>
                         <ContactItem imgAddr={instagramIcon} imgAlt="Instagram Logo" txtTitle="Instagram" href="https://www.instagram.com/edd1e_estevez/"colClass="col-md-3 col-6" />
                         <ContactItem imgAddr={twitterLogo} imgAlt="Twitter Logo" txtTitle="Twitter" href="https://twitter.com/edd1e_estevezz" colClass="col-md-3 col-6"/>

@@ -6,7 +6,7 @@ import axios from 'axios';
 import "./Card.css";
 const cardCSS ="col-lg-4 col-md-6 col-12 my-4";
 
-const noCards = [];
+const emptyCards = [{},{},{},{},{},{},{},{},{},{},{},{}];
 
 const api = axios.create({
     baseURL: `https://eddie-estevez-portfolio-api.herokuapp.com/`
@@ -14,7 +14,7 @@ const api = axios.create({
 
 function Cards(props) {
 
-    const emptyCards = [{},{},{},{},{},{},{},{},{},{},{},{}];
+    
     const [isAxiosDone, setIsAxiosDone] = useState(false);
     const [currentDeck, setCurrentDeck] = useState(emptyCards);
 
@@ -91,7 +91,7 @@ function Cards(props) {
                     break
               }
         }
-    },[appCards, emptyCards, imageCards, isAxiosDone, props.section, soundCards, videoCards, websiteCards])
+    },[props.section, appCards, imageCards, isAxiosDone, soundCards, videoCards, websiteCards])
 
         return(
             <>
