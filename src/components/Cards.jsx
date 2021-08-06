@@ -14,10 +14,9 @@ const api = axios.create({
 
 function Cards(props) {
 
+    const emptyCards = [{},{},{},{},{},{},{},{},{},{},{},{}];
     const [isAxiosDone, setIsAxiosDone] = useState(false);
-    const [currentDeck, setCurrentDeck] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
-
+    const [currentDeck, setCurrentDeck] = useState(emptyCards);
 
     const [websiteCards, setwebsiteCards] = useState({});
     const [appCards, setappCards] = useState({});
@@ -70,7 +69,6 @@ function Cards(props) {
     })
 
     useEffect( () => {
-        setIsLoading(true);
         if(isAxiosDone) {
             switch(props.section) {
                 case 0:
@@ -89,45 +87,17 @@ function Cards(props) {
                     setCurrentDeck(imageCards);
                     break;
                 default:
-                    setCurrentDeck(noCards);
+                    setCurrentDeck(emptyCards);
                     break
               }
         }
-        setIsLoading(false)
-    }, [appCards, imageCards, isAxiosDone, props.section, soundCards, videoCards, websiteCards])
+    },[appCards, emptyCards, imageCards, isAxiosDone, props.section, soundCards, videoCards, websiteCards])
 
         return(
             <>
-            {(!isAxiosDone)?(<>
-                    <div className="d-flex justify-content-center">
-                    <div className="row mt-5">
-                        <div className="col">
-                            <div className="spinner-grow text-primary biggerLoadingSpinner" role="status">
-                                <span className="visually-hidden">Loading...</span>
-                            </div>
-                        </div>
-
-                    </div>
-                    </div>
-                </>):(<>
-                    {(isLoading)?(
-                <>
-                <div className="container">
-                    <div className="row justify-content-center text-center my-5">
-                         <div className="col">
-                            <div className={`cardLoader spinner-grow text-primary m-5`} role="status">
-                                <span className="visually-hidden">Loading...</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </>
-                ):(
-                <></>
-                )}
                 <div className="container-fluid">
                 <animated.div style={springProps} >
-                    <div className={`row cardRow justify-content-center ${(isLoading)?(`hidden`):(``)}`}>
+                    <div className={`row cardRow justify-content-center`}>
                         {currentDeck.map((deck) => (
                             <div className={cardCSS} key={deck.title}>
                                     <Card
@@ -145,7 +115,6 @@ function Cards(props) {
                     </div>
                 </animated.div>
                 </div>
-                </>) }
                 </>
         )
 }
