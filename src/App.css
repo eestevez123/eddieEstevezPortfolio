@@ -112,3 +112,8 @@
   height: 5rem !important;
   width: 5rem !important;
 }
+
+.itemBoxes > div > div > a > div {
+  height: 14rem;
+  width: auto;
+}

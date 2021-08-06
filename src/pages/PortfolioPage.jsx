@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {useSpring, animated as a , config} from 'react-spring';
 import {Helmet} from "react-helmet-async";
 import {
     Switch,
@@ -37,6 +38,13 @@ function PortfolioPage(props) {
         setSectionValue(parseInt(val))
     }
 
+    const springProps = useSpring({
+        to: {opacity: 1, y:0},
+        from: {opacity: 0, y:50},
+        config: config.default ,
+        reset: true
+    })
+
 
     return(<>
             <Helmet>
@@ -73,7 +81,9 @@ function PortfolioPage(props) {
                 </Route>
                 
                 <Route path={`${path}/:portfolioURL`}>
-                    <Template sectionValue={sectionValue} />
+                    <a.div style={springProps}>
+                        <Template sectionValue={sectionValue} />
+                    </a.div>
                 </Route>
             </Switch>
         </>
