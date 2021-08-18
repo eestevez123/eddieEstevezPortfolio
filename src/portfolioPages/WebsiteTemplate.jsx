@@ -130,6 +130,11 @@ function WebsiteTemplate(props) {
 
                     <div className="container">
                         <div className="row justify-content-center">
+                        {props.portfolioURL === ("NCJS")?(<>
+                            <Link  to="/ncjs-case-study">
+                                <div className="text-center"> <button className="btn btn-primary my-4" type="button">Case Study</button></div>
+                            </Link>
+                            </>):(<></>)}
                             <div className="col-sm-6">
                                 <h4 className="mt-3">
                                     Background

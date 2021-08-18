@@ -17,6 +17,9 @@ import AboutPage from './pages/AboutPage';
 import MyWorkPage from './pages/PortfolioPage';
 import NotFoundPage from './pages/NotFoundPage';
 
+import NCJSCaseStudyPage from './portfolioPages/custom/NCJSCaseStudyPage'
+import WorkoutAppCaseStudyPage from './portfolioPages/custom/WorkoutAppCaseStudyPage'
+
 
 import ContactPage from './pages/ContactPage'; // We'll just provide info for now, we can fix the API later
 import { Image } from 'react-bootstrap';
@@ -83,6 +86,9 @@ render() {
           <Route path="/aboutme"  render={()=> <AboutPage title={this.state.about.title} />} />
           <Route path="/mywork" render={()=> <MyWorkPage title={this.state.portfolio.title} />} />
           <Route path="/letsconnect"   render={()=> <ContactPage title={this.state.contact.title}/>} />
+
+          <Route path="/ncjs-case-study"   render={()=> <NCJSCaseStudyPage />} />
+          <Route path="/workout-app-case-study"   render={()=> <WorkoutAppCaseStudyPage />} />
 
 
           <Route path="/404" component={NotFoundPage} />
