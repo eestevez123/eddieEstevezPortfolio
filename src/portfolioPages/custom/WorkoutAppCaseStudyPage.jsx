@@ -102,7 +102,7 @@ function WorkoutAppCaseStudyPage(props) {
                 <div className="row">
                     <div className="col">
                         <h2>The Solution</h2>
-                        <h3 className="fw-bold my-5 mb-3">Let's Design and Develop the a workout tracking app!</h3>
+                        <h3 className="fw-bold my-5 mb-3">Let's Design and Develop a workout tracking app!</h3>
                         <p> The class was well structured where we had the opportunity to appropriately design the application to solve the problem at hand effectively.</p>
                     </div>
                 </div>
