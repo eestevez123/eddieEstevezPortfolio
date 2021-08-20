@@ -98,9 +98,10 @@ function Cards(props) {
                 <div className="container-fluid">
                 <animated.div style={springProps} >
                     <div className={`row cardRow justify-content-center`}>
-                        {currentDeck.map((deck) => (
-                            <div className={cardCSS} key={deck.title}>
+                        {currentDeck.map((deck, idx) => (
+                            <div className={cardCSS} key={`div-${idx}-${deck.title}`}>
                                     <Card
+                                        key={`Card-${idx}-${deck.title}`}
                                         src={deck.src}
                                         alt={deck.alt}
                                         title={deck.title}
