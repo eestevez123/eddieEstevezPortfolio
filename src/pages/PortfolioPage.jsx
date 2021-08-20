@@ -75,6 +75,16 @@ function PortfolioPage(props) {
                             </Button>
                             ))}
                         </ButtonGroup>
+                        <Button
+                                id={`button-Case Studies`}
+                                type="button"
+                                className={`${sectionValue === 5 ? 'active' : ''} ms-5`}
+                                variant="outline-primary"
+                                value={5}
+                                onClick={() => setSectionValue(5)}
+                        >
+                            Case Studies
+                        </Button>
                     </div>
                     
                     <Cards section={sectionValue} path={path}/>
