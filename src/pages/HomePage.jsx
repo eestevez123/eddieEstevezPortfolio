@@ -27,7 +27,7 @@ function HomePage(props) {
     return(
         <div>
             <Helmet>
-                <title>Eddie Estevez | Computer Nerd TOBECHANGED</title>
+                <title>Eddie Estevez | Computer Nerd</title>
                 <meta name="description" content="Welcome to my personal website! My name is Eddie Estevez, a software developer, designer, content creator, and coffee lover"/>
                 <meta property="og:title" content="Eddie Estevez | Computer Nerd" />
                 <meta property="og:description" 
