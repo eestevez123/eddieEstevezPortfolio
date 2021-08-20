@@ -36,6 +36,10 @@
     width: 0px;
 }
 
-.caseStudiesButton {
-
+.dropdown-menu {
+    width: 18rem !important;
+    text-align: center !important;
+}
+.dropdown-toggle{
+    width: 18rem !important;
 }
