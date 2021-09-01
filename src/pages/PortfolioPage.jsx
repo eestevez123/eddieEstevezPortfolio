@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import {useSpring, animated as a , config} from 'react-spring';
 import {Helmet} from "react-helmet-async";
 import {
@@ -19,13 +19,13 @@ import Template from '../portfolioPages/Template';
 
 function PortfolioPage(props) {
 
-    const sectionArray = [
-        { name: 'Web Development and Design', value: 0 },
-        { name: 'Apps and Software', value: 1 },
-        { name: 'Video Work', value: 2 },
-        { name: 'Sound Work', value: 3 },
-        { name: 'Image Work', value: 4 },
-      ];
+    // const sectionArray = [
+    //     { name: 'Web Development and Design', value: 0 },
+    //     { name: 'Apps and Software', value: 1 },
+    //     { name: 'Video Work', value: 2 },
+    //     { name: 'Sound Work', value: 3 },
+    //     { name: 'Image Work', value: 4 },
+    //   ];
 
     const [sectionValue, setSectionValue] = useState(0);
 
