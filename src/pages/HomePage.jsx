@@ -4,6 +4,8 @@ import {Link} from "react-router-dom";
 import Skeleton from 'react-loading-skeleton';
 
 import "./HomePage.css"
+import 'react-loading-skeleton/dist/skeleton.css'
+
 import Hero from "../components/Hero";
 import { motion } from "framer-motion";
 import DraggableObject from "../components/DraggableObject";

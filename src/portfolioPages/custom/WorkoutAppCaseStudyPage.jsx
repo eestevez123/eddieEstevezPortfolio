@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Skeleton from 'react-loading-skeleton';
 
 import "./caseStudies.css"
+import 'react-loading-skeleton/dist/skeleton.css'
 
 import CoverPic from "../../images/caseStudies/workoutapp_background.jpg";
 import WorkoutPersona from "../../images/caseStudies/workoutPersona.png";

@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
 import Skeleton from 'react-loading-skeleton';
+
 import {Helmet} from "react-helmet-async";
 import Hero from "../components/Hero";
 
 import "./AboutPage.css"
+import 'react-loading-skeleton/dist/skeleton.css'
 
 import uwlogo from "../images/aboutMePage/uwlogo.png";
 

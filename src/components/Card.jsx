@@ -2,6 +2,8 @@ import React, {useState, useEffect} from "react";
 import {useSpring, animated , config} from 'react-spring'
 import {Link} from "react-router-dom";
 import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css'
+
 
 
 function PortfolioCard(props) {

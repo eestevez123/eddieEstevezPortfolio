@@ -5,6 +5,8 @@ import OnImagesLoaded from 'react-on-images-loaded';
 import Skeleton from 'react-loading-skeleton';
 import axios from 'axios';
 
+import 'react-loading-skeleton/dist/skeleton.css'
+
 
 import {
     Link,

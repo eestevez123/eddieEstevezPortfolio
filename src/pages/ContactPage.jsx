@@ -66,13 +66,6 @@ function HomePage(props) {
                         
 
                     </div>
-                    <h3 className="mb-4 contactPageTitle">Reach Me via...</h3>
-                    <div className="row mb-5 justify-content-center g-5">
-
-                        <ContactItem imgAddr={phoneIcon} imgAlt="Phone" txtTitle="Phone: " txt="(414)628-4171" href="tel:4146284171" colClass="col-xl-3 col-sm-6"/>
-                        <ContactItem imgAddr={emailIcon} imgAlt="Email" txtTitle="Email: " txt="estevez.eduardo111@gmail.com" href="mailto:estevez.eduardo111@gmail.com" colClass="col-xl-3 col-sm-6"/>
-
-                    </div>
                     <div className="row no-gutters bg-light mb-5 rounded">
                         <div className="col-md-7">
                             <div className="contact-wrap w-100 p-md-5 p-4">
