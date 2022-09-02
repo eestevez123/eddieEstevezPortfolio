@@ -2,6 +2,8 @@ import React, {useRef, useState} from "react";
 import { useSpring, animated as a } from "@react-spring/web";
 import Skeleton from 'react-loading-skeleton';
 
+import 'react-loading-skeleton/dist/skeleton.css'
+
 const calc = (x, y, rect, scale) => [
     -(y - rect.top - rect.height / 2) / 5,
     (x - rect.left - rect.width / 2) / 5,

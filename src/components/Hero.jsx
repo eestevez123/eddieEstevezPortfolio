@@ -1,5 +1,4 @@
 import React from "react";
-import Jumbotron from "react-bootstrap/Jumbotron"
 import Container from "react-bootstrap/Container";
 import Row from 'react-bootstrap/Row';
 import Col from "react-bootstrap/Col";
@@ -7,7 +6,7 @@ import Col from "react-bootstrap/Col";
 function Hero(props) {
     
     return(
-        <Jumbotron className="bg-transparent jumbotron-fluid p-0 mb-0">
+        <div className="bg-transparent jumbotron-fluid p-0 mb-0">
             <Container fluid={true}>
                 <Row className="justify-content-center">
                     <Col md={8} sm={12}>
@@ -16,7 +15,7 @@ function Hero(props) {
                     </Col>
                 </Row>
             </Container>
-        </Jumbotron>
+        </div>
     );
 }
 
