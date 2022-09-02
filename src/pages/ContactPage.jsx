@@ -10,9 +10,6 @@ import instagramIcon from "../images/contactPage/insta.svg";
 import twitterLogo from "../images/contactPage/twitter.svg";
 import linkedInLogo from "../images/contactPage/linkedIn.svg";
 
-import phoneIcon from "../images/contactPage/phone.svg";
-import emailIcon from "../images/contactPage/email.svg";
-
 function HomePage(props) {
 
     const [sendingEmail, setSendingEmail] = useState(false)
