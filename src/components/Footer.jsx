@@ -10,7 +10,7 @@ function Footer() {
             <Container fluid={true} >
                 <Row className="border-top justify-content-between p-3 text-center align-items-center">
                     <Col className="justify-content-start" md={4} sm={12}>
-                    © 2022 - Eddie Estevez
+                    © 2024 - Eddie Estevez
                     </Col>
                     <Col className="justify-content-end" md={4} sm={12}>
                         Designed and Developed by Eddie Estevez

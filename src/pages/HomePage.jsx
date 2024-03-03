@@ -47,8 +47,8 @@ function HomePage(props) {
                     </>):(<></>)}
                 <motion.img
                     src={eddieProfilePic}
-                    className={`eddieProfile grabbable img-fluid ${mainEddieImageLoading?("hidden"):("")}`}
-                    alt="Me, Eddie Estevez"
+                    className={`eddieProfile grabbable user-select-none img-fluid ${mainEddieImageLoading?("hidden"):("")}`}
+                    alt="A picture of Eddie Estevez"
                     drag
                     dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
                     dragTransition={{ bounceStiffness: 800, bounceDamping: 25 }}
@@ -68,33 +68,39 @@ function HomePage(props) {
                                 className="img-fluid"
                                 innerClassName="rect1 bg-myBlue grabbable position-absolute top-0 start-0"
                                 isImage={false}
+                                alt="A draggable blue square"
                             />
                             <DraggableObject
                                 className="img-fluid"
                                 innerClassName="rect2 bg-myPurple grabbable position-absolute"
                                 isImage={false}
+                                alt="A draggable purple square"
                             />
                             <DraggableObject
                                 className="img-fluid"
                                 innerClassName="circle1 bg-myGreen grabbable rounded-circle position-absolute"
                                 isImage={false}
+                                alt="A draggable green square"
                             />
                             <DraggableObject
                                 className="img-fluid"
                                 innerClassName="blackRect grabbable position-absolute"
                                 isImage={true}
                                 src={blackLineRect}
+                                alt="A draggable square filled in with black lines"
                             />
                             <DraggableObject
                                 className="img-fluid"
                                 innerClassName="blackRect2 grabbable position-absolute"
                                 isImage={true}
                                 src={blackLineRect}
+                                alt="A draggable square filled in with black lines"
                             />
                             <DraggableObject
                                 className="img-fluid"
                                 innerClassName="rect3 bg-myGreen grabbable position-absolute"
                                 isImage={false}
+                                alt="A draggable green square"
                             />
                         </div>
                 </div>

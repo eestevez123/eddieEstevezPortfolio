@@ -10,8 +10,8 @@ const calc = (x, y, rect, scale) => [
     scale
   ];
   
-const trans = (x, y, s) =>
-  `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
+  const trans = (x, y, s) =>
+  `perspective(600px) rotateX(${x / 5}deg) rotateY(${y / 5}deg) scale(${s})`;
 
 function ContactItem(props) {
     const refRect = useRef(null);
@@ -31,10 +31,10 @@ function ContactItem(props) {
                 onMouseLeave={() => set([0, 0, 1])}
                 onMouseMove={(e) => {
                     const rect = refRect.current.getBoundingClientRect();
-                    set(calc(e.clientX, e.clientY, rect, 1.15));
+                    set(calc(e.clientX, e.clientY, rect, 1.05));
                 }}
                 onClick={(e) => {
-                    set([0, 0, 0.8]);
+                    set([0, 0, 0.9]);
                 }}
                 >
                     <div className="icon d-flex align-items-center justify-content-center">
