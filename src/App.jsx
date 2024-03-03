@@ -33,8 +33,8 @@ constructor(props) {
   this.state = {
     title: "Eddie Estevz",
     home: {
-      title: "Hey guys, Eddie here",
-      subTitle: "Software developer, designer, content creator, and coffee lover"
+      title: "Hey guys, Eddie here!",
+      subTitle: "Software engineer 👨‍💻 , digital creator 💻, and coffee lover ☕"
     },
     about: {
       title: "Hello World!",

@@ -6,7 +6,8 @@ import axios from 'axios';
 import "./Card.css";
 const cardCSS ="col-lg-4 col-md-6 col-12 my-4";
 
-const emptyCards = [{},{},{},{},{},{},{},{},{},{},{},{}];
+const emptyCards = Array.from({ length: 12 }, () => ({}));
+
 
 const api = axios.create({
     baseURL: `https://eddie-estevez-portfolio-api.herokuapp.com/`

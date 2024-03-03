@@ -5,9 +5,7 @@ import emailjs from 'emailjs-com';
 import Hero from "../components/Hero";
 import ContactItem from "../components/ContactItem";
 
-import facebookIcon from "../images/contactPage/facebook.svg";
 import instagramIcon from "../images/contactPage/insta.svg";
-import twitterLogo from "../images/contactPage/twitter.svg";
 import linkedInLogo from "../images/contactPage/linkedIn.svg";
 
 function HomePage(props) {
@@ -38,13 +36,13 @@ function HomePage(props) {
             <Helmet>
                 <title>Let's Connect | Eddie Estevez</title>
                 <meta name="description"
-                content="See What I'm Up to on Social Media! Also you can reach me via phone or email!"
+                content="See what I'm up to on social media! Also you can reach me via phone or email!"
                 />
                 <meta property="og:title" 
                     content="Let's Connect | Eddie Estevez"
                 />
                 <meta property="og:description" 
-                    content="See What I'm Up to on Social Media! Also you can reach me via phone or email!"
+                    content="See what I'm up to on social media! Also you can reach me via phone or email!"
                 />
             </Helmet>
         <Hero id="hereOnHomePage" title={props.title}/>
@@ -53,13 +51,11 @@ function HomePage(props) {
 
             
             <div className="col-md-12">
-            <h3 className="mb-4 contactPageTitle">See What I'm Up to on Social Media!</h3>
+            <h3 className="mb-4 contactPageTitle">See what I'm up to on social media!</h3>
                 <div className="wrapper itemBoxes">
                     <div className="row mb-5 g-5">
-                        <ContactItem imgAddr={facebookIcon} imgAlt="Facebook Logo" txtTitle="Facebook" href="https://www.facebook.com/Eduardo.Estevez1.0" colClass="col-md-3 col-6"/>
-                        <ContactItem imgAddr={instagramIcon} imgAlt="Instagram Logo" txtTitle="Instagram" href="https://www.instagram.com/edd1e_estevez/"colClass="col-md-3 col-6" />
-                        <ContactItem imgAddr={twitterLogo} imgAlt="Twitter Logo" txtTitle="Twitter" href="https://twitter.com/edd1e_estevezz" colClass="col-md-3 col-6"/>
-                        <ContactItem imgAddr={linkedInLogo} imgAlt="LinkedIn Logo" txtTitle="LinkedIn" href="https://www.linkedin.com/in/eduardo-estevez-a63193144/" colClass="col-md-3 col-6"/>
+                        <ContactItem imgAddr={instagramIcon} imgAlt="Instagram Logo" txtTitle="Instagram" href="https://www.instagram.com/edd1e_estevez/" colClass="col-md-6 col-6" />
+                        <ContactItem imgAddr={linkedInLogo} imgAlt="LinkedIn Logo" txtTitle="LinkedIn" href="https://www.linkedin.com/in/eduardo-estevez-a63193144/" colClass="col-md-6 col-6"/>
                         
 
                     </div>
