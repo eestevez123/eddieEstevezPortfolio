@@ -3,10 +3,10 @@ import ReactPlayer from 'react-player'
 import {Helmet} from "react-helmet-async";
 import { Link } from "react-router-dom";
 import axios from 'axios';
-
+import CONFIG from "../../config"
 
 const api = axios.create({
-    baseURL: `https://eddie-estevez-portfolio-api.herokuapp.com/`
+    baseURL: CONFIG.API_ENDPOINT
   })
 
 function PodcastPage(props) {
