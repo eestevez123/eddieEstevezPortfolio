@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import ReactSoundcloud from 'react-soundcloud-embedded'
+import ReactPlayer from 'react-player'
 import {Helmet} from "react-helmet-async";
 import { Link } from "react-router-dom";
 import axios from 'axios';
@@ -84,7 +84,7 @@ function PodcastPage(props) {
                     </h2>
                     <div className="row justify-content-center">
                         <div className="col-12 col-lg-8 m-5">
-                            <ReactSoundcloud url="https://soundcloud.com/eduardo-estevez-771666676/podcast-about-relationships" visual={false}/>
+                            <ReactPlayer url="https://soundcloud.com/eduardo-estevez-771666676/podcast-about-relationships" controls={true}/>
                         </div>
                     </div>
                 </div>
