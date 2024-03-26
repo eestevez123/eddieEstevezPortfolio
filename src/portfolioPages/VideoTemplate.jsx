@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import {Helmet} from "react-helmet-async";
 import axios from 'axios';
-
+import CONFIG from "../config";
 
 import {
     Link,
@@ -9,7 +9,7 @@ import {
 
 
   const api = axios.create({
-    baseURL: `https://eddie-estevez-portfolio-api.herokuapp.com/`
+    baseURL: CONFIG.API_ENDPOINT
   })
 
 function ApplicationTemplate(props) {

@@ -17,8 +17,11 @@ import PictureTemplate from "./PictureTemplate";
 import PodcastPage from "./custom/PodcastPage";
 import VidGallery from "./custom/VidGallery";
 
+import CONFIG from "../config";
+
+
 const api = axios.create({
-    baseURL: `https://eddie-estevez-portfolio-api.herokuapp.com/`
+    baseURL: CONFIG.API_ENDPOINT
   })
 
 

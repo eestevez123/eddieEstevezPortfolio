@@ -4,13 +4,15 @@ import Card from "./Card";
 import axios from 'axios';
 
 import "./Card.css";
+import CONFIG from "../config";
+
 const cardCSS ="col-lg-4 col-md-6 col-12 my-4";
 
 const emptyCards = Array.from({ length: 12 }, () => ({}));
 
 
 const api = axios.create({
-    baseURL: `https://eddie-estevez-portfolio-api.herokuapp.com/`
+    baseURL: CONFIG.API_ENDPOINT
   })
 
 function Cards(props) {

@@ -6,6 +6,7 @@ import Skeleton from 'react-loading-skeleton';
 import axios from 'axios';
 
 import 'react-loading-skeleton/dist/skeleton.css'
+import CONFIG from "../config";
 
 
 import {
@@ -13,7 +14,7 @@ import {
   } from "react-router-dom";
 
   const api = axios.create({
-    baseURL: `https://eddie-estevez-portfolio-api.herokuapp.com/`
+    baseURL: CONFIG.API_ENDPOINT
   })
 
 
