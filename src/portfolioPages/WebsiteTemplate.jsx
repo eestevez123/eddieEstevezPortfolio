@@ -4,7 +4,7 @@ import Carousel from 'react-bootstrap/Carousel'
 import OnImagesLoaded from 'react-on-images-loaded';
 import Skeleton from 'react-loading-skeleton';
 import axios from 'axios';
-
+import CONFIG from "../config";
 import 'react-loading-skeleton/dist/skeleton.css'
 
 
@@ -13,7 +13,7 @@ import {
   } from "react-router-dom";
 
 const api = axios.create({
-    baseURL: `https://eddie-estevez-portfolio-api.herokuapp.com/`
+    baseURL: CONFIG.API_ENDPOINT
   })
 
 function WebsiteTemplate(props) {

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Helmet} from "react-helmet-async";
 import emailjs from 'emailjs-com';
 
@@ -8,9 +8,18 @@ import ContactItem from "../components/ContactItem";
 import instagramIcon from "../images/contactPage/insta.svg";
 import linkedInLogo from "../images/contactPage/linkedIn.svg";
 
+import CONFIG from "../config";
+
 function HomePage(props) {
 
-    const [sendingEmail, setSendingEmail] = useState(false)
+    const [sendingEmail, setSendingEmail] = useState(false);
+    
+
+    useEffect(() => {
+        emailjs.init({
+            publicKey: CONFIG.EMAILJS_PUBLIC_KEY
+        })
+    }, [])
 
     function sendEmail(e) {
         e.preventDefault();
@@ -20,7 +29,7 @@ function HomePage(props) {
             setSendingEmail(false)
             return
         } else {
-            emailjs.sendForm('service_h9o93bm', 'template_b99mtj9', e.target, 'emailJSPublicKey')
+            emailjs.sendForm(CONFIG.EMAILJS_SERVICE_ID, CONFIG.EMAILJS_TEMPLATE_ID, e.target)
             .then((result) => {
                 alert("Your message was sent! Thank you! I will get back to you soon!");
             }, (error) => {
