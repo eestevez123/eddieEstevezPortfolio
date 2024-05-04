@@ -1,66 +1,44 @@
 import React, {useState, useEffect} from "react";
 import {useSpring, animated , config} from 'react-spring';
 import Card from "./Card";
-import axios from 'axios';
 
 import "./Card.css";
-import CONFIG from "../config";
 
 const cardCSS ="col-lg-4 col-md-6 col-12 my-4";
 
 const emptyCards = Array.from({ length: 12 }, () => ({}));
 
-
-const api = axios.create({
-    baseURL: CONFIG.API_ENDPOINT
-  })
-
 function Cards(props) {
 
     
-    const [isAxiosDone, setIsAxiosDone] = useState(false);
+    const [isLoadingDone, setIsLoadingDone] = useState(false);
     const [currentDeck, setCurrentDeck] = useState(emptyCards);
 
-    const [websiteCards, setwebsiteCards] = useState({});
-    const [appCards, setappCards] = useState({});
-    const [videoCards, setvideoCards] = useState({});
-    const [soundCards, setsoundCards] = useState({});
-    const [imageCards, setimageCards] = useState({});
+    const [websiteCards, setWebsiteCards] = useState({});
+    const [appCards, setAppCards] = useState({});
+    const [videoCards, setVideoCards] = useState({});
+    const [soundCards, setSoundCards] = useState({});
+    const [imageCards, setImageCards] = useState({});
 
     useEffect(() => {
-        let source = axios.CancelToken.source()
+        import('../data/cards/websiteCards.json').then(data => {
+            debugger;
+            setWebsiteCards(Object.values(data.default));
+        });
+        import('../data/cards/appCards.json').then(data => {
+            setAppCards(Object.values(data.default));
+        });
+        import('../data/cards/videoCards.json').then(data => {
+            setVideoCards(Object.values(data.default));
+        });
+        import('../data/cards/soundCards.json').then(data => {
+            setSoundCards(Object.values(data.default));
+        });
+        import('../data/cards/imageCards.json').then(data => {
+            setImageCards(Object.values(data.default));
+        });
 
-        async function loadData() {
-            try {
-                const websiteCardsData = await api.get("/websiteCards", {cancelToken: source.token})
-                const appCardsData = await api.get("/appCards", {cancelToken: source.token})
-                const videoCardsData = await api.get("/videoCards", {cancelToken: source.token})
-                const soundCardsData = await api.get("/soundCards", {cancelToken: source.token})
-                const imageCardsData = await api.get("/imageCards", {cancelToken: source.token})
-    
-    
-                setwebsiteCards(Object.values(websiteCardsData.data))
-                setappCards(Object.values(appCardsData.data))
-                setvideoCards(Object.values(videoCardsData.data))
-                setsoundCards(Object.values(soundCardsData.data))
-                setimageCards(Object.values(imageCardsData.data))
-                
-    
-                setCurrentDeck(Object.values(websiteCardsData.data));
-                setIsAxiosDone(true)
-            } catch(err) {
-                if(!axios.isCancel(err)) {
-                    console.log(err)
-                    alert("Let Eddie know that his API could not fetch the requested data")
-                }
-                if(axios.isCancel(err)) console.log("axios async call cancelled")
-            }
-
-        }
-        loadData()
-        return () => {
-            source.cancel()
-        }
+        setIsLoadingDone(true)
     }, [])
 
 
@@ -72,11 +50,11 @@ function Cards(props) {
     })
 
     useEffect( () => {
-        if(isAxiosDone) {
+        if (isLoadingDone) {
             switch(props.section) {
                 case 0:
                     setCurrentDeck(websiteCards);
-                  break;
+                    break;
                 case 1:
                     setCurrentDeck(appCards);
                     break;
@@ -92,9 +70,9 @@ function Cards(props) {
                 default:
                     setCurrentDeck(emptyCards);
                     break
-              }
+                }
         }
-    },[props.section, appCards, imageCards, isAxiosDone, soundCards, videoCards, websiteCards])
+    },[props.section, appCards, imageCards, isLoadingDone, soundCards, videoCards, websiteCards])
 
         return(
             <>
