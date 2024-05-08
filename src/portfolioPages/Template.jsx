@@ -69,11 +69,8 @@ function Template(props) {
                 return (<><SoundTemplate key={portfolioURL} portfolioURL={portfolioURL}/></>)
             }
         } else if (cardURLs.imageURLs.includes(portfolioURL)) {
-            return (
-                <>
-                    <PictureTemplate key={portfolioURL}  portfolioURL={portfolioURL}/>
-                </>
-            )
+            debugger;
+            return (<><PictureTemplate key={portfolioURL}  portfolioURL={portfolioURL}/></>)
         } else {
             return (<>
                 <Redirect to="/404" />
