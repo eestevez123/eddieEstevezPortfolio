@@ -5,6 +5,14 @@ import {
     Link,
   } from "react-router-dom";
 
+/**
+ * Component representing the template for an article in the picture section.
+ *
+ * @component
+ * @param {Object} props - Component props
+ * @param {string} props.portfolioURL - The URL of the picture portfolio item.
+ * @returns {JSX.Element} JSX element representing the template for an article in the picture section.
+ */
 function PictureTemplate(props) {
     
     let portfolioURL = props.portfolioURL;
@@ -43,13 +51,9 @@ function PictureTemplate(props) {
         if(isLoadingDone) setImageList(infoObj.images)
 
     }, [infoObj, isLoadingDone])
-   
-
         return (
         <>
         {(!isLoadingDone)?(<>
-        
-        
         <div className="d-flex justify-content-center">
         <div className="row mt-5">
             <div className="col">
@@ -116,7 +120,6 @@ function PictureTemplate(props) {
                     </div>
                 </div>                
             </div>
-
 
             <div className="container mt-5">
                 <div className="row text-center m-3">

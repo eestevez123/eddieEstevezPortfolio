@@ -10,6 +10,15 @@ import {
     Link,
   } from "react-router-dom";
 
+
+/**
+ * Component representing the template for an article in the website section.
+ *
+ * @component
+ * @param {Object} props - Component props
+ * @param {string} props.portfolioURL - The portfolio URL for website article information
+ * @returns {JSX.Element} JSX element representing the template for an article in the website section.
+ */
 function WebsiteTemplate(props) {
 
     let portfolioURL = props.portfolioURL;
@@ -245,7 +254,12 @@ function WebsiteTemplate(props) {
     )
     
 } 
-
+/**
+ * Component representing the template used for the article talking about the Implicit Bias Test project
+ *
+ * @component
+ * @returns {JSX.Element} JSX element representing the component.
+ */
 function ImplicitBiasTest() {
     return(
         <div className="container-fluid bg-light pb-5">

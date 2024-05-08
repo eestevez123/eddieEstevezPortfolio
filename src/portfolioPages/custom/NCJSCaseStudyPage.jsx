@@ -13,6 +13,14 @@ import Sketch from "../../images/caseStudies/NCJS_Sketch.jpg";
 import Color from "../../images/caseStudies/ncjsColor.png";
 import Font from "../../images/caseStudies/ncjsFont.png";
 
+
+/**
+ * Component representing the NCJS Case Study page.
+ *
+ * @component
+ * @param {Object} props - Component props
+ * @returns {JSX.Element} JSX element representing the NCJS Case Study page.
+ */
 function NCJSCaseStudyPage(props) {
 
     const [isLoadingCover, setIsLoadingCover] = useState(true);

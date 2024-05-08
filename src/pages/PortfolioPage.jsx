@@ -13,10 +13,18 @@ import Hero from "../components/Hero"
 import WorkNav from "../components/WorkNav"
 import Cards from '../components/Cards';
 
-
-
 import Template from '../portfolioPages/Template';
 
+
+/**
+ * Component representing the portfolio page with work sections.
+ * This component displays sections of work and allows navigation between them.
+ *
+ * @component
+ * @param {Object} props - Component props
+ * @param {string} props.title - Title for the portfolio page.
+ * @returns {JSX.Element} JSX element representing the PortfolioPage.
+ */
 function PortfolioPage(props) {
 
     // const sectionArray = [

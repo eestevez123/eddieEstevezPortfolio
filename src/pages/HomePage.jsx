@@ -22,6 +22,17 @@ import blackLineRect from "../images/homePage/blackLineRect.svg";
 
 const  eddieResumePDF = process.env.PUBLIC_URL + '/eddieResume.pdf';
 
+
+/**
+ * Component representing the Home page.
+ * This component renders the Home page with various sections and content.
+ *
+ * @component
+ * @param {Object} props - The props object containing the title and subtitle for the Hero component.
+ * @param {string} props.title - The title to be displayed in the Hero component.
+ * @param {string} props.subTitle - The subtitle to be displayed in the Hero component.
+ * @returns {JSX.Element} JSX element representing the Home page.
+ */
 function HomePage(props) {
     
     const [mainEddieImageLoading, setmMinEddieImageLoading] = useState(true);

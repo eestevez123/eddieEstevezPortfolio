@@ -19,6 +19,16 @@ import digStud from "../images/aboutMePage/digitalStudies.svg";
 
 const  eddieResumePDF = process.env.PUBLIC_URL + '/eddieResume.pdf';
 
+
+/**
+ * Component representing the About Me page.
+ * This component renders the About Me page with detailed information about Eddie Estevez.
+ *
+ * @component
+ * @param {Object} props - The props object containing the title for the Hero component.
+ * @param {string} props.title - The title to be displayed in the Hero component.
+ * @returns {JSX.Element} JSX element representing the About Me page.
+ */
 function AboutPage(props) {
 
     const [babyPicLoading, setBabyPicLoading] = useState(true)

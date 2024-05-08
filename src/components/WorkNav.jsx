@@ -5,6 +5,19 @@ import ButtonGroup from'react-bootstrap/ButtonGroup';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown';
 
+
+/**
+ * Component for rendering navigation buttons or dropdown based on screen size.
+ * This component conditionally renders navigation buttons or a dropdown menu
+ * based on the screen size. It utilizes a custom hook `useWindowWidth` to
+ * determine the current window width and manage responsive behavior.
+ *
+ * @component
+ * @param {Object} props - The props object containing the section index and update handler.
+ * @param {number} props.section - The current section index selected.
+ * @param {Function} props.updateHandler - The function to handle section updates.
+ * @returns {JSX.Element} JSX element representing the navigation buttons or dropdown.
+ */
 function WorkNav(props) {
 
     const windowWidth = useWindowWidth();
@@ -71,7 +84,12 @@ function WorkNav(props) {
     )
 }
 
-// Hook for checking what the current window size is 
+/**
+ * Custom hook to track the current window width.
+ * This hook monitors window resize events and returns the current window width.
+ *
+ * @returns {number} The current window width in pixels.
+ */
 function useWindowWidth() {
 
     const [windowWidth, setWindowWidth] = useState(1000)
