@@ -5,7 +5,7 @@ import {
     Link,
   } from "react-router-dom";
 
-function ApplicationTemplate(props) {
+function VideoTemplate(props) {
     
     let portfolioURL = props.portfolioURL;
 
@@ -117,4 +117,4 @@ function ApplicationTemplate(props) {
     
 } 
 
-export default ApplicationTemplate;
+export default VideoTemplate;

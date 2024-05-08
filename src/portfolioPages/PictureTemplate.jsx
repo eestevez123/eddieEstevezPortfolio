@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import Gallery from 'react-grid-gallery';
+import {Gallery} from 'react-grid-gallery';
 import {Helmet} from "react-helmet-async";
 import {
     Link,
@@ -18,20 +18,23 @@ function PictureTemplate(props) {
 
     useEffect(() => {
         async function loadData() {
-            Promise.all([
-                import('../data/pageInfo/imagesInfo.json'),
-                import('../data/cards/imageCards.json')
-              ])
-                .then(([infoData, cardsData]) => {
-                    let imagesData = infoData.default;
-                    setInfoObj(imagesData[`${portfolioURL}`])
-                    
-                    let imagesCards = cardsData.default;
-                    setCardObj(imagesCards[`${portfolioURL}`])
-
-                    setIsLoadingDone(true);
-                });
-
+            try {
+                Promise.all([
+                    import('../data/pageInfo/imagesInfo.json'),
+                    import('../data/cards/imageCards.json')
+                  ])
+                    .then(([infoData, cardsData]) => {
+                        let imagesData = infoData.default;
+                        setInfoObj(imagesData[`${portfolioURL}`])
+                        
+                        let imagesCards = cardsData.default;
+                        setCardObj(imagesCards[`${portfolioURL}`])
+    
+                        setIsLoadingDone(true);
+                    });
+            } catch (error) {
+                console.error('Error loading data:', error);
+            }
         }
         loadData()
     }, [portfolioURL] )
@@ -42,10 +45,8 @@ function PictureTemplate(props) {
     }, [infoObj, isLoadingDone])
    
 
-        return(
+        return (
         <>
-
-
         {(!isLoadingDone)?(<>
         
         
@@ -129,7 +130,6 @@ function PictureTemplate(props) {
     </>) 
     } </>
     )
-    
-} 
+}
 
 export default PictureTemplate;
