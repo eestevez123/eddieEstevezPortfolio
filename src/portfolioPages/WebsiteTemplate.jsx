@@ -3,8 +3,6 @@ import {Helmet} from "react-helmet-async";
 import Carousel from 'react-bootstrap/Carousel'
 import OnImagesLoaded from 'react-on-images-loaded';
 import Skeleton from 'react-loading-skeleton';
-import axios from 'axios';
-import CONFIG from "../config";
 import 'react-loading-skeleton/dist/skeleton.css'
 
 
@@ -12,15 +10,11 @@ import {
     Link,
   } from "react-router-dom";
 
-const api = axios.create({
-    baseURL: CONFIG.API_ENDPOINT
-  })
-
 function WebsiteTemplate(props) {
 
     let portfolioURL = props.portfolioURL;
 
-    const [isAxiosDone, setIsAxiosDone] = useState(false);
+    const [isLoadingDone, setIsLoadingDone] = useState(false);
 
     const [infoObj, setInfoObj] = useState({});
     const [cardObj, setCardObj] = useState({});
@@ -32,37 +26,27 @@ function WebsiteTemplate(props) {
     const [showCarouselControls, setshowCarouselControlers] = useState(true)
 
     useEffect(() => {
-        let source = axios.CancelToken.source()
         async function loadData() {
-            try {
-                const infoRes = await api.get("/websiteInfo", {cancelToken: source.token})
-                const cardRes = await api.get("/websiteCards", {cancelToken: source.token})
-    
-                const websiteInfo = infoRes.data
-                const websiteCards = cardRes.data
-    
-                setInfoObj(websiteInfo[`${portfolioURL}`])
-                setCardObj(websiteCards[`${portfolioURL}`])
-    
-                setIsAxiosDone(true)
-            } catch(err) {
-                if(!axios.isCancel(err)) {
-                    console.log(err)
-                    alert("Let Eddie know that his API could not fetch the requested data")
-                }
-                if(axios.isCancel(err)) console.log("axios async call cancelled")
-            }
+            Promise.all([
+                import('../data/pageInfo/websiteInfo.json'),
+                import('../data/cards/websiteCards.json')
+              ])
+                .then(([infoData, cardsData]) => {
+                    let websiteInfo = infoData.default;
+                    setInfoObj(websiteInfo[`${portfolioURL}`])
+                    
+                    let websiteCards = cardsData.default;
+                    setCardObj(websiteCards[`${portfolioURL}`])
 
+                    setIsLoadingDone(true);
+                });
         }
         loadData()
-        return () => {
-            source.cancel()
-        }
     }, [portfolioURL] )
 
     useEffect(() => {
-        if(isAxiosDone) setCarouselImages(infoObj.CarouselImages)
-    }, [infoObj, isAxiosDone])
+        if(isLoadingDone) setCarouselImages(infoObj.CarouselImages)
+    }, [infoObj, isLoadingDone])
 
     useEffect(() => {
         const carouselImageLength =  CarouselImages.length
@@ -78,7 +62,7 @@ function WebsiteTemplate(props) {
 
         return(
         <>
-            {(!isAxiosDone)?(<>
+            {(!isLoadingDone)?(<>
             
                 <div className="d-flex justify-content-center">
                 <div className="row mt-5">

@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react";
-import axios from 'axios';
 
 import {
     useParams,
@@ -17,13 +16,6 @@ import PictureTemplate from "./PictureTemplate";
 import PodcastPage from "./custom/PodcastPage";
 import VidGallery from "./custom/VidGallery";
 
-import CONFIG from "../config";
-
-
-const api = axios.create({
-    baseURL: CONFIG.API_ENDPOINT
-  })
-
 
 function Template(props) {
     const [doneLoading, setDoneLoading] = useState(false)
@@ -31,33 +23,19 @@ function Template(props) {
     
     
     useEffect(() => {
-        let source = axios.CancelToken.source()
-
-        async function loadData() {
-        try {
-            const res = await api.get("/cardURLs", {cancelToken: source.token})
-            setCardURLs(res.data)
-            setDoneLoading(true)
-
-        } catch(err) {
-            if(!axios.isCancel(err)) {
-                console.log(err)
-                alert("Let Eddie know that his API could not fetch the requested data")
-            }
-            if(axios.isCancel(err)) console.log("axios async call cancelled")
-            }
+        async function loadData() {            
+            import('../data/cardURLs.json').then(data => {
+                setCardURLs(data.default);
+                setDoneLoading(true)
+            });
         }
         loadData()
-
-        return () => {
-            source.cancel()
-        }
     },[])
 
     let { portfolioURL } = useParams();
 
     if (doneLoading) {
-        if (! cardURLs.validWorkURLs.includes(portfolioURL)) {
+        if (!cardURLs.validWorkURLs.includes(portfolioURL)) {
             return (<>
             <Redirect to="/404" />
             </>)

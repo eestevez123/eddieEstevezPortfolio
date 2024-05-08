@@ -14,31 +14,28 @@ function Cards(props) {
     const [isLoadingDone, setIsLoadingDone] = useState(false);
     const [currentDeck, setCurrentDeck] = useState(emptyCards);
 
-    const [websiteCards, setWebsiteCards] = useState({});
-    const [appCards, setAppCards] = useState({});
-    const [videoCards, setVideoCards] = useState({});
-    const [soundCards, setSoundCards] = useState({});
-    const [imageCards, setImageCards] = useState({});
+    const [websiteCards, setWebsiteCards] = useState(emptyCards);
+    const [appCards, setAppCards] = useState(emptyCards);
+    const [videoCards, setVideoCards] = useState(emptyCards);
+    const [soundCards, setSoundCards] = useState(emptyCards);
+    const [imageCards, setImageCards] = useState(emptyCards);
 
     useEffect(() => {
-        import('../data/cards/websiteCards.json').then(data => {
-            debugger;
-            setWebsiteCards(Object.values(data.default));
-        });
-        import('../data/cards/appCards.json').then(data => {
-            setAppCards(Object.values(data.default));
-        });
-        import('../data/cards/videoCards.json').then(data => {
-            setVideoCards(Object.values(data.default));
-        });
-        import('../data/cards/soundCards.json').then(data => {
-            setSoundCards(Object.values(data.default));
-        });
-        import('../data/cards/imageCards.json').then(data => {
-            setImageCards(Object.values(data.default));
-        });
-
-        setIsLoadingDone(true)
+        Promise.all([
+            import('../data/cards/websiteCards.json'),
+            import('../data/cards/appCards.json'),
+            import('../data/cards/videoCards.json'),
+            import('../data/cards/soundCards.json'),
+            import('../data/cards/imageCards.json')
+          ])
+            .then(([websiteData, appData, videoData, soundData, imageData]) => {
+                setWebsiteCards(Object.values(websiteData.default));
+                setAppCards(Object.values(appData.default));
+                setVideoCards(Object.values(videoData.default));
+                setSoundCards(Object.values(soundData.default));
+                setImageCards(Object.values(imageData.default));
+                setIsLoadingDone(true);
+            });
     }, [])
 
 
