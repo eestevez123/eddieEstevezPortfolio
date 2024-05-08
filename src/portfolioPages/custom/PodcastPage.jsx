@@ -3,6 +3,15 @@ import ReactPlayer from 'react-player'
 import {Helmet} from "react-helmet-async";
 import { Link } from "react-router-dom";
 
+
+/**
+ * Component representing the page where I talk about a podcast project I worked on.
+ *
+ * @component
+ * @param {Object} props - Component props
+ * @param {string} props.portfolioURL - The URL of the podcast portfolio item.
+ * @returns {JSX.Element} JSX element representing the Podcast page.
+ */
 function PodcastPage(props) {
     
     let portfolioURL = props.portfolioURL;

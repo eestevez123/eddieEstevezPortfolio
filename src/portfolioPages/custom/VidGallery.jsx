@@ -2,6 +2,16 @@ import React, {useState, useEffect} from "react";
 import {Helmet} from "react-helmet-async";
 import { Link } from "react-router-dom";
 
+
+
+/**
+ * Component representing a video gallery page.
+ *
+ * @component
+ * @param {Object} props - Component props
+ * @param {string} props.portfolioURL - The URL of the video gallery portfolio item.
+ * @returns {JSX.Element} JSX element representing the video gallery page.
+ */
 function VidGallery(props) {
     
     let portfolioURL = props.portfolioURL;

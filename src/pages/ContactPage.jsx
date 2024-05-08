@@ -10,17 +10,31 @@ import linkedInLogo from "../images/contactPage/linkedIn.svg";
 
 import CONFIG from "../config";
 
+
+/**
+ * Component representing the Home page.
+ * This component renders the Home page with social media links and a contact form.
+ *
+ * @component
+ * @param {Object} props - The props object containing the title for the Hero component.
+ * @param {string} props.title - The title to be displayed in the Hero component.
+ * @returns {JSX.Element} JSX element representing the Home page.
+ */
 function HomePage(props) {
 
     const [sendingEmail, setSendingEmail] = useState(false);
-    
 
     useEffect(() => {
         emailjs.init({
             publicKey: CONFIG.EMAILJS_PUBLIC_KEY
         })
+        console.log(CONFIG)
     }, [])
 
+    /**
+     * Function to handle form submission and send email using emailjs.
+     * @param {Event} e - The form submit event.
+     */
     function sendEmail(e) {
         e.preventDefault();
         setSendingEmail(true)

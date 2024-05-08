@@ -10,6 +10,14 @@ import CoverPic from "../../images/caseStudies/workoutapp_background.jpg";
 import WorkoutPersona from "../../images/caseStudies/workoutPersona.png";
 import ScreenFlow from "../../images/caseStudies/screenFlow.png";
 
+
+/**
+ * Component representing the Workout App Case Study page
+ *
+ * @component
+ * @param {Object} props - Component props
+ * @returns {JSX.Element} JSX element representing the Workout App Case Study page
+ */
 function WorkoutAppCaseStudyPage(props) {
 
     const [isLoadingCover, setIsLoadingCover] = useState(true);

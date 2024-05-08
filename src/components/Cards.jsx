@@ -4,13 +4,21 @@ import Card from "./Card";
 
 import "./Card.css";
 
-const cardCSS ="col-lg-4 col-md-6 col-12 my-4";
-
+const cardCSS = "col-lg-4 col-md-6 col-12 my-4";
 const emptyCards = Array.from({ length: 12 }, () => ({}));
 
+/**
+ * Functional component for rendering a section of cards based on the selected section type.
+ * This component fetches card data asynchronously and dynamically renders cards based on the specified section.
+ *
+ * @component
+ * @param {Object} props - The props object containing data and configuration for the card section.
+ * @param {string} props.section - The section type for which cards should be displayed (0: website, 1: app, 2: video, 3: sound, 4: image).
+ * @param {string} props.path - The base path used for routing.
+ * @returns {JSX.Element} JSX element representing a section of cards.
+ */
 function Cards(props) {
 
-    
     const [isLoadingDone, setIsLoadingDone] = useState(false);
     const [currentDeck, setCurrentDeck] = useState(emptyCards);
 
@@ -20,6 +28,7 @@ function Cards(props) {
     const [soundCards, setSoundCards] = useState(emptyCards);
     const [imageCards, setImageCards] = useState(emptyCards);
 
+    // This loads in the card data for all sections
     useEffect(() => {
         Promise.all([
             import('../data/cards/websiteCards.json'),
@@ -38,7 +47,6 @@ function Cards(props) {
             });
     }, [])
 
-
     const springProps = useSpring({
         to: {opacity: 1, y:0},
         from: {opacity: 0, y:50},
@@ -46,6 +54,7 @@ function Cards(props) {
         reset: true
     })
 
+    // This controls which set of cards to show depending on the section
     useEffect( () => {
         if (isLoadingDone) {
             switch(props.section) {

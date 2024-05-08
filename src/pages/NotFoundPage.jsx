@@ -6,32 +6,38 @@ import penguinPic from "../images/penguin.svg"
 
 import { useSpring, animated } from 'react-spring'
 
-
+/**
+ * Component representing the 404 Not Found page.
+ * This component displays a custom 404 error message with an animated penguin.
+ *
+ * @component
+ * @returns {JSX.Element} JSX element representing the 404 Not Found page.
+ */
 function NotFoundPage() {
 
-        const penguinAnimation = useSpring({
-            to: { opacity: 1, x:0},
-            from: { opacity: 0, x:-100},
-            delay: 500
-        })
+    const penguinAnimation = useSpring({
+        to: { opacity: 1, x:0},
+        from: { opacity: 0, x:-100},
+        delay: 500
+    })
 
-        const textFromRight = useSpring({
-            to: { opacity: 1, x:0},
-            from: { opacity: 0, x:100},
-        })
+    const textFromRight = useSpring({
+        to: { opacity: 1, x:0},
+        from: { opacity: 0, x:100},
+    })
 
-        const textComeUp = useSpring({
-            to: { opacity: 1, y:0},
-            from: { opacity: 0, y:100},
-        })
+    const textComeUp = useSpring({
+        to: { opacity: 1, y:0},
+        from: { opacity: 0, y:100},
+    })
 
-        const buttonComeIn = useSpring({
-            to: { opacity: 1},
-            from: { opacity: 0},
-            delay: 1000
-        })
+    const buttonComeIn = useSpring({
+        to: { opacity: 1},
+        from: { opacity: 0},
+        delay: 1000
+    })
 
-        return(
+    return(
         <>
             <Helmet>
                 <title>404 | Eddie Estevez</title>
@@ -60,7 +66,7 @@ function NotFoundPage() {
                 </div>
             </div>
         </>
-    )
+)
     
 } 
 

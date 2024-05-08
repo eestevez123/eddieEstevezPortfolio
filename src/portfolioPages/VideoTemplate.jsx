@@ -5,6 +5,15 @@ import {
     Link,
   } from "react-router-dom";
 
+
+/**
+ * Component representing the template for an article in the video section.
+ *
+ * @component
+ * @param {Object} props - Component props
+ * @param {string} props.portfolioURL - The portfolio URL for video article information
+ * @returns {JSX.Element} JSX element representing the template for an article in the video section.
+ */
 function VideoTemplate(props) {
     
     let portfolioURL = props.portfolioURL;

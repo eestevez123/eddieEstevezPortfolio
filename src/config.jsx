@@ -1,7 +1,7 @@
-const config = {
-    EMAILJS_PUBLIC_KEY  : "emailJSPublicKey",
-    EMAILJS_SERVICE_ID  : "service_h9o93bm",
-    EMAILJS_TEMPLATE_ID : "template_b99mtj9"
-};
+const CONFIG = {
+    EMAILJS_PUBLIC_KEY: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
+    EMAILJS_SERVICE_ID: process.env.REACT_APP_EMAILJS_SERVICE_ID,
+    EMAILJS_TEMPLATE_ID: process.env.REACT_APP_EMAILJS_TEMPLATE_ID
+  };
   
-export default config;
+  export default CONFIG;

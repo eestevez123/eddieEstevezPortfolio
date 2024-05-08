@@ -14,7 +14,14 @@ import {
 
 const  ai_report6 = process.env.PUBLIC_URL + '/P6_Eddie_Estevez_Report.pdf';
 
-
+/**
+ * Component representing the template for an application article.
+ *
+ * @component
+ * @param {Object} props - Component props
+ * @param {string} props.portfolioURL - The URL of the application portfolio item.
+ * @returns {JSX.Element} JSX element representing the template for an article in the application section.
+ */
 function ApplicationTemplate(props) {
     
     let portfolioURL = props.portfolioURL;
@@ -238,6 +245,12 @@ function ApplicationTemplate(props) {
     
 }
 
+/**
+ * Component representing a demo video and UI testing for the Workout App.
+ *
+ * @component
+ * @returns {JSX.Element} JSX element representing the Workout App details.
+ */
 function WorkoutApp() {
     return(
         <div className="container-fluid bg-light pb-5 mt-5">
@@ -295,6 +308,12 @@ function WorkoutApp() {
     )
 }
 
+/**
+ * Component representing demo videos for Tiva Launchpad Games.
+ *
+ * @component
+ * @returns {JSX.Element} JSX element representing the Tiva Launchpad Games details.
+ */
 function TivaLaunchGames() {
     return(
         <div className="container-fluid bg-light pb-5">

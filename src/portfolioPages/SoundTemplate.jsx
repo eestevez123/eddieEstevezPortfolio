@@ -2,6 +2,15 @@ import React, {useState, useEffect} from "react";
 import {Helmet} from "react-helmet-async";
 import { Link } from "react-router-dom";
 
+
+/**
+ * Component representing the template for an article in the sound section.
+ *
+ * @component
+ * @param {Object} props - Component props
+ * @param {string} props.portfolioURL - The URL of the sound portfolio item.
+ * @returns {JSX.Element} JSX element representing the template for an article in the sound section.
+ */
 function SoundTemplate(props) {
     
     let portfolioURL = props.portfolioURL;

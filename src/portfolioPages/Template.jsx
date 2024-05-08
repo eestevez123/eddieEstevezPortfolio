@@ -16,8 +16,13 @@ import PictureTemplate from "./PictureTemplate";
 import PodcastPage from "./custom/PodcastPage";
 import VidGallery from "./custom/VidGallery";
 
-
-function Template(props) {
+/**
+ * Component representing the template for an article in the video section.
+ *
+ * @component
+ * @returns {JSX.Element} JSX element representing the template for an article in the video section.
+ */
+function Template() {
     const [doneLoading, setDoneLoading] = useState(false)
     const [cardURLs, setCardURLs] = useState({})
     
@@ -40,8 +45,6 @@ function Template(props) {
             <Redirect to="/404" />
             </>)
         }
-    
-    
         if (cardURLs.websiteURLs.includes(portfolioURL)) {
             // Websites
             return(
@@ -90,8 +93,6 @@ function Template(props) {
             </div>
         )
     }
-
-    
 } 
 
 export default Template;
