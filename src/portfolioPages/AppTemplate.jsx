@@ -3,19 +3,13 @@ import {Helmet} from "react-helmet-async";
 import Carousel from 'react-bootstrap/Carousel'
 import OnImagesLoaded from 'react-on-images-loaded';
 import Skeleton from 'react-loading-skeleton';
-import axios from 'axios';
 
 import 'react-loading-skeleton/dist/skeleton.css'
-import CONFIG from "../config";
 
 
 import {
     Link,
   } from "react-router-dom";
-
-  const api = axios.create({
-    baseURL: CONFIG.API_ENDPOINT
-  })
 
 
 const  ai_report6 = process.env.PUBLIC_URL + '/P6_Eddie_Estevez_Report.pdf';
@@ -25,7 +19,7 @@ function ApplicationTemplate(props) {
     
     let portfolioURL = props.portfolioURL;
 
-    const [isAxiosDone, setIsAxiosDone] = useState(false);
+    const [isLoadingDone, setIsLoadingDone] = useState(false);
 
     const [infoObj, setInfoObj] = useState({});
     const [cardObj, setCardObj] = useState({});
@@ -37,37 +31,28 @@ function ApplicationTemplate(props) {
     const [showCarouselControls, setshowCarouselControlers] = useState(true)
 
     useEffect(() => {
-        let source = axios.CancelToken.source()
-        async function loadData() {
-            try {
-                const infoRes = await api.get("/appInfo", {cancelToken: source.token})
-                const cardRes = await api.get("/appCards", {cancelToken: source.token})
-    
-                const websiteInfo = infoRes.data
-                const websiteCards = cardRes.data
-    
-                setInfoObj(websiteInfo[`${portfolioURL}`])
-                setCardObj(websiteCards[`${portfolioURL}`])
-    
-                setIsAxiosDone(true)
-            } catch(err) {
-                if(!axios.isCancel(err)) {
-                    console.log(err)
-                    alert("Let Eddie know that his API could not fetch the requested data")
-                }
-                if(axios.isCancel(err)) console.log("axios async call cancelled")
-            }
+        async function loadData() {            
+            Promise.all([
+                import('../data/pageInfo/appInfo.json'),
+                import('../data/cards/appCards.json')
+              ])
+                .then(([infoData, cardsData]) => {
+                    let appInfo = infoData.default;
+                    setInfoObj(appInfo[`${portfolioURL}`])
+                    
+                    let appCards = cardsData.default;
+                    setCardObj(appCards[`${portfolioURL}`])
+
+                    setIsLoadingDone(true);
+                });
 
         }
-        loadData()
-        return () => {
-            source.cancel()
-        }
+        loadData();
     }, [portfolioURL] )
 
     useEffect(() => {
-        if(isAxiosDone) setCarouselImages(infoObj.CarouselImages)
-    }, [infoObj, isAxiosDone])
+        if(isLoadingDone) setCarouselImages(infoObj.CarouselImages)
+    }, [infoObj, isLoadingDone])
 
     useEffect(() => {
         const carouselImageLength =  CarouselImages.length
@@ -84,7 +69,7 @@ function ApplicationTemplate(props) {
         return(
         <>
 
-        {(!isAxiosDone)?(<>
+        {(!isLoadingDone)?(<>
             
             <div className="d-flex justify-content-center">
             <div className="row mt-5">

@@ -1,58 +1,41 @@
 import React, {useState, useEffect} from "react";
 import {Helmet} from "react-helmet-async";
-import axios from 'axios';
-import CONFIG from "../config";
 
 import {
     Link,
   } from "react-router-dom";
 
-
-  const api = axios.create({
-    baseURL: CONFIG.API_ENDPOINT
-  })
-
 function ApplicationTemplate(props) {
     
     let portfolioURL = props.portfolioURL;
 
-    const [isAxiosDone, setIsAxiosDone] = useState(false);
+    const [isLoadingDone, setIsLoadingDone] = useState(false);
 
     const [infoObj, setInfoObj] = useState({});
     const [cardObj, setCardObj] = useState({});
 
     useEffect(() => {
-        let source = axios.CancelToken.source()
         async function loadData() {
-            try {
-                const infoRes = await api.get("/videoInfo", {cancelToken: source.token})
-                const cardRes = await api.get("/videoCards", {cancelToken: source.token})
-    
-                const websiteInfo = infoRes.data
-                const websiteCards = cardRes.data
-    
-                setInfoObj(websiteInfo[`${portfolioURL}`])
-                setCardObj(websiteCards[`${portfolioURL}`])
-    
-                setIsAxiosDone(true)
-            } catch(err) {
-                if(!axios.isCancel(err)) {
-                    console.log(err)
-                    alert("Let Eddie know that his API could not fetch the requested data")
-                }
-                if(axios.isCancel(err)) console.log("axios async call cancelled")
-            }
+            Promise.all([
+                import('../data/pageInfo/videoInfo.json'),
+                import('../data/cards/videoCards.json')
+              ])
+                .then(([infoData, cardsData]) => {
+                    let videoInfo = infoData.default;
+                    setInfoObj(videoInfo[`${portfolioURL}`])
+                    
+                    let videoCards = cardsData.default;
+                    setCardObj(videoCards[`${portfolioURL}`])
 
+                    setIsLoadingDone(true);
+                });
         }
-        loadData()
-        return () => {
-            source.cancel()
-        }
+        loadData();
     }, [portfolioURL] )
 
         return(
             <>
-        {(!isAxiosDone)?(<>
+        {(!isLoadingDone)?(<>
             
             <div className="d-flex justify-content-center">
             <div className="row mt-5">

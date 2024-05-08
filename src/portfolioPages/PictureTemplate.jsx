@@ -4,18 +4,12 @@ import {Helmet} from "react-helmet-async";
 import {
     Link,
   } from "react-router-dom";
-import axios from 'axios';
-import CONFIG from "../config";
-
-const api = axios.create({
-    baseURL: CONFIG.API_ENDPOINT
-  })
 
 function PictureTemplate(props) {
     
     let portfolioURL = props.portfolioURL;
 
-    const [isAxiosDone, setIsAxiosDone] = useState(false);
+    const [isLoadingDone, setIsLoadingDone] = useState(false);
 
     const [infoObj, setInfoObj] = useState({});
     const [cardObj, setCardObj] = useState({});
@@ -23,46 +17,36 @@ function PictureTemplate(props) {
     const [imageList, setImageList] = useState([]);
 
     useEffect(() => {
-        let source = axios.CancelToken.source()
-
         async function loadData() {
-            try {
-                const infoRes = await api.get("/imagesInfo", {cancelToken: source.token})
-                const cardRes = await api.get("/imageCards", {cancelToken: source.token})
-    
-                const websiteInfo = infoRes.data
-                const websiteCards = cardRes.data
-    
-                setInfoObj(websiteInfo[`${portfolioURL}`])
-                setCardObj(websiteCards[`${portfolioURL}`])
-    
-                setIsAxiosDone(true)
-            } catch(err) {
-                if(!axios.isCancel(err)) {
-                    console.log(err)
-                    alert("Let Eddie know that his API could not fetch the requested data")
-                }
-                if(axios.isCancel(err)) console.log("axios async call cancelled")
-            }
+            Promise.all([
+                import('../data/pageInfo/imagesInfo.json'),
+                import('../data/cards/imageCards.json')
+              ])
+                .then(([infoData, cardsData]) => {
+                    let imagesData = infoData.default;
+                    setInfoObj(imagesData[`${portfolioURL}`])
+                    
+                    let imagesCards = cardsData.default;
+                    setCardObj(imagesCards[`${portfolioURL}`])
+
+                    setIsLoadingDone(true);
+                });
 
         }
         loadData()
-        return () => {
-            source.cancel()
-        }
     }, [portfolioURL] )
 
     useEffect(() => {
-        if(isAxiosDone) setImageList(infoObj.images)
+        if(isLoadingDone) setImageList(infoObj.images)
 
-    }, [infoObj, isAxiosDone])
+    }, [infoObj, isLoadingDone])
    
 
         return(
         <>
 
 
-        {(!isAxiosDone)?(<>
+        {(!isLoadingDone)?(<>
         
         
         <div className="d-flex justify-content-center">
