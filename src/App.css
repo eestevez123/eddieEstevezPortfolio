@@ -34,7 +34,7 @@
 
 @media (min-width: 992px) {
   .nav-link {
-    padding-right: 1.5rem !important; 
+    padding-right: 1.5rem !important;
     padding-left: 1.5rem !important;
     font-size: 1.5rem !important;
   }
@@ -56,10 +56,9 @@
   }
 }
 
-
 @media (max-width: 767.98px) {
   .info-wrap {
-      height: 400px;
+    height: 400px;
   }
 }
 
@@ -69,7 +68,7 @@
 }
 
 .contactPageTitle {
-  margin-bottom: 20px !important; 
+  margin-bottom: 20px !important;
 }
 
 #formImage {
@@ -89,14 +88,14 @@
 }
 
 .contentWrap {
-  padding-bottom: 5rem !important ;    /* Footer height */
+  padding-bottom: 5rem !important ; /* Footer height */
 }
 
 .footer {
   position: absolute !important ;
   bottom: 0 !important ;
   width: 100% !important ;
-  height: 5rem !important ;            /* Footer height */
+  height: 5rem !important ; /* Footer height */
 }
 
 .animatedDiv {
@@ -105,7 +104,7 @@
 }
 
 .animatedDiv:hover {
-  box-shadow: 5px 10px 20px 1px rgba(0, 0,0, 0.253) !important;
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
 }
 
 .biggerLoadingSpinner {

@@ -9,8 +9,8 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -22,24 +22,24 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 .success-msg {
-  color: #57A773;
+  color: #57a773;
   padding: 10px 15px;
 }
 
 .err-msg {
-  color: #EE6352;
+  color: #ee6352;
   padding: 10px 15px;
 }
 
 .heroTitle {
   font-size: 5rem;
 }
-.heroSubTitle{
+.heroSubTitle {
   font-size: 2.5rem;
 }
 
@@ -47,7 +47,7 @@ code {
   .heroTitle {
     font-size: 13vw;
   }
-  .heroSubTitle{
+  .heroSubTitle {
     font-size: 8vw;
   }
 
@@ -55,21 +55,20 @@ code {
     font-size: 5vw;
   }
 
-  .videoResponsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+  .videoResponsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
   }
-  .videoResponsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+  .videoResponsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
   }
 }
-
 
 #lis500_pic {
   width: 80vw;
@@ -83,7 +82,7 @@ code {
   margin-top: 15vh;
 }
 
-.logoLink{
+.logoLink {
   width: 24vw;
   transition: width 0.5s;
 }
@@ -93,29 +92,27 @@ code {
   width: 26vw;
 }
 
-@media (max-width: 900px) { 
-
-  .logoLink{
+@media (max-width: 900px) {
+  .logoLink {
     width: 50vw;
     transition: width 0.5s;
   }
-  
+
   .logoLink:hover {
     cursor: pointer;
     width: 52vw;
   }
 }
 
-
 #videos {
   margin-left: 20vw;
 }
 
-#culversPic_ID{
+#culversPic_ID {
   width: 70vw;
 }
 
-#homepageBackground{
+#homepageBackground {
   width: 100vw;
   margin-top: 30px;
 }
@@ -129,9 +126,9 @@ ul {
   height: 0px !important;
 }
 
-.lostPenguin{
+.lostPenguin {
   height: 20rem;
 }
-.notFoundPageContainer{
+.notFoundPageContainer {
   padding-top: 15vh;
 }

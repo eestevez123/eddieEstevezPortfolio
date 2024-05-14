@@ -1,45 +1,45 @@
 .portfolioCoverImage {
-    width: 50rem !important;
-    transform: scale(1);
-    transition: transform 0.5s ease;
+  width: 50rem !important;
+  transform: scale(1);
+  transition: transform 0.5s ease;
 }
 
 .portfolioCoverImage:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .cardLoader {
-    width: 5rem !important;
-    height: 5rem !important;
+  width: 5rem !important;
+  height: 5rem !important;
 }
 
 .carousel-control-next-icon {
-    background-image: url("https://res.cloudinary.com/eestevez/image/upload/v1627777204/myWorkPage/next.svg") !important;
-    width: 3rem!important;
-    height: 3rem!important;
+  background-image: url("https://res.cloudinary.com/eestevez/image/upload/v1627777204/myWorkPage/next.svg") !important;
+  width: 3rem !important;
+  height: 3rem !important;
 }
 
-.carousel-control-prev-icon{
-    background-image: url("https://res.cloudinary.com/eestevez/image/upload/v1627777204/myWorkPage/next.svg") !important;
-    transform: scaleX(-1) !important;
-    width: 3rem!important;
-    height: 3rem!important;
+.carousel-control-prev-icon {
+  background-image: url("https://res.cloudinary.com/eestevez/image/upload/v1627777204/myWorkPage/next.svg") !important;
+  transform: scaleX(-1) !important;
+  width: 3rem !important;
+  height: 3rem !important;
 }
 
 .carouselCaptions {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: initial !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: initial !important;
 }
 
 .sr-only {
-    visibility: hidden;
-    width: 0px;
+  visibility: hidden;
+  width: 0px;
 }
 
 .dropdown-menu {
-    width: 18rem !important;
-    text-align: center !important;
+  width: 18rem !important;
+  text-align: center !important;
 }
-.dropdown-toggle{
-    width: 18rem !important;
+.dropdown-toggle {
+  width: 18rem !important;
 }

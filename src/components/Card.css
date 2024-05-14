@@ -1,104 +1,102 @@
 .card {
-    width: 20rem;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: none;
-    transform: scale(0.98);
-    transition: all 0.25s ease-out;
+  width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: none;
+  transform: scale(0.98);
+  transition: all 0.25s ease-out;
 }
 
-.card:hover{
-    box-shadow: 5px 10px 20px 1px rgba(0, 0,0, 0.253) !important;
-    transform: scale(1);
+.card:hover {
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
+  transform: scale(1);
 }
 
 .card-body {
-    padding: 3rem 0 !important;
+  padding: 3rem 0 !important;
 }
 
 .card-text {
-    font-size: 0.9rem;
-    padding: 0.4rem 1.0rem;
+  font-size: 0.9rem;
+  padding: 0.4rem 1rem;
 }
 
 .container-fluid .row {
-    padding-top: 0.6rem;
+  padding-top: 0.6rem;
 }
 
 .overflow {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .card-img-top {
-    transform: scale(1);
-    transition: all 0.5s ease;
+  transform: scale(1);
+  transition: all 0.5s ease;
 }
 
 .card-img-top:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .cardRow {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-@media (min-width: 1400px)  {
-    .cardRow > div {
-        flex: 0 0 25%;
-    }
+@media (min-width: 1400px) {
+  .cardRow > div {
+    flex: 0 0 25%;
+  }
 }
 
-@media (min-width: 1800px)  {
-    .cardRow > div {
-        flex: 0 0 20%;
-    }
+@media (min-width: 1800px) {
+  .cardRow > div {
+    flex: 0 0 20%;
+  }
 }
 
-@media (min-width: 2200px)  {
-    .cardRow > div {
-        flex: 0 0 16%;
-    }
+@media (min-width: 2200px) {
+  .cardRow > div {
+    flex: 0 0 16%;
+  }
 }
-
 
 .websiteCards > .card {
-    height: 31rem;
+  height: 31rem;
 }
 .websiteCards > div > div {
-    height: 10rem;
+  height: 10rem;
 }
 
 .cardButton {
-    bottom: 7%;
-    position: absolute;
-    left: 35%;
+  bottom: 7%;
+  position: absolute;
+  left: 35%;
 }
 
 .appCards > .card {
-    height: 32rem;
+  height: 32rem;
 }
 .appCards > div > div {
-    height: 11rem;
+  height: 11rem;
 }
 
 .videoCards > .card {
-    height: 32rem;
+  height: 32rem;
 }
 .videoCards > div > div {
-    height: 10rem;
+  height: 10rem;
 }
 
 .soundCards > .card {
-    height: 41rem;
+  height: 41rem;
 }
 .soundCards > div > div {
-    height: auto;
+  height: auto;
 }
 
 .imageCards > .card {
-    height: 33rem;
+  height: 33rem;
 }
 .imageCards > div > div {
-    height: 13rem;
+  height: 13rem;
 }
-
