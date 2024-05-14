@@ -1,114 +1,114 @@
 .eddieProfile {
-    width: 20rem !important;
-    border-radius: 0;
+  width: 20rem !important;
+  border-radius: 0;
 }
 
 .grabbable:hover {
-    cursor: grab;
+  cursor: grab;
 }
 
 .bg-myBlue {
-    background-color: #2196f3 !important;
+  background-color: #2196f3 !important;
 }
 
 .bg-myPurple {
-    background-color: #672fd9 !important;
+  background-color: #672fd9 !important;
 }
 
 .bg-myGreen {
-    background-color: #21eaaf !important;
+  background-color: #21eaaf !important;
 }
 
 .font-myBlue {
-    color: #2196f3 !important;
+  color: #2196f3 !important;
 }
 
 .skillChart {
-    margin-top: -5rem;
+  margin-top: -5rem;
 }
 
-.skillIcon{
-    max-width: 40% !important;
+.skillIcon {
+  max-width: 40% !important;
 }
 
-.workImage{
-    width: 30% !important;
+.workImage {
+  width: 30% !important;
 }
 
 .designerIcon {
-    max-width: 22% !important;
+  max-width: 22% !important;
 }
 
-.shapeHolder{
-    width: auto;
-    --baseHeight: 10rem;
-    height: calc(var(--baseHeight) * (15/10));
+.shapeHolder {
+  width: auto;
+  --baseHeight: 10rem;
+  height: calc(var(--baseHeight) * (15 / 10));
 }
 
 @media (max-width: 992px) {
-    .shapeHolder{
-        --baseHeight: 8rem;
-        height: calc(var(--baseHeight) * (15/10));
-    }    
+  .shapeHolder {
+    --baseHeight: 8rem;
+    height: calc(var(--baseHeight) * (15 / 10));
+  }
 }
 
 @media (max-width: 768px) {
-    .shapeHolder{
-        --baseHeight: 5rem;
-        height: calc(var(--baseHeight) * (15/10));
-    }    
+  .shapeHolder {
+    --baseHeight: 5rem;
+    height: calc(var(--baseHeight) * (15 / 10));
+  }
 }
 
 @media (max-width: 576px) {
-    .shapeHolder{
-        --baseHeight: 4rem;
-        height: calc(var(--baseHeight) * (15/10));
-    }    
+  .shapeHolder {
+    --baseHeight: 4rem;
+    height: calc(var(--baseHeight) * (15 / 10));
+  }
 }
 
 @media (max-width: 350px) {
-    .shapeHolder{
-        --baseHeight: 3rem;
-        height: calc(var(--baseHeight) * (15/10));
-    }    
+  .shapeHolder {
+    --baseHeight: 3rem;
+    height: calc(var(--baseHeight) * (15 / 10));
+  }
 }
 
 .circle1 {
-    width: calc(var(--baseHeight) * (7/10));
-    height: calc(var(--baseHeight) * (7/10));
-    top: 7%;
-    left: 37%;
+  width: calc(var(--baseHeight) * (7 / 10));
+  height: calc(var(--baseHeight) * (7 / 10));
+  top: 7%;
+  left: 37%;
 }
 
-.rect1{
-    width: calc(var(--baseHeight) * (15/10));
-    height: var(--baseHeight);
+.rect1 {
+  width: calc(var(--baseHeight) * (15 / 10));
+  height: var(--baseHeight);
 }
 
 .rect2 {
-    width: calc(var(--baseHeight) * (15/10));
-    height: var(--baseHeight);
-    right: 28%;
-    bottom: 0%;
+  width: calc(var(--baseHeight) * (15 / 10));
+  height: var(--baseHeight);
+  right: 28%;
+  bottom: 0%;
 }
 
-.blackRect{
-    width: calc(var(--baseHeight) * (8/10));
-    height: calc(var(--baseHeight) * (8/10));
-    left: 18%;
-    top: 31%;
+.blackRect {
+  width: calc(var(--baseHeight) * (8 / 10));
+  height: calc(var(--baseHeight) * (8 / 10));
+  left: 18%;
+  top: 31%;
 }
 
 .blackRect2 {
-    width: calc(var(--baseHeight) * (8/10));
-    height: calc(var(--baseHeight) * (8/10));
-    right: 26%;
-    bottom: 31%;
+  width: calc(var(--baseHeight) * (8 / 10));
+  height: calc(var(--baseHeight) * (8 / 10));
+  right: 26%;
+  bottom: 31%;
 }
 
 .rect3 {
-    width: var(--baseHeight);
-    height: var(--baseHeight);
-    right: 0%;
-    top: 0%;
+  width: var(--baseHeight);
+  height: var(--baseHeight);
+  right: 0%;
+  top: 0%;
 }

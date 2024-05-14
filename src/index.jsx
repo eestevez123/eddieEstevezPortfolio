@@ -1,11 +1,10 @@
-import React from 'react';
+import React from "react";
 import ReactDOM from "react-dom/client";
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.css";
 
-import './index.css';
-
+import "./index.css";
 
 /**
  * Root rendering function to render the main application component.
@@ -19,7 +18,7 @@ const renderApp = (rootElement) => {
   root.render(
     <React.Fragment>
       <App />
-    </React.Fragment>
+    </React.Fragment>,
   );
 };
 
