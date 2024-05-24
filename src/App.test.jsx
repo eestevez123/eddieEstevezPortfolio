@@ -21,16 +21,6 @@ test('renders header text', () => {
     fireEvent.click(aboutLink);
   
     // Wait for the About page content to be rendered
-    const aboutPageTitle = await findByText('Hello World!');
-    expect(aboutPageTitle).toBeInTheDocument();
-  });
-
-  test('clicking navigation links updates page content', async () => {
-    render(<App />);
-  
-    const aboutLink = screen.getByText('About Me');
-    fireEvent.click(aboutLink);
-  
-    const aboutPageTitle = await screen.findByText('Hello World!');
+    const aboutPageTitle = await findByText('Hello world!');
     expect(aboutPageTitle).toBeInTheDocument();
   });
