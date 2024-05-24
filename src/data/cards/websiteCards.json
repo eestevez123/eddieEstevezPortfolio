@@ -14,15 +14,8 @@
     "desc": "I designed and implemented a website for the La Cosecha Tortilleria Company, a tortilla business located in Madison, WI.",
     "href": "la-cosecha-tortilla"
   },
-  "JUST": {
-    "src": "https://res.cloudinary.com/eestevez/image/upload/v1627777211/myWorkPage/cardPics/website/just.png",
-    "alt": "JUST Logo",
-    "title": "Journal of Science and Technology (JUST)",
-    "desc": "I helped maintain the website used by JUST, a club at UW-Madison.",
-    "href": "JUST"
-  },
   "NCJS": {
-    "src": "https://res.cloudinary.com/eestevez/image/upload/v1627777211/myWorkPage/cardPics/website/ncjs.png",
+    "src": "https://res.cloudinary.com/eestevez/image/upload/v1716428774/ncjs_background.jpg",
     "alt": "NCJS Logo",
     "title": "National Collegiate Journal of Science (NCJS)",
     "desc": "I designed and implemented a WordPress website for the National Collegiate Journal of Science.",
@@ -32,56 +25,42 @@
     "src": "https://res.cloudinary.com/eestevez/image/upload/v1627777211/myWorkPage/cardPics/website/nm.jpg",
     "alt": "Risk Assessment and Aggregate Application",
     "title": "Risk Assessment and Aggregate Application",
-    "desc": "Within my second summer with Northwestern Mutual, I and another intern created a prototype for a new way risk could be calculated and evaluated within the company.",
+    "desc": "In 2018 during my time as an intern at Northwestern Mutual, I and another intern created a prototype for a new way risk could be calculated and evaluated within the company.",
     "href": "risk-assessment-and-aggregate-application"
-  },
-  "liftoff": {
-    "src": "https://res.cloudinary.com/eestevez/image/upload/v1627777211/myWorkPage/cardPics/website/takeoff.png",
-    "alt": "LiftOff Logo",
-    "title": "LiftOff",
-    "desc": "I, alongside 5 others, teamed up to create a web app called LiftOff, which was designed to streamline the onboarding experience for Northwestern Mutual interns.",
-    "href": "liftoff"
   },
   "apprisen-website-redesign": {
     "src": "https://res.cloudinary.com/eestevez/image/upload/v1627777211/myWorkPage/cardPics/website/codeForGood.jpg",
     "alt": "Apprisen Logo",
     "title": "Apprisen Website Redesign (JP Morgan Chase Hackathon)",
-    "desc": "I was in team within JP Morgan Chase's Code For Good Hackathon where we redesigned a website for a non-profit organization called Apprisen.",
+    "desc": "In October of 2019, I was in team within JP Morgan Chase's Code For Good Hackathon where we redesigned a website for a non-profit organization called Apprisen.",
     "href": "apprisen-website-redesign"
-  },
-  "college-financial-literacy-web-app": {
-    "src": "https://res.cloudinary.com/eestevez/image/upload/v1627777210/myWorkPage/cardPics/website/nm2.jpg",
-    "alt": "College Financial Literacy Web App Logo",
-    "title": "College Financial Literacy Web App",
-    "desc": "During my winter break of my freshman year, I and another intern worked on a prototype web app that would give high school and early college students much needed financial literacy tools.",
-    "href": "college-financial-literacy-web-app"
   },
   "the-longevity-game": {
     "src": "https://res.cloudinary.com/eestevez/image/upload/v1627777211/myWorkPage/cardPics/website/longgame.png",
     "alt": "Logevity Game Logo",
     "title": "The Longevity Game",
-    "desc": "Within Northwestern Mutual, I was a part of a team that recreated an old Flash game called The Longevity Game with modern web tools.",
+    "desc": "During my time as a high school intern at Northwestern Mutual, I was a part of a team that recreated an old Flash game called The Longevity Game with modern web tools.",
     "href": "the-longevity-game"
   },
   "custom-implicit-bias-test": {
     "src": "https://res.cloudinary.com/eestevez/image/upload/v1627777211/myWorkPage/cardPics/website/lis500.png",
     "alt": "Custom Implicit Bias Test Logo",
     "title": "Custom Implicit Bias Test",
-    "desc": "My team and I created an online survey about implicit racial and gender biases. We built and tracked the survey and its results using HTML, CSS, and PHP.",
+    "desc": "During my third year of university, I was in a class where my team and I created an online survey about implicit racial and gender biases. We built and tracked the survey and its results using HTML, CSS, and PHP.",
     "href": "custom-implicit-bias-test"
   },
   "freesound-website-redesign": {
     "src": "https://res.cloudinary.com/eestevez/image/upload/v1627777211/myWorkPage/cardPics/website/freesound.png",
     "alt": "Freesound Logo",
     "title": "FreeSound Website Redesign",
-    "desc": "I created a mockup of a redesign of a website I frequented called FreeSound and created a prototype with React.",
+    "desc": "In a class during my last year of university, I created a mockup of a redesign of a website I frequented called FreeSound and created a prototype with React.",
     "href": "freesound-website-redesign"
   },
   "university-of-wisconsin-arboretum-website-redesign": {
     "src": "https://res.cloudinary.com/eestevez/image/upload/v1627777211/myWorkPage/cardPics/website/arb.png",
     "alt": "University of Wisconsin-Arboretum Website Redesign",
     "title": "University of Wisconsin-Arboretum Website Redesign",
-    "desc": "I was in a team that redesigned the website used by the University of Wisconsin-Arboretum to be more useful to most users and to increase traffic and interactions.",
+    "desc": "In a class during my last year of university, I was in a team that redesigned the website used by the University of Wisconsin-Arboretum to be more useful to most users and to increase traffic and interactions.",
     "href": "university-of-wisconsin-arboretum-website-redesign"
   }
 }

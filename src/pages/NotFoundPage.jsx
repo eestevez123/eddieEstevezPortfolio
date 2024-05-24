@@ -62,14 +62,14 @@ function NotFoundPage() {
             </div>
             <div className="col d-flex">
               <animated.h1 style={textFromRight}>
-                Oh no! A 404 Error :(
+                Ope! Page not found!
               </animated.h1>
             </div>
           </div>
           <div className="row text-center">
             <div className="col pt-5">
               <animated.h1 style={textComeUp}>
-                Even though you're lost, you found this penguin! So that's cool
+              It looks like you’ve wandered off the map, but hey, you discovered this awesome penguin!
               </animated.h1>
             </div>
           </div>

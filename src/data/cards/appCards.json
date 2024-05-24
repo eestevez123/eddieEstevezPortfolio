@@ -7,52 +7,24 @@
     "href": "blackrock-tableau-dashboard"
   },
   "workout-application": {
-    "src": "https://res.cloudinary.com/eestevez/image/upload/v1627777210/myWorkPage/cardPics/app/workout.png",
+    "src": "https://res.cloudinary.com/eestevez/image/upload/v1715663897/caseStudies/b8tevntgycyxvbcn4hbq.jpg",
     "alt": "Workout Application Logo",
     "title": "Workout Application",
-    "desc": "I was a part of a team of 5 students to design and create a workout tracker app written in React Native.",
+    "desc": "In my last year of university, I was a part of a team of 5 students to design and create a workout tracker app written in React Native.",
     "href": "workout-application"
-  },
-  "operating-system-tinkering": {
-    "src": "https://res.cloudinary.com/eestevez/image/upload/v1627777210/myWorkPage/cardPics/app/xv6.jpg",
-    "alt": "Operating System Tinkering Logo",
-    "title": "Operating System Tinkering",
-    "desc": "I had the opportunity to dive into the workings of an operating system and low-level coding, having done projects to put my knowledge to the test.",
-    "href": "operating-system-tinkering"
   },
   "ti-tiva-launchpad-games": {
     "src": "https://res.cloudinary.com/eestevez/image/upload/v1627777210/myWorkPage/cardPics/app/tiva.png",
     "alt": "TI Tiva Launchpad Games Logo",
     "title": "TI Tiva Launchpad Games",
-    "desc": "I created 2 games written in C that ran on a Tiva Launchpad. This involved understanding low-level software and hardware communication interfaces such as UART, SPI, I2C, CAN, and more.",
+    "desc": "Throughout my college career, I created 2 games written in C that ran on a Tiva Launchpad. This involved understanding low-level software and hardware communication interfaces such as UART, SPI, I2C, CAN, and more.",
     "href": "ti-tiva-launchpad-games"
-  },
-  "artificial-intelligence-projects": {
-    "src": "https://res.cloudinary.com/eestevez/image/upload/v1627777210/myWorkPage/cardPics/app/AI.png",
-    "alt": "Artificial Intelligence Project Logo",
-    "title": "Artificial Intelligence Projects",
-    "desc": "During a summer class (CS 540: Intro to AI), I had the opportunity to work on a couple projects that put what was taught in class into practice.",
-    "href": "artificial-intelligence-projects"
-  },
-  "java-programs-and-applications": {
-    "src": "https://res.cloudinary.com/eestevez/image/upload/v1627777210/myWorkPage/cardPics/app/eclipse.png",
-    "alt": "Java Programs and Applications Logo",
-    "title": "Java Programs and Applications",
-    "desc": "Within 2 of my computer science classes, I was able to explore programming concepts with Java, including data structures, object oriented programming, and more.",
-    "href": "java-programs-and-applications"
   },
   "mips-16-bit-5-stage-pipelined-microprocessor": {
     "src": "https://res.cloudinary.com/eestevez/image/upload/v1627777210/myWorkPage/cardPics/app/552.png",
     "alt": "MIPS 16-bit 5-stage Pipelined Microprocessor Logo",
     "title": "MIPS 16-bit 5-stage Pipelined Microprocessor",
-    "desc": "I and my partner in ECE 552: Intro to Computer Architecture, designed our very own MIPS 16-bit 5-stage pipelined microprocessor with forwarding enabled and cache in System Verilog.",
+    "desc": "During my third year of university, I and my partner in ECE 552: Intro to Computer Architecture, designed our very own MIPS 16-bit 5-stage pipelined microprocessor with forwarding enabled and cache in System Verilog.",
     "href": "mips-16-bit-5-stage-pipelined-microprocessor"
-  },
-  "convolutional-neural-network-hardware-accelerator": {
-    "src": "https://res.cloudinary.com/eestevez/image/upload/v1627777210/myWorkPage/cardPics/app/cnn.png",
-    "alt": "Convolutional Neural Network Hardware Accelerator Logo",
-    "title": "Convolutional Neural Network Hardware Accelerator",
-    "desc": "I worked within a team of 5 other students to build out a Convolutional Neural Network Hardware Accelerator, designed to be able to do the required matrix math efficiently with pre-trained values. ",
-    "href": "convolutional-neural-network-hardware-accelerator"
   }
 }

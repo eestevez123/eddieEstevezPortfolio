@@ -37,8 +37,7 @@ function WorkNav(props) {
     { name: "Web Development and Design", value: 0 },
     { name: "Apps and Software", value: 1 },
     { name: "Video Work", value: 2 },
-    { name: "Sound Work", value: 3 },
-    { name: "Image Work", value: 4 },
+    { name: "Sound Work", value: 3 }
   ];
 
   return (

@@ -7,7 +7,6 @@ import WebsiteTemplate from "./WebsiteTemplate";
 import AppTemplate from "./AppTemplate";
 import VideoTemplate from "./VideoTemplate";
 import SoundTemplate from "./SoundTemplate";
-import PictureTemplate from "./PictureTemplate";
 
 // Custom Pages
 import PodcastPage from "./custom/PodcastPage";
@@ -84,13 +83,6 @@ function Template() {
           </>
         );
       }
-    } else if (cardURLs.imageURLs.includes(portfolioURL)) {
-      debugger;
-      return (
-        <>
-          <PictureTemplate key={portfolioURL} portfolioURL={portfolioURL} />
-        </>
-      );
     } else {
       return (
         <>

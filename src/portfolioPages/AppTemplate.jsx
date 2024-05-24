@@ -6,9 +6,9 @@ import Skeleton from "react-loading-skeleton";
 
 import "react-loading-skeleton/dist/skeleton.css";
 
-import { Link } from "react-router-dom";
+import "./css/Carousel.css";
 
-const ai_report6 = process.env.PUBLIC_URL + "/P6_Eddie_Estevez_Report.pdf";
+import { Link } from "react-router-dom";
 
 /**
  * Component representing the template for an application article.
@@ -134,20 +134,6 @@ function ApplicationTemplate(props) {
 
           <div className="container">
             <div className="row justify-content-center">
-              {props.portfolioURL === "workout-application" ? (
-                <>
-                  <Link to="/workout-app-case-study">
-                    <div className="text-center">
-                      {" "}
-                      <button className="btn btn-primary my-4" type="button">
-                        Case Study
-                      </button>
-                    </div>
-                  </Link>
-                </>
-              ) : (
-                <></>
-              )}
               <div className="col-sm-6">
                 <h4 className="mt-3">Background</h4>
                 <p>{infoObj["Background"]}</p>
@@ -169,25 +155,6 @@ function ApplicationTemplate(props) {
                       {infoObj.WhatIDid_moreParagraphs.map((paragraph, idx) => (
                         <p key={idx}>{paragraph}</p>
                       ))}
-                    </>
-                  ) : (
-                    <></>
-                  )}
-
-                  {props.portfolioURL === "artificial-intelligence-projects" ? (
-                    <>
-                      <div className="text-center">
-                        {" "}
-                        <a
-                          className="btn btn-primary mb-4"
-                          role="button"
-                          href={ai_report6}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Project 6: MINST CNN Report PDF
-                        </a>
-                      </div>
                     </>
                   ) : (
                     <></>
@@ -225,18 +192,20 @@ function ApplicationTemplate(props) {
                   timeout={7000}
                 >
                   <Carousel
-                    fade
                     controls={showCarouselControls}
                     interval={null}
-                    className={`${isLoadingCarousel ? "hidden" : ""}`}
+                    className={`${isLoadingCarousel ? "hidden" : ""} carousel` }
                   >
                     {CarouselImages.map((picObj, idx) => (
-                      <Carousel.Item key={idx}>
-                        <img
-                          className="d-block w-100 carouselImage rounded-top"
-                          src={picObj.src}
-                          alt="slide"
-                        />
+                      <Carousel.Item key={idx} className="carousel-item">
+                        <div className="carousel-image-container">
+                          <img
+                            className="d-block w-100 carousel-image rounded-top"
+                            src={picObj.src}
+                            alt="slide"
+                          />
+                        </div>
+
                         <Carousel.Caption
                           className={`carouselCaptions rounded-bottom`}
                         >
@@ -303,8 +272,7 @@ function WorkoutApp() {
           <div className="col col-sm-6">
             <h4 className="mt-3">Demo Video</h4>
             <p>
-              My team member Nick Stoffel created a YouTube Video demoing the
-              Workout App
+            My teammate, Nick Stoffel, produced a YouTube video showcasing the functionality of the Workout App.
             </p>
           </div>
         </div>
@@ -325,8 +293,7 @@ function WorkoutApp() {
           <div className="col col-sm-6">
             <h4 className="mt-5">Automated UI Testing Video</h4>
             <p>
-              I was able to create a video showing some basic automated UI
-              testing via Espresso
+            I successfully created a video demonstrating basic automated UI testing using Espresso.
             </p>
           </div>
         </div>

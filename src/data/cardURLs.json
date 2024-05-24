@@ -33,12 +33,6 @@
     "communication-arts-155-video"
   ],
   "soundURLs": ["podcast-about-relationships", "beep-boop"],
-  "imageURLs": [
-    "uw-madison-memes",
-    "la-cosecha-tortilla-company-pictures",
-    "advertisement-club-pictures",
-    "art-155"
-  ],
   "vidGalleryURLs": [
     "videos-for-uw-madison-memes-for-milk-chugging-teens",
     "advertisement-club-videos",
@@ -73,10 +67,6 @@
     "communication-arts-200-video",
     "communication-arts-155-video",
     "podcast-about-relationships",
-    "beep-boop",
-    "uw-madison-memes",
-    "la-cosecha-tortilla-company-pictures",
-    "advertisement-club-pictures",
-    "art-155"
+    "beep-boop"
   ]
 }

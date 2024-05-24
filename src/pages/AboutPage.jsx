@@ -57,17 +57,17 @@ function AboutPage(props) {
 
             <div className="row justify-content-center align-items-center">
               <div className="col-md-6">
-                <h4 className="mt-3">My Origin Story</h4>
+                <h4 className="mt-3">My tech origin story</h4>
                 <p>
                   My fascination with technology began in the 4th grade. I
-                  finally convinced my dad it was time to get a desktop computer
-                  for the family. I quickly assumed the role of the family tech
+                  finally convinced my dad it was time to get a{" "}<a href="https://www.samsclub.com/p/dell-inspiron-530s-desktop-1-8ghz-250gb-19-lcd/185042" target="_blank" rel="noopener noreferrer">desktop computer</a>
+                  {" "}for the family. I quickly assumed the role of the family tech
                   expect, learning how to troubleshoot and repair the computer,
                   as well any gadget connected to it.
                 </p>
                 <p>
-                  In middle school, I delved into smartphone customization with
-                  my first LG Android device, experimenting with custom
+                  In middle school, I delved into smartphone customization with{" "}
+                  <a href="https://en.wikipedia.org/wiki/LG_Optimus_L9" target="_blank" rel="noopener noreferrer">my first LG Android device</a>, experimenting with custom
                   operating systems. High school exposed me to formal computer
                   science education, where I learned Python, Java, and the
                   foundations of software engineering, including Scrum and Agile
@@ -111,7 +111,7 @@ function AboutPage(props) {
         <div className="container">
           <div className="row justify-content-center align-items-center">
             <div className="col-md-6 order-md-2">
-              <h4 className="mt-3">Where My Story Is Right Now</h4>
+              <h4 className="mt-3">Where my story is right now</h4>
               <p>
                 In May 2021, I graduated from the University of Wisconsin –
                 Madison with a double major in Computer Science and Computer
@@ -122,7 +122,7 @@ function AboutPage(props) {
               <p>
                 I have had the incredible opportunity to intern at Northwestern
                 Mutual and BlackRock. Additionally, I designed a website for a
-                local Madison business, La Cosecha Tortilla Company, showcasing
+                local Madison business, La Cosecha Tortilleria Company, showcasing
                 my ability to apply my skills in real-world projects.{" "}
               </p>
               <p>
@@ -193,7 +193,7 @@ function AboutPage(props) {
               </div>
               <div className="row justify-content-center mt-5">
                 <div className="col-sm-4">
-                  <h6>B.S in Computer Engineering</h6>
+                  <h6>B.S. in Computer Engineering</h6>
                   <img
                     className="img-fluid educationIcon my-4"
                     src={compEng}
@@ -209,25 +209,16 @@ function AboutPage(props) {
                     Verilog, a hardware description language, to develop my own
                     16-bit MIPS microprocessor.
                   </p>
-                  <p>
-                    Along the way, I acquired essential electrical engineering
-                    skills to understand embedded systems and signal processing.{" "}
-                  </p>
                 </div>
                 <div className="col-sm-4">
-                  <h6>BMAJ in Computer Science</h6>
+                  <h6>B.S. in Computer Science</h6>
                   <img
                     className="img-fluid educationIcon my-4"
                     src={compSci}
                     alt="Software Development Icon"
                   />
                   <p>
-                    In my Computer Science studies, I explored the theory,
-                    application, and engineering of software.
-                  </p>
-                  <p>
-                    I learned to work within a Scrum team to deliver a workout
-                    app built with React Native. My coursework covered the
+                    My coursework covered the
                     theory behind computer science algorithms, the efficiencies
                     of data structures and sorting algorithms, and various
                     applications such as machine learning, website development,
@@ -260,8 +251,7 @@ function AboutPage(props) {
           <div className="row justify-content-center">
             <div className="col-md-6 order-md-2 fs-6">
               <h5>
-                Very Involved In The Meme Culture of the University of
-                Wisconsin-Madison!
+              😂 Meme Mastery at UW-Madison
               </h5>
               <p>
                 I was the admin for the University of Wisconsin-Madison’s meme
@@ -274,18 +264,18 @@ function AboutPage(props) {
                 I was also a contributing member of the UW-Madison Meme Club,
                 B.O.I, whose acronym of course stood for Meme Analysis Club.
               </p>
-              <h5>I Love Learning Languages!</h5>
+              <h5>🌍 Language Lover Extraordinaire!</h5>
               <p>
                 I grew up bilingual, speaking both English and Spanish. In
                 College, I picked up two semesters of Italian, and continue to
                 learn it today in an effort to be trilingual. Duolingo is a
                 great app for that which I use almost daily.
               </p>
-              <h5>Recently Learned How To Swim!</h5>
+              <h5>🏊‍♂️ Splashing into New Skills!</h5>
               <p>
-                After years of trying to teach myself and placing myself in a
-                swimming class in high school, I just learned and became
-                comfortable swimming this summer (2021)!
+              Guess what? I conquered my lifelong fear and learned to swim in the summer of 2021! 
+              After many splashy attempts and a high school swim class, I finally found my comfort in the water. 
+              Now I can dive into new adventures, quite literally!
               </p>
             </div>
             <div className="col-md-6 order-md-1 mb-3">

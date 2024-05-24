@@ -37,9 +37,6 @@ function PortfolioCard(props) {
       case 3:
         setCardClass("soundCards");
         break;
-      case 4:
-        setCardClass("imageCards");
-        break;
       default:
         setCardClass("");
         break;

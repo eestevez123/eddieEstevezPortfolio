@@ -134,11 +134,12 @@ function HomePage(props) {
               <p className="fs-5">
                 I'm a Milwaukee native with a deep appreciation for technology,
                 the color blue, and a great cup of coffee.
-                <br />I thrive on challenges that push me outside my comfort
+                <br />
+                I thrive on challenges that push me outside my comfort
                 zone, especially when fueled by a good cup of coffee.
                 <br />
                 As a self-proclaimed extrovert, I love engaging in meaningful
-                conversations—preferably over coffee.
+                conversations—preferably over a steaming cup of coffee.
                 <br />
                 Did I mention coffee yet?
               </p>

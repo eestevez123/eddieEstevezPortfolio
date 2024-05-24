@@ -25,7 +25,6 @@ function Cards(props) {
   const [appCards, setAppCards] = useState(emptyCards);
   const [videoCards, setVideoCards] = useState(emptyCards);
   const [soundCards, setSoundCards] = useState(emptyCards);
-  const [imageCards, setImageCards] = useState(emptyCards);
 
   // This loads in the card data for all sections
   useEffect(() => {
@@ -34,13 +33,11 @@ function Cards(props) {
       import("../data/cards/appCards.json"),
       import("../data/cards/videoCards.json"),
       import("../data/cards/soundCards.json"),
-      import("../data/cards/imageCards.json"),
-    ]).then(([websiteData, appData, videoData, soundData, imageData]) => {
+    ]).then(([websiteData, appData, videoData, soundData]) => {
       setWebsiteCards(Object.values(websiteData.default));
       setAppCards(Object.values(appData.default));
       setVideoCards(Object.values(videoData.default));
       setSoundCards(Object.values(soundData.default));
-      setImageCards(Object.values(imageData.default));
       setIsLoadingDone(true);
     });
   }, []);
@@ -68,9 +65,6 @@ function Cards(props) {
         case 3:
           setCurrentDeck(soundCards);
           break;
-        case 4:
-          setCurrentDeck(imageCards);
-          break;
         default:
           setCurrentDeck(emptyCards);
           break;
@@ -79,7 +73,6 @@ function Cards(props) {
   }, [
     props.section,
     appCards,
-    imageCards,
     isLoadingDone,
     soundCards,
     videoCards,

@@ -5,6 +5,8 @@ import OnImagesLoaded from "react-on-images-loaded";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
+import "./css/Carousel.css";
+
 import { Link } from "react-router-dom";
 
 /**
@@ -132,16 +134,15 @@ function WebsiteTemplate(props) {
 
           <div className="container">
             <div className="row justify-content-center">
-              {props.portfolioURL === "NCJS" ? (
+              {props.portfolioURL === "personal-site" ? (
                 <>
-                  <Link to="/ncjs-case-study">
-                    <div className="text-center">
-                      {" "}
+                  <div className="text-center">
+                    <a href="https://github.com/eestevez123/eddieEstevezPortfolio" target="_blank" rel="noopener noreferrer">
                       <button className="btn btn-primary my-4" type="button">
-                        Case Study
+                        Github Repository
                       </button>
-                    </div>
-                  </Link>
+                    </a>
+                  </div>
                 </>
               ) : (
                 <></>
@@ -216,7 +217,7 @@ function WebsiteTemplate(props) {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Check Out The Website
+                      Check Out The Currently Website (now known as International Collegiate Journal of Science)
                     </a>
                   </div>
                 </>
@@ -230,11 +231,23 @@ function WebsiteTemplate(props) {
                     <a
                       className="btn btn-primary my-4"
                       role="button"
+                      href={"https://web.archive.org/web/20210212075403/https://freesound.org/"}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Check out the original design
+                    </a>
+                  </div>
+                  <div className="text-center">
+                    {" "}
+                    <a
+                      className="btn btn-primary my-4"
+                      role="button"
                       href={"https://freesound.org/"}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Check Out The Original Website
+                      Check out the current website (might look familiar 😉)
                     </a>
                   </div>
                 </>
@@ -277,7 +290,7 @@ function WebsiteTemplate(props) {
 
           {showCarousel ? (
             <>
-              <div className="container mt-5">
+              <div className="container mt-5 carousel-container">
                 {isLoadingCarousel ? (
                   <div className="row text-center">
                     <div className="col">
@@ -297,18 +310,20 @@ function WebsiteTemplate(props) {
                   timeout={7000}
                 >
                   <Carousel
-                    fade
                     controls={showCarouselControls}
                     interval={null}
-                    className={`${isLoadingCarousel ? "hidden" : ""}`}
+                    className={`${isLoadingCarousel ? "hidden" : ""} carousel` }
                   >
                     {CarouselImages.map((picObj, idx) => (
-                      <Carousel.Item key={idx}>
-                        <img
-                          className="d-block w-100 carouselImage rounded-top"
-                          src={picObj.src}
-                          alt="slide"
-                        />
+                      <Carousel.Item key={idx} className="carousel-item">
+                        <div className="carousel-image-container">
+                          <img
+                            className="d-block w-100 carousel-image rounded-top"
+                            src={picObj.src}
+                            alt="slide"
+                          />
+                        </div>
+
                         <Carousel.Caption
                           className={`carouselCaptions rounded-bottom`}
                         >

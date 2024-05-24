@@ -1,0 +1,48 @@
+.carousel-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-image {
+  border: 1px solid #ddd; /* Add borders to the images */
+}
+
+/* Styling for Carousel control buttons */
+.carousel-control-prev,
+.carousel-control-next  {
+  filter: drop-shadow(
+    2px 2px 4px rgba(0, 0, 0, 0.2)
+  ); /* Add a drop shadow effect */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Set a semi-transparent white background */
+  color: #000; /* Set the color to black */ 
+  height: 15vw  !important; /* Set a maximum height based on viewport width */
+  width: 15vw  !important; /* Set a maximum width based on viewport width */
+  max-height: 100px  !important; /* Set a maximum height in pixels for desktop */
+  max-width: 100px  !important; /* Set a maximum width in pixels for desktop */
+  border-radius: 50%; /* Set border-radius to 50% to create a circle */
+  top: 40% !important;
+}
+
+/* Styling for the hover state of Carousel control buttons */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Change background color on hover to black */
+  color: #fff; /* Change color on hover to white */
+}
+
+.carouselCaptions {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: initial !important;
+}
