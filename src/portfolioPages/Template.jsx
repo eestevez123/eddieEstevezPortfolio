@@ -36,59 +36,39 @@ function Template() {
 
   if (doneLoading) {
     if (!cardURLs.validWorkURLs.includes(portfolioURL)) {
-      return (
-        <Routes>
-          <Route element={<Navigate to="/404" replace />} />
-        </Routes>
-      );
+      return <Navigate to="/404" replace />;
     }
     if (cardURLs.websiteURLs.includes(portfolioURL)) {
       // Websites
       return (
-        <>
           <WebsiteTemplate key={portfolioURL} portfolioURL={portfolioURL} />
-        </>
       );
     } else if (cardURLs.appURLs.includes(portfolioURL)) {
       return (
-        <>
           <AppTemplate key={portfolioURL} portfolioURL={portfolioURL} />
-        </>
       );
     } else if (cardURLs.videoURLs.includes(portfolioURL)) {
       if (cardURLs.vidGalleryURLs.includes(portfolioURL))
         return (
-          <>
             <VidGallery key={portfolioURL} portfolioURL={portfolioURL} />
-          </>
         );
       else {
         return (
-          <>
             <VideoTemplate key={portfolioURL} portfolioURL={portfolioURL} />
-          </>
         );
       }
     } else if (cardURLs.soundURLs.includes(portfolioURL)) {
       if (portfolioURL === "podcast-about-relationships")
         return (
-          <>
             <PodcastPage key={portfolioURL} portfolioURL={portfolioURL} />
-          </>
         );
       else {
         return (
-          <>
             <SoundTemplate key={portfolioURL} portfolioURL={portfolioURL} />
-          </>
         );
       }
     } else {
-      return (
-        <Routes>
-          <Route element={<Navigate to="/404" replace />} />
-        </Routes>
-      );
+      return <Navigate to="/404" replace />;
     }
   } else {
     return (
