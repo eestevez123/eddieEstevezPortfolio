@@ -4,4 +4,5 @@
 // learn more: https://github.com/testing-library/jest-dom
 import "@testing-library/jest-dom/";
 
+// Mock window.scrollTo in tests
 window.scrollTo = jest.fn();
