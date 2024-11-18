@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { useParams, Navigate, Routes, Route } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 
 // Template Pages
 import WebsiteTemplate from "./WebsiteTemplate";

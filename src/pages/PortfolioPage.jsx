@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useSpring, animated as a, config } from "react-spring";
 import { Helmet } from "react-helmet-async";
-import { Routes, Route, useMatch } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import "./PortfolioPage.css";
 
