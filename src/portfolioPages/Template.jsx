@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { useParams, Redirect } from "react-router-dom";
+import { useParams, Navigate, Routes, Route } from "react-router-dom";
 
 // Template Pages
 import WebsiteTemplate from "./WebsiteTemplate";
@@ -37,9 +37,9 @@ function Template() {
   if (doneLoading) {
     if (!cardURLs.validWorkURLs.includes(portfolioURL)) {
       return (
-        <>
-          <Redirect to="/404" />
-        </>
+        <Routes>
+          <Route element={<Navigate to="/404" replace />} />
+        </Routes>
       );
     }
     if (cardURLs.websiteURLs.includes(portfolioURL)) {
@@ -85,9 +85,9 @@ function Template() {
       }
     } else {
       return (
-        <>
-          <Redirect to="/404" />
-        </>
+        <Routes>
+          <Route element={<Navigate to="/404" replace />} />
+        </Routes>
       );
     }
   } else {

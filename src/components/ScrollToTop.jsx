@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { withRouter } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 /**
  * Component that scrolls the window to the top when the route changes.
@@ -12,19 +12,14 @@ import { withRouter } from "react-router-dom";
  * @returns {null} Returns null, as this component doesn't render any visible content.
  */
 function ScrollToTop({ history }) {
-  useEffect(() => {
-    const unlisten = history.listen(() => {
-      window.scrollTo(0, 0);
-    });
+  const location = useLocation();
 
-    // Cleanup function to stop listening to route changes when component unmounts
-    return () => {
-      unlisten();
-    };
-    // Re-run effect when the history object changes (e.g., route changes)
-  }, [history]);
+  useEffect(() => {
+    // Scroll to the top whenever the location changes
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return null;
 }
 
-export default withRouter(ScrollToTop);
+export default ScrollToTop;

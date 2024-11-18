@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useSpring, animated as a, config } from "react-spring";
 import { Helmet } from "react-helmet-async";
-import { Switch, Route, useRouteMatch } from "react-router-dom";
+import { Routes, Route, useMatch } from "react-router-dom";
 
 import "./PortfolioPage.css";
 
@@ -30,8 +30,6 @@ function PortfolioPage(props) {
 
   const [sectionValue, setSectionValue] = useState(0);
 
-  let { path } = useRouteMatch();
-
   const mainButtonClick = (e) => {
     let val = e.target.value;
     setSectionValue(parseInt(val));
@@ -58,21 +56,28 @@ function PortfolioPage(props) {
           content="You can find some of my work that I have done throughout the past couple years, from web development and software engineering, to video and sound production."
         />
       </Helmet>
-      <Switch>
-        <Route exact path={path}>
-          <Hero title={props.title} className="mb-0" />
+      <Routes>
+        {/* Main Portfolio Page */}
+        <Route
+          index
+          element={
+            <>
+              <Hero title={props.title} className="mb-0" />
+              <WorkNav section={sectionValue} updateHandler={mainButtonClick} />
+              <Cards section={sectionValue} path="/mywork"/>
+            </>
+          }
+        />
+        <Route
+          path=':portfolioURL'
+          element={
+            <a.div style={springProps}>
+              <Template sectionValue={sectionValue} />
+            </a.div>
+          }
+        />
+      </Routes>
 
-          <WorkNav section={sectionValue} updateHandler={mainButtonClick} />
-
-          <Cards section={sectionValue} path={path} />
-        </Route>
-
-        <Route path={`${path}/:portfolioURL`}>
-          <a.div style={springProps}>
-            <Template sectionValue={sectionValue} />
-          </a.div>
-        </Route>
-      </Switch>
     </>
   );
 }
