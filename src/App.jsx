@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Link, Navigate, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Link, Navigate, Routes } from "react-router";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -29,7 +29,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: "Eddie Estevz",
+      title: "Eddie Estevez",
       home: {
         title: "Hey guys, Eddie here!",
         subTitle:

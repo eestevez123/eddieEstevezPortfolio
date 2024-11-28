@@ -7,7 +7,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 
 import "./css/Carousel.css";
 
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 /**
  * Component representing the template for an article in the website section.
